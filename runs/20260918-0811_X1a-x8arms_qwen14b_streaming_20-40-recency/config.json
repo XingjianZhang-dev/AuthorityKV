@@ -1,0 +1,109 @@
+{
+  "experiment_id": "X1a-ext",
+  "start_time": "2026-09-18T08:11:22+00:00",
+  "end_time": "2026-09-18T08:19:59+00:00",
+  "repo_git_commit": null,
+  "repo_git_note": "repository has no .git (docs/INVENTORY.md §0/G5); code identity = source sha256 below",
+  "runner_version": "current",
+  "runner_source_sha256": {
+    "scripts/run_kvpress_authority.py": "2479b473a5a5d5d44268abe0ef546c6c862d57c2646ebd1266a30db96d3548f2",
+    "authoritykv_experiments/kvpress_authority.py": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+    "scripts/run_authoritykv_smoke.py": "8faa998ace07913fc0bd64bbd8e50519e352da9a4eb22f02ff6d798da98f1930"
+  },
+  "wrapper_source_sha256": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+  "detector_input_scope": "chat_message spans only (sentence-level localisation when --scan-low-authority-chat)",
+  "tie_break": "recency",
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "model_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "dtype": "bf16",
+  "decoding": "greedy (argmax), generation-phase KV not compressed",
+  "seed": 20260530,
+  "keep_ratio": null,
+  "budget_rule": "kept_count = max(1, int(cache_length * (1 - compression_ratio))), compression_ratio = 1 - keep_ratio; PyramidKV native allocation",
+  "variant": "rpstrict,e3bclfpg2,e3bclfdeberta,detv3mb",
+  "hyperparams": {
+    "dataset": "data/external_safety/ih_challenge_blue_team_auto_quoted_system_40.jsonl",
+    "dataset_sha256": "313e1480bc3143d36a50b0491222dc1cd6494c8f334e5b2616e390a1152ccfc9",
+    "scorer": "streaming",
+    "ratios": [
+      0.2,
+      0.4
+    ],
+    "variants": [
+      "rpstrict",
+      "e3bclfpg2",
+      "e3bclfdeberta",
+      "detv3mb"
+    ],
+    "tie_break": "recency",
+    "max_new_tokens": 16,
+    "gate_run": "/workspace/authoritykv/runs/20260918-0433_X1a-fullkv_qwen14b_none_100",
+    "admitted_n": 40,
+    "labels": {
+      "rpstrict": "DEPLOYABLE (native chat roles; no tool/retrieved spans in IH-Challenge → D = ∅)",
+      "e3bclfpg2": "DETECTOR (annotation-free; Llama-Prompt-Guard-2-86M on user-message sentences; label index set by pre-registered probe; local config has no id2label)",
+      "e3bclfdeberta": "DETECTOR (annotation-free; deberta-v3-base-prompt-injection-v2 on user-message sentences)",
+      "detv3mb": "DETECTOR, marker-blind (detector-v3 on user-message sentences; annotated marker strings masked in the detector input only)"
+    },
+    "frozen": {
+      "run_kvpress_ih_challenge.py": "76cade7279995eb54635fd7005e4161f84b382cc4e26112146dc1c8f088ff12a",
+      "run_ih_challenge_kv.py": "65e981e099b4f093a936a5e09b98f1f5d5f692698b73d9e2f7dc984fffe122c2"
+    },
+    "new_code": {
+      "x8_run.py": "c226d7ba8effb879203df7037bbbbc46528833cd3c0bd0aa80431545930866c5",
+      "akv_variants.py": "1ef7678bf635470ef400a00549bc1c0a68cd68f2d91c3f5537d297b8bb7b65d0",
+      "akv_presses.py": "8dd334a5c178117f88a86a020f8e2eaac27e9d39180c2147c9f52f14583302b7",
+      "akv_common.py": "a563a8bd73914a53e2371a8ff48aa804d46cd968dc58e3a727ec4b1657912cd0"
+    },
+    "sentence_splitter": "re.split(r\"(?<=[.!?])\\s+|\\n+\") over the whole user message",
+    "policy": "strict"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "python_bin": "/workspace/persist/envs/akv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.2.0",
+    "kvpress_import_path": "/workspace/authoritykv/external/kvpress/kvpress/__init__.py",
+    "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+    "cuda_runtime": "13.0",
+    "cudnn": 91900,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "HF_HOME": "/workspace/persist/hf",
+    "HF_HUB_OFFLINE": "1",
+    "NLTK_DATA": "/workspace/persist/nltk_data",
+    "hostname": "gpu-node",
+    "pid": 117784
+  },
+  "command": "review_experiments/x8_run.py --model Qwen/Qwen2.5-14B-Instruct --model-tag qwen14b --experiment X1a-ext --scorer streaming --keep-ratios 0.2,0.4 --variants rpstrict,e3bclfpg2,e3bclfdeberta,detv3mb --tie-break recency --gate-run auto --out-dir /workspace/authoritykv/runs/_tmp/X1a-x8arms_qwen14b_streaming_20-40-recency",
+  "prereg_id": "PREREG-22",
+  "classifiers": {
+    "pg2": {
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "id2label_from_config": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "injection_index": 1,
+      "rule": "argmax == injection_index",
+      "max_length": 512,
+      "n_calls": 0,
+      "n_truncated": 0,
+      "label_note": "label index set by pre-registered probe; local config has no id2label (PREREG-05/06 amendments B/C)"
+    },
+    "deberta": {
+      "model": "protectai/deberta-v3-base-prompt-injection-v2",
+      "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "id2label_from_config": {
+        "0": "SAFE",
+        "1": "INJECTION"
+      },
+      "injection_index": 1,
+      "rule": "argmax == injection_index",
+      "max_length": 512,
+      "n_calls": 0,
+      "n_truncated": 0,
+      "label_note": "id2label {0: SAFE, 1: INJECTION} from local config (PREREG-05/06 amendment A)"
+    }
+  }
+}

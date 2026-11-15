@@ -1,0 +1,24 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+& & \multicolumn{4}{c}{Prefix authority} & \multicolumn{4}{c}{Mid-context authority} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Scorer & KV & Base hier. & Base rev. & AKV hier. & AKV rev. & Base hier. & Base rev. & AKV hier. & AKV rev. \\
+\midrule
+H2O & 20\% & 490/600 & 0/600 & 600/600 & 0/600 & 462/600 & 133/600 & 600/600 & 0/600 \\
+H2O & 40\% & 530/600 & 9/600 & 600/600 & 0/600 & 483/600 & 117/600 & 600/600 & 0/600 \\
+\midrule
+Knorm & 20\% & 493/600 & 41/600 & 600/600 & 0/600 & 539/600 & 40/600 & 600/600 & 0/600 \\
+Knorm & 40\% & 583/600 & 17/600 & 600/600 & 0/600 & 575/600 & 25/600 & 600/600 & 0/600 \\
+\midrule
+StreamingLLM & 20\% & 0/600 & 0/600 & 600/600 & 0/600 & 28/600 & 568/600 & 600/600 & 0/600 \\
+StreamingLLM & 40\% & 9/600 & 590/600 & 600/600 & 0/600 & 72/600 & 515/600 & 600/600 & 0/600 \\
+\bottomrule
+\end{tabular}
+\caption{Primary position-stratified results across three models. Every scorer--budget--position cell contains 600 paired conflicts.}
+\label{tab:position-full}
+\end{table*}

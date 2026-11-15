@@ -1,0 +1,82 @@
+{
+  "decision_id": "arr_august_streaming_robustness_full_scaling_20260727v1",
+  "frozen_before_full_robustness_generation": true,
+  "parents": [
+    {
+      "path": "configs/arr_august_robustness40_pilot_decision.json",
+      "sha256": "174ed7ea2f3325205d15876a5ff13a1eb6538853367ad1f4c135e29a3c9ce8e8"
+    },
+    {
+      "path": "reports/arr_august_external_closure/robustness/streaming40_pilot_v2_summary.json",
+      "sha256": "a12f2250c7dd7188ca2ffeeb4a2f69b108fd9031cd9367c285746bcb89c63353"
+    },
+    {
+      "path": "reports/arr_august_external_closure/robustness/streaming40_pilot_v2_execution_audit.json",
+      "sha256": "02670e1b08928de75e9a56c508e353a402c67146fa62768f358f721615da9f78"
+    },
+    {
+      "path": "reports/arr_august_external_closure/full/mixed_evidence_streaming_full_v4_metrics.json",
+      "sha256": "88e33ecb97cf7bb07212ef8865f47f884ac370a45329fc5bafaec7c8bad194eb"
+    },
+    {
+      "path": "reports/arr_august_external_closure/full/final_fullscale_v4_execution_audit.json",
+      "sha256": "355e5a775c436a00b7d19e17d4ed3c70810e27d10cd5bc55dc9481a7507c15f0"
+    }
+  ],
+  "scaling_decision": {
+    "scale": true,
+    "compressor": "streaming",
+    "keep_ratio": 0.4,
+    "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+    "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+    "source_pairs": 100,
+    "conditions_per_pair": 3,
+    "expected_rows_per_cell": 300,
+    "reason": "The corrected pilot passed every execution audit and produced an identifiable provenance/detector curve on FullKV-capable paraphrase attacks: attack success was 0%, 6.25%, 18.75%, 25%, and 37.5% at provenance-drop rates 0%, 25%, 50%, 75%, and 100%, while explicit attacks remained at 0% because the frozen detector provided the registered backstop."
+  },
+  "full_cells": {
+    "detector_only": {
+      "method": "authority_streaming_detected",
+      "count": 1
+    },
+    "hybrid_provenance_drop": {
+      "method": "authority_streaming_detected_provenance",
+      "drop_rates": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hybrid_boundary_shrink": {
+      "method": "authority_streaming_detected_provenance",
+      "shrink_tokens_each_side": [
+        4,
+        8,
+        16
+      ]
+    }
+  },
+  "stopped_after_pilot": {
+    "compressor": "knorm",
+    "reason": "Knorm had zero attack success even under detector-only and complete provenance removal in the pilot, so a larger noise sweep would not identify a safety boundary. Its complete pilot curve remains a reported flat/no-headroom result."
+  },
+  "fixed_settings": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "seed": 20260726,
+    "dtype": "bf16",
+    "max_new_tokens": 32,
+    "span_source": "metadata",
+    "protected_budget_policy": "priority",
+    "scan_low_authority_chat": true
+  },
+  "acceptance": [
+    "Every full robustness run has exactly 300 unique prediction cells and zero runtime errors.",
+    "All dataset and experiment-config SHA-256 checks pass.",
+    "All retained-token execution audits pass, with zero excluded-token retention.",
+    "Report every detector-only, provenance-drop, and boundary-shrink cell, including non-monotonic or adverse values.",
+    "Use the frozen 64-pair FullKV capability gate in addition to all-pair results."
+  ]
+}

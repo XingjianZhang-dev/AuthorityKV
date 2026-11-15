@@ -1,0 +1,46 @@
+{
+  "run_id": "aclfollow_20260725v2_yi9b_ih_native_fullkv40",
+  "start_time": "2026-07-26T02:59:51+00:00",
+  "command": "scripts/run_kvpress_ih_challenge.py --run-id aclfollow_20260725v2_yi9b_ih_native_fullkv40 --model 01-ai/Yi-1.5-9B-Chat --dataset data/external_safety/ih_challenge_blue_team_auto_quoted_system_40.jsonl --methods fullkv --keep-ratios 0.2,0.4 --max-new-tokens 16 --dtype bf16 --experiment-config configs/acl_main_followup_matrix.json --out-dir results/authoritykv/aclfollow_20260725v2_yi9b_ih_native_fullkv40",
+  "source_sha256": "d2eb26b080c82d5cef19500b5141b7e67bcef35f15d419ce8eea020340e0d2c5",
+  "source_hashes": {
+    "scripts/run_kvpress_ih_challenge.py": "76cade7279995eb54635fd7005e4161f84b382cc4e26112146dc1c8f088ff12a",
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "scripts/run_ih_challenge_kv.py": "65e981e099b4f093a936a5e09b98f1f5d5f692698b73d9e2f7dc984fffe122c2",
+    "scripts/make_ih_challenge_subset.py": "cd95ebf9ca95c8c46ac64ba85ca6c3273b36162d82a0ba09fa88ff0daf9de41d",
+    "scripts/remap_ih_control_role.py": "38ae0609652594f977587d2c57c4e43a1df58838d6ea3d2908e792ef9579202b",
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199"
+  },
+  "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "model": "01-ai/Yi-1.5-9B-Chat",
+  "model_class": "LlamaForCausalLM",
+  "model_commit": "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5",
+  "model_max_position_embeddings": 4096,
+  "tokenizer_class": "TokenizersBackend",
+  "tokenizer_commit": null,
+  "dataset": "data/external_safety/ih_challenge_blue_team_auto_quoted_system_40.jsonl",
+  "dataset_sha256": "313e1480bc3143d36a50b0491222dc1cd6494c8f334e5b2616e390a1152ccfc9",
+  "dataset_rows": 40,
+  "methods": [
+    "fullkv"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "max_new_tokens": 16,
+  "seed": 20260530,
+  "dtype": "bf16",
+  "attn_implementation": null,
+  "span_protocol": "actual_high_authority_chat_roles_plus_typed_metadata_spans",
+  "role_compatibility_protocol": "native role rendering when lossless; otherwise exact system/developer contents are boundary-tagged and serialized in the system channel; all other dropped roles fail closed",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "cuda_runtime": "13.0",
+  "cudnn_version": 91900,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "kvpress_version": "not_exposed",
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "end_time": "2026-07-26T03:00:26+00:00"
+}

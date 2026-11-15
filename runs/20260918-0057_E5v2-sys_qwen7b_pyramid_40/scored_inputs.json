@@ -1,0 +1,12 @@
+{
+  "task": "sys",
+  "inputs": [
+    "/workspace/authoritykv/results/authoritykv/arrsys_20260726v2_qwen_fullkv_full150/predictions.jsonl",
+    "/workspace/authoritykv/runs/20260918-0057_E5v2-sys_qwen7b_pyramid_40/predictions.jsonl"
+  ],
+  "scorer": "scripts/score_system_ifeval.py",
+  "scorer_sha256": "42480b304eaa32fde0ffa670b62669591688f5e21cfe4c6cc44eea223e14fb66",
+  "exit": 0,
+  "tail": "ion\": true,\n  \"grader_determinism\": {\n    \"langdetect_detector_factory_seed\": 0,\n    \"paired_aggregate_consistency\": true,\n    \"python_random_seed\": 0\n  },\n  \"official_grader\": true,\n  \"paired_comparisons\": {\n    \"kvpress_pyramid@0.40_vs_authority_pyramid_detected_provenance@0.40\": {\n      \"all_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.0022222222222222222,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            -0.017777777777777778,\n            0.023333333333333334\n          ]\n        },\n        \"pairs\": 150,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.0,\n          \"authority_only\": 2,\n          \"base_only\": 2,\n          \"both\": 6,\n          \"mcnemar_exact_two_sided_p\": 1.0,\n          \"neither\": 140\n        }\n      },\n      \"fullkv_strict_correct_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.005681818181818182,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            -0.017045454545454544,\n            0.028409090909090908\n          ]\n        },\n        \"pairs\": 88,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.011363636363636364,\n          \"authority_only\": 2,\n          \"base_only\": 1,\n          \"both\": 5,\n          \"mcnemar_exact_two_sided_p\": 1.0,\n          \"neither\": 80\n        }\n      }\n    }\n  },\n  \"prediction_rows\": 450\n}\n",
+  "scored_at": "2026-09-18T01:27:37+00:00"
+}

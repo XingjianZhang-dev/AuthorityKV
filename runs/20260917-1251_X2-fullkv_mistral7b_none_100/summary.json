@@ -1,0 +1,37 @@
+{
+  "experiment": "X2",
+  "prereg": "PREREG-16",
+  "task": "mixed",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "model_tag": "mistral7b",
+  "scorer": "streaming",
+  "tie_break": "topk",
+  "variants": [
+    "fullkv"
+  ],
+  "keep_ratios": [
+    1.0
+  ],
+  "n_examples": 300,
+  "n_rows": 300,
+  "elapsed_s": 480.2,
+  "labels": {
+    "fullkv": "none (FullKV)"
+  },
+  "classifiers": {},
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 0,
+    "paired_base_run": null,
+    "retained_checked": 0,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 15876.005
+}

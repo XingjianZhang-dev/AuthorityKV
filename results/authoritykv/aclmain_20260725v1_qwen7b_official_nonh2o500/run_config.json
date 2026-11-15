@@ -1,0 +1,55 @@
+{
+  "run_id": "aclmain_20260725v1_qwen7b_official_nonh2o500",
+  "start_time": "2026-07-25T07:12:44+00:00",
+  "command": "scripts/run_kvpress_authority.py --run-id aclmain_20260725v1_qwen7b_official_nonh2o500 --model Qwen/Qwen2.5-7B-Instruct --dataset data/ih_cachebench/natural_short_500.jsonl --methods kvpress_snapkv,kvpress_streaming,kvpress_tova,kvpress_knorm,kvpress_pyramid --keep-ratios 0.2,0.4 --max-new-tokens 16 --dtype bf16 --assistant-prefix '{\"decision\":\"' --stop-after-json-object --out-dir results/authoritykv/aclmain_20260725v1_qwen7b_official_nonh2o500",
+  "source_sha256": "5722fc56056eb4d4b5bedb4b88481465f7e230cfe97946663663ec50f8fbba18",
+  "source_hashes": {
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3",
+    "scripts/judge_authoritykv.py": "dbbcfe0e68e4a71ce5850dcb304c053d9c445d86b671b18e7f9425f2aa3b15fe",
+    "scripts/run_acl_main_gpu_queue.sh": "2a9a85a04ca26d03604fa4d9b0d14ae60f2ca00b7cc44b906473b7b2d008a4d2"
+  },
+  "experiment_config": "configs/acl_main_experiment_matrix.json",
+  "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_max_position_embeddings": 32768,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "tokenizer_commit": null,
+  "dataset": "data/ih_cachebench/natural_short_500.jsonl",
+  "dataset_sha256": "2226670965938f9d23b569e4dd8f40396b8a0e8da5e53c36b2e648678b445cd9",
+  "limit": null,
+  "methods": [
+    "kvpress_snapkv",
+    "kvpress_streaming",
+    "kvpress_tova",
+    "kvpress_knorm",
+    "kvpress_pyramid"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "max_new_tokens": 16,
+  "seed": 20260530,
+  "dtype": "bf16",
+  "attn_implementation": null,
+  "span_source": "metadata",
+  "assistant_prefix": "{\"decision\":\"",
+  "stop_after_json_object": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_capability": [
+    8,
+    0
+  ],
+  "cuda_runtime": "13.0",
+  "cudnn_version": 91900,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "kvpress_version": "not_exposed",
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "end_time": "2026-07-25T07:42:36+00:00"
+}

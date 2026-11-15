@@ -1,0 +1,77 @@
+{
+  "amendment_id": "arr_august_robustness_identifiability_20260726v1",
+  "parent_registration": "configs/arr_august_external_closure.json",
+  "parent_sha256": "8897a530a685143fbb5572f898cb9fc0569e1217556b5229ad64fea6a9dbf646",
+  "frozen_before_robustness_generation": true,
+  "objective": "Identify provenance-span and detector errors separately instead of attributing protection from one signal to the other.",
+  "confirmatory_parent_cells": {
+    "dataset_condition": "explicit_attack",
+    "method": "authority_knorm_detected_provenance",
+    "keep_ratios": [
+      0.2,
+      0.4
+    ],
+    "provenance_drop_rates": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "boundary_shrink_tokens_each_side": [
+      0,
+      4,
+      8,
+      16
+    ]
+  },
+  "identifiability_cells": {
+    "detector_only": {
+      "methods": [
+        "authority_knorm_detected",
+        "authority_streaming_detected"
+      ],
+      "conditions": [
+        "explicit_attack",
+        "paraphrase_attack"
+      ],
+      "interpretation": "Explicit attacks are detector-covered and paraphrased attacks are frozen detector misses; no provenance exclusion is active."
+    },
+    "hybrid_redundancy": {
+      "methods": [
+        "authority_knorm_detected_provenance",
+        "authority_streaming_detected_provenance"
+      ],
+      "conditions": [
+        "explicit_attack",
+        "paraphrase_attack"
+      ],
+      "provenance_drop_rates": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "boundary_shrink_tokens_each_side": [
+        0,
+        4,
+        8,
+        16
+      ],
+      "interpretation": "The explicit condition measures detector backstop under provenance corruption; the paraphrase condition measures residual dependence on provenance when the detector misses."
+    }
+  },
+  "scaling_rule": {
+    "knorm": "Run the parent-confirmatory cells regardless of effect direction.",
+    "streaming": "Run the same diagnostic cells because the frozen mixed-evidence pilot established an active attack-compliance reduction for Authority-StreamingLLM.",
+    "reporting": "Report all rows and the frozen FullKV-capable pair subset; retain flat or adverse curves."
+  },
+  "invariants": [
+    "Do not alter the frozen messages or labels.",
+    "Do not use answers or attack-success outcomes in span perturbation.",
+    "Use deterministic SHA-256 span dropout with seed 20260726.",
+    "Pair base and AuthorityKV at the same retained-token ratio.",
+    "Do not present hybrid results as detector-only evidence."
+  ]
+}

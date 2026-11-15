@@ -1,0 +1,52 @@
+{
+  "experiment_id": "D2SANITY",
+  "start_time": "2026-09-17T14:37:55+00:00",
+  "end_time": "2026-09-17T14:39:06+00:00",
+  "repo_git_commit": null,
+  "repo_git_note": "repository has no .git (docs/INVENTORY.md §0/G5); code identity = source sha256 below",
+  "runner_version": "snapshot",
+  "runner_source_sha256": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "wrapper_source_sha256": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+  "detector_input_scope": "all_annotated_spans (metadata_marker + chat spans; whole span demoted on hit)",
+  "tie_break": "topk",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dtype": "bf16",
+  "decoding": "greedy (argmax), generation-phase KV not compressed",
+  "seed": 20260530,
+  "keep_ratio": null,
+  "budget_rule": "kept_count = max(1, int(cache_length * (1 - compression_ratio))), compression_ratio = 1 - keep_ratio; PyramidKV native allocation",
+  "variant": "random_tie_seed1_vs_topk_prefill_only",
+  "hyperparams": {
+    "examples": 4,
+    "scorers": [
+      "knorm",
+      "streaming"
+    ],
+    "ratios": [
+      0.2,
+      0.4
+    ]
+  },
+  "environment": {
+    "python": "3.12.13",
+    "python_bin": "/workspace/persist/envs/akv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.2.0",
+    "kvpress_import_path": "/workspace/authoritykv/external/kvpress/kvpress/__init__.py",
+    "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+    "cuda_runtime": "13.0",
+    "cudnn": 91900,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "HF_HOME": "/workspace/persist/hf",
+    "HF_HUB_OFFLINE": "1",
+    "NLTK_DATA": "/workspace/persist/nltk_data",
+    "hostname": "gpu-node",
+    "pid": 53889
+  },
+  "command": "review_experiments/d2_sanity.py"
+}

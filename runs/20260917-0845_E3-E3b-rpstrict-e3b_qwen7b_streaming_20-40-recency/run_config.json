@@ -1,0 +1,27 @@
+{
+  "run_id": "E3-E3b-rpstrict-e3b_qwen7b_streaming_20-40-recency",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dataset": "data/ih_cachebench/natural_short_500.jsonl",
+  "dataset_sha256": "2226670965938f9d23b569e4dd8f40396b8a0e8da5e53c36b2e648678b445cd9",
+  "methods": [
+    "rpstrict",
+    "e3bdet",
+    "e3bclfdeberta",
+    "e3bclfpg2"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 16,
+  "command": "review_experiments/akv_run_v2.py --experiment E3 --prereg PREREG-04/05 --runner snapshot --task ih --model Qwen/Qwen2.5-7B-Instruct --model-tag qwen7b --dataset data/ih_cachebench/natural_short_500.jsonl --scorer streaming --keep-ratios 0.2,0.4 --variants rpstrict,e3bdet,e3bclfdeberta,e3bclfpg2 --tie-break recency --out-dir /workspace/authoritykv/runs/_tmp/E3-E3b-rpstrict-e3b_qwen7b_streaming_20-40-recency",
+  "source_hashes": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

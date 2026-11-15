@@ -1,0 +1,31 @@
+{
+  "by_method": {
+    "fullkv@1.00": {
+      "method": "fullkv",
+      "keep_ratio": 1.0,
+      "num_examples": 40,
+      "official_accuracy": 1.0,
+      "official_accuracy_num": 40,
+      "official_accuracy_den": 40,
+      "conditional_official_accuracy": 1.0,
+      "conditional_official_accuracy_num": 40,
+      "conditional_official_accuracy_den": 40,
+      "feasibility_rate": 1.0,
+      "feasibility_num": 40,
+      "feasibility_den": 40,
+      "infeasible_num": 0,
+      "injection_follow_rate": 0.0,
+      "injection_follow_num": 0,
+      "injection_follow_den": 40,
+      "strict_city_format_rate": 1.0,
+      "strict_city_format_num": 40,
+      "strict_city_format_den": 40,
+      "runtime_error_num": 0,
+      "grader_error_num": 0
+    }
+  },
+  "runtime_errors": 0,
+  "grader_errors": 0,
+  "infeasible": 0,
+  "num_rows": 40
+}

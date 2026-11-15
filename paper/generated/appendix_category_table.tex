@@ -1,0 +1,28 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & KV & Sys./user & Dev./user & Sys./tool & Dev./retr. & Multi-tier & Total \\
+\midrule
+H2O & 20\% & 9/240 & 40/240 & 6/240 & 49/240 & 29/240 & 133/1200 \\
+H2O+\method{} & 20\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+H2O & 40\% & 25/240 & 51/240 & 11/240 & 37/240 & 2/240 & 126/1200 \\
+H2O+\method{} & 40\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+\midrule
+Knorm & 20\% & 6/240 & 60/240 & 6/240 & 0/240 & 9/240 & 81/1200 \\
+Knorm+\method{} & 20\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+Knorm & 40\% & 3/240 & 39/240 & 0/240 & 0/240 & 0/240 & 42/1200 \\
+Knorm+\method{} & 40\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+\midrule
+StreamingLLM & 20\% & 117/240 & 115/240 & 115/240 & 116/240 & 105/240 & 568/1200 \\
+StreamingLLM+\method{} & 20\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+StreamingLLM & 40\% & 233/240 & 237/240 & 219/240 & 233/240 & 183/240 & 1105/1200 \\
+StreamingLLM+\method{} & 40\% & 0/240 & 0/240 & 0/240 & 0/240 & 0/240 & 0/1200 \\
+\bottomrule
+\end{tabular}
+\caption{Primary authority reversals by conflict relation, aggregated over three independently FullKV-gated models. Each category cell has 240 decisions; totals have 1,200. Other hierarchy errors are not reclassified as reversals.}
+\label{tab:category-full}
+\end{table*}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "registered_at_utc": "2026-07-26T03:05:00Z",
+  "purpose": "Prevent the Transformers model-level output recorder from retaining one quadratic attention tensor per layer during registered LongBench H2O utility cells, while preserving the official eager-attention and NVIDIA KVPress H2O execution path exactly.",
+  "activation": {
+    "runner": "scripts/run_kvpress_external_utility.py",
+    "run_id_regex": "^aclmain_20260725v1_qwen7b_utility_(triviaqa|2wikimqa)_h2o$",
+    "methods": [
+      "kvpress_h2o",
+      "authority_h2o_detected_provenance"
+    ]
+  },
+  "execution_contract": [
+    "Load and execute the official Transformers eager attention implementation without modifying its projections, rotary embeddings, causal mask, scaling, float32 softmax, bf16 cast, value aggregation, or returned attention tensor.",
+    "Execute the unchanged NVIDIA KVPress ObservedAttentionPress forward hook; it consumes each layer's returned attention tensor and applies the official H2O score, top-k, and cache-gather operations.",
+    "Pass output_attentions=false only to the outer Transformers model so its read-only output recorder is inactive; this flag does not suppress the eager attention tensor returned to the KVPress layer hook.",
+    "After the layer hook returns, the decoder discards the unrequested attention output instead of retaining it in a model-level tuple across all layers."
+  ],
+  "invariants": [
+    "Do not use the query-chunked attention prototype in admitted formal runs.",
+    "Do not change model weights, attention implementation, H2O implementation, projections, masks, scaling, softmax precision, value aggregation, H2O normalization, top-k ordering, compression ratio, token budgets, prompts, or decoding.",
+    "Require bitwise equality of generated token IDs, output text, prompt and retained-cache lengths, press audits, and exact per-layer ordered top-k index digests between captured and uncaptured official eager paths on a feasible diagnostic sample before scale-up.",
+    "Require a successful uncaptured official-eager replay of a previously OOM 6k-plus-token sample before scale-up.",
+    "Use the identical uncaptured official-eager backend for the registered official H2O and Authority-H2O utility cells so paired comparisons are not confounded.",
+    "Treat every runtime error as a nonzero runner exit and exclude the run from closure."
+  ],
+  "incident": {
+    "failure_mode": "Transformers output_attentions=true activated a model-level recorder installed before experiment hooks; it retained one quadratic attention tensor per layer and reached approximately 75-76 GiB before a further 4-5.5 GiB allocation.",
+    "affected_attempts": [
+      "aclmain_20260725v1_qwen7b_utility_triviaqa_h2o",
+      "aclmain_20260725v1_qwen7b_utility_2wikimqa_h2o"
+    ],
+    "insufficient_release_repair": "A later release hook could not remove references already stored by the earlier Transformers recorder; its exact short audit and long-context OOM remain preserved.",
+    "failed_chunked_repair": "The query-chunked prototype reduced memory and passed a prior-OOM stress replay but changed floating-point accumulation, generated tokens, and exact per-layer H2O top-k sets; all failed diagnostics remain preserved and the prototype is forbidden in admitted formal runs.",
+    "disposition": "Archive the failed formal attempts without deleting raw outputs. Rerun the registered cells only after bitwise captured-versus-uncaptured official-eager equivalence and long-context stress gates pass."
+  }
+}

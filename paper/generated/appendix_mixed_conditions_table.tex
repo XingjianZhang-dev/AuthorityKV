@@ -1,0 +1,34 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabular}{lllrrrr}
+\toprule
+Scorer / KV & Condition & Population & Attack (base$\rightarrow$AKV) & Joint (base$\rightarrow$AKV) & LB (base$\rightarrow$AKV) & Paired $\Delta$LB [95\% CI] \\
+\midrule
+Streaming / 20\% & Clean & All (100) & 0/100$\rightarrow$0/100 & 64/100$\rightarrow$62/100 & 0.384$\rightarrow$0.590 & +0.206 [+0.136,+0.277] \\
+Streaming / 20\% & Clean & Gated (64) & 0/64$\rightarrow$0/64 & 57/64$\rightarrow$58/64 & 0.514$\rightarrow$0.857 & +0.343 [+0.254,+0.429] \\
+Streaming / 20\% & Explicit & All (100) & 17/100$\rightarrow$0/100 & 59/100$\rightarrow$61/100 & 0.529$\rightarrow$0.581 & +0.052 [-0.002,+0.109] \\
+Streaming / 20\% & Explicit & Gated (64) & 7/64$\rightarrow$0/64 & 54/64$\rightarrow$57/64 & 0.734$\rightarrow$0.828 & +0.094 [+0.032,+0.163] \\
+Streaming / 20\% & Paraphrase & All (100) & 1/100$\rightarrow$0/100 & 65/100$\rightarrow$60/100 & 0.501$\rightarrow$0.576 & +0.075 [+0.010,+0.140] \\
+Streaming / 20\% & Paraphrase & Gated (64) & 1/64$\rightarrow$0/64 & 59/64$\rightarrow$57/64 & 0.682$\rightarrow$0.843 & +0.161 [+0.079,+0.243] \\
+\addlinespace[1pt]
+Streaming / 40\% & Clean & All (100) & 0/100$\rightarrow$0/100 & 66/100$\rightarrow$63/100 & 0.430$\rightarrow$0.580 & +0.149 [+0.083,+0.214] \\
+Streaming / 40\% & Clean & Gated (64) & 0/64$\rightarrow$0/64 & 59/64$\rightarrow$59/64 & 0.585$\rightarrow$0.840 & +0.255 [+0.173,+0.339] \\
+Streaming / 40\% & Explicit & All (100) & 13/100$\rightarrow$0/100 & 58/100$\rightarrow$62/100 & 0.542$\rightarrow$0.569 & +0.028 [-0.017,+0.074] \\
+Streaming / 40\% & Explicit & Gated (64) & 6/64$\rightarrow$0/64 & 54/64$\rightarrow$59/64 & 0.767$\rightarrow$0.821 & +0.054 [+0.003,+0.111] \\
+Streaming / 40\% & Paraphrase & All (100) & 0/100$\rightarrow$0/100 & 67/100$\rightarrow$62/100 & 0.505$\rightarrow$0.579 & +0.074 [+0.019,+0.130] \\
+Streaming / 40\% & Paraphrase & Gated (64) & 0/64$\rightarrow$0/64 & 61/64$\rightarrow$59/64 & 0.690$\rightarrow$0.847 & +0.157 [+0.092,+0.229] \\
+\addlinespace[1pt]
+Knorm / 40\% & Clean & All (100) & 0/100$\rightarrow$0/100 & 46/100$\rightarrow$50/100 & 0.235$\rightarrow$0.390 & +0.155 [+0.094,+0.219] \\
+Knorm / 40\% & Clean & Gated (64) & 0/64$\rightarrow$0/64 & 45/64$\rightarrow$48/64 & 0.341$\rightarrow$0.551 & +0.210 [+0.126,+0.302] \\
+Knorm / 40\% & Explicit & All (100) & 0/100$\rightarrow$0/100 & 45/100$\rightarrow$50/100 & 0.298$\rightarrow$0.365 & +0.066 [+0.022,+0.113] \\
+Knorm / 40\% & Explicit & Gated (64) & 0/64$\rightarrow$0/64 & 43/64$\rightarrow$48/64 & 0.410$\rightarrow$0.518 & +0.108 [+0.044,+0.179] \\
+Knorm / 40\% & Paraphrase & All (100) & 0/100$\rightarrow$0/100 & 45/100$\rightarrow$47/100 & 0.300$\rightarrow$0.360 & +0.060 [+0.014,+0.110] \\
+Knorm / 40\% & Paraphrase & Gated (64) & 0/64$\rightarrow$0/64 & 44/64$\rightarrow$46/64 & 0.423$\rightarrow$0.521 & +0.099 [+0.029,+0.174] \\
+\bottomrule
+\end{tabular}
+\caption{Complete mixed-evidence matrix (\(\mathrm{R}_{\uparrow}\) rule). ``All'' preserves the unconditional 100-pair denominator; ``Gated'' contains the 64 source pairs correct and attack-free under FullKV in all three conditions. Attack markers and answer labels are used only after generation.}
+\label{tab:mixed-all-conditions}
+\end{table*}

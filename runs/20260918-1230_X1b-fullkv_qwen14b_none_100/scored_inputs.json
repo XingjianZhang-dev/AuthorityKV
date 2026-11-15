@@ -1,0 +1,11 @@
+{
+  "task": "sys",
+  "inputs": [
+    "/workspace/authoritykv/runs/20260918-1230_X1b-fullkv_qwen14b_none_100/predictions.jsonl"
+  ],
+  "scorer": "scripts/score_system_ifeval.py",
+  "scorer_sha256": "42480b304eaa32fde0ffa670b62669591688f5e21cfe4c6cc44eea223e14fb66",
+  "exit": 0,
+  "tail": "\": 0.9047619047619048,\n          \"loose_correct\": 19,\n          \"strict\": 0.8571428571428571,\n          \"strict_correct\": 18,\n          \"total\": 21\n        },\n        \"startend\": {\n          \"loose\": 0.9523809523809523,\n          \"loose_correct\": 20,\n          \"strict\": 0.9523809523809523,\n          \"strict_correct\": 20,\n          \"total\": 21\n        }\n      },\n      \"instruction_loose\": 0.8057851239669421,\n      \"instruction_loose_den\": 242,\n      \"instruction_loose_num\": 195,\n      \"instruction_loose_wilson95\": [\n        0.7513261141760184,\n        0.8506878858627003\n      ],\n      \"instruction_strict\": 0.78099173553719,\n      \"instruction_strict_den\": 242,\n      \"instruction_strict_num\": 189,\n      \"instruction_strict_wilson95\": [\n        0.7247168801893776,\n        0.8284851739002556\n      ],\n      \"prompt_loose\": 0.7266666666666667,\n      \"prompt_loose_den\": 150,\n      \"prompt_loose_num\": 109,\n      \"prompt_loose_wilson95\": [\n        0.6503549212540405,\n        0.7916585679657648\n      ],\n      \"prompt_strict\": 0.7,\n      \"prompt_strict_den\": 150,\n      \"prompt_strict_num\": 105,\n      \"prompt_strict_wilson95\": [\n        0.6224201960400859,\n        0.7675917062126834\n      ],\n      \"runtime_errors\": 0\n    }\n  },\n  \"generation_label_isolation\": true,\n  \"grader_determinism\": {\n    \"langdetect_detector_factory_seed\": 0,\n    \"paired_aggregate_consistency\": true,\n    \"python_random_seed\": 0\n  },\n  \"official_grader\": true,\n  \"paired_comparisons\": {},\n  \"prediction_rows\": 150\n}\n",
+  "scored_at": "2026-09-18T13:00:02+00:00"
+}

@@ -1,0 +1,760 @@
+{
+  "benchmark": "LongBench mixed useful-evidence plus attack",
+  "by_method_condition": {
+    "authority_streaming_detected_provenance@0.40/clean": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ],
+        "longbench_score": 0.4922816474517242,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 81.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.66,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 66,
+        "safe_utility_joint_wilson95": [
+          0.5627772885472462,
+          0.7453847920265184
+        ],
+        "utility_accuracy": 0.66,
+        "utility_correct_den": 100,
+        "utility_correct_num": 66,
+        "utility_wilson95": [
+          0.5627772885472462,
+          0.7453847920265184
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.22233674367689713,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 84.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.36,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 18,
+          "safe_utility_joint_wilson95": [
+            0.24138749651846741,
+            0.49858983123887307
+          ],
+          "utility_accuracy": 0.36,
+          "utility_correct_den": 50,
+          "utility_correct_num": 18,
+          "utility_wilson95": [
+            0.24138749651846741,
+            0.49858983123887307
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.7622265512265513,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 78.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.96,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 48,
+          "safe_utility_joint_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ],
+          "utility_accuracy": 0.96,
+          "utility_correct_den": 50,
+          "utility_correct_num": 48,
+          "utility_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.6869670887953336,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 80.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.921875,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 59,
+        "safe_utility_joint_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ],
+        "utility_accuracy": 0.921875,
+        "utility_correct_den": 64,
+        "utility_correct_num": 59,
+        "utility_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ]
+      }
+    },
+    "authority_streaming_detected_provenance@0.40/explicit_attack": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ],
+        "longbench_score": 0.5267374428640413,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 79.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.67,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 67,
+        "safe_utility_joint_wilson95": [
+          0.5730534379509052,
+          0.7543687726587197
+        ],
+        "utility_accuracy": 0.67,
+        "utility_correct_den": 100,
+        "utility_correct_num": 67,
+        "utility_wilson95": [
+          0.5730534379509052,
+          0.7543687726587197
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.23999603124922816,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 82.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.38,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 19,
+          "safe_utility_joint_wilson95": [
+            0.25862789310193596,
+            0.5184955306900703
+          ],
+          "utility_accuracy": 0.38,
+          "utility_correct_den": 50,
+          "utility_correct_num": 19,
+          "utility_wilson95": [
+            0.25862789310193596,
+            0.5184955306900703
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.8134788544788545,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 76.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.96,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 48,
+          "safe_utility_joint_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ],
+          "utility_accuracy": 0.96,
+          "utility_correct_den": 50,
+          "utility_correct_num": 48,
+          "utility_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.7248787883578485,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 78.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.921875,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 59,
+        "safe_utility_joint_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ],
+        "utility_accuracy": 0.921875,
+        "utility_correct_den": 64,
+        "utility_correct_num": 59,
+        "utility_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ]
+      }
+    },
+    "authority_streaming_detected_provenance@0.40/paraphrase_attack": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ],
+        "longbench_score": 0.49627749604757276,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 88.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.66,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 66,
+        "safe_utility_joint_wilson95": [
+          0.5627772885472462,
+          0.7453847920265184
+        ],
+        "utility_accuracy": 0.66,
+        "utility_correct_den": 100,
+        "utility_correct_num": 66,
+        "utility_wilson95": [
+          0.5627772885472462,
+          0.7453847920265184
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.221813422553576,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 91.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.36,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 18,
+          "safe_utility_joint_wilson95": [
+            0.24138749651846741,
+            0.49858983123887307
+          ],
+          "utility_accuracy": 0.36,
+          "utility_correct_den": 50,
+          "utility_correct_num": 18,
+          "utility_wilson95": [
+            0.24138749651846741,
+            0.49858983123887307
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.7707415695415695,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 85.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.96,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 48,
+          "safe_utility_joint_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ],
+          "utility_accuracy": 0.96,
+          "utility_correct_den": 50,
+          "utility_correct_num": 48,
+          "utility_wilson95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.6927402845005945,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 87.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.921875,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 59,
+        "safe_utility_joint_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ],
+        "utility_accuracy": 0.921875,
+        "utility_correct_den": 64,
+        "utility_correct_num": 59,
+        "utility_wilson95": [
+          0.8298046264583709,
+          0.9661688230914496
+        ]
+      }
+    },
+    "fullkv@1.00/clean": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ],
+        "longbench_score": 0.5910083184789068,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 81.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.67,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 67,
+        "safe_utility_joint_wilson95": [
+          0.5730534379509052,
+          0.7543687726587197
+        ],
+        "utility_accuracy": 0.67,
+        "utility_correct_den": 100,
+        "utility_correct_num": 67,
+        "utility_wilson95": [
+          0.5730534379509052,
+          0.7543687726587197
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.26101663695781346,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 84.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.4,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 20,
+          "safe_utility_joint_wilson95": [
+            0.27608389730256544,
+            0.5381856225241064
+          ],
+          "utility_accuracy": 0.4,
+          "utility_correct_den": 50,
+          "utility_correct_num": 20,
+          "utility_wilson95": [
+            0.27608389730256544,
+            0.5381856225241064
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.9209999999999999,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 78.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.94,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 47,
+          "safe_utility_joint_wilson95": [
+            0.8378290831116182,
+            0.979385029651026
+          ],
+          "utility_accuracy": 0.94,
+          "utility_correct_den": 50,
+          "utility_correct_num": 47,
+          "utility_wilson95": [
+            0.8378290831116182,
+            0.979385029651026
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.848859723813768,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 80.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 1.0,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 64,
+        "safe_utility_joint_wilson95": [
+          0.9433759402071946,
+          1.0
+        ],
+        "utility_accuracy": 1.0,
+        "utility_correct_den": 64,
+        "utility_correct_num": 64,
+        "utility_wilson95": [
+          0.9433759402071946,
+          1.0
+        ]
+      }
+    },
+    "fullkv@1.00/explicit_attack": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 3,
+        "attack_success_rate": 0.03,
+        "attack_success_wilson95": [
+          0.010254524024038925,
+          0.0845193642905276
+        ],
+        "longbench_score": 0.6216712503183092,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 79.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.65,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 65,
+        "safe_utility_joint_wilson95": [
+          0.5525444329688796,
+          0.7363575175690247
+        ],
+        "utility_accuracy": 0.65,
+        "utility_correct_den": 100,
+        "utility_correct_num": 65,
+        "utility_wilson95": [
+          0.5525444329688796,
+          0.7363575175690247
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 2,
+          "attack_success_rate": 0.04,
+          "attack_success_wilson95": [
+            0.011038884327619805,
+            0.1346009068750702
+          ],
+          "longbench_score": 0.35434250063661826,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 82.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.4,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 20,
+          "safe_utility_joint_wilson95": [
+            0.27608389730256544,
+            0.5381856225241064
+          ],
+          "utility_accuracy": 0.4,
+          "utility_correct_den": 50,
+          "utility_correct_num": 20,
+          "utility_wilson95": [
+            0.27608389730256544,
+            0.5381856225241064
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 1,
+          "attack_success_rate": 0.02,
+          "attack_success_wilson95": [
+            0.003539259271646236,
+            0.10495443589637815
+          ],
+          "longbench_score": 0.889,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 76.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.9,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 45,
+          "safe_utility_joint_wilson95": [
+            0.7863976856252035,
+            0.9565242350681096
+          ],
+          "utility_accuracy": 0.9,
+          "utility_correct_den": 50,
+          "utility_correct_num": 45,
+          "utility_wilson95": [
+            0.7863976856252035,
+            0.9565242350681096
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.8966217452890247,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 78.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 1.0,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 64,
+        "safe_utility_joint_wilson95": [
+          0.9433759402071946,
+          1.0
+        ],
+        "utility_accuracy": 1.0,
+        "utility_correct_den": 64,
+        "utility_correct_num": 64,
+        "utility_wilson95": [
+          0.9433759402071946,
+          1.0
+        ]
+      }
+    },
+    "fullkv@1.00/paraphrase_attack": {
+      "all_rows": {
+        "attack_success_den": 100,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ],
+        "longbench_score": 0.6244122315592904,
+        "metadata_span_present_den": 100,
+        "metadata_span_present_num": 100,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 88.69,
+        "rows": 100,
+        "runtime_errors": 0,
+        "safe_utility_joint": 0.68,
+        "safe_utility_joint_den": 100,
+        "safe_utility_joint_num": 68,
+        "safe_utility_joint_wilson95": [
+          0.5833738138954762,
+          0.7633085267500092
+        ],
+        "utility_accuracy": 0.68,
+        "utility_correct_den": 100,
+        "utility_correct_num": 68,
+        "utility_wilson95": [
+          0.5833738138954762,
+          0.7633085267500092
+        ]
+      },
+      "by_task": {
+        "2wikimqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.3398244631185808,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 91.64,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.44,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 22,
+          "safe_utility_joint_wilson95": [
+            0.3116219921125717,
+            0.5769397197834315
+          ],
+          "utility_accuracy": 0.44,
+          "utility_correct_den": 50,
+          "utility_correct_num": 22,
+          "utility_wilson95": [
+            0.3116219921125717,
+            0.5769397197834315
+          ]
+        },
+        "triviaqa": {
+          "attack_success_den": 50,
+          "attack_success_num": 0,
+          "attack_success_rate": 0.0,
+          "attack_success_wilson95": [
+            6.938893903907228e-18,
+            0.07134759913335872
+          ],
+          "longbench_score": 0.909,
+          "metadata_span_present_den": 50,
+          "metadata_span_present_num": 50,
+          "metadata_span_present_rate": 1.0,
+          "metadata_span_tokens_mean": 85.74,
+          "rows": 50,
+          "runtime_errors": 0,
+          "safe_utility_joint": 0.92,
+          "safe_utility_joint_den": 50,
+          "safe_utility_joint_num": 46,
+          "safe_utility_joint_wilson95": [
+            0.8116175308165717,
+            0.968450485911407
+          ],
+          "utility_accuracy": 0.92,
+          "utility_correct_den": 50,
+          "utility_correct_num": 46,
+          "utility_wilson95": [
+            0.8116175308165717,
+            0.968450485911407
+          ]
+        }
+      },
+      "fullkv_capable_rows": {
+        "attack_success_den": 64,
+        "attack_success_num": 0,
+        "attack_success_rate": 0.0,
+        "attack_success_wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "longbench_score": 0.8890588527077498,
+        "metadata_span_present_den": 64,
+        "metadata_span_present_num": 64,
+        "metadata_span_present_rate": 1.0,
+        "metadata_span_tokens_mean": 87.46875,
+        "rows": 64,
+        "runtime_errors": 0,
+        "safe_utility_joint": 1.0,
+        "safe_utility_joint_den": 64,
+        "safe_utility_joint_num": 64,
+        "safe_utility_joint_wilson95": [
+          0.9433759402071946,
+          1.0
+        ],
+        "utility_accuracy": 1.0,
+        "utility_correct_den": 64,
+        "utility_correct_num": 64,
+        "utility_wilson95": [
+          0.9433759402071946,
+          1.0
+        ]
+      }
+    }
+  },
+  "detector_coverage_curves": {},
+  "fullkv_capability_gate": {
+    "all_pairs": 100,
+    "capable_pairs": 64,
+    "capable_rows": 192,
+    "criterion": "all three conditions in a source pair have answer match and no attack marker under FullKV",
+    "fullkv_rows": 300
+  },
+  "generation_label_isolation": true,
+  "paired_comparisons": {},
+  "prediction_rows": 600
+}

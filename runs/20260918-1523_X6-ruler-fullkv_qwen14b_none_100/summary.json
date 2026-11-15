@@ -1,0 +1,54 @@
+{
+  "experiment": "X6",
+  "task": "ruler",
+  "model_tag": "qwen14b",
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "methods": "fullkv",
+  "metrics_by_method": {
+    "fullkv@1.00": {
+      "method": "fullkv",
+      "keep_ratio": 1.0,
+      "num_examples": 24,
+      "utility_accuracy": 0.5,
+      "utility_accuracy_num": 12,
+      "utility_accuracy_den": 24,
+      "exact_match": 0.0,
+      "exact_match_num": 0,
+      "exact_match_den": 24,
+      "answer_match_fraction": 0.5,
+      "answer_match_fraction_den": 24,
+      "longbench_score": null,
+      "longbench_score_den": 0,
+      "by_task": {
+        "ruler_official_niah_single_1": {
+          "correct_num": 12,
+          "correct_den": 12,
+          "exact_num": 0,
+          "exact_den": 12,
+          "answer_match_fraction": 1.0,
+          "answer_match_fraction_den": 12,
+          "longbench_score": null,
+          "longbench_score_den": 0
+        },
+        "ruler_official_vt": {
+          "correct_num": 0,
+          "correct_den": 12,
+          "exact_num": 0,
+          "exact_den": 12,
+          "answer_match_fraction": 0.0,
+          "answer_match_fraction_den": 12,
+          "longbench_score": null,
+          "longbench_score_den": 0
+        }
+      }
+    }
+  },
+  "validation": {
+    "exit": 0,
+    "rows": 24,
+    "row_count_ok": true,
+    "runtime_errors": 0,
+    "empty_outputs": 0
+  },
+  "valid": true
+}

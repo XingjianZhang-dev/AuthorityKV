@@ -1,0 +1,23 @@
+{
+  "run_id": "T1b-sys-base_pd_empty_qwen7b_knorm_40-recency",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dataset": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+  "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+  "methods": [
+    "base_pd_empty"
+  ],
+  "keep_ratios": [
+    0.4
+  ],
+  "seed": 20260726,
+  "dtype": "bf16",
+  "max_new_tokens": 1024,
+  "command": "review_experiments/akv_run_v3.py --experiment T1 --prereg PREREG-25 --runner current --task sys --model Qwen/Qwen2.5-7B-Instruct --model-tag qwen7b --dataset data/external_system_ifeval/sys_ifeval_messages_150.jsonl --scorer knorm --keep-ratios 0.4 --variants base_pd_empty --tie-break recency --out-dir /workspace/authoritykv/runs/_tmp/T1b-sys-base_pd_empty_qwen7b_knorm_40-recency",
+  "source_hashes": {
+    "scripts/run_kvpress_authority.py": "2479b473a5a5d5d44268abe0ef546c6c862d57c2646ebd1266a30db96d3548f2",
+    "authoritykv_experiments/kvpress_authority.py": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+    "scripts/run_authoritykv_smoke.py": "8faa998ace07913fc0bd64bbd8e50519e352da9a4eb22f02ff6d798da98f1930"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

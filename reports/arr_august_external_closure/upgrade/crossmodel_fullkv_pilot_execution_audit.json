@@ -1,0 +1,102 @@
+{
+  "audited_at_utc": "2026-07-26T19:45:57+00:00",
+  "model_commits": [
+    "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5",
+    "c170c708c41dac9275d15a8fff4eca08d52bab71"
+  ],
+  "runs": [
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 30,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "526fe0dbc2c098ffa1c73bf1ee7513323cdc041f0aab9920e4bebb64814ac419",
+      "failures": [],
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "model_commit": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [],
+      "press_audit": {
+        "authority_rows": 0,
+        "excluded_fraction_observations": 0,
+        "excluded_kept_fraction_max": null,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 0,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 0,
+        "protected_kept_fraction_max": null,
+        "protected_kept_fraction_min": null,
+        "status": "PASS"
+      },
+      "rows": 30,
+      "run_dir": "results/authoritykv/arrsys_upgrade_20260727v1_mistral7b_fullkv_pilot30",
+      "run_id": "arrsys_upgrade_20260727v1_mistral7b_fullkv_pilot30",
+      "seed": 20260727,
+      "status": "PASS"
+    },
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 30,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "526fe0dbc2c098ffa1c73bf1ee7513323cdc041f0aab9920e4bebb64814ac419",
+      "failures": [],
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "model_commit": "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [],
+      "press_audit": {
+        "authority_rows": 0,
+        "excluded_fraction_observations": 0,
+        "excluded_kept_fraction_max": null,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 0,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 0,
+        "protected_kept_fraction_max": null,
+        "protected_kept_fraction_min": null,
+        "status": "PASS"
+      },
+      "rows": 30,
+      "run_dir": "results/authoritykv/arrsys_upgrade_20260727v1_yi9b_fullkv_pilot30",
+      "run_id": "arrsys_upgrade_20260727v1_yi9b_fullkv_pilot30",
+      "seed": 20260727,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "structural_label_isolation": {
+    "datasets": [
+      {
+        "forbidden_fields": [
+          "answers",
+          "instruction_id_list",
+          "kwargs"
+        ],
+        "path": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+        "rows": 150,
+        "sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+        "status": "PASS",
+        "violations": 0
+      },
+      {
+        "forbidden_fields": [
+          "answers",
+          "attack_marker"
+        ],
+        "path": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+        "rows": 300,
+        "sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+        "status": "PASS",
+        "violations": 0
+      }
+    ],
+    "scope": "Structural isolation of post-generation scoring fields. Natural task evidence and literal attack text remain part of the prompt.",
+    "status": "PASS"
+  },
+  "unknown_expected_run_ids": []
+}

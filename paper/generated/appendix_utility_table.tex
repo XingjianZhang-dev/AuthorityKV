@@ -1,0 +1,27 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{lllrrr}
+\toprule
+LongBench task & Scorer & KV & Base score & +\method{} score & Exact outputs \\
+\midrule
+TriviaQA & H2O & 20\% & 0.904 & 0.904 & 50/50 \\
+TriviaQA & H2O & 40\% & 0.890 & 0.890 & 50/50 \\
+TriviaQA & Knorm & 20\% & 0.318 & 0.318 & 50/50 \\
+TriviaQA & Knorm & 40\% & 0.556 & 0.556 & 50/50 \\
+TriviaQA & StreamingLLM & 20\% & 0.543 & 0.543 & 50/50 \\
+TriviaQA & StreamingLLM & 40\% & 0.647 & 0.647 & 50/50 \\
+\midrule
+2WikiMultiHopQA & H2O & 20\% & 0.328 & 0.328 & 50/50 \\
+2WikiMultiHopQA & H2O & 40\% & 0.372 & 0.372 & 50/50 \\
+2WikiMultiHopQA & Knorm & 20\% & 0.120 & 0.120 & 50/50 \\
+2WikiMultiHopQA & Knorm & 40\% & 0.255 & 0.255 & 50/50 \\
+2WikiMultiHopQA & StreamingLLM & 20\% & 0.320 & 0.320 & 50/50 \\
+2WikiMultiHopQA & StreamingLLM & 40\% & 0.334 & 0.334 & 50/50 \\
+\bottomrule
+\end{tabular}
+\caption{No-authority-span transparency on two compatible LongBench tasks. The authority wrapper and its official base emit exactly the same token IDs on all 600 paired outputs. Scores against FullKV are reported only as descriptive compression utility in the artifact.}
+\label{tab:utility-equivalence}
+\end{table*}

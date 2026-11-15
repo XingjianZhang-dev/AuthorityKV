@@ -1,0 +1,40 @@
+{
+  "experiment": "T1EQ",
+  "prereg": "PREREG-25B",
+  "task": "mixed",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_tag": "qwen7b",
+  "scorer": "streaming",
+  "tie_break": "earliest",
+  "variants": [
+    "base_pd_empty",
+    "full"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "n_examples": 60,
+  "n_rows": 240,
+  "elapsed_s": 473.5,
+  "labels": {
+    "base_pd_empty": "none (official press via AuthorityKV with P = D = ∅; D2 base)",
+    "full": "DETECTOR (annotated boundaries) [IH] / ORACLE+DETECTOR [mixed]"
+  },
+  "classifiers": {},
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 0,
+    "paired_base_run": "arrmixed_20260726v4_qwen_streaming_full300",
+    "retained_checked": 240,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 15736.743
+}

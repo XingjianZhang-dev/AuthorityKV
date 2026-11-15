@@ -1,0 +1,222 @@
+{
+  "by_method": {
+    "authority_knorm_detected_provenance@0.20": {
+      "method": "authority_knorm_detected_provenance",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.14,
+      "utility_accuracy_num": 7,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.08,
+      "exact_match_num": 4,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.14,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.12009039373325088,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 7,
+          "correct_den": 50,
+          "exact_num": 4,
+          "exact_den": 50,
+          "answer_match_fraction": 0.14,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.12009039373325088,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_knorm_detected_provenance@0.40": {
+      "method": "authority_knorm_detected_provenance",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.26,
+      "utility_accuracy_num": 13,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.18,
+      "exact_match_num": 9,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.26,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.2548090591949322,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 13,
+          "correct_den": 50,
+          "exact_num": 9,
+          "exact_den": 50,
+          "answer_match_fraction": 0.26,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.2548090591949322,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_streaming_detected_provenance@0.20": {
+      "method": "authority_streaming_detected_provenance",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.32,
+      "utility_accuracy_num": 16,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.32,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.3199968102073365,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 16,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.32,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.3199968102073365,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_streaming_detected_provenance@0.40": {
+      "method": "authority_streaming_detected_provenance",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.38,
+      "utility_accuracy_num": 19,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.38,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.33356823877876507,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 19,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.38,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.33356823877876507,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_knorm@0.20": {
+      "method": "kvpress_knorm",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.14,
+      "utility_accuracy_num": 7,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.08,
+      "exact_match_num": 4,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.14,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.12009039373325088,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 7,
+          "correct_den": 50,
+          "exact_num": 4,
+          "exact_den": 50,
+          "answer_match_fraction": 0.14,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.12009039373325088,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_knorm@0.40": {
+      "method": "kvpress_knorm",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.26,
+      "utility_accuracy_num": 13,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.18,
+      "exact_match_num": 9,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.26,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.2548090591949322,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 13,
+          "correct_den": 50,
+          "exact_num": 9,
+          "exact_den": 50,
+          "answer_match_fraction": 0.26,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.2548090591949322,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_streaming@0.20": {
+      "method": "kvpress_streaming",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.32,
+      "utility_accuracy_num": 16,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.32,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.3199968102073365,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 16,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.32,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.3199968102073365,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_streaming@0.40": {
+      "method": "kvpress_streaming",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.38,
+      "utility_accuracy_num": 19,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.38,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.33356823877876507,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 19,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.38,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.33356823877876507,
+          "longbench_score_den": 50
+        }
+      }
+    }
+  },
+  "errors": 0,
+  "num_rows": 400
+}

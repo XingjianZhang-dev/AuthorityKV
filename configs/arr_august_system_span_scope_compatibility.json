@@ -1,0 +1,37 @@
+{
+  "amendment_id": "arr_august_system_span_scope_compatibility_20260726v1",
+  "parent_registration": "configs/arr_august_external_closure.json",
+  "parent_sha256": "8897a530a685143fbb5572f898cb9fc0569e1217556b5229ad64fea6a9dbf646",
+  "incorporates": [
+    "configs/arr_august_system_ifeval_compatibility_amendment.json",
+    "configs/arr_august_authority_span_scope_fix.json"
+  ],
+  "system_ifeval_methods": [
+    "fullkv",
+    "kvpress_knorm",
+    "authority_knorm_detected_provenance",
+    "kvpress_streaming",
+    "authority_streaming_detected_provenance"
+  ],
+  "excluded_method": {
+    "method": "SnapKV",
+    "reason": "The pinned official 64-token observation window is incompatible with System-IFEval prompts shorter than 64 query tokens.",
+    "quarantine": "results/quarantine/system_ifeval_incompatible/arrsys_20260726v1_qwen_snapkv_pilot30"
+  },
+  "corrected_pilot": {
+    "rows": 30,
+    "keep_ratios": [
+      0.2,
+      0.4
+    ],
+    "max_new_tokens": 1024,
+    "fullkv_capability_gate": "prompt-level strict success under the frozen FullKV run",
+    "reporting": "Report all prompts and FullKV-strict-correct prompts."
+  },
+  "acceptance": [
+    "No runtime errors.",
+    "Exact base/Authority retained-token equality.",
+    "No content-derived provenance from chat-message text.",
+    "Retain flat or adverse pilot cells."
+  ]
+}

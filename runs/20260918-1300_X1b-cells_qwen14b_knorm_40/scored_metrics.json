@@ -1,0 +1,740 @@
+{
+  "benchmark": "System-IFEval",
+  "by_method": {
+    "authority_knorm_detected_provenance@0.40": {
+      "all_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 0.2857142857142857,
+            "loose_correct": 6,
+            "strict": 0.23809523809523808,
+            "strict_correct": 5,
+            "total": 21
+          },
+          "combination": {
+            "loose": 0.11764705882352941,
+            "loose_correct": 2,
+            "strict": 0.058823529411764705,
+            "strict_correct": 1,
+            "total": 17
+          },
+          "detectable_content": {
+            "loose": 0.5789473684210527,
+            "loose_correct": 11,
+            "strict": 0.5789473684210527,
+            "strict_correct": 11,
+            "total": 19
+          },
+          "detectable_format": {
+            "loose": 0.41025641025641024,
+            "loose_correct": 16,
+            "strict": 0.41025641025641024,
+            "strict_correct": 16,
+            "total": 39
+          },
+          "keywords": {
+            "loose": 0.5510204081632653,
+            "loose_correct": 27,
+            "strict": 0.5306122448979592,
+            "strict_correct": 26,
+            "total": 49
+          },
+          "language": {
+            "loose": 0.7058823529411765,
+            "loose_correct": 12,
+            "strict": 0.7058823529411765,
+            "strict_correct": 12,
+            "total": 17
+          },
+          "length_constraints": {
+            "loose": 0.3684210526315789,
+            "loose_correct": 14,
+            "strict": 0.3684210526315789,
+            "strict_correct": 14,
+            "total": 38
+          },
+          "punctuation": {
+            "loose": 0.7142857142857143,
+            "loose_correct": 15,
+            "strict": 0.6666666666666666,
+            "strict_correct": 14,
+            "total": 21
+          },
+          "startend": {
+            "loose": 0.23809523809523808,
+            "loose_correct": 5,
+            "strict": 0.19047619047619047,
+            "strict_correct": 4,
+            "total": 21
+          }
+        },
+        "instruction_loose": 0.4462809917355372,
+        "instruction_loose_den": 242,
+        "instruction_loose_num": 108,
+        "instruction_loose_wilson95": [
+          0.3849749815814964,
+          0.5092658021954855
+        ],
+        "instruction_strict": 0.4256198347107438,
+        "instruction_strict_den": 242,
+        "instruction_strict_num": 103,
+        "instruction_strict_wilson95": [
+          0.36496507764532743,
+          0.4885990845074167
+        ],
+        "prompt_loose": 0.35333333333333333,
+        "prompt_loose_den": 150,
+        "prompt_loose_num": 53,
+        "prompt_loose_wilson95": [
+          0.2813726509048464,
+          0.4326186207764561
+        ],
+        "prompt_strict": 0.3333333333333333,
+        "prompt_strict_den": 150,
+        "prompt_strict_num": 50,
+        "prompt_strict_wilson95": [
+          0.262887648323876,
+          0.41210243313214945
+        ],
+        "runtime_errors": 0
+      },
+      "fullkv_strict_correct_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 0.4,
+            "loose_correct": 4,
+            "strict": 0.3,
+            "strict_correct": 3,
+            "total": 10
+          },
+          "combination": {
+            "loose": 0.25,
+            "loose_correct": 2,
+            "strict": 0.125,
+            "strict_correct": 1,
+            "total": 8
+          },
+          "detectable_content": {
+            "loose": 0.5714285714285714,
+            "loose_correct": 8,
+            "strict": 0.5714285714285714,
+            "strict_correct": 8,
+            "total": 14
+          },
+          "detectable_format": {
+            "loose": 0.46153846153846156,
+            "loose_correct": 12,
+            "strict": 0.46153846153846156,
+            "strict_correct": 12,
+            "total": 26
+          },
+          "keywords": {
+            "loose": 0.5925925925925926,
+            "loose_correct": 16,
+            "strict": 0.5555555555555556,
+            "strict_correct": 15,
+            "total": 27
+          },
+          "language": {
+            "loose": 0.75,
+            "loose_correct": 12,
+            "strict": 0.75,
+            "strict_correct": 12,
+            "total": 16
+          },
+          "length_constraints": {
+            "loose": 0.26666666666666666,
+            "loose_correct": 4,
+            "strict": 0.26666666666666666,
+            "strict_correct": 4,
+            "total": 15
+          },
+          "punctuation": {
+            "loose": 0.7142857142857143,
+            "loose_correct": 10,
+            "strict": 0.6428571428571429,
+            "strict_correct": 9,
+            "total": 14
+          },
+          "startend": {
+            "loose": 0.3333333333333333,
+            "loose_correct": 5,
+            "strict": 0.26666666666666666,
+            "strict_correct": 4,
+            "total": 15
+          }
+        },
+        "instruction_loose": 0.503448275862069,
+        "instruction_loose_den": 145,
+        "instruction_loose_num": 73,
+        "instruction_loose_wilson95": [
+          0.4230351408955185,
+          0.5836834172798934
+        ],
+        "instruction_strict": 0.4689655172413793,
+        "instruction_strict_den": 145,
+        "instruction_strict_num": 68,
+        "instruction_strict_wilson95": [
+          0.38959136753048595,
+          0.5499416088908075
+        ],
+        "prompt_loose": 0.44761904761904764,
+        "prompt_loose_den": 105,
+        "prompt_loose_num": 47,
+        "prompt_loose_wilson95": [
+          0.3560327891916607,
+          0.5429027807723413
+        ],
+        "prompt_strict": 0.41904761904761906,
+        "prompt_strict_den": 105,
+        "prompt_strict_num": 44,
+        "prompt_strict_wilson95": [
+          0.3291664697059705,
+          0.5146430475111234
+        ],
+        "runtime_errors": 0
+      }
+    },
+    "fullkv@1.00": {
+      "all_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 0.9047619047619048,
+            "loose_correct": 19,
+            "strict": 0.9047619047619048,
+            "strict_correct": 19,
+            "total": 21
+          },
+          "combination": {
+            "loose": 0.5294117647058824,
+            "loose_correct": 9,
+            "strict": 0.5294117647058824,
+            "strict_correct": 9,
+            "total": 17
+          },
+          "detectable_content": {
+            "loose": 0.7894736842105263,
+            "loose_correct": 15,
+            "strict": 0.7894736842105263,
+            "strict_correct": 15,
+            "total": 19
+          },
+          "detectable_format": {
+            "loose": 0.8205128205128205,
+            "loose_correct": 32,
+            "strict": 0.8205128205128205,
+            "strict_correct": 32,
+            "total": 39
+          },
+          "keywords": {
+            "loose": 0.7959183673469388,
+            "loose_correct": 39,
+            "strict": 0.7346938775510204,
+            "strict_correct": 36,
+            "total": 49
+          },
+          "language": {
+            "loose": 1.0,
+            "loose_correct": 17,
+            "strict": 1.0,
+            "strict_correct": 17,
+            "total": 17
+          },
+          "length_constraints": {
+            "loose": 0.6578947368421053,
+            "loose_correct": 25,
+            "strict": 0.5789473684210527,
+            "strict_correct": 22,
+            "total": 38
+          },
+          "punctuation": {
+            "loose": 0.9047619047619048,
+            "loose_correct": 19,
+            "strict": 0.8571428571428571,
+            "strict_correct": 18,
+            "total": 21
+          },
+          "startend": {
+            "loose": 0.9523809523809523,
+            "loose_correct": 20,
+            "strict": 0.9523809523809523,
+            "strict_correct": 20,
+            "total": 21
+          }
+        },
+        "instruction_loose": 0.8057851239669421,
+        "instruction_loose_den": 242,
+        "instruction_loose_num": 195,
+        "instruction_loose_wilson95": [
+          0.7513261141760184,
+          0.8506878858627003
+        ],
+        "instruction_strict": 0.7768595041322314,
+        "instruction_strict_den": 242,
+        "instruction_strict_num": 188,
+        "instruction_strict_wilson95": [
+          0.7203086400228653,
+          0.8247580897419204
+        ],
+        "prompt_loose": 0.7266666666666667,
+        "prompt_loose_den": 150,
+        "prompt_loose_num": 109,
+        "prompt_loose_wilson95": [
+          0.6503549212540405,
+          0.7916585679657648
+        ],
+        "prompt_strict": 0.7,
+        "prompt_strict_den": 150,
+        "prompt_strict_num": 105,
+        "prompt_strict_wilson95": [
+          0.6224201960400859,
+          0.7675917062126834
+        ],
+        "runtime_errors": 0
+      },
+      "fullkv_strict_correct_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 1.0,
+            "loose_correct": 10,
+            "strict": 1.0,
+            "strict_correct": 10,
+            "total": 10
+          },
+          "combination": {
+            "loose": 1.0,
+            "loose_correct": 8,
+            "strict": 1.0,
+            "strict_correct": 8,
+            "total": 8
+          },
+          "detectable_content": {
+            "loose": 1.0,
+            "loose_correct": 14,
+            "strict": 1.0,
+            "strict_correct": 14,
+            "total": 14
+          },
+          "detectable_format": {
+            "loose": 1.0,
+            "loose_correct": 26,
+            "strict": 1.0,
+            "strict_correct": 26,
+            "total": 26
+          },
+          "keywords": {
+            "loose": 1.0,
+            "loose_correct": 27,
+            "strict": 1.0,
+            "strict_correct": 27,
+            "total": 27
+          },
+          "language": {
+            "loose": 1.0,
+            "loose_correct": 16,
+            "strict": 1.0,
+            "strict_correct": 16,
+            "total": 16
+          },
+          "length_constraints": {
+            "loose": 1.0,
+            "loose_correct": 15,
+            "strict": 1.0,
+            "strict_correct": 15,
+            "total": 15
+          },
+          "punctuation": {
+            "loose": 1.0,
+            "loose_correct": 14,
+            "strict": 1.0,
+            "strict_correct": 14,
+            "total": 14
+          },
+          "startend": {
+            "loose": 1.0,
+            "loose_correct": 15,
+            "strict": 1.0,
+            "strict_correct": 15,
+            "total": 15
+          }
+        },
+        "instruction_loose": 1.0,
+        "instruction_loose_den": 145,
+        "instruction_loose_num": 145,
+        "instruction_loose_wilson95": [
+          0.9741909354347176,
+          1.0
+        ],
+        "instruction_strict": 1.0,
+        "instruction_strict_den": 145,
+        "instruction_strict_num": 145,
+        "instruction_strict_wilson95": [
+          0.9741909354347176,
+          1.0
+        ],
+        "prompt_loose": 1.0,
+        "prompt_loose_den": 105,
+        "prompt_loose_num": 105,
+        "prompt_loose_wilson95": [
+          0.9647059230708901,
+          1.0
+        ],
+        "prompt_strict": 1.0,
+        "prompt_strict_den": 105,
+        "prompt_strict_num": 105,
+        "prompt_strict_wilson95": [
+          0.9647059230708901,
+          1.0
+        ],
+        "runtime_errors": 0
+      }
+    },
+    "kvpress_knorm@0.40": {
+      "all_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 0.23809523809523808,
+            "loose_correct": 5,
+            "strict": 0.23809523809523808,
+            "strict_correct": 5,
+            "total": 21
+          },
+          "combination": {
+            "loose": 0.0,
+            "loose_correct": 0,
+            "strict": 0.0,
+            "strict_correct": 0,
+            "total": 17
+          },
+          "detectable_content": {
+            "loose": 0.3157894736842105,
+            "loose_correct": 6,
+            "strict": 0.3157894736842105,
+            "strict_correct": 6,
+            "total": 19
+          },
+          "detectable_format": {
+            "loose": 0.20512820512820512,
+            "loose_correct": 8,
+            "strict": 0.20512820512820512,
+            "strict_correct": 8,
+            "total": 39
+          },
+          "keywords": {
+            "loose": 0.6122448979591837,
+            "loose_correct": 30,
+            "strict": 0.5510204081632653,
+            "strict_correct": 27,
+            "total": 49
+          },
+          "language": {
+            "loose": 0.8235294117647058,
+            "loose_correct": 14,
+            "strict": 0.8235294117647058,
+            "strict_correct": 14,
+            "total": 17
+          },
+          "length_constraints": {
+            "loose": 0.34210526315789475,
+            "loose_correct": 13,
+            "strict": 0.34210526315789475,
+            "strict_correct": 13,
+            "total": 38
+          },
+          "punctuation": {
+            "loose": 0.23809523809523808,
+            "loose_correct": 5,
+            "strict": 0.14285714285714285,
+            "strict_correct": 3,
+            "total": 21
+          },
+          "startend": {
+            "loose": 0.047619047619047616,
+            "loose_correct": 1,
+            "strict": 0.0,
+            "strict_correct": 0,
+            "total": 21
+          }
+        },
+        "instruction_loose": 0.33884297520661155,
+        "instruction_loose_den": 242,
+        "instruction_loose_num": 82,
+        "instruction_loose_wilson95": [
+          0.28214162810616406,
+          0.40058072322478144
+        ],
+        "instruction_strict": 0.3140495867768595,
+        "instruction_strict_den": 242,
+        "instruction_strict_num": 76,
+        "instruction_strict_wilson95": [
+          0.25886405622855974,
+          0.37504634915330054
+        ],
+        "prompt_loose": 0.22,
+        "prompt_loose_den": 150,
+        "prompt_loose_num": 33,
+        "prompt_loose_wilson95": [
+          0.16116023701753923,
+          0.29282309982858373
+        ],
+        "prompt_strict": 0.19333333333333333,
+        "prompt_strict_den": 150,
+        "prompt_strict_num": 29,
+        "prompt_strict_wilson95": [
+          0.13811889170191843,
+          0.2638628581771686
+        ],
+        "runtime_errors": 0
+      },
+      "fullkv_strict_correct_prompts": {
+        "by_instruction_family": {
+          "change_case": {
+            "loose": 0.3,
+            "loose_correct": 3,
+            "strict": 0.3,
+            "strict_correct": 3,
+            "total": 10
+          },
+          "combination": {
+            "loose": 0.0,
+            "loose_correct": 0,
+            "strict": 0.0,
+            "strict_correct": 0,
+            "total": 8
+          },
+          "detectable_content": {
+            "loose": 0.2857142857142857,
+            "loose_correct": 4,
+            "strict": 0.2857142857142857,
+            "strict_correct": 4,
+            "total": 14
+          },
+          "detectable_format": {
+            "loose": 0.23076923076923078,
+            "loose_correct": 6,
+            "strict": 0.23076923076923078,
+            "strict_correct": 6,
+            "total": 26
+          },
+          "keywords": {
+            "loose": 0.7777777777777778,
+            "loose_correct": 21,
+            "strict": 0.7037037037037037,
+            "strict_correct": 19,
+            "total": 27
+          },
+          "language": {
+            "loose": 0.8125,
+            "loose_correct": 13,
+            "strict": 0.8125,
+            "strict_correct": 13,
+            "total": 16
+          },
+          "length_constraints": {
+            "loose": 0.3333333333333333,
+            "loose_correct": 5,
+            "strict": 0.3333333333333333,
+            "strict_correct": 5,
+            "total": 15
+          },
+          "punctuation": {
+            "loose": 0.2857142857142857,
+            "loose_correct": 4,
+            "strict": 0.14285714285714285,
+            "strict_correct": 2,
+            "total": 14
+          },
+          "startend": {
+            "loose": 0.06666666666666667,
+            "loose_correct": 1,
+            "strict": 0.0,
+            "strict_correct": 0,
+            "total": 15
+          }
+        },
+        "instruction_loose": 0.3931034482758621,
+        "instruction_loose_den": 145,
+        "instruction_loose_num": 57,
+        "instruction_loose_wilson95": [
+          0.3173450841066292,
+          0.47437961245560356
+        ],
+        "instruction_strict": 0.3586206896551724,
+        "instruction_strict_den": 145,
+        "instruction_strict_num": 52,
+        "instruction_strict_wilson95": [
+          0.2851352202299254,
+          0.439403894578189
+        ],
+        "prompt_loose": 0.2857142857142857,
+        "prompt_loose_den": 105,
+        "prompt_loose_num": 30,
+        "prompt_loose_wilson95": [
+          0.2080712457182028,
+          0.37848335867998717
+        ],
+        "prompt_strict": 0.26666666666666666,
+        "prompt_strict_den": 105,
+        "prompt_strict_num": 28,
+        "prompt_strict_wilson95": [
+          0.1914167865270055,
+          0.3583871160399124
+        ],
+        "runtime_errors": 0
+      }
+    }
+  },
+  "fullkv_capability_gate": {
+    "all_ids": 150,
+    "correct_ids": 105,
+    "criterion": "prompt-level strict success under FullKV",
+    "fullkv_metrics": {
+      "by_instruction_family": {
+        "change_case": {
+          "loose": 0.9047619047619048,
+          "loose_correct": 19,
+          "strict": 0.9047619047619048,
+          "strict_correct": 19,
+          "total": 21
+        },
+        "combination": {
+          "loose": 0.5294117647058824,
+          "loose_correct": 9,
+          "strict": 0.5294117647058824,
+          "strict_correct": 9,
+          "total": 17
+        },
+        "detectable_content": {
+          "loose": 0.7894736842105263,
+          "loose_correct": 15,
+          "strict": 0.7894736842105263,
+          "strict_correct": 15,
+          "total": 19
+        },
+        "detectable_format": {
+          "loose": 0.8205128205128205,
+          "loose_correct": 32,
+          "strict": 0.8205128205128205,
+          "strict_correct": 32,
+          "total": 39
+        },
+        "keywords": {
+          "loose": 0.7959183673469388,
+          "loose_correct": 39,
+          "strict": 0.7551020408163265,
+          "strict_correct": 37,
+          "total": 49
+        },
+        "language": {
+          "loose": 1.0,
+          "loose_correct": 17,
+          "strict": 1.0,
+          "strict_correct": 17,
+          "total": 17
+        },
+        "length_constraints": {
+          "loose": 0.6578947368421053,
+          "loose_correct": 25,
+          "strict": 0.5789473684210527,
+          "strict_correct": 22,
+          "total": 38
+        },
+        "punctuation": {
+          "loose": 0.9047619047619048,
+          "loose_correct": 19,
+          "strict": 0.8571428571428571,
+          "strict_correct": 18,
+          "total": 21
+        },
+        "startend": {
+          "loose": 0.9523809523809523,
+          "loose_correct": 20,
+          "strict": 0.9523809523809523,
+          "strict_correct": 20,
+          "total": 21
+        }
+      },
+      "instruction_loose": 0.8057851239669421,
+      "instruction_loose_den": 242,
+      "instruction_loose_num": 195,
+      "instruction_loose_wilson95": [
+        0.7513261141760184,
+        0.8506878858627003
+      ],
+      "instruction_strict": 0.78099173553719,
+      "instruction_strict_den": 242,
+      "instruction_strict_num": 189,
+      "instruction_strict_wilson95": [
+        0.7247168801893776,
+        0.8284851739002556
+      ],
+      "prompt_loose": 0.7266666666666667,
+      "prompt_loose_den": 150,
+      "prompt_loose_num": 109,
+      "prompt_loose_wilson95": [
+        0.6503549212540405,
+        0.7916585679657648
+      ],
+      "prompt_strict": 0.7,
+      "prompt_strict_den": 150,
+      "prompt_strict_num": 105,
+      "prompt_strict_wilson95": [
+        0.6224201960400859,
+        0.7675917062126834
+      ],
+      "runtime_errors": 0
+    }
+  },
+  "generation_label_isolation": true,
+  "grader_determinism": {
+    "langdetect_detector_factory_seed": 0,
+    "paired_aggregate_consistency": true,
+    "python_random_seed": 0
+  },
+  "official_grader": true,
+  "paired_comparisons": {
+    "kvpress_knorm@0.40_vs_authority_knorm_detected_provenance@0.40": {
+      "all_prompts": {
+        "instruction_strict": {
+          "authority_minus_base": 0.14333333333333334,
+          "bootstrap_samples": 5000,
+          "bootstrap_seed": 20260726,
+          "paired_prompt_bootstrap95": [
+            0.06333333333333334,
+            0.22555555555555556
+          ]
+        },
+        "pairs": 150,
+        "prompt_strict": {
+          "authority_minus_base": 0.14,
+          "authority_only": 31,
+          "base_only": 10,
+          "both": 19,
+          "mcnemar_exact_two_sided_p": 0.0014504910141113214,
+          "neither": 90
+        }
+      },
+      "fullkv_strict_correct_prompts": {
+        "instruction_strict": {
+          "authority_minus_base": 0.15396825396825398,
+          "bootstrap_samples": 5000,
+          "bootstrap_seed": 20260726,
+          "paired_prompt_bootstrap95": [
+            0.04285714285714286,
+            0.2619047619047619
+          ]
+        },
+        "pairs": 105,
+        "prompt_strict": {
+          "authority_minus_base": 0.1523809523809524,
+          "authority_only": 26,
+          "base_only": 10,
+          "both": 18,
+          "mcnemar_exact_two_sided_p": 0.011330984183587134,
+          "neither": 51
+        }
+      }
+    }
+  },
+  "prediction_rows": 450
+}

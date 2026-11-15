@@ -1,0 +1,24 @@
+{
+  "run_id": "X5-8k_qwen7b_pyramid_2",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dataset": "data/ih_cachebench/outcome_informed_long_8k_30.jsonl",
+  "dataset_sha256": "e1ca05c6f020343b163a82743923cfac22ca559ee325b1177682236fbb227d40",
+  "methods": [
+    "rpstrict",
+    "e3bdet"
+  ],
+  "keep_ratios": [
+    0.02
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 16,
+  "command": "review_experiments/akv_run_v2.py --experiment X5 --prereg PREREG-19 --runner snapshot --task long8k --model Qwen/Qwen2.5-7B-Instruct --model-tag qwen7b --dataset data/ih_cachebench/outcome_informed_long_8k_30.jsonl --scorer pyramid --keep-ratios 0.02 --variants rpstrict,e3bdet --tie-break topk --policy priority --out-dir /workspace/authoritykv/runs/_tmp/X5-8k_qwen7b_pyramid_2",
+  "source_hashes": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

@@ -1,0 +1,12 @@
+{
+  "task": "sys",
+  "inputs": [
+    "/workspace/authoritykv/runs/20260918-1230_X1b-fullkv_qwen14b_none_100/predictions.jsonl",
+    "/workspace/authoritykv/runs/20260918-1300_X1b-cells_qwen14b_knorm_40/predictions.jsonl"
+  ],
+  "scorer": "scripts/score_system_ifeval.py",
+  "scorer_sha256": "42480b304eaa32fde0ffa670b62669591688f5e21cfe4c6cc44eea223e14fb66",
+  "exit": 0,
+  "tail": "rminism\": {\n    \"langdetect_detector_factory_seed\": 0,\n    \"paired_aggregate_consistency\": true,\n    \"python_random_seed\": 0\n  },\n  \"official_grader\": true,\n  \"paired_comparisons\": {\n    \"kvpress_knorm@0.40_vs_authority_knorm_detected_provenance@0.40\": {\n      \"all_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.14333333333333334,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            0.06333333333333334,\n            0.22555555555555556\n          ]\n        },\n        \"pairs\": 150,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.14,\n          \"authority_only\": 31,\n          \"base_only\": 10,\n          \"both\": 19,\n          \"mcnemar_exact_two_sided_p\": 0.0014504910141113214,\n          \"neither\": 90\n        }\n      },\n      \"fullkv_strict_correct_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.15396825396825398,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            0.04285714285714286,\n            0.2619047619047619\n          ]\n        },\n        \"pairs\": 105,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.1523809523809524,\n          \"authority_only\": 26,\n          \"base_only\": 10,\n          \"both\": 18,\n          \"mcnemar_exact_two_sided_p\": 0.011330984183587134,\n          \"neither\": 51\n        }\n      }\n    }\n  },\n  \"prediction_rows\": 450\n}\n",
+  "scored_at": "2026-09-18T16:22:54+00:00"
+}

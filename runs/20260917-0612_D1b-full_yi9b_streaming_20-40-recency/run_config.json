@@ -1,0 +1,24 @@
+{
+  "run_id": "D1b-full_yi9b_streaming_20-40-recency",
+  "model": "01-ai/Yi-1.5-9B-Chat",
+  "model_commit": "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5",
+  "dataset": "data/ih_cachebench/natural_short_500.jsonl",
+  "dataset_sha256": "2226670965938f9d23b569e4dd8f40396b8a0e8da5e53c36b2e648678b445cd9",
+  "methods": [
+    "full"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 16,
+  "command": "review_experiments/akv_run.py --experiment D1 --prereg PREREG-07 --runner snapshot --task ih --model 01-ai/Yi-1.5-9B-Chat --model-tag yi9b --dataset data/ih_cachebench/natural_short_500.jsonl --scorer streaming --keep-ratios 0.2,0.4 --variants full --tie-break recency --out-dir /workspace/authoritykv/runs/_tmp/D1b-full_yi9b_streaming_20-40-recency",
+  "source_hashes": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

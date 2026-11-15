@@ -1,0 +1,83 @@
+{
+  "experiment_id": "E1",
+  "start_time": "2026-09-17T16:29:45+00:00",
+  "end_time": "2026-09-17T16:56:28+00:00",
+  "repo_git_commit": null,
+  "repo_git_note": "repository has no .git (docs/INVENTORY.md §0/G5); code identity = source sha256 below",
+  "runner_version": "snapshot",
+  "runner_source_sha256": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "wrapper_source_sha256": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+  "detector_input_scope": "all_annotated_spans (metadata_marker + chat spans; whole span demoted on hit)",
+  "tie_break": "recency",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dtype": "bf16",
+  "decoding": "greedy (argmax), generation-phase KV not compressed",
+  "seed": 20260530,
+  "keep_ratio": null,
+  "budget_rule": "kept_count = max(1, int(cache_length * (1 - compression_ratio))), compression_ratio = 1 - keep_ratio; PyramidKV native allocation",
+  "variant": "e1a,e1b",
+  "hyperparams": {
+    "task": "ih",
+    "dataset": "data/ih_cachebench/natural_short_500.jsonl",
+    "dataset_sha256": "2226670965938f9d23b569e4dd8f40396b8a0e8da5e53c36b2e648678b445cd9",
+    "n_examples": 500,
+    "ids_file": null,
+    "limit": null,
+    "scorer": "streaming",
+    "keep_ratios": [
+      0.2,
+      0.4
+    ],
+    "variants": [
+      "e1a",
+      "e1b"
+    ],
+    "tie_break": "recency",
+    "drop_rate": 0.0,
+    "policy": "strict",
+    "scan_low_authority_chat": false,
+    "max_new_tokens": 16,
+    "assistant_prefix": "{\"decision\":\"",
+    "stop_after_json_object": true,
+    "paired_run": "results/authoritykv/aclmain_20260725v1_qwen7b_streaming_compositions500",
+    "paired_method": "authority_streaming_detected_provenance",
+    "labels": {
+      "e1a": "filter-then-compress (a) whole-source deletion + P pin",
+      "e1b": "filter-then-compress (b) same-span deletion + P pin"
+    },
+    "label_note": "",
+    "attn_implementation": "default(sdpa)",
+    "new_code": {
+      "akv_run_v2.py": "475bf661e6f4a676e15824914c7d88c364532e06473f8ed7e3bedd161659abab",
+      "akv_variants.py": "1ef7678bf635470ef400a00549bc1c0a68cd68f2d91c3f5537d297b8bb7b65d0",
+      "akv_presses.py": "8dd334a5c178117f88a86a020f8e2eaac27e9d39180c2147c9f52f14583302b7",
+      "d1_streaming_tiebreak.py": "9c90b63e6bd20cb4945b4f628bf7a186db01db6a87e9f0d64824d324568ce9ee",
+      "akv_common.py": "a563a8bd73914a53e2371a8ff48aa804d46cd968dc58e3a727ec4b1657912cd0"
+    }
+  },
+  "environment": {
+    "python": "3.12.13",
+    "python_bin": "/workspace/persist/envs/akv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.2.0",
+    "kvpress_import_path": "/workspace/authoritykv/external/kvpress/kvpress/__init__.py",
+    "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+    "cuda_runtime": "13.0",
+    "cudnn": 91900,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "HF_HOME": "/workspace/persist/hf",
+    "HF_HUB_OFFLINE": "1",
+    "NLTK_DATA": "/workspace/persist/nltk_data",
+    "hostname": "gpu-node",
+    "pid": 60147
+  },
+  "command": "review_experiments/akv_run_v2.py --experiment E1 --prereg PREREG-01 --runner snapshot --task ih --model Qwen/Qwen2.5-7B-Instruct --model-tag qwen7b --dataset data/ih_cachebench/natural_short_500.jsonl --scorer streaming --keep-ratios 0.2,0.4 --variants e1a,e1b --tie-break recency --paired-run results/authoritykv/aclmain_20260725v1_qwen7b_streaming_compositions500 --paired-method authority_streaming_detected_provenance --out-dir /workspace/authoritykv/runs/_tmp/E1-e1ab_qwen7b_streaming_20-40-recency",
+  "prereg_id": "PREREG-01",
+  "tokenizer_revision": null,
+  "classifiers": {}
+}

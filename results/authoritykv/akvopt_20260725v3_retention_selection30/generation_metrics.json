@@ -1,0 +1,10 @@
+{
+  "end_time": "2026-07-26T04:15:15+00:00",
+  "predictions_sha256": "ca8212ef885cf7d5aa18d364f16a2c6ab2238c31699dfc4be77be2cdcf6a93e5",
+  "rows": 180,
+  "run_config_sha256": "6df869522c63b7d279d066c45323d428da4b324d5a35b83e8c3f69a0c112cce9",
+  "run_id": "akvopt_20260725v3_retention_selection30",
+  "runtime_errors": 0,
+  "schema_version": "2.0",
+  "source": "retention_diagnostic_runner"
+}

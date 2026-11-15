@@ -1,0 +1,29 @@
+{
+  "amendment_id": "arr_august_detector_localization_fix_20260726v1",
+  "parent_registration": "configs/arr_august_authority_span_scope_fix.json",
+  "frozen_before_final_corrected_pilot_generation": true,
+  "defect": {
+    "trigger": "Detector terms occur in different sentences of a long evidence-bearing chat message, so the full-message classifier fires but no individual sentence is a localized match.",
+    "old_behavior": "If sentence localization returned no ranges, the detector fell through to excluding every token in the chat message.",
+    "detection": "The fail-closed execution audit found excluded sets up to 6,351 tokens and nonzero excluded-token retention in later pilot examples.",
+    "scope": "Runs with --scan-low-authority-chat and a detector-based AuthorityKV method. System-IFEval runs omit this flag and are unaffected."
+  },
+  "resolution": {
+    "localized_chat_policy": "A chat-message detector may exclude only sentence ranges that independently satisfy the frozen detector.",
+    "no_whole_message_fallback": "If no sentence can be localized, the detector returns an empty set for that chat span.",
+    "typed_span_policy": "Explicit provenance spans remain independently available to the hybrid method."
+  },
+  "invalidated_runs": [
+    "arrmixed_20260726v2_qwen_snapkv_pilot60",
+    "arrmixed_20260726v2_qwen_knorm_pilot60",
+    "arrmixed_20260726v2_qwen_streaming_pilot60"
+  ],
+  "acceptance": [
+    "All detector/provenance unit tests pass.",
+    "No runtime errors.",
+    "Exact base/Authority retained-token equality.",
+    "The maximum excluded set remains localized rather than scaling with full evidence-message length.",
+    "excluded_kept_fraction is zero whenever non-excluded tokens can fill the budget.",
+    "Retain any flat or adverse corrected result."
+  ]
+}

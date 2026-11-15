@@ -1,0 +1,34 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{lllrrrrr}
+\toprule
+Model & Scorer & KV & Official base & System-only & All-control & Full AKV & AKV benign \\
+\midrule
+Qwen2.5-7B & H2O & 20\% & 118/400 & 116/400 & 75/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & H2O & 40\% & 120/400 & 109/400 & 90/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & Knorm & 20\% & 80/400 & 39/400 & 165/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & Knorm & 40\% & 39/400 & 28/400 & 67/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & StreamingLLM & 20\% & 200/400 & 16/400 & 186/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & StreamingLLM & 40\% & 361/400 & 35/400 & 86/400 & 0/400 & 100/100 \\
+\midrule
+Mistral-7B-v0.3 & H2O & 20\% & 0/400 & 0/400 & 0/320 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & H2O & 40\% & 0/400 & 0/400 & 0/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & Knorm & 20\% & 0/400 & 0/400 & 0/320 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & Knorm & 40\% & 0/400 & 0/400 & 0/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & StreamingLLM & 20\% & 183/400 & 35/400 & 26/320 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & StreamingLLM & 40\% & 372/400 & 34/400 & 11/400 & 0/400 & 100/100 \\
+\midrule
+Yi-1.5-9B & H2O & 20\% & 15/400 & 0/400 & 1/320 & 0/400 & 100/100 \\
+Yi-1.5-9B & H2O & 40\% & 6/400 & 1/400 & 1/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & Knorm & 20\% & 1/400 & 0/400 & 49/320 & 0/400 & 100/100 \\
+Yi-1.5-9B & Knorm & 40\% & 3/400 & 0/400 & 18/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & StreamingLLM & 20\% & 185/400 & 5/400 & 82/320 & 0/400 & 100/100 \\
+Yi-1.5-9B & StreamingLLM & 40\% & 372/400 & 8/400 & 41/400 & 0/400 & 100/100 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-model protection ablation, reported as explicit reversals over feasible conflicts. At 20\% KV, some all-control variants admit only 320 conflicts because protecting every typed control token exceeds the strict budget on the multi-tier stratum; the full method remains feasible on all 400 primary conflicts.}
+\label{tab:crossmodel-ablation}
+\end{table*}

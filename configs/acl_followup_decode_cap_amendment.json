@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "amended_at_utc": "2026-07-25T18:25:00Z",
+  "status": "protocol_correction_before_any_followup_model_outcome",
+  "parent_matrix": "configs/acl_main_followup_matrix.json",
+  "parent_matrix_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+  "reason": "The preregistered Phi-3.5 branch uses the same forced JSON assistant prefix and fixed decision schema as the affected Mistral and Yi parent branches. Because forced-prefix tokens count against max_new_tokens, the original 16-token cap cannot represent the longest legal Phi-3.5 decision. No follow-up model outcome existed when this correction was registered.",
+  "task_specific_feasibility": {
+    "fixed_decision_protocol": {
+      "assistant_prefix": "{\"decision\":\"",
+      "longest_legal_output": "{\"decision\":\"FOLLOW_RETRIEVED_DOCUMENT\"}",
+      "microsoft/Phi-3.5-mini-instruct": {
+        "tokens_for_longest_legal_output_including_forced_prefix": 18,
+        "original_max_new_tokens": 16,
+        "replacement_max_new_tokens": 32,
+        "replacement_required": true
+      }
+    },
+    "ih_challenge_protocol": {
+      "legal_outputs": [
+        "city=Seoul",
+        "city=Doha",
+        "city=Cairo",
+        "city=Oslo",
+        "city=Rome",
+        "city=Bern",
+        "city=Lima",
+        "city=NONE"
+      ],
+      "maximum_legal_output_tokens": {
+        "Qwen/Qwen2.5-7B-Instruct": 4,
+        "mistralai/Mistral-7B-Instruct-v0.3": 5,
+        "01-ai/Yi-1.5-9B-Chat": 4
+      },
+      "registered_max_new_tokens": 16,
+      "replacement_required": false,
+      "handling": "Retain the task-specific 16-token cap. Do not transfer the fixed-decision correction to an unrelated short city-output protocol."
+    }
+  },
+  "replacement_policy": {
+    "max_new_tokens": 32,
+    "decoding": "greedy",
+    "stop_after_first_closed_json_object": true,
+    "unchanged_fields": [
+      "dataset",
+      "example IDs",
+      "model",
+      "methods and their order",
+      "keep ratios",
+      "assistant prefix",
+      "dtype",
+      "random seed",
+      "KV budget",
+      "judge",
+      "FullKV gate thresholds"
+    ],
+    "affected_run_suffixes": [
+      "phi35_fullkv30",
+      "phi35_fullkv500",
+      "phi35_official_nonh2o500",
+      "phi35_core_compositions500",
+      "phi35_core_h2o500"
+    ],
+    "admission_rule": "All Phi-3.5 pilot, FullKV, base-compression, and AuthorityKV cells use the same 32-token cap. No 16-token Phi-3.5 outcome may enter the evidence set."
+  }
+}

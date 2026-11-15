@@ -1,0 +1,49 @@
+{
+  "experiment_id": "OVL-T6T8",
+  "start_time": "2026-09-17T04:43:46+00:00",
+  "end_time": "2026-09-17T04:44:02+00:00",
+  "repo_git_commit": null,
+  "repo_git_note": "repository has no .git (docs/INVENTORY.md §0/G5); code identity = source sha256 below",
+  "runner_version": "current",
+  "runner_source_sha256": {
+    "scripts/run_kvpress_authority.py": "2479b473a5a5d5d44268abe0ef546c6c862d57c2646ebd1266a30db96d3548f2",
+    "authoritykv_experiments/kvpress_authority.py": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+    "scripts/run_authoritykv_smoke.py": "8faa998ace07913fc0bd64bbd8e50519e352da9a4eb22f02ff6d798da98f1930"
+  },
+  "wrapper_source_sha256": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+  "detector_input_scope": "chat_message spans only (sentence-level localisation when --scan-low-authority-chat)",
+  "tie_break": "topk",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": null,
+  "dtype": "n/a (CPU re-scoring of stored predictions)",
+  "decoding": "greedy (argmax), generation-phase KV not compressed",
+  "seed": 0,
+  "keep_ratio": null,
+  "budget_rule": "kept_count = max(1, int(cache_length * (1 - compression_ratio))), compression_ratio = 1 - keep_ratio; PyramidKV native allocation",
+  "variant": "overlay_scorer_reproduction",
+  "hyperparams": {
+    "scorers": {
+      "scripts/score_system_ifeval.py": "42480b304eaa32fde0ffa670b62669591688f5e21cfe4c6cc44eea223e14fb66",
+      "scripts/score_mixed_evidence_attack.py": "c192cdbefc113a5e2b9a3dee99cad9b2bf5db8cb7360f3f9671ecb00cdb421d2"
+    },
+    "grader_seeds": "python random.seed(0); langdetect DetectorFactory.seed=0 (inside score_system_ifeval.py)",
+    "NLTK_DATA": "/workspace/persist/nltk_data"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "python_bin": "/workspace/persist/envs/akv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.2.0",
+    "kvpress_import_path": "/workspace/authoritykv/external/kvpress/kvpress/__init__.py",
+    "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+    "cuda_runtime": "13.0",
+    "cudnn": 91900,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "HF_HOME": "/workspace/persist/hf",
+    "HF_HUB_OFFLINE": "1",
+    "NLTK_DATA": "/workspace/persist/nltk_data",
+    "hostname": "gpu-node",
+    "pid": 12225
+  },
+  "command": "review_experiments/overlay_check.py"
+}

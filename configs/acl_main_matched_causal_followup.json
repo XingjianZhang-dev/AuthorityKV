@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "label": "20260726v4",
+  "purpose": "Confirm whether the extreme-budget behavioral difference is caused by selecting the correct authority spans, using a treatment-matched wrong-authority control.",
+  "claim_guardrail": "This confirmatory study supports a causal authority-selection claim only when every registered base family passes the paired conflict test while the correct and wrong treatments are exactly matched on benign examples and cache budgets.",
+  "task_compatibility": {
+    "verdict": "DIRECT",
+    "rationale": "The long-context instruction-hierarchy task directly instantiates the paper's claim: KV compression must preserve governing system/developer evidence over conflicting lower-authority evidence.",
+    "excluded_tasks": "No unrelated agent benchmark, generic QA expansion, or mismatched model family is included."
+  },
+  "prerequisites": {
+    "outcome_queue_marker": "results/authoritykv/akvopt_20260725v3_QUEUE_FINISHED.txt",
+    "outcome_closure": "reports/acl_stage_gates/outcome_closure_before_final.json",
+    "fullkv_run": "results/authoritykv/akvopt_20260725v3_long8k_fullkv30"
+  },
+  "run": {
+    "run_id": "akvcausal_20260726v4_matched_long8k30",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "dataset": "data/ih_cachebench/outcome_informed_long_8k_30.jsonl",
+    "keep_ratio": 0.02,
+    "examples": 30,
+    "conflict_examples": 25,
+    "benign_examples": 5,
+    "methods": [
+      "kvpress_snapkv",
+      "authority_snapkv_v2_adaptive",
+      "counterfactual_snapkv_v3_matched_wrong_authority",
+      "kvpress_tova",
+      "authority_tova_v2_adaptive",
+      "counterfactual_tova_v3_matched_wrong_authority",
+      "kvpress_pyramid",
+      "authority_pyramid_v2_adaptive",
+      "counterfactual_pyramid_v3_matched_wrong_authority"
+    ],
+    "expected_rows": 270,
+    "max_new_tokens": 16,
+    "assistant_prefix": "{\"decision\":\"",
+    "stop_after_json_object": true
+  },
+  "primary_comparisons": [
+    {
+      "base_family": "snapkv",
+      "reference": "counterfactual_snapkv_v3_matched_wrong_authority",
+      "comparison": "authority_snapkv_v2_adaptive"
+    },
+    {
+      "base_family": "tova",
+      "reference": "counterfactual_tova_v3_matched_wrong_authority",
+      "comparison": "authority_tova_v2_adaptive"
+    },
+    {
+      "base_family": "pyramid",
+      "reference": "counterfactual_pyramid_v3_matched_wrong_authority",
+      "comparison": "authority_pyramid_v2_adaptive"
+    }
+  ],
+  "registered_gates": {
+    "prediction_rows": 270,
+    "unique_prediction_keys": 270,
+    "runtime_errors_max": 0,
+    "infeasible_rows_max": 0,
+    "paired_conflicts_per_family_min": 25,
+    "paired_benign_per_family_min": 5,
+    "require_positive_hierarchy_delta": true,
+    "require_hierarchy_delta_ci95_low_above_zero": true,
+    "require_global_holm_significance": true,
+    "require_exact_benign_output_match": true,
+    "require_exact_benign_token_id_match": true,
+    "require_equal_retained_budget_all_examples": true,
+    "require_official_and_correct_behavioral_reproduction": true
+  },
+  "statistics": {
+    "paired_test": "exact McNemar",
+    "confidence_interval": "paired example bootstrap",
+    "bootstrap_samples": 5000,
+    "familywise_correction": "Holm across the three registered base families",
+    "seed": 20260530
+  }
+}

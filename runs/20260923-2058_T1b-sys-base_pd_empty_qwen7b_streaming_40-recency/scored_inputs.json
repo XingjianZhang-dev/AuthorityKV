@@ -1,0 +1,13 @@
+{
+  "task": "sys",
+  "inputs": [
+    "/workspace/authoritykv/results/authoritykv/arrsys_20260726v2_qwen_fullkv_full150/predictions.jsonl",
+    "/workspace/authoritykv/runs/20260923-2058_T1b-sys-base_pd_empty_qwen7b_streaming_40-recency/predictions.jsonl",
+    "/workspace/authoritykv/results/authoritykv/arrsys_20260726v4_qwen_streaming40_full150/predictions.jsonl"
+  ],
+  "scorer": "scripts/score_system_ifeval.py",
+  "scorer_sha256": "42480b304eaa32fde0ffa670b62669591688f5e21cfe4c6cc44eea223e14fb66",
+  "exit": 0,
+  "tail": "hority_minus_base\": 0.0,\n          \"authority_only\": 0,\n          \"base_only\": 0,\n          \"both\": 8,\n          \"mcnemar_exact_two_sided_p\": 1.0,\n          \"neither\": 80\n        }\n      }\n    },\n    \"kvpress_streaming@0.40_vs_authority_streaming_detected_provenance@0.40\": {\n      \"all_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.4166666666666667,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            0.34,\n            0.49666666666666665\n          ]\n        },\n        \"pairs\": 150,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.3333333333333333,\n          \"authority_only\": 54,\n          \"base_only\": 4,\n          \"both\": 7,\n          \"mcnemar_exact_two_sided_p\": 3.1699504132731704e-12,\n          \"neither\": 85\n        }\n      },\n      \"fullkv_strict_correct_prompts\": {\n        \"instruction_strict\": {\n          \"authority_minus_base\": 0.5,\n          \"bootstrap_samples\": 5000,\n          \"bootstrap_seed\": 20260726,\n          \"paired_prompt_bootstrap95\": [\n            0.3939393939393939,\n            0.600378787878788\n          ]\n        },\n        \"pairs\": 88,\n        \"prompt_strict\": {\n          \"authority_minus_base\": 0.45454545454545453,\n          \"authority_only\": 42,\n          \"base_only\": 2,\n          \"both\": 6,\n          \"mcnemar_exact_two_sided_p\": 1.1266365618212149e-10,\n          \"neither\": 38\n        }\n      }\n    }\n  },\n  \"prediction_rows\": 600\n}\n",
+  "scored_at": "2026-09-23T21:51:53+00:00"
+}

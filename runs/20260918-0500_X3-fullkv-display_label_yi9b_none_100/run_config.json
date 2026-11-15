@@ -1,0 +1,23 @@
+{
+  "run_id": "X3-fullkv-display_label_yi9b_none_100",
+  "model": "01-ai/Yi-1.5-9B-Chat",
+  "model_commit": "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5",
+  "dataset": "data/ih_cachebench/natural_short_heldout_display_label_120.jsonl",
+  "dataset_sha256": "15130c445656354d0cc2e4411907c7685ba360136e7f604f267bd3518106a5dc",
+  "methods": [
+    "fullkv"
+  ],
+  "keep_ratios": [
+    1.0
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 16,
+  "command": "review_experiments/akv_run_v2.py --experiment X3 --prereg PREREG-17 --runner snapshot --task heldout --model 01-ai/Yi-1.5-9B-Chat --model-tag yi9b --dataset data/ih_cachebench/natural_short_heldout_display_label_120.jsonl --scorer knorm --keep-ratios 1.0 --variants fullkv --tie-break topk --out-dir /workspace/authoritykv/runs/_tmp/X3-fullkv-display_label_yi9b_none_100",
+  "source_hashes": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

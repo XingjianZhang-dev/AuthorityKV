@@ -1,0 +1,26 @@
+{
+  "run_id": "T1a32-ih_mistral7b_streaming_20-40-recency",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "model_commit": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "dataset": "data/ih_cachebench/natural_short_500.jsonl",
+  "dataset_sha256": "2226670965938f9d23b569e4dd8f40396b8a0e8da5e53c36b2e648678b445cd9",
+  "methods": [
+    "base_pd_empty",
+    "rpstrict",
+    "full"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 32,
+  "command": "review_experiments/akv_run_v3.py --experiment T1 --prereg PREREG-25 --runner snapshot --task ih --model mistralai/Mistral-7B-Instruct-v0.3 --model-tag mistral7b --dataset data/ih_cachebench/natural_short_500.jsonl --scorer streaming --keep-ratios 0.2,0.4 --variants base_pd_empty,rpstrict,full --tie-break recency --max-new-tokens 32 --out-dir /workspace/authoritykv/runs/_tmp/T1a32-ih_mistral7b_streaming_20-40-recency",
+  "source_hashes": {
+    "repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "repro_snapshots/acl_parent_20260725/authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "repro_snapshots/acl_parent_20260725/scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

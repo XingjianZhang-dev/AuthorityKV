@@ -1,0 +1,222 @@
+{
+  "by_method": {
+    "authority_knorm_detected_provenance@0.20": {
+      "method": "authority_knorm_detected_provenance",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.54,
+      "utility_accuracy_num": 27,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.14,
+      "exact_match_num": 7,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.1609664502164502,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.31754038079445823,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 27,
+          "correct_den": 50,
+          "exact_num": 7,
+          "exact_den": 50,
+          "answer_match_fraction": 0.1609664502164502,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.31754038079445823,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_knorm_detected_provenance@0.40": {
+      "method": "authority_knorm_detected_provenance",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.74,
+      "utility_accuracy_num": 37,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.46,
+      "exact_match_num": 23,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.19492002557126398,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.5564459576691863,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 37,
+          "correct_den": 50,
+          "exact_num": 23,
+          "exact_den": 50,
+          "answer_match_fraction": 0.19492002557126398,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.5564459576691863,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_streaming_detected_provenance@0.20": {
+      "method": "authority_streaming_detected_provenance",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.94,
+      "utility_accuracy_num": 47,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.4,
+      "exact_match_num": 20,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.25992991136830146,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.5428131440030786,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 47,
+          "correct_den": 50,
+          "exact_num": 20,
+          "exact_den": 50,
+          "answer_match_fraction": 0.25992991136830146,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.5428131440030786,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_streaming_detected_provenance@0.40": {
+      "method": "authority_streaming_detected_provenance",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.96,
+      "utility_accuracy_num": 48,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.54,
+      "exact_match_num": 27,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.27566007009846016,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.6472916034373288,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 48,
+          "correct_den": 50,
+          "exact_num": 27,
+          "exact_den": 50,
+          "answer_match_fraction": 0.27566007009846016,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.6472916034373288,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_knorm@0.20": {
+      "method": "kvpress_knorm",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.54,
+      "utility_accuracy_num": 27,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.14,
+      "exact_match_num": 7,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.1609664502164502,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.31754038079445823,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 27,
+          "correct_den": 50,
+          "exact_num": 7,
+          "exact_den": 50,
+          "answer_match_fraction": 0.1609664502164502,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.31754038079445823,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_knorm@0.40": {
+      "method": "kvpress_knorm",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.74,
+      "utility_accuracy_num": 37,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.46,
+      "exact_match_num": 23,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.19492002557126398,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.5564459576691863,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 37,
+          "correct_den": 50,
+          "exact_num": 23,
+          "exact_den": 50,
+          "answer_match_fraction": 0.19492002557126398,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.5564459576691863,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_streaming@0.20": {
+      "method": "kvpress_streaming",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.94,
+      "utility_accuracy_num": 47,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.4,
+      "exact_match_num": 20,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.25992991136830146,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.5428131440030786,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 47,
+          "correct_den": 50,
+          "exact_num": 20,
+          "exact_den": 50,
+          "answer_match_fraction": 0.25992991136830146,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.5428131440030786,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_streaming@0.40": {
+      "method": "kvpress_streaming",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.96,
+      "utility_accuracy_num": 48,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.54,
+      "exact_match_num": 27,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.27566007009846016,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.6472916034373288,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 48,
+          "correct_den": 50,
+          "exact_num": 27,
+          "exact_den": 50,
+          "answer_match_fraction": 0.27566007009846016,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.6472916034373288,
+          "longbench_score_den": 50
+        }
+      }
+    }
+  },
+  "errors": 0,
+  "num_rows": 400
+}

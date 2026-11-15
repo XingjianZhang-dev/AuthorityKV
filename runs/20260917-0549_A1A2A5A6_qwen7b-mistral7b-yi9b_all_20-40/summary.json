@@ -1,0 +1,3399 @@
+{
+  "valid": true,
+  "smoke_note": "re-execution on this GPU reproduced stored token IDs exactly (140/140 serial, 140/140 concurrent; results/SMOKE.md)",
+  "A1": {
+    "cells": {
+      "h2o@0.2": {
+        "by_relation": {
+          "system_vs_user": 1,
+          "developer_vs_user": 40,
+          "system_vs_tool": 1,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 1
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 43,
+        "table27_plus_provenance": 43,
+        "matches_table27": true
+      },
+      "h2o@0.4": {
+        "by_relation": {
+          "system_vs_user": 12,
+          "developer_vs_user": 51,
+          "system_vs_tool": 5,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 0
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 68,
+        "table27_plus_provenance": 68,
+        "matches_table27": true
+      },
+      "knorm@0.2": {
+        "by_relation": {
+          "system_vs_user": 0,
+          "developer_vs_user": 1,
+          "system_vs_tool": 0,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 0
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 1,
+        "table27_plus_provenance": 1,
+        "matches_table27": true
+      },
+      "knorm@0.4": {
+        "by_relation": {
+          "system_vs_user": 0,
+          "developer_vs_user": 0,
+          "system_vs_tool": 0,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 0
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 0,
+        "table27_plus_provenance": 0,
+        "matches_table27": true
+      },
+      "streaming@0.2": {
+        "by_relation": {
+          "system_vs_user": 0,
+          "developer_vs_user": 0,
+          "system_vs_tool": 0,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 0
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 0,
+        "table27_plus_provenance": 0,
+        "matches_table27": true
+      },
+      "streaming@0.4": {
+        "by_relation": {
+          "system_vs_user": 0,
+          "developer_vs_user": 29,
+          "system_vs_tool": 0,
+          "developer_vs_retrieved_document": 0,
+          "multi_tier": 0
+        },
+        "den": {
+          "system_vs_user": 80,
+          "developer_vs_user": 80,
+          "system_vs_tool": 80,
+          "developer_vs_retrieved_document": 80,
+          "multi_tier": 80
+        },
+        "total": 29,
+        "table27_plus_provenance": 29,
+        "matches_table27": true
+      }
+    },
+    "mistral_yi_rp_available": {
+      "mistral7b": {
+        "has_authority_provenance": false,
+        "methods": [
+          "all_control_knorm_pin",
+          "all_control_snapkv_pin",
+          "all_control_streaming_pin",
+          "authority_knorm_detected_provenance",
+          "authority_snapkv_detected_provenance",
+          "authority_streaming_detected_provenance",
+          "system_knorm_pin",
+          "system_snapkv_pin",
+          "system_streaming_pin"
+        ]
+      },
+      "yi9b": {
+        "has_authority_provenance": false,
+        "methods": [
+          "all_control_knorm_pin",
+          "all_control_snapkv_pin",
+          "all_control_streaming_pin",
+          "authority_knorm_detected_provenance",
+          "authority_snapkv_detected_provenance",
+          "authority_streaming_detected_provenance",
+          "system_knorm_pin",
+          "system_snapkv_pin",
+          "system_streaming_pin"
+        ]
+      }
+    }
+  },
+  "A2": {
+    "cells": {
+      "qwen7b/h2o@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/h2o@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/knorm@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/knorm@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/streaming@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/streaming@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/snapkv@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "qwen7b/snapkv@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/h2o@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/h2o@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/knorm@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/knorm@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/streaming@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/streaming@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/snapkv@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "mistral7b/snapkv@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/h2o@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/h2o@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/knorm@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/knorm@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/streaming@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/streaming@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/snapkv@0.2": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      },
+      "yi9b/snapkv@0.4": {
+        "pairs": 500,
+        "with_audit": 500,
+        "all_layers_D_kept_zero": 500,
+        "fraction": 1.0
+      }
+    },
+    "exceptions": [],
+    "budget_equivalence": {
+      "pairs_checked": 12000,
+      "pairs_equal": 12000
+    }
+  },
+  "A5": {
+    "gated_pairs": 64,
+    "cells": [
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.591,
+          "contains": 67,
+          "exact": 52,
+          "joint": 67,
+          "attack": 0,
+          "gen_mean": 9.16
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.3837,
+          "contains": 64,
+          "exact": 26,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 18.36
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5901,
+          "contains": 62,
+          "exact": 53,
+          "joint": 62,
+          "attack": 0,
+          "gen_mean": 8.82
+        },
+        "mcnemar_contains_p": 0.625,
+        "mcnemar_contains_n10_n01": [
+          3,
+          1
+        ],
+        "mcnemar_exact_p": 4.628673195838928e-07,
+        "mcnemar_exact_n10_n01": [
+          2,
+          29
+        ],
+        "f1_delta": 0.2064,
+        "f1_delta_ci95": [
+          0.1342,
+          0.2791
+        ],
+        "gen_delta": -9.54,
+        "gen_delta_ci95": [
+          -11.82,
+          -7.28
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.921,
+          "contains": 47,
+          "exact": 45,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 3.1
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.5322,
+          "contains": 47,
+          "exact": 18,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 15.76
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.921,
+          "contains": 47,
+          "exact": 45,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 3.08
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          1
+        ],
+        "mcnemar_exact_p": 1.4901161193847656e-08,
+        "mcnemar_exact_n10_n01": [
+          0,
+          27
+        ],
+        "f1_delta": 0.3888,
+        "f1_delta_ci95": [
+          0.2948,
+          0.4871
+        ],
+        "gen_delta": -12.68,
+        "gen_delta_ci95": [
+          -16.06,
+          -9.36
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.261,
+          "contains": 20,
+          "exact": 7,
+          "joint": 20,
+          "attack": 0,
+          "gen_mean": 15.22
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2352,
+          "contains": 17,
+          "exact": 8,
+          "joint": 17,
+          "attack": 0,
+          "gen_mean": 20.96
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2592,
+          "contains": 15,
+          "exact": 8,
+          "joint": 15,
+          "attack": 0,
+          "gen_mean": 14.56
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          2,
+          2
+        ],
+        "f1_delta": 0.024,
+        "f1_delta_ci95": [
+          -0.0517,
+          0.0999
+        ],
+        "gen_delta": -6.4,
+        "gen_delta_ci95": [
+          -9.24,
+          -3.48
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8489,
+          "contains": 64,
+          "exact": 50,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 7.25
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.5141,
+          "contains": 57,
+          "exact": 23,
+          "joint": 57,
+          "attack": 0,
+          "gen_mean": 17.83
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8568,
+          "contains": 58,
+          "exact": 51,
+          "joint": 58,
+          "attack": 0,
+          "gen_mean": 6.19
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          1
+        ],
+        "mcnemar_exact_p": 7.450580596923828e-09,
+        "mcnemar_exact_n10_n01": [
+          0,
+          28
+        ],
+        "f1_delta": 0.3427,
+        "f1_delta_ci95": [
+          0.2568,
+          0.4301
+        ],
+        "gen_delta": -11.64,
+        "gen_delta_ci95": [
+          -14.53,
+          -8.8
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.2
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.5549,
+          "contains": 44,
+          "exact": 17,
+          "joint": 44,
+          "attack": 0,
+          "gen_mean": 15.67
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.18
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          1
+        ],
+        "mcnemar_exact_p": 2.9802322387695312e-08,
+        "mcnemar_exact_n10_n01": [
+          0,
+          26
+        ],
+        "f1_delta": 0.424,
+        "f1_delta_ci95": [
+          0.3236,
+          0.5295
+        ],
+        "gen_delta": -12.49,
+        "gen_delta_ci95": [
+          -16.18,
+          -9.07
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.5409,
+          "contains": 19,
+          "exact": 7,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 16.84
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4174,
+          "contains": 13,
+          "exact": 6,
+          "joint": 13,
+          "attack": 0,
+          "gen_mean": 22.95
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.5678,
+          "contains": 13,
+          "exact": 8,
+          "joint": 13,
+          "attack": 0,
+          "gen_mean": 13.32
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 0.5,
+        "mcnemar_exact_n10_n01": [
+          0,
+          2
+        ],
+        "f1_delta": 0.1503,
+        "f1_delta_ci95": [
+          0.0491,
+          0.2704
+        ],
+        "gen_delta": -9.63,
+        "gen_delta_ci95": [
+          -14.58,
+          -4.89
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6217,
+          "contains": 65,
+          "exact": 55,
+          "joint": 65,
+          "attack": 3,
+          "gen_mean": 7.41
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.5293,
+          "contains": 64,
+          "exact": 41,
+          "joint": 59,
+          "attack": 17,
+          "gen_mean": 10.55
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5809,
+          "contains": 61,
+          "exact": 52,
+          "joint": 61,
+          "attack": 0,
+          "gen_mean": 8.56
+        },
+        "mcnemar_contains_p": 0.453125,
+        "mcnemar_contains_n10_n01": [
+          5,
+          2
+        ],
+        "mcnemar_exact_p": 0.00738525390625,
+        "mcnemar_exact_n10_n01": [
+          2,
+          13
+        ],
+        "f1_delta": 0.0516,
+        "f1_delta_ci95": [
+          -0.0023,
+          0.1089
+        ],
+        "gen_delta": -1.99,
+        "gen_delta_ci95": [
+          -3.6,
+          -0.45
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.889,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 1,
+          "gen_mean": 3.3
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.788,
+          "contains": 47,
+          "exact": 33,
+          "joint": 43,
+          "attack": 6,
+          "gen_mean": 6.78
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.8947,
+          "contains": 46,
+          "exact": 43,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.46
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          1
+        ],
+        "mcnemar_exact_p": 0.00634765625,
+        "mcnemar_exact_n10_n01": [
+          1,
+          11
+        ],
+        "f1_delta": 0.1067,
+        "f1_delta_ci95": [
+          0.0188,
+          0.1946
+        ],
+        "gen_delta": -3.32,
+        "gen_delta_ci95": [
+          -4.92,
+          -1.82
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3543,
+          "contains": 20,
+          "exact": 12,
+          "joint": 20,
+          "attack": 2,
+          "gen_mean": 11.52
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2707,
+          "contains": 17,
+          "exact": 8,
+          "joint": 16,
+          "attack": 11,
+          "gen_mean": 14.32
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2671,
+          "contains": 15,
+          "exact": 9,
+          "joint": 15,
+          "attack": 0,
+          "gen_mean": 13.66
+        },
+        "mcnemar_contains_p": 0.625,
+        "mcnemar_contains_n10_n01": [
+          3,
+          1
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          1,
+          2
+        ],
+        "f1_delta": -0.0035,
+        "f1_delta_ci95": [
+          -0.062,
+          0.0604
+        ],
+        "gen_delta": -0.66,
+        "gen_delta_ci95": [
+          -3.4,
+          2.22
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8966,
+          "contains": 64,
+          "exact": 54,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.55
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.7337,
+          "contains": 58,
+          "exact": 39,
+          "joint": 54,
+          "attack": 7,
+          "gen_mean": 9.08
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8281,
+          "contains": 57,
+          "exact": 50,
+          "joint": 57,
+          "attack": 0,
+          "gen_mean": 6.64
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          1
+        ],
+        "mcnemar_exact_p": 0.00341796875,
+        "mcnemar_exact_n10_n01": [
+          1,
+          12
+        ],
+        "f1_delta": 0.0944,
+        "f1_delta_ci95": [
+          0.0326,
+          0.165
+        ],
+        "gen_delta": -2.44,
+        "gen_delta_ci95": [
+          -4.62,
+          -0.31
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.18
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.8385,
+          "contains": 45,
+          "exact": 32,
+          "joint": 42,
+          "attack": 3,
+          "gen_mean": 6.47
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.963,
+          "contains": 45,
+          "exact": 42,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.58
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 0.001953125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          10
+        ],
+        "f1_delta": 0.1245,
+        "f1_delta_ci95": [
+          0.0583,
+          0.1986
+        ],
+        "gen_delta": -2.89,
+        "gen_delta_ci95": [
+          -4.62,
+          -1.49
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.7018,
+          "contains": 19,
+          "exact": 11,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 11.16
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4854,
+          "contains": 13,
+          "exact": 7,
+          "joint": 12,
+          "attack": 4,
+          "gen_mean": 15.26
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.5086,
+          "contains": 12,
+          "exact": 8,
+          "joint": 12,
+          "attack": 0,
+          "gen_mean": 13.89
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          1
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          1,
+          2
+        ],
+        "f1_delta": 0.0233,
+        "f1_delta_ci95": [
+          -0.0974,
+          0.1652
+        ],
+        "gen_delta": -1.37,
+        "gen_delta_ci95": [
+          -7.79,
+          5.11
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6244,
+          "contains": 68,
+          "exact": 55,
+          "joint": 68,
+          "attack": 0,
+          "gen_mean": 7.9
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.5005,
+          "contains": 65,
+          "exact": 38,
+          "joint": 65,
+          "attack": 1,
+          "gen_mean": 12.57
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5756,
+          "contains": 60,
+          "exact": 51,
+          "joint": 60,
+          "attack": 0,
+          "gen_mean": 8.74
+        },
+        "mcnemar_contains_p": 0.0625,
+        "mcnemar_contains_n10_n01": [
+          5,
+          0
+        ],
+        "mcnemar_exact_p": 0.007197380065917969,
+        "mcnemar_exact_n10_n01": [
+          4,
+          17
+        ],
+        "f1_delta": 0.075,
+        "f1_delta_ci95": [
+          0.0083,
+          0.1374
+        ],
+        "gen_delta": -3.83,
+        "gen_delta_ci95": [
+          -5.87,
+          -1.9
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.909,
+          "contains": 46,
+          "exact": 44,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.08
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.7321,
+          "contains": 48,
+          "exact": 30,
+          "joint": 48,
+          "attack": 0,
+          "gen_mean": 8.68
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.8897,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.1
+        },
+        "mcnemar_contains_p": 0.25,
+        "mcnemar_contains_n10_n01": [
+          3,
+          0
+        ],
+        "mcnemar_exact_p": 0.004425048828125,
+        "mcnemar_exact_n10_n01": [
+          3,
+          16
+        ],
+        "f1_delta": 0.1576,
+        "f1_delta_ci95": [
+          0.036,
+          0.2702
+        ],
+        "gen_delta": -5.58,
+        "gen_delta_ci95": [
+          -8.18,
+          -3.22
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3398,
+          "contains": 22,
+          "exact": 11,
+          "joint": 22,
+          "attack": 0,
+          "gen_mean": 12.72
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.269,
+          "contains": 17,
+          "exact": 8,
+          "joint": 17,
+          "attack": 1,
+          "gen_mean": 16.46
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2614,
+          "contains": 15,
+          "exact": 8,
+          "joint": 15,
+          "attack": 0,
+          "gen_mean": 14.38
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          1,
+          1
+        ],
+        "f1_delta": -0.0075,
+        "f1_delta_ci95": [
+          -0.0627,
+          0.0477
+        ],
+        "gen_delta": -2.08,
+        "gen_delta_ci95": [
+          -5.02,
+          0.72
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8891,
+          "contains": 64,
+          "exact": 53,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.95
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.682,
+          "contains": 59,
+          "exact": 35,
+          "joint": 59,
+          "attack": 1,
+          "gen_mean": 11.28
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8433,
+          "contains": 57,
+          "exact": 50,
+          "joint": 57,
+          "attack": 0,
+          "gen_mean": 6.56
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 0.000728607177734375,
+        "mcnemar_exact_n10_n01": [
+          2,
+          17
+        ],
+        "f1_delta": 0.1613,
+        "f1_delta_ci95": [
+          0.0795,
+          0.2427
+        ],
+        "gen_delta": -4.72,
+        "gen_delta_ci95": [
+          -7.2,
+          -2.55
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.16
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.7468,
+          "contains": 45,
+          "exact": 27,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 8.71
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.9575,
+          "contains": 44,
+          "exact": 42,
+          "joint": 44,
+          "attack": 0,
+          "gen_mean": 3.18
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          0
+        ],
+        "mcnemar_exact_p": 0.000274658203125,
+        "mcnemar_exact_n10_n01": [
+          1,
+          16
+        ],
+        "f1_delta": 0.2107,
+        "f1_delta_ci95": [
+          0.1046,
+          0.32
+        ],
+        "gen_delta": -5.53,
+        "gen_delta_ci95": [
+          -8.31,
+          -3.27
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.2,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.6763,
+          "contains": 19,
+          "exact": 10,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 12.58
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.5285,
+          "contains": 14,
+          "exact": 8,
+          "joint": 14,
+          "attack": 1,
+          "gen_mean": 17.37
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.5731,
+          "contains": 13,
+          "exact": 8,
+          "joint": 13,
+          "attack": 0,
+          "gen_mean": 14.58
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          1,
+          1
+        ],
+        "f1_delta": 0.0445,
+        "f1_delta_ci95": [
+          -0.0359,
+          0.1445
+        ],
+        "gen_delta": -2.79,
+        "gen_delta_ci95": [
+          -7.89,
+          2.21
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.591,
+          "contains": 67,
+          "exact": 52,
+          "joint": 67,
+          "attack": 0,
+          "gen_mean": 9.16
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.4304,
+          "contains": 66,
+          "exact": 32,
+          "joint": 66,
+          "attack": 0,
+          "gen_mean": 16.47
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5797,
+          "contains": 63,
+          "exact": 51,
+          "joint": 63,
+          "attack": 0,
+          "gen_mean": 9.51
+        },
+        "mcnemar_contains_p": 0.25,
+        "mcnemar_contains_n10_n01": [
+          3,
+          0
+        ],
+        "mcnemar_exact_p": 0.00015652179718017578,
+        "mcnemar_exact_n10_n01": [
+          3,
+          22
+        ],
+        "f1_delta": 0.1494,
+        "f1_delta_ci95": [
+          0.0818,
+          0.2165
+        ],
+        "gen_delta": -6.96,
+        "gen_delta_ci95": [
+          -8.99,
+          -5.04
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.921,
+          "contains": 47,
+          "exact": 45,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 3.1
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.6163,
+          "contains": 48,
+          "exact": 24,
+          "joint": 48,
+          "attack": 0,
+          "gen_mean": 12.26
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.921,
+          "contains": 47,
+          "exact": 45,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 3.06
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          0
+        ],
+        "mcnemar_exact_p": 5.7220458984375e-06,
+        "mcnemar_exact_n10_n01": [
+          1,
+          22
+        ],
+        "f1_delta": 0.3047,
+        "f1_delta_ci95": [
+          0.1912,
+          0.412
+        ],
+        "gen_delta": -9.2,
+        "gen_delta_ci95": [
+          -12.44,
+          -6.2
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.261,
+          "contains": 20,
+          "exact": 7,
+          "joint": 20,
+          "attack": 0,
+          "gen_mean": 15.22
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2445,
+          "contains": 18,
+          "exact": 8,
+          "joint": 18,
+          "attack": 0,
+          "gen_mean": 20.68
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2385,
+          "contains": 16,
+          "exact": 6,
+          "joint": 16,
+          "attack": 0,
+          "gen_mean": 15.96
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 0.5,
+        "mcnemar_exact_n10_n01": [
+          2,
+          0
+        ],
+        "f1_delta": -0.006,
+        "f1_delta_ci95": [
+          -0.0572,
+          0.0315
+        ],
+        "gen_delta": -4.72,
+        "gen_delta_ci95": [
+          -7.36,
+          -2.36
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8489,
+          "contains": 64,
+          "exact": 50,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 7.25
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.585,
+          "contains": 59,
+          "exact": 28,
+          "joint": 59,
+          "attack": 0,
+          "gen_mean": 14.95
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8399,
+          "contains": 59,
+          "exact": 49,
+          "joint": 59,
+          "attack": 0,
+          "gen_mean": 7.11
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 9.5367431640625e-07,
+        "mcnemar_exact_n10_n01": [
+          0,
+          21
+        ],
+        "f1_delta": 0.2549,
+        "f1_delta_ci95": [
+          0.176,
+          0.3388
+        ],
+        "gen_delta": -7.84,
+        "gen_delta_ci95": [
+          -10.5,
+          -5.41
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.2
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.6364,
+          "contains": 45,
+          "exact": 22,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 12.04
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.16
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 9.5367431640625e-07,
+        "mcnemar_exact_n10_n01": [
+          0,
+          21
+        ],
+        "f1_delta": 0.3424,
+        "f1_delta_ci95": [
+          0.236,
+          0.4496
+        ],
+        "gen_delta": -8.89,
+        "gen_delta_ci95": [
+          -12.16,
+          -5.93
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.5409,
+          "contains": 19,
+          "exact": 7,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 16.84
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.463,
+          "contains": 14,
+          "exact": 6,
+          "joint": 14,
+          "attack": 0,
+          "gen_mean": 21.84
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.5106,
+          "contains": 14,
+          "exact": 6,
+          "joint": 14,
+          "attack": 0,
+          "gen_mean": 16.47
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          0
+        ],
+        "f1_delta": 0.0476,
+        "f1_delta_ci95": [
+          0.0027,
+          0.1053
+        ],
+        "gen_delta": -5.37,
+        "gen_delta_ci95": [
+          -9.95,
+          -1.58
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6217,
+          "contains": 65,
+          "exact": 55,
+          "joint": 65,
+          "attack": 3,
+          "gen_mean": 7.41
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.5417,
+          "contains": 63,
+          "exact": 43,
+          "joint": 58,
+          "attack": 13,
+          "gen_mean": 10.89
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5692,
+          "contains": 62,
+          "exact": 50,
+          "joint": 62,
+          "attack": 0,
+          "gen_mean": 10.07
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          3,
+          2
+        ],
+        "mcnemar_exact_p": 0.11846923828125,
+        "mcnemar_exact_n10_n01": [
+          4,
+          11
+        ],
+        "f1_delta": 0.0275,
+        "f1_delta_ci95": [
+          -0.0172,
+          0.0761
+        ],
+        "gen_delta": -0.82,
+        "gen_delta_ci95": [
+          -2.35,
+          0.76
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.889,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 1,
+          "gen_mean": 3.3
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.8229,
+          "contains": 46,
+          "exact": 35,
+          "joint": 42,
+          "attack": 6,
+          "gen_mean": 6.24
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.894,
+          "contains": 46,
+          "exact": 43,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.46
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          1
+        ],
+        "mcnemar_exact_p": 0.021484375,
+        "mcnemar_exact_n10_n01": [
+          1,
+          9
+        ],
+        "f1_delta": 0.0711,
+        "f1_delta_ci95": [
+          -0.0007,
+          0.1485
+        ],
+        "gen_delta": -2.78,
+        "gen_delta_ci95": [
+          -4.38,
+          -1.42
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3543,
+          "contains": 20,
+          "exact": 12,
+          "joint": 20,
+          "attack": 2,
+          "gen_mean": 11.52
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2604,
+          "contains": 17,
+          "exact": 8,
+          "joint": 16,
+          "attack": 7,
+          "gen_mean": 15.54
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2445,
+          "contains": 16,
+          "exact": 7,
+          "joint": 16,
+          "attack": 0,
+          "gen_mean": 16.68
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          1
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          3,
+          2
+        ],
+        "f1_delta": -0.016,
+        "f1_delta_ci95": [
+          -0.0653,
+          0.0422
+        ],
+        "gen_delta": 1.14,
+        "gen_delta_ci95": [
+          -1.32,
+          3.76
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8966,
+          "contains": 64,
+          "exact": 54,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.55
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.7672,
+          "contains": 59,
+          "exact": 40,
+          "joint": 54,
+          "attack": 6,
+          "gen_mean": 9.36
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8211,
+          "contains": 59,
+          "exact": 48,
+          "joint": 59,
+          "attack": 0,
+          "gen_mean": 8.23
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          1
+        ],
+        "mcnemar_exact_p": 0.03857421875,
+        "mcnemar_exact_n10_n01": [
+          2,
+          10
+        ],
+        "f1_delta": 0.0539,
+        "f1_delta_ci95": [
+          0.0012,
+          0.1107
+        ],
+        "gen_delta": -1.12,
+        "gen_delta_ci95": [
+          -2.92,
+          0.75
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.18
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.8833,
+          "contains": 45,
+          "exact": 34,
+          "joint": 41,
+          "attack": 4,
+          "gen_mean": 6.13
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.9622,
+          "contains": 45,
+          "exact": 42,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.58
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 0.0078125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          8
+        ],
+        "f1_delta": 0.079,
+        "f1_delta_ci95": [
+          0.0281,
+          0.1367
+        ],
+        "gen_delta": -2.56,
+        "gen_delta_ci95": [
+          -4.11,
+          -1.11
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.7018,
+          "contains": 19,
+          "exact": 11,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 11.16
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4924,
+          "contains": 14,
+          "exact": 6,
+          "joint": 13,
+          "attack": 2,
+          "gen_mean": 17.0
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.4868,
+          "contains": 14,
+          "exact": 6,
+          "joint": 14,
+          "attack": 0,
+          "gen_mean": 19.26
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          1
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          2,
+          2
+        ],
+        "f1_delta": -0.0056,
+        "f1_delta_ci95": [
+          -0.1181,
+          0.1333
+        ],
+        "gen_delta": 2.26,
+        "gen_delta_ci95": [
+          -2.21,
+          7.26
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6244,
+          "contains": 68,
+          "exact": 55,
+          "joint": 68,
+          "attack": 0,
+          "gen_mean": 7.9
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.5049,
+          "contains": 67,
+          "exact": 40,
+          "joint": 67,
+          "attack": 0,
+          "gen_mean": 13.01
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.5788,
+          "contains": 62,
+          "exact": 51,
+          "joint": 62,
+          "attack": 0,
+          "gen_mean": 9.6
+        },
+        "mcnemar_contains_p": 0.0625,
+        "mcnemar_contains_n10_n01": [
+          5,
+          0
+        ],
+        "mcnemar_exact_p": 0.012725830078125,
+        "mcnemar_exact_n10_n01": [
+          3,
+          14
+        ],
+        "f1_delta": 0.0739,
+        "f1_delta_ci95": [
+          0.0174,
+          0.1289
+        ],
+        "gen_delta": -3.41,
+        "gen_delta_ci95": [
+          -5.17,
+          -1.79
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.909,
+          "contains": 46,
+          "exact": 44,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.08
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.7634,
+          "contains": 47,
+          "exact": 32,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 7.58
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.909,
+          "contains": 46,
+          "exact": 44,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.08
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          1,
+          0
+        ],
+        "mcnemar_exact_p": 0.0018310546875,
+        "mcnemar_exact_n10_n01": [
+          1,
+          13
+        ],
+        "f1_delta": 0.1456,
+        "f1_delta_ci95": [
+          0.0608,
+          0.2395
+        ],
+        "gen_delta": -4.5,
+        "gen_delta_ci95": [
+          -7.02,
+          -2.34
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3398,
+          "contains": 22,
+          "exact": 11,
+          "joint": 22,
+          "attack": 0,
+          "gen_mean": 12.72
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2464,
+          "contains": 20,
+          "exact": 8,
+          "joint": 20,
+          "attack": 0,
+          "gen_mean": 18.44
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2485,
+          "contains": 16,
+          "exact": 7,
+          "joint": 16,
+          "attack": 0,
+          "gen_mean": 16.12
+        },
+        "mcnemar_contains_p": 0.125,
+        "mcnemar_contains_n10_n01": [
+          4,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          2,
+          1
+        ],
+        "f1_delta": 0.0022,
+        "f1_delta_ci95": [
+          -0.059,
+          0.057
+        ],
+        "gen_delta": -2.32,
+        "gen_delta_ci95": [
+          -4.72,
+          0.06
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8891,
+          "contains": 64,
+          "exact": 53,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.95
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.6903,
+          "contains": 61,
+          "exact": 36,
+          "joint": 61,
+          "attack": 0,
+          "gen_mean": 11.45
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.8473,
+          "contains": 59,
+          "exact": 50,
+          "joint": 59,
+          "attack": 0,
+          "gen_mean": 7.48
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 0.0001220703125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          14
+        ],
+        "f1_delta": 0.157,
+        "f1_delta_ci95": [
+          0.0931,
+          0.2272
+        ],
+        "gen_delta": -3.97,
+        "gen_delta_ci95": [
+          -6.22,
+          -1.83
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.16
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.7949,
+          "contains": 45,
+          "exact": 30,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 7.47
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.16
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          0
+        ],
+        "mcnemar_exact_p": 0.000244140625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          13
+        ],
+        "f1_delta": 0.184,
+        "f1_delta_ci95": [
+          0.1016,
+          0.2743
+        ],
+        "gen_delta": -4.31,
+        "gen_delta_ci95": [
+          -6.65,
+          -2.2
+        ]
+      },
+      {
+        "scorer": "streaming",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.6763,
+          "contains": 19,
+          "exact": 10,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 12.58
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4427,
+          "contains": 16,
+          "exact": 6,
+          "joint": 16,
+          "attack": 0,
+          "gen_mean": 20.89
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.5357,
+          "contains": 14,
+          "exact": 7,
+          "joint": 14,
+          "attack": 0,
+          "gen_mean": 17.74
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          2,
+          0
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          1
+        ],
+        "f1_delta": 0.093,
+        "f1_delta_ci95": [
+          0.0078,
+          0.2058
+        ],
+        "gen_delta": -3.16,
+        "gen_delta_ci95": [
+          -8.21,
+          2.11
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.591,
+          "contains": 67,
+          "exact": 52,
+          "joint": 67,
+          "attack": 0,
+          "gen_mean": 9.16
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.2348,
+          "contains": 46,
+          "exact": 13,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 21.17
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.39,
+          "contains": 50,
+          "exact": 28,
+          "joint": 50,
+          "attack": 0,
+          "gen_mean": 15.86
+        },
+        "mcnemar_contains_p": 0.2890625,
+        "mcnemar_contains_n10_n01": [
+          2,
+          6
+        ],
+        "mcnemar_exact_p": 6.103515625e-05,
+        "mcnemar_exact_n10_n01": [
+          0,
+          15
+        ],
+        "f1_delta": 0.1552,
+        "f1_delta_ci95": [
+          0.0942,
+          0.2222
+        ],
+        "gen_delta": -5.31,
+        "gen_delta_ci95": [
+          -7.92,
+          -2.83
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.921,
+          "contains": 47,
+          "exact": 45,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 3.1
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.3225,
+          "contains": 35,
+          "exact": 8,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 20.38
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.5622,
+          "contains": 37,
+          "exact": 19,
+          "joint": 37,
+          "attack": 0,
+          "gen_mean": 12.16
+        },
+        "mcnemar_contains_p": 0.6875,
+        "mcnemar_contains_n10_n01": [
+          2,
+          4
+        ],
+        "mcnemar_exact_p": 0.0009765625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          11
+        ],
+        "f1_delta": 0.2397,
+        "f1_delta_ci95": [
+          0.1378,
+          0.3436
+        ],
+        "gen_delta": -8.22,
+        "gen_delta_ci95": [
+          -11.72,
+          -4.8
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.261,
+          "contains": 20,
+          "exact": 7,
+          "joint": 20,
+          "attack": 0,
+          "gen_mean": 15.22
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.1471,
+          "contains": 11,
+          "exact": 5,
+          "joint": 11,
+          "attack": 0,
+          "gen_mean": 21.96
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2179,
+          "contains": 13,
+          "exact": 9,
+          "joint": 13,
+          "attack": 0,
+          "gen_mean": 19.56
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          0,
+          2
+        ],
+        "mcnemar_exact_p": 0.125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          4
+        ],
+        "f1_delta": 0.0708,
+        "f1_delta_ci95": [
+          0.0136,
+          0.1431
+        ],
+        "gen_delta": -2.4,
+        "gen_delta_ci95": [
+          -5.68,
+          0.9
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8489,
+          "contains": 64,
+          "exact": 50,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 7.25
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.3409,
+          "contains": 45,
+          "exact": 13,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 20.45
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.5509,
+          "contains": 48,
+          "exact": 26,
+          "joint": 48,
+          "attack": 0,
+          "gen_mean": 12.95
+        },
+        "mcnemar_contains_p": 0.453125,
+        "mcnemar_contains_n10_n01": [
+          2,
+          5
+        ],
+        "mcnemar_exact_p": 0.000244140625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          13
+        ],
+        "f1_delta": 0.21,
+        "f1_delta_ci95": [
+          0.1246,
+          0.3043
+        ],
+        "gen_delta": -7.5,
+        "gen_delta_ci95": [
+          -10.83,
+          -4.45
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.2
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.3484,
+          "contains": 35,
+          "exact": 8,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 21.02
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.6083,
+          "contains": 37,
+          "exact": 19,
+          "joint": 37,
+          "attack": 0,
+          "gen_mean": 12.42
+        },
+        "mcnemar_contains_p": 0.6875,
+        "mcnemar_contains_n10_n01": [
+          2,
+          4
+        ],
+        "mcnemar_exact_p": 0.0009765625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          11
+        ],
+        "f1_delta": 0.2599,
+        "f1_delta_ci95": [
+          0.1521,
+          0.3694
+        ],
+        "gen_delta": -8.6,
+        "gen_delta_ci95": [
+          -12.84,
+          -4.64
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "clean",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.5409,
+          "contains": 19,
+          "exact": 7,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 16.84
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.323,
+          "contains": 10,
+          "exact": 5,
+          "joint": 10,
+          "attack": 0,
+          "gen_mean": 19.11
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.4149,
+          "contains": 11,
+          "exact": 7,
+          "joint": 11,
+          "attack": 0,
+          "gen_mean": 14.21
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          0,
+          1
+        ],
+        "mcnemar_exact_p": 0.5,
+        "mcnemar_exact_n10_n01": [
+          0,
+          2
+        ],
+        "f1_delta": 0.0919,
+        "f1_delta_ci95": [
+          -0.0006,
+          0.2356
+        ],
+        "gen_delta": -4.89,
+        "gen_delta_ci95": [
+          -9.89,
+          -0.84
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6217,
+          "contains": 65,
+          "exact": 55,
+          "joint": 65,
+          "attack": 3,
+          "gen_mean": 7.41
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.2983,
+          "contains": 45,
+          "exact": 18,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 17.18
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.3647,
+          "contains": 50,
+          "exact": 26,
+          "joint": 50,
+          "attack": 0,
+          "gen_mean": 18.0
+        },
+        "mcnemar_contains_p": 0.2265625,
+        "mcnemar_contains_n10_n01": [
+          3,
+          8
+        ],
+        "mcnemar_exact_p": 0.0078125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          8
+        ],
+        "f1_delta": 0.0664,
+        "f1_delta_ci95": [
+          0.0221,
+          0.1153
+        ],
+        "gen_delta": 0.82,
+        "gen_delta_ci95": [
+          -1.68,
+          3.48
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.889,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 1,
+          "gen_mean": 3.3
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.3733,
+          "contains": 33,
+          "exact": 10,
+          "joint": 33,
+          "attack": 0,
+          "gen_mean": 17.28
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.5193,
+          "contains": 38,
+          "exact": 17,
+          "joint": 38,
+          "attack": 0,
+          "gen_mean": 13.48
+        },
+        "mcnemar_contains_p": 0.125,
+        "mcnemar_contains_n10_n01": [
+          1,
+          6
+        ],
+        "mcnemar_exact_p": 0.015625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          7
+        ],
+        "f1_delta": 0.1461,
+        "f1_delta_ci95": [
+          0.0819,
+          0.2213
+        ],
+        "gen_delta": -3.8,
+        "gen_delta_ci95": [
+          -7.0,
+          -0.58
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3543,
+          "contains": 20,
+          "exact": 12,
+          "joint": 20,
+          "attack": 2,
+          "gen_mean": 11.52
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2234,
+          "contains": 12,
+          "exact": 8,
+          "joint": 12,
+          "attack": 0,
+          "gen_mean": 17.08
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2101,
+          "contains": 12,
+          "exact": 9,
+          "joint": 12,
+          "attack": 0,
+          "gen_mean": 22.52
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          2
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          1
+        ],
+        "f1_delta": -0.0133,
+        "f1_delta_ci95": [
+          -0.0674,
+          0.0405
+        ],
+        "gen_delta": 5.44,
+        "gen_delta_ci95": [
+          2.04,
+          9.06
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8966,
+          "contains": 64,
+          "exact": 54,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.55
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.4096,
+          "contains": 43,
+          "exact": 16,
+          "joint": 43,
+          "attack": 0,
+          "gen_mean": 15.66
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.518,
+          "contains": 48,
+          "exact": 24,
+          "joint": 48,
+          "attack": 0,
+          "gen_mean": 14.19
+        },
+        "mcnemar_contains_p": 0.2265625,
+        "mcnemar_contains_n10_n01": [
+          3,
+          8
+        ],
+        "mcnemar_exact_p": 0.0078125,
+        "mcnemar_exact_n10_n01": [
+          0,
+          8
+        ],
+        "f1_delta": 0.1084,
+        "f1_delta_ci95": [
+          0.042,
+          0.1764
+        ],
+        "gen_delta": -1.47,
+        "gen_delta_ci95": [
+          -4.42,
+          1.56
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.18
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.4073,
+          "contains": 33,
+          "exact": 10,
+          "joint": 33,
+          "attack": 0,
+          "gen_mean": 17.58
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.5607,
+          "contains": 38,
+          "exact": 17,
+          "joint": 38,
+          "attack": 0,
+          "gen_mean": 13.24
+        },
+        "mcnemar_contains_p": 0.125,
+        "mcnemar_contains_n10_n01": [
+          1,
+          6
+        ],
+        "mcnemar_exact_p": 0.015625,
+        "mcnemar_exact_n10_n01": [
+          0,
+          7
+        ],
+        "f1_delta": 0.1534,
+        "f1_delta_ci95": [
+          0.0818,
+          0.2342
+        ],
+        "gen_delta": -4.33,
+        "gen_delta_ci95": [
+          -7.62,
+          -1.31
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "explicit_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.7018,
+          "contains": 19,
+          "exact": 11,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 11.16
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4149,
+          "contains": 10,
+          "exact": 6,
+          "joint": 10,
+          "attack": 0,
+          "gen_mean": 11.11
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.4168,
+          "contains": 10,
+          "exact": 7,
+          "joint": 10,
+          "attack": 0,
+          "gen_mean": 16.42
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          2,
+          2
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          1
+        ],
+        "f1_delta": 0.0019,
+        "f1_delta_ci95": [
+          -0.1311,
+          0.152
+        ],
+        "gen_delta": 5.32,
+        "gen_delta_ci95": [
+          0.16,
+          11.63
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "both",
+        "fullkv": {
+          "n": 100,
+          "f1": 0.6244,
+          "contains": 68,
+          "exact": 55,
+          "joint": 68,
+          "attack": 0,
+          "gen_mean": 7.9
+        },
+        "base": {
+          "n": 100,
+          "f1": 0.3003,
+          "contains": 45,
+          "exact": 18,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 16.36
+        },
+        "akv": {
+          "n": 100,
+          "f1": 0.3601,
+          "contains": 47,
+          "exact": 26,
+          "joint": 47,
+          "attack": 0,
+          "gen_mean": 16.6
+        },
+        "mcnemar_contains_p": 0.75390625,
+        "mcnemar_contains_n10_n01": [
+          4,
+          6
+        ],
+        "mcnemar_exact_p": 0.021484375,
+        "mcnemar_exact_n10_n01": [
+          1,
+          9
+        ],
+        "f1_delta": 0.0598,
+        "f1_delta_ci95": [
+          0.0122,
+          0.1107
+        ],
+        "gen_delta": 0.24,
+        "gen_delta_ci95": [
+          -2.36,
+          2.67
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.909,
+          "contains": 46,
+          "exact": 44,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 3.08
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.3941,
+          "contains": 35,
+          "exact": 11,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 16.36
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.5133,
+          "contains": 35,
+          "exact": 19,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 11.34
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          4,
+          4
+        ],
+        "mcnemar_exact_p": 0.021484375,
+        "mcnemar_exact_n10_n01": [
+          1,
+          9
+        ],
+        "f1_delta": 0.1192,
+        "f1_delta_ci95": [
+          0.0318,
+          0.2116
+        ],
+        "gen_delta": -5.02,
+        "gen_delta_ci95": [
+          -8.64,
+          -1.62
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "all100",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 50,
+          "f1": 0.3398,
+          "contains": 22,
+          "exact": 11,
+          "joint": 22,
+          "attack": 0,
+          "gen_mean": 12.72
+        },
+        "base": {
+          "n": 50,
+          "f1": 0.2064,
+          "contains": 10,
+          "exact": 7,
+          "joint": 10,
+          "attack": 0,
+          "gen_mean": 16.36
+        },
+        "akv": {
+          "n": 50,
+          "f1": 0.2069,
+          "contains": 12,
+          "exact": 7,
+          "joint": 12,
+          "attack": 0,
+          "gen_mean": 21.86
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          0,
+          2
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          0
+        ],
+        "f1_delta": 0.0005,
+        "f1_delta_ci95": [
+          -0.0117,
+          0.0153
+        ],
+        "gen_delta": 5.5,
+        "gen_delta_ci95": [
+          2.8,
+          8.44
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "both",
+        "fullkv": {
+          "n": 64,
+          "f1": 0.8891,
+          "contains": 64,
+          "exact": 53,
+          "joint": 64,
+          "attack": 0,
+          "gen_mean": 5.95
+        },
+        "base": {
+          "n": 64,
+          "f1": 0.4226,
+          "contains": 44,
+          "exact": 17,
+          "joint": 44,
+          "attack": 0,
+          "gen_mean": 15.3
+        },
+        "akv": {
+          "n": 64,
+          "f1": 0.5215,
+          "contains": 46,
+          "exact": 25,
+          "joint": 46,
+          "attack": 0,
+          "gen_mean": 12.36
+        },
+        "mcnemar_contains_p": 0.75390625,
+        "mcnemar_contains_n10_n01": [
+          4,
+          6
+        ],
+        "mcnemar_exact_p": 0.021484375,
+        "mcnemar_exact_n10_n01": [
+          1,
+          9
+        ],
+        "f1_delta": 0.0988,
+        "f1_delta_ci95": [
+          0.0283,
+          0.1771
+        ],
+        "gen_delta": -2.94,
+        "gen_delta_ci95": [
+          -6.23,
+          0.13
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "triviaqa",
+        "fullkv": {
+          "n": 45,
+          "f1": 0.9789,
+          "contains": 45,
+          "exact": 43,
+          "joint": 45,
+          "attack": 0,
+          "gen_mean": 3.16
+        },
+        "base": {
+          "n": 45,
+          "f1": 0.4194,
+          "contains": 35,
+          "exact": 11,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 17.16
+        },
+        "akv": {
+          "n": 45,
+          "f1": 0.554,
+          "contains": 35,
+          "exact": 19,
+          "joint": 35,
+          "attack": 0,
+          "gen_mean": 11.53
+        },
+        "mcnemar_contains_p": 1.0,
+        "mcnemar_contains_n10_n01": [
+          4,
+          4
+        ],
+        "mcnemar_exact_p": 0.021484375,
+        "mcnemar_exact_n10_n01": [
+          1,
+          9
+        ],
+        "f1_delta": 0.1346,
+        "f1_delta_ci95": [
+          0.0323,
+          0.2351
+        ],
+        "gen_delta": -5.62,
+        "gen_delta_ci95": [
+          -9.6,
+          -1.71
+        ]
+      },
+      {
+        "scorer": "knorm",
+        "ratio": 0.4,
+        "condition": "paraphrase_attack",
+        "population": "gated64",
+        "task": "2wikimqa",
+        "fullkv": {
+          "n": 19,
+          "f1": 0.6763,
+          "contains": 19,
+          "exact": 10,
+          "joint": 19,
+          "attack": 0,
+          "gen_mean": 12.58
+        },
+        "base": {
+          "n": 19,
+          "f1": 0.4304,
+          "contains": 9,
+          "exact": 6,
+          "joint": 9,
+          "attack": 0,
+          "gen_mean": 10.89
+        },
+        "akv": {
+          "n": 19,
+          "f1": 0.4444,
+          "contains": 11,
+          "exact": 6,
+          "joint": 11,
+          "attack": 0,
+          "gen_mean": 14.32
+        },
+        "mcnemar_contains_p": 0.5,
+        "mcnemar_contains_n10_n01": [
+          0,
+          2
+        ],
+        "mcnemar_exact_p": 1.0,
+        "mcnemar_exact_n10_n01": [
+          0,
+          0
+        ],
+        "f1_delta": 0.014,
+        "f1_delta_ci95": [
+          -0.0014,
+          0.0421
+        ],
+        "gen_delta": 3.42,
+        "gen_delta_ci95": [
+          -0.11,
+          7.68
+        ]
+      }
+    ]
+  },
+  "A6": {
+    "cells": [
+      {
+        "scorer": "streaming",
+        "population": "all150",
+        "regime": "P<=B",
+        "n": 47,
+        "base_prompt_strict": 6,
+        "akv_prompt_strict": 33,
+        "n10": 1,
+        "n01": 28,
+        "mcnemar_p": 1.1175870895385742e-07,
+        "base_instruction_strict": 7,
+        "akv_instruction_strict": 38,
+        "n_instructions": 52,
+        "instruction_delta_ci95": [
+          0.4468,
+          0.7273
+        ],
+        "mean_P": 14.8,
+        "mean_B": 17.9,
+        "protected_kept_fraction_mean": 1.0
+      },
+      {
+        "scorer": "streaming",
+        "population": "all150",
+        "regime": "P>B",
+        "n": 103,
+        "base_prompt_strict": 5,
+        "akv_prompt_strict": 28,
+        "n10": 3,
+        "n01": 26,
+        "mcnemar_p": 1.5236437320709229e-05,
+        "base_instruction_strict": 34,
+        "akv_instruction_strict": 103,
+        "n_instructions": 190,
+        "instruction_delta_ci95": [
+          0.2835,
+          0.4402
+        ],
+        "mean_P": 33.6,
+        "mean_B": 23.2,
+        "protected_kept_fraction_mean": 0.724
+      },
+      {
+        "scorer": "streaming",
+        "population": "gated88",
+        "regime": "P<=B",
+        "n": 35,
+        "base_prompt_strict": 5,
+        "akv_prompt_strict": 26,
+        "n10": 1,
+        "n01": 22,
+        "mcnemar_p": 5.7220458984375e-06,
+        "base_instruction_strict": 5,
+        "akv_instruction_strict": 29,
+        "n_instructions": 38,
+        "instruction_delta_ci95": [
+          0.4571,
+          0.7949
+        ],
+        "mean_P": 14.2,
+        "mean_B": 17.8,
+        "protected_kept_fraction_mean": 1.0
+      },
+      {
+        "scorer": "streaming",
+        "population": "gated88",
+        "regime": "P>B",
+        "n": 53,
+        "base_prompt_strict": 3,
+        "akv_prompt_strict": 22,
+        "n10": 1,
+        "n01": 20,
+        "mcnemar_p": 2.09808349609375e-05,
+        "base_instruction_strict": 11,
+        "akv_instruction_strict": 46,
+        "n_instructions": 78,
+        "instruction_delta_ci95": [
+          0.3421,
+          0.553
+        ],
+        "mean_P": 29.1,
+        "mean_B": 21.2,
+        "protected_kept_fraction_mean": 0.75
+      },
+      {
+        "scorer": "knorm",
+        "population": "all150",
+        "regime": "P<=B",
+        "n": 47,
+        "base_prompt_strict": 14,
+        "akv_prompt_strict": 39,
+        "n10": 0,
+        "n01": 25,
+        "mcnemar_p": 5.960464477539063e-08,
+        "base_instruction_strict": 17,
+        "akv_instruction_strict": 44,
+        "n_instructions": 52,
+        "instruction_delta_ci95": [
+          0.3846,
+          0.6538
+        ],
+        "mean_P": 14.8,
+        "mean_B": 17.9,
+        "protected_kept_fraction_mean": 1.0
+      },
+      {
+        "scorer": "knorm",
+        "population": "all150",
+        "regime": "P>B",
+        "n": 103,
+        "base_prompt_strict": 14,
+        "akv_prompt_strict": 32,
+        "n10": 3,
+        "n01": 21,
+        "mcnemar_p": 0.0002771615982055664,
+        "base_instruction_strict": 58,
+        "akv_instruction_strict": 100,
+        "n_instructions": 190,
+        "instruction_delta_ci95": [
+          0.1437,
+          0.2989
+        ],
+        "mean_P": 33.6,
+        "mean_B": 23.2,
+        "protected_kept_fraction_mean": 0.724
+      },
+      {
+        "scorer": "knorm",
+        "population": "gated88",
+        "regime": "P<=B",
+        "n": 35,
+        "base_prompt_strict": 11,
+        "akv_prompt_strict": 31,
+        "n10": 0,
+        "n01": 20,
+        "mcnemar_p": 1.9073486328125e-06,
+        "base_instruction_strict": 13,
+        "akv_instruction_strict": 34,
+        "n_instructions": 38,
+        "instruction_delta_ci95": [
+          0.3947,
+          0.7028
+        ],
+        "mean_P": 14.2,
+        "mean_B": 17.8,
+        "protected_kept_fraction_mean": 1.0
+      },
+      {
+        "scorer": "knorm",
+        "population": "gated88",
+        "regime": "P>B",
+        "n": 53,
+        "base_prompt_strict": 13,
+        "akv_prompt_strict": 25,
+        "n10": 2,
+        "n01": 14,
+        "mcnemar_p": 0.004180908203125,
+        "base_instruction_strict": 27,
+        "akv_instruction_strict": 47,
+        "n_instructions": 78,
+        "instruction_delta_ci95": [
+          0.1235,
+          0.3924
+        ],
+        "mean_P": 29.1,
+        "mean_B": 21.2,
+        "protected_kept_fraction_mean": 0.75
+      }
+    ]
+  },
+  "end_time": "2026-09-17T05:49:20+00:00"
+}

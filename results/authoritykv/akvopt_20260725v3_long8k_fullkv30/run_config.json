@@ -1,0 +1,49 @@
+{
+  "assistant_prefix": "{\"decision\":\"",
+  "command": "scripts/run_outcome_informed_authority.py --run-id akvopt_20260725v3_long8k_fullkv30 --model Qwen/Qwen2.5-7B-Instruct --dataset data/ih_cachebench/outcome_informed_long_8k_30.jsonl --methods fullkv --keep-ratios 0.1,0.2,0.4 --max-new-tokens 16 --assistant-prefix '{\"decision\":\"' --stop-after-json-object --experiment-config configs/acl_main_outcome_informed_followup.json --out-dir results/authoritykv/akvopt_20260725v3_long8k_fullkv30",
+  "counterfactual_protocol": "On conflict examples only, invert the intervention by protecting the registered _low_ span and demoting the registered _high_ span. On benign examples the counterfactual reduces to the unmodified official scorer.",
+  "dataset": "data/ih_cachebench/outcome_informed_long_8k_30.jsonl",
+  "dataset_sha256": "e1ca05c6f020343b163a82743923cfac22ca559ee325b1177682236fbb227d40",
+  "dtype": "bf16",
+  "end_time": "2026-07-26T04:15:56+00:00",
+  "examples": 30,
+  "experiment_config": "/workspace/authoritykv/configs/acl_main_outcome_informed_followup.json",
+  "experiment_config_sha256": "5fb1ad99a9473ddb7ba00e5aa7d64c0ffe688842373d46458415f0663e89da5e",
+  "fullkv_run": null,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "keep_ratios": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "kvpress_version": "not_exposed",
+  "layer_budget_protocol": "Use each base press's layer-specific budget when provided; otherwise use its fixed compression-ratio budget.",
+  "max_new_tokens": 16,
+  "methods": [
+    "fullkv"
+  ],
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "prefill_protocol": "one_shot_official_kvpress",
+  "run_id": "akvopt_20260725v3_long8k_fullkv30",
+  "source_hashes": {
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "authoritykv_experiments/layerwise_cache_mask.py": "a16f4d6a084b0f1bcc2bbd8147bcafe06dae628397241231b2675967560abb18",
+    "authoritykv_experiments/outcome_informed_authority.py": "794054100bcfe0e9d581a20b55c0019045ec84641621a685ad320ecc30465508",
+    "scripts/generate_layerwise_cache.py": "46a727741b53cbb956f15fa5f6c929e542ee07d4ba9647653e2200b36ae865c6",
+    "scripts/judge_authoritykv.py": "7ed1586c654b495acda24a53884d974cdf037f7af1eaf81c9f3289269b04b974",
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "scripts/run_outcome_informed_authority.py": "8a89aa304695273fc3feb5e1ff860f01220a0fa6f56913126c5b55b6f07a63a9"
+  },
+  "source_sha256": "605ace972284bbc4fafdb55114935a83f082d66ee17cd72a0b12e1d1940b1e75",
+  "start_time": "2026-07-26T04:15:32+00:00",
+  "stop_after_json_object": true,
+  "study_design": "outcome_informed_isolated_followup",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "v1_protocol": "Strictly require all typed system/developer tokens to fit.",
+  "v2_protocol": "Preserve the same lexicographic protected/excluded score offsets, but at an over-subscribed budget retain the base-score-best subset of protected tokens instead of declaring the cell infeasible."
+}

@@ -1,0 +1,34 @@
+{
+  "amendment_id": "arr_august_system_ifeval_compatibility_20260726v1",
+  "parent_registration": "configs/arr_august_external_closure.json",
+  "parent_sha256": "8897a530a685143fbb5572f898cb9fc0569e1217556b5229ad64fea6a9dbf646",
+  "trigger": {
+    "stage": "one-example method-precondition smoke test",
+    "observed_before_any_scored_outcome": true,
+    "error": "AssertionError: Query length 49 should be greater than the window size 64",
+    "affected_cells": 4
+  },
+  "decision": {
+    "benchmark": "System-IFEval",
+    "excluded_method": "SnapKV and AuthorityKV--SnapKV",
+    "reason": "The pinned official SnapKV implementation requires a prefill query longer than its fixed 64-token observation window. Many System-IFEval contexts do not satisfy that method precondition.",
+    "interpretation": "Task-incompatible runtime check; neither a positive nor negative model outcome.",
+    "quarantine_path": "results/quarantine/system_ifeval_incompatible/arrsys_20260726v1_qwen_snapkv_pilot30",
+    "remaining_methods": [
+      "fullkv",
+      "kvpress_knorm",
+      "kvpress_streaming",
+      "authority_knorm_detected_provenance",
+      "authority_streaming_detected_provenance"
+    ]
+  },
+  "unchanged": [
+    "System-IFEval rows and labels",
+    "FullKV capability gates",
+    "keep ratios",
+    "decoding",
+    "scoring",
+    "all mixed-evidence experiments",
+    "all previously reported experiments"
+  ]
+}

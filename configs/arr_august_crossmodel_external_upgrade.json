@@ -1,0 +1,55 @@
+{
+  "decision_id": "arr_august_crossmodel_external_upgrade_20260727v1",
+  "frozen_before_generation": true,
+  "objective": "Test whether the System-IFEval active-treatment result transfers beyond Qwen without running task-incompatible model cells.",
+  "benchmark": {
+    "name": "System-IFEval",
+    "dataset": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+    "labels": "data/external_system_ifeval/sys_ifeval_labels.jsonl",
+    "grader": "external/system_ifeval",
+    "reason": "The task directly measures system-instruction compliance under compression and uses a public deterministic grader."
+  },
+  "fixed_settings": {
+    "candidate_models": [
+      "mistralai/Mistral-7B-Instruct-v0.3",
+      "01-ai/Yi-1.5-9B-Chat"
+    ],
+    "pilot_examples": 30,
+    "full_examples": 150,
+    "base_method": "kvpress_streaming",
+    "authority_method": "authority_streaming_detected_provenance",
+    "keep_ratio": 0.4,
+    "max_new_tokens": 1024,
+    "dtype": "bf16",
+    "seed": 20260727,
+    "protected_budget_policy": "priority",
+    "scan_low_authority_chat": false
+  },
+  "stages": [
+    {
+      "stage": "FullKV capability pilot",
+      "run": "Both candidate models on the first 30 frozen prompts.",
+      "scale_if": "At least 15/30 prompts are prompt-strict correct, with zero runtime errors.",
+      "stop_if": "The capability threshold is not met."
+    },
+    {
+      "stage": "Paired treatment pilot",
+      "run": "StreamingLLM and its AuthorityKV composition at 40% KV for the eligible model with the higher FullKV capability count.",
+      "scale_if": "AuthorityKV improves prompt-strict accuracy by at least 0.20 on the FullKV-strict population, with at least five authority-only discordant pairs and no paired-budget mismatch.",
+      "stop_if": "The base has no meaningful compression headroom or the paired improvement threshold is not met."
+    },
+    {
+      "stage": "Full-scale confirmation",
+      "run": "FullKV plus the registered paired treatment on all 150 prompts for the selected model.",
+      "promote_if": "Execution audit passes, the FullKV-strict population contains at least 60 prompts, the paired prompt-strict effect is positive with exact McNemar p < 0.05, and the instruction-strict paired-bootstrap interval excludes zero.",
+      "stop_if": "Any audit or confirmatory criterion fails; retain the result as a reported boundary outside the main claims."
+    }
+  ],
+  "selection_rule": "Select the eligible model with the larger FullKV prompt-strict count; break an exact tie by the model order listed above. No compressed outcome is observed before selection.",
+  "reporting": [
+    "Retain every FullKV capability result, including failed gates.",
+    "Do not pool models or replace the registered 30-prompt pilot after observing outputs.",
+    "Do not promote pilot-only effects as full-scale evidence.",
+    "Preserve exact run commands, model revisions, dataset/configuration hashes, predictions, scores, and execution audits."
+  ]
+}

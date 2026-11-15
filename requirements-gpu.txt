@@ -1,0 +1,19 @@
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+torch==2.11.0+cu130
+transformers==5.2.0
+accelerate==1.14.0
+datasets==5.0.0
+kvpress @ git+https://github.com/NVIDIA/kvpress.git@6d965557a5b9f0201a2301b23c454473dd681d0d
+numpy==2.5.1
+scipy==1.18.0
+pandas==2.3.3
+matplotlib==3.11.1
+pillow==12.3.0
+sentencepiece==0.2.2
+protobuf==6.33.6
+pyyaml==6.0.3
+tqdm==4.68.0
+fire==0.6.0
+scikit-learn==1.8.0
+pytest==7.4.4

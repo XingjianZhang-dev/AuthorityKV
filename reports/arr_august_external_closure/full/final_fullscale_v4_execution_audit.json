@@ -1,0 +1,231 @@
+{
+  "audited_at_utc": "2026-07-26T15:43:05+00:00",
+  "model_commits": [
+    "a09a35458c702b33eeacc393d103063234e8bc28"
+  ],
+  "runs": [
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 1200,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "b55a8c383fe34e62eb6ded94ca24e9840734808515f17cebb2692849314ab7b0",
+      "failures": [],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [
+        {
+          "authority_method": "authority_streaming_detected_provenance",
+          "authority_rows": 600,
+          "base_method": "kvpress_streaming",
+          "base_rows": 600,
+          "budget_field_mismatches": {
+            "prompt_tokens": 0,
+            "retained_prompt_tokens": 0,
+            "retained_prompt_tokens_max": 0,
+            "retained_prompt_tokens_min": 0
+          },
+          "missing_authority": 0,
+          "missing_base": 0,
+          "paired_rows": 600,
+          "status": "PASS"
+        }
+      ],
+      "press_audit": {
+        "authority_rows": 600,
+        "excluded_fraction_observations": 16800,
+        "excluded_kept_fraction_max": 0.0,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 16800,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 16800,
+        "protected_kept_fraction_max": 1.0,
+        "protected_kept_fraction_min": 1.0,
+        "status": "PASS"
+      },
+      "rows": 1200,
+      "run_dir": "/workspace/authoritykv/results/authoritykv/arrmixed_20260726v4_qwen_streaming_full300",
+      "run_id": "arrmixed_20260726v4_qwen_streaming_full300",
+      "seed": 20260726,
+      "status": "PASS"
+    },
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 600,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "b55a8c383fe34e62eb6ded94ca24e9840734808515f17cebb2692849314ab7b0",
+      "failures": [],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [
+        {
+          "authority_method": "authority_knorm_detected_provenance",
+          "authority_rows": 300,
+          "base_method": "kvpress_knorm",
+          "base_rows": 300,
+          "budget_field_mismatches": {
+            "prompt_tokens": 0,
+            "retained_prompt_tokens": 0,
+            "retained_prompt_tokens_max": 0,
+            "retained_prompt_tokens_min": 0
+          },
+          "missing_authority": 0,
+          "missing_base": 0,
+          "paired_rows": 300,
+          "status": "PASS"
+        }
+      ],
+      "press_audit": {
+        "authority_rows": 300,
+        "excluded_fraction_observations": 8400,
+        "excluded_kept_fraction_max": 0.0,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 8400,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 8400,
+        "protected_kept_fraction_max": 1.0,
+        "protected_kept_fraction_min": 1.0,
+        "status": "PASS"
+      },
+      "rows": 600,
+      "run_dir": "/workspace/authoritykv/results/authoritykv/arrmixed_20260726v4_qwen_knorm40_full300",
+      "run_id": "arrmixed_20260726v4_qwen_knorm40_full300",
+      "seed": 20260726,
+      "status": "PASS"
+    },
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 300,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "b55a8c383fe34e62eb6ded94ca24e9840734808515f17cebb2692849314ab7b0",
+      "failures": [],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [
+        {
+          "authority_method": "authority_streaming_detected_provenance",
+          "authority_rows": 150,
+          "base_method": "kvpress_streaming",
+          "base_rows": 150,
+          "budget_field_mismatches": {
+            "prompt_tokens": 0,
+            "retained_prompt_tokens": 0,
+            "retained_prompt_tokens_max": 0,
+            "retained_prompt_tokens_min": 0
+          },
+          "missing_authority": 0,
+          "missing_base": 0,
+          "paired_rows": 150,
+          "status": "PASS"
+        }
+      ],
+      "press_audit": {
+        "authority_rows": 150,
+        "excluded_fraction_observations": 0,
+        "excluded_kept_fraction_max": null,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 4200,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 4200,
+        "protected_kept_fraction_max": 1.0,
+        "protected_kept_fraction_min": 0.48543688654899597,
+        "status": "PASS"
+      },
+      "rows": 300,
+      "run_dir": "/workspace/authoritykv/results/authoritykv/arrsys_20260726v4_qwen_streaming40_full150",
+      "run_id": "arrsys_20260726v4_qwen_streaming40_full150",
+      "seed": 20260726,
+      "status": "PASS"
+    },
+    {
+      "dataset_hash_matches": true,
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "dtype": "bf16",
+      "duplicate_prediction_cells": 0,
+      "expected_rows": 300,
+      "experiment_config_hash_matches": true,
+      "experiment_config_sha256": "b55a8c383fe34e62eb6ded94ca24e9840734808515f17cebb2692849314ab7b0",
+      "failures": [],
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "non_ok_predictions": 0,
+      "paired_budget_audits": [
+        {
+          "authority_method": "authority_knorm_detected_provenance",
+          "authority_rows": 150,
+          "base_method": "kvpress_knorm",
+          "base_rows": 150,
+          "budget_field_mismatches": {
+            "prompt_tokens": 0,
+            "retained_prompt_tokens": 0,
+            "retained_prompt_tokens_max": 0,
+            "retained_prompt_tokens_min": 0
+          },
+          "missing_authority": 0,
+          "missing_base": 0,
+          "paired_rows": 150,
+          "status": "PASS"
+        }
+      ],
+      "press_audit": {
+        "authority_rows": 150,
+        "excluded_fraction_observations": 0,
+        "excluded_kept_fraction_max": null,
+        "excluded_kept_fraction_nonzero": 0,
+        "layer_audits": 4200,
+        "note": "Protected-token retention below one is reported, not failed, under the registered priority policy when the protected tier exceeds the retained-token budget.",
+        "protected_fraction_observations": 4200,
+        "protected_kept_fraction_max": 1.0,
+        "protected_kept_fraction_min": 0.48543688654899597,
+        "status": "PASS"
+      },
+      "rows": 300,
+      "run_dir": "/workspace/authoritykv/results/authoritykv/arrsys_20260726v4_qwen_knorm40_full150",
+      "run_id": "arrsys_20260726v4_qwen_knorm40_full150",
+      "seed": 20260726,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "structural_label_isolation": {
+    "datasets": [
+      {
+        "forbidden_fields": [
+          "answers",
+          "instruction_id_list",
+          "kwargs"
+        ],
+        "path": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+        "rows": 150,
+        "sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+        "status": "PASS",
+        "violations": 0
+      },
+      {
+        "forbidden_fields": [
+          "answers",
+          "attack_marker"
+        ],
+        "path": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+        "rows": 300,
+        "sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+        "status": "PASS",
+        "violations": 0
+      }
+    ],
+    "scope": "Structural isolation of post-generation scoring fields. Natural task evidence and literal attack text remain part of the prompt.",
+    "status": "PASS"
+  },
+  "unknown_expected_run_ids": []
+}

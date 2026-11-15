@@ -1,0 +1,17 @@
+% Generated from released result records.
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Scorer & Wrong & Correct & $\Delta$ [95\% CI] & Holm $p$ \\
+\midrule
+SnapKV & 36\% & 72\% & +36 [20,56] & 0.0117 \\
+TOVA & 44\% & 80\% & +36 [20,56] & 0.0117 \\
+PyramidKV & 36\% & 68\% & +32 [16,52] & 0.0117 \\
+\bottomrule
+\end{tabular}
+\caption{Matched 8k-context intervention at 2\% KV. ``Wrong'' protects the lower-authority span and demotes the governing span; ``Correct'' reverses that assignment under the same scorer and per-layer budget. Each row has 25 conflicts and five benign controls.}
+\label{tab:matched-causal}
+\end{table}

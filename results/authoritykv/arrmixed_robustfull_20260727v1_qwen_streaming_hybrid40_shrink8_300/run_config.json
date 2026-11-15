@@ -1,0 +1,54 @@
+{
+  "run_id": "arrmixed_robustfull_20260727v1_qwen_streaming_hybrid40_shrink8_300",
+  "start_time": "2026-07-26T16:28:25+00:00",
+  "command": "scripts/run_kvpress_authority.py --run-id arrmixed_robustfull_20260727v1_qwen_streaming_hybrid40_shrink8_300 --model Qwen/Qwen2.5-7B-Instruct --dataset data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl --methods authority_streaming_detected_provenance --keep-ratios 0.40 --max-new-tokens 32 --seed 20260726 --dtype bf16 --out-dir results/authoritykv/arrmixed_robustfull_20260727v1_qwen_streaming_hybrid40_shrink8_300 --experiment-config configs/arr_august_streaming_robustness_full_scaling_decision.json --protected-budget-policy priority --scan-low-authority-chat --metadata-span-boundary-shrink-tokens 8",
+  "source_sha256": "0609a014cb62deff2f41872481e61e9c93042550ae80dd14ad13ee6d61dfe9a3",
+  "source_hashes": {
+    "scripts/run_kvpress_authority.py": "0e3b0228135f1466b9c3990ee67634024a60be45bce82be4d76a537e05d334d6",
+    "authoritykv_experiments/kvpress_authority.py": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+    "scripts/run_authoritykv_smoke.py": "8faa998ace07913fc0bd64bbd8e50519e352da9a4eb22f02ff6d798da98f1930",
+    "scripts/judge_authoritykv.py": "7ed1586c654b495acda24a53884d974cdf037f7af1eaf81c9f3289269b04b974",
+    "scripts/run_acl_main_gpu_queue.sh": "c068673a4e34c7378330984558381f93c991ef17c337e247f589f52951027b41"
+  },
+  "experiment_config": "configs/arr_august_streaming_robustness_full_scaling_decision.json",
+  "experiment_config_sha256": "d1c7b77343213a0f2d627717524aff4a36a0730bb48b76169d70ed0c796217b6",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_max_position_embeddings": 32768,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "tokenizer_commit": null,
+  "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+  "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+  "limit": null,
+  "methods": [
+    "authority_streaming_detected_provenance"
+  ],
+  "keep_ratios": [
+    0.4
+  ],
+  "max_new_tokens": 32,
+  "seed": 20260726,
+  "dtype": "bf16",
+  "attn_implementation": null,
+  "span_source": "metadata",
+  "protected_budget_policy": "priority",
+  "metadata_span_drop_rate": 0.0,
+  "metadata_span_boundary_shrink_tokens": 8,
+  "scan_low_authority_chat": true,
+  "assistant_prefix": "",
+  "stop_after_json_object": false,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_capability": [
+    8,
+    0
+  ],
+  "cuda_runtime": "13.0",
+  "cudnn_version": 91900,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "kvpress_version": "not_exposed",
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "end_time": "2026-07-26T16:42:43+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "by_method": {
+    "fullkv@1.00": {
+      "method": "fullkv",
+      "keep_ratio": 1.0,
+      "num_examples": 50,
+      "utility_accuracy": 0.96,
+      "utility_accuracy_num": 48,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.94,
+      "exact_match_num": 47,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.26128435809116923,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.958,
+      "longbench_score_den": 50,
+      "by_task": {
+        "triviaqa": {
+          "correct_num": 48,
+          "correct_den": 50,
+          "exact_num": 47,
+          "exact_den": 50,
+          "answer_match_fraction": 0.26128435809116923,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.958,
+          "longbench_score_den": 50
+        }
+      }
+    }
+  },
+  "errors": 0,
+  "num_rows": 50
+}

@@ -1,0 +1,22 @@
+{
+  "decision_id": "arr_august_crossmodel_external_upgrade_20260727v1",
+  "rows": [
+    {
+      "correct": 14,
+      "eligible": false,
+      "label": "mistral7b",
+      "metrics": "reports/arr_august_external_closure/upgrade/mistral7b_fullkv_pilot30_metrics.json",
+      "total": 30
+    },
+    {
+      "correct": 7,
+      "eligible": false,
+      "label": "yi9b",
+      "metrics": "reports/arr_august_external_closure/upgrade/yi9b_fullkv_pilot30_metrics.json",
+      "total": 30
+    }
+  ],
+  "selected_model_label": null,
+  "stage": "FullKV capability pilot",
+  "status": "STOP"
+}

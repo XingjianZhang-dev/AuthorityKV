@@ -1,0 +1,132 @@
+{
+  "decision_id": "arr_august_final_pilot_scaling_decision_20260726v1",
+  "frozen_before_full_generation": true,
+  "parents": [
+    {
+      "path": "configs/arr_august_external_closure.json",
+      "sha256": "8897a530a685143fbb5572f898cb9fc0569e1217556b5229ad64fea6a9dbf646"
+    },
+    {
+      "path": "configs/arr_august_detector_localization_fix.json",
+      "sha256": "f06f11628f3f662c3339b8b7f209c98334ceab6d9d46d3bcc14834e272461be1"
+    },
+    {
+      "path": "configs/arr_august_system_span_scope_compatibility.json",
+      "sha256": "c0a9a95d0375c5e3de81543e732d779f74f92917ba69adea4fa9a454765f510b"
+    }
+  ],
+  "pilot_evidence": {
+    "execution_audit": {
+      "path": "reports/arr_august_external_closure/pilot/final_corrected_pilot_execution_audit.json",
+      "status": "PASS"
+    },
+    "mixed_evidence_metrics": "reports/arr_august_external_closure/pilot/mixed_evidence_pilot_v3_metrics.json",
+    "system_ifeval_metrics": "reports/arr_august_external_closure/pilot/system_ifeval_pilot_v3_metrics.json"
+  },
+  "full_scale_cells": [
+    {
+      "benchmark": "mixed_evidence_attack",
+      "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+      "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+      "methods": [
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "reason": "On FullKV-capable pilot pairs, explicit-attack success decreased by 0.2500 and 0.1875, while LongBench-style utility increased by 0.1533 and 0.1291 at 20% and 40%; the utility bootstrap intervals were strictly positive."
+    },
+    {
+      "benchmark": "mixed_evidence_attack",
+      "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+      "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+      "methods": [
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.4
+      ],
+      "reason": "At 40%, FullKV-capable explicit-attack utility increased by 0.1316 with paired-bootstrap 95% CI [0.0100, 0.2949]."
+    },
+    {
+      "benchmark": "system_ifeval",
+      "dataset": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "methods": [
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.4
+      ],
+      "reason": "On FullKV-strict-correct pilot prompts, prompt-strict and instruction-strict accuracy each increased by 0.6111; exact McNemar p=0.0009765625 for prompt-strict."
+    },
+    {
+      "benchmark": "system_ifeval",
+      "dataset": "data/external_system_ifeval/sys_ifeval_messages_150.jsonl",
+      "dataset_sha256": "c1cd8e30af47f16b0e91234e5af8fce081185c6065092b1ca72020326a1746d3",
+      "methods": [
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.4
+      ],
+      "reason": "On FullKV-strict-correct pilot prompts, prompt-strict and instruction-strict accuracy each increased by 0.3333; exact McNemar p=0.03125 for prompt-strict."
+    }
+  ],
+  "pilot_only_boundaries": [
+    {
+      "benchmark": "mixed_evidence_attack",
+      "method_family": "snapkv",
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "reason": "The baseline already had zero attack success and perfect gated joint success, leaving no safety headroom; AuthorityKV utility was flat-to-adverse."
+    },
+    {
+      "benchmark": "mixed_evidence_attack",
+      "method_family": "knorm",
+      "keep_ratios": [
+        0.2
+      ],
+      "reason": "The pilot did not show a positive joint outcome under this overcompression setting."
+    },
+    {
+      "benchmark": "system_ifeval",
+      "method_family": "knorm",
+      "keep_ratios": [
+        0.2
+      ],
+      "reason": "The small positive pilot effect was not sufficiently precise to justify full scaling."
+    },
+    {
+      "benchmark": "system_ifeval",
+      "method_family": "streaming",
+      "keep_ratios": [
+        0.2
+      ],
+      "reason": "Prompt-strict improvement was zero on FullKV-strict-correct pilot prompts."
+    }
+  ],
+  "fixed_settings": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "dtype": "bf16",
+    "seed": 20260726,
+    "protected_budget_policy": "priority",
+    "span_source": "metadata",
+    "mixed_scan_low_authority_chat": true,
+    "system_scan_low_authority_chat": false
+  },
+  "reporting": [
+    "Report every completed pilot cell, including flat and adverse boundaries.",
+    "Use the frozen FullKV capability gates in addition to all-example analyses.",
+    "Do not pool pilot-only cells with full-scale cells as if they had the same sample size.",
+    "Require zero runtime errors, zero duplicate prediction cells, exact paired retained-token equality, structural label isolation, and the registered priority-policy execution audit."
+  ]
+}

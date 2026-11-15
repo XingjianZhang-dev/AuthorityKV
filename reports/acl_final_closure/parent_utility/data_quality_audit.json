@@ -1,0 +1,183 @@
+{
+  "status": "pass",
+  "run_prefix": "aclmain_20260725v1_qwen7b_utility_",
+  "run_directories": 7,
+  "complete_runs": 7,
+  "base_authority_equivalence_pairs": 600,
+  "base_authority_equivalence_mismatches": 0,
+  "fullkv_authority_comparisons": 12,
+  "fullkv_authority_integrity_failures": 0,
+  "experiment_config_hashes": [
+    "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed"
+  ],
+  "source_hashes": [
+    "5cd8312c33e81eea04ea4d5d19104ace9f5776d0de6f9056ea067641f6a312c9",
+    "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75"
+  ],
+  "allowed_source_hashes": [
+    "5cd8312c33e81eea04ea4d5d19104ace9f5776d0de6f9056ea067641f6a312c9",
+    "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75"
+  ],
+  "source_hashes_valid": true,
+  "kvpress_commits": [
+    "6d965557a5b9f0201a2301b23c454473dd681d0d"
+  ],
+  "inconsistent_dataset_hashes": {},
+  "runs": [
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_2wikimqa_fullkv",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_2wikimqa_fullkv",
+      "dataset": "data/external_utility/longbench_official_2wikimqa_50.jsonl",
+      "methods": [
+        "fullkv"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 50,
+      "prediction_rows": 50,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "82a820f2a16438b4198e0a58fb654aaabe955b6862ad39dc51cb33b89754c763"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_2wikimqa_h2o",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_2wikimqa_h2o",
+      "dataset": "data/external_utility/longbench_official_2wikimqa_50.jsonl",
+      "methods": [
+        "kvpress_h2o",
+        "authority_h2o_detected_provenance"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 200,
+      "prediction_rows": 200,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "5cd8312c33e81eea04ea4d5d19104ace9f5776d0de6f9056ea067641f6a312c9",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "82a820f2a16438b4198e0a58fb654aaabe955b6862ad39dc51cb33b89754c763"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_2wikimqa_nonh2o",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_2wikimqa_nonh2o",
+      "dataset": "data/external_utility/longbench_official_2wikimqa_50.jsonl",
+      "methods": [
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance",
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 400,
+      "prediction_rows": 400,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "82a820f2a16438b4198e0a58fb654aaabe955b6862ad39dc51cb33b89754c763"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_ruler4k_fullkv",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_ruler4k_fullkv",
+      "dataset": "data/external_utility/ruler_official_qwen25_4k_24.jsonl",
+      "methods": [
+        "fullkv"
+      ],
+      "examples": 24,
+      "configured_examples": 24,
+      "expected_rows": 24,
+      "prediction_rows": 24,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "12a332a4839a51819d055da4feef97f136ebc0a76e34c11d10239137f82f1afc"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_triviaqa_fullkv",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_triviaqa_fullkv",
+      "dataset": "data/external_utility/longbench_official_triviaqa_50.jsonl",
+      "methods": [
+        "fullkv"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 50,
+      "prediction_rows": 50,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "49bc674fa872747d00f2ab50270ddcabaf44a2e9b2f5a4dc5ce8f00463895be8"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_triviaqa_h2o",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_triviaqa_h2o",
+      "dataset": "data/external_utility/longbench_official_triviaqa_50.jsonl",
+      "methods": [
+        "kvpress_h2o",
+        "authority_h2o_detected_provenance"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 200,
+      "prediction_rows": 200,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "5cd8312c33e81eea04ea4d5d19104ace9f5776d0de6f9056ea067641f6a312c9",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "49bc674fa872747d00f2ab50270ddcabaf44a2e9b2f5a4dc5ce8f00463895be8"
+    },
+    {
+      "run_dir": "results/authoritykv/aclmain_20260725v1_qwen7b_utility_triviaqa_nonh2o",
+      "run_id": "aclmain_20260725v1_qwen7b_utility_triviaqa_nonh2o",
+      "dataset": "data/external_utility/longbench_official_triviaqa_50.jsonl",
+      "methods": [
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance",
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "examples": 50,
+      "configured_examples": 50,
+      "expected_rows": 400,
+      "prediction_rows": 400,
+      "errors": 0,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "status": "pass",
+      "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+      "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "49bc674fa872747d00f2ab50270ddcabaf44a2e9b2f5a4dc5ce8f00463895be8"
+    }
+  ]
+}

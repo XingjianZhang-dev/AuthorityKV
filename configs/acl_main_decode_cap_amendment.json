@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "amended_at_utc": "2026-07-25T18:00:00Z",
+  "status": "protocol_correction_before_replacement_runs",
+  "parent_matrix": "configs/acl_main_experiment_matrix.json",
+  "parent_matrix_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+  "reason": "The original 16-token decode cap cannot represent the longest legal fixed-schema decision for the Mistral and Yi tokenizers. This turns some otherwise unambiguous low-authority decisions into malformed outputs and therefore biases authority-reversal and format metrics.",
+  "observed_evidence": {
+    "audit_report": "reports/diagnostics/20260725_decode_cap_truncation_audit.json",
+    "audit_report_sha256": "7ea03bf3bcf2de299d52dce2d513c35be778993dac1cf2c8d11e9015b5945900",
+    "audit_script": "scripts/audit_truncated_decision_labels.py",
+    "audit_script_sha256": "7cbe2bbe7deb9384a7d06a79e4eeb53dbaa338aab26f2b5264800ee4ac0a5c7c",
+    "audited_prediction_rows": 64249,
+    "generation_cap_rows": 530,
+    "uniquely_identifiable_truncated_labels": 303,
+    "uniquely_identifiable_truncated_low_authority_labels": 300
+  },
+  "tokenizer_feasibility": {
+    "assistant_prefix": "{\"decision\":\"",
+    "longest_legal_output": "{\"decision\":\"FOLLOW_RETRIEVED_DOCUMENT\"}",
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "tokens_for_longest_legal_output": 11,
+      "registered_max_new_tokens": 16,
+      "replacement_required": false
+    },
+    "mistralai/Mistral-7B-Instruct-v0.3": {
+      "tokens_for_longest_legal_output": 18,
+      "registered_max_new_tokens": 16,
+      "replacement_max_new_tokens": 32,
+      "replacement_required": true
+    },
+    "01-ai/Yi-1.5-9B-Chat": {
+      "tokens_for_longest_legal_output": 18,
+      "registered_max_new_tokens": 16,
+      "replacement_max_new_tokens": 32,
+      "replacement_required": true
+    }
+  },
+  "replacement_policy": {
+    "max_new_tokens": 32,
+    "decoding": "greedy",
+    "stop_after_first_closed_json_object": true,
+    "unchanged_fields": [
+      "dataset",
+      "example IDs",
+      "model",
+      "methods and their order",
+      "keep ratios",
+      "assistant prefix",
+      "dtype",
+      "random seed",
+      "KV budget",
+      "judge"
+    ],
+    "affected_run_suffixes": [
+      "mistral7b_official_nonh2o500",
+      "mistral7b_core_compositions500",
+      "mistral7b_core_h2o500",
+      "yi9b_official_nonh2o500",
+      "yi9b_core_compositions500",
+      "yi9b_core_h2o500"
+    ],
+    "original_results_quarantine": "results/quarantine/20260725_1759_decode_cap16_protocol_bias",
+    "original_logs_quarantine": "logs/quarantine/20260725_1759_decode_cap16_protocol_bias",
+    "admission_rule": "Only the clean 32-token replacement runs may enter final statistics. The original 16-token runs remain visible as protocol-invalid diagnostic evidence and must never be merged with replacement rows."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "D1a-full-drop100_qwen7b_streaming_40-recency",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl",
+  "dataset_sha256": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+  "methods": [
+    "full"
+  ],
+  "keep_ratios": [
+    0.4
+  ],
+  "seed": 20260726,
+  "dtype": "bf16",
+  "max_new_tokens": 32,
+  "command": "review_experiments/akv_run.py --experiment D1 --prereg PREREG-07 --runner current --task mixed --model Qwen/Qwen2.5-7B-Instruct --model-tag qwen7b --dataset data/mixed_evidence_attack/mixed_evidence_messages_all.jsonl --scorer streaming --keep-ratios 0.4 --variants full --tie-break recency --drop-rate 1.0 --out-dir /workspace/authoritykv/runs/_tmp/D1a-full-drop100_qwen7b_streaming_40-recency",
+  "source_hashes": {
+    "scripts/run_kvpress_authority.py": "2479b473a5a5d5d44268abe0ef546c6c862d57c2646ebd1266a30db96d3548f2",
+    "authoritykv_experiments/kvpress_authority.py": "a4af6dc84f9440a694decaab73e9ccedea1a46d58d7b1a0edd3146e9d62c8433",
+    "scripts/run_authoritykv_smoke.py": "8faa998ace07913fc0bd64bbd8e50519e352da9a4eb22f02ff6d798da98f1930"
+  },
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

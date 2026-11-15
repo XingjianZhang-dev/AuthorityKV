@@ -1,0 +1,75 @@
+{
+  "experiment": "X2",
+  "prereg": "PREREG-16",
+  "task": "mixed",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "model_tag": "mistral7b",
+  "scorer": "streaming",
+  "tie_break": "topk",
+  "variants": [
+    "base",
+    "full",
+    "e4det",
+    "e4clfdeberta",
+    "e4clfpg2"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "n_examples": 200,
+  "n_rows": 2000,
+  "elapsed_s": 4152.4,
+  "labels": {
+    "base": "none (official press)",
+    "full": "DETECTOR (annotated boundaries) [IH] / ORACLE+DETECTOR [mixed]",
+    "e4det": "DETECTOR (annotation-free, detector-v3 sentences in retrieved region)",
+    "e4clfdeberta": "DETECTOR (annotation-free, deberta-v3-base-prompt-injection-v2)",
+    "e4clfpg2": "DETECTOR (annotation-free, Llama-Prompt-Guard-2-86M; label index set by pre-registered probe; local config has no id2label)"
+  },
+  "classifiers": {
+    "deberta": {
+      "model": "protectai/deberta-v3-base-prompt-injection-v2",
+      "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "id2label_from_config": {
+        "0": "SAFE",
+        "1": "INJECTION"
+      },
+      "injection_index": 1,
+      "rule": "argmax == injection_index",
+      "max_length": 512,
+      "n_calls": 0,
+      "n_truncated": 0,
+      "label_note": "id2label {0: SAFE, 1: INJECTION} from local config (PREREG-05/06 amendment A)"
+    },
+    "pg2": {
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "id2label_from_config": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "injection_index": 1,
+      "rule": "argmax == injection_index",
+      "max_length": 512,
+      "n_calls": 0,
+      "n_truncated": 0,
+      "label_note": "label index set by pre-registered probe; local config has no id2label (PREREG-05/06 amendments B/C)"
+    }
+  },
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 0,
+    "paired_base_run": null,
+    "retained_checked": 0,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 17003.917
+}

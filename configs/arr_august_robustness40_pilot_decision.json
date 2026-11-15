@@ -1,0 +1,78 @@
+{
+  "decision_id": "arr_august_robustness40_pilot_decision_20260726v2",
+  "frozen_before_generation": true,
+  "parents": [
+    {
+      "path": "configs/arr_august_robustness_identifiability_amendment.json",
+      "sha256": "be55677a18a765686700d6fdf5c30e834d6ab2831f01a96468bbd6989db9ac2f"
+    },
+    {
+      "path": "configs/arr_august_detector_localization_fix.json",
+      "sha256": "f06f11628f3f662c3339b8b7f209c98334ceab6d9d46d3bcc14834e272461be1"
+    },
+    {
+      "path": "configs/arr_august_final_pilot_scaling_decision.json",
+      "sha256": "b55a8c383fe34e62eb6ded94ca24e9840734808515f17cebb2692849314ab7b0"
+    }
+  ],
+  "scope": {
+    "benchmark": "mixed_evidence_attack",
+    "dataset": "data/mixed_evidence_attack/mixed_evidence_messages_pilot.jsonl",
+    "dataset_sha256": "d9846581200fcd02a8414f43346dcec9b1bef3e72bc957914f39081ed9269628",
+    "source_pairs": 20,
+    "conditions_per_pair": 3,
+    "keep_ratio": 0.4,
+    "compressors": [
+      "knorm",
+      "streaming"
+    ]
+  },
+  "rationale": {
+    "keep_ratio": "The 40% cells are the shared positive operating point selected by the final corrected external pilot. The 20% cells remain reported overcompression boundaries and are not expanded for noise curves.",
+    "task_alignment": "The perturbations directly test the method assumptions used on the same useful-evidence-plus-attack task: low-authority provenance availability, provenance boundary accuracy, and detector coverage.",
+    "pilot_first": "Scale robustness cells only after checking execution invariants and whether the curves identify detector/provenance dependence."
+  },
+  "cells_per_compressor": {
+    "detector_only": {
+      "count": 1,
+      "method_template": "authority_{compressor}_detected"
+    },
+    "hybrid_provenance_drop": {
+      "count": 5,
+      "method_template": "authority_{compressor}_detected_provenance",
+      "drop_rates": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hybrid_boundary_shrink": {
+      "count": 3,
+      "method_template": "authority_{compressor}_detected_provenance",
+      "shrink_tokens_each_side": [
+        4,
+        8,
+        16
+      ]
+    }
+  },
+  "fixed_settings": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "seed": 20260726,
+    "dtype": "bf16",
+    "max_new_tokens": 32,
+    "span_source": "metadata",
+    "protected_budget_policy": "priority",
+    "scan_low_authority_chat": true
+  },
+  "acceptance": [
+    "Every run has 60 unique prediction cells and zero runtime errors.",
+    "Dataset and experiment-config SHA-256 values match.",
+    "No post-generation answer or attack label is exposed to generation.",
+    "Excluded-token retention is zero whenever the non-excluded tier can fill the budget.",
+    "Report flat, non-monotonic, and adverse curves without removal."
+  ]
+}

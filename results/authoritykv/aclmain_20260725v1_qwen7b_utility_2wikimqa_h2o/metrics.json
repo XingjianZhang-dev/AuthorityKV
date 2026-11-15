@@ -1,0 +1,114 @@
+{
+  "by_method": {
+    "authority_h2o_detected_provenance@0.20": {
+      "method": "authority_h2o_detected_provenance",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.32,
+      "utility_accuracy_num": 16,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.32,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.32799999999999996,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 16,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.32,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.32799999999999996,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "authority_h2o_detected_provenance@0.40": {
+      "method": "authority_h2o_detected_provenance",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.38,
+      "utility_accuracy_num": 19,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.24,
+      "exact_match_num": 12,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.38,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.3716190476190476,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 19,
+          "correct_den": 50,
+          "exact_num": 12,
+          "exact_den": 50,
+          "answer_match_fraction": 0.38,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.3716190476190476,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_h2o@0.20": {
+      "method": "kvpress_h2o",
+      "keep_ratio": 0.2,
+      "num_examples": 50,
+      "utility_accuracy": 0.32,
+      "utility_accuracy_num": 16,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.26,
+      "exact_match_num": 13,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.32,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.32799999999999996,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 16,
+          "correct_den": 50,
+          "exact_num": 13,
+          "exact_den": 50,
+          "answer_match_fraction": 0.32,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.32799999999999996,
+          "longbench_score_den": 50
+        }
+      }
+    },
+    "kvpress_h2o@0.40": {
+      "method": "kvpress_h2o",
+      "keep_ratio": 0.4,
+      "num_examples": 50,
+      "utility_accuracy": 0.38,
+      "utility_accuracy_num": 19,
+      "utility_accuracy_den": 50,
+      "exact_match": 0.24,
+      "exact_match_num": 12,
+      "exact_match_den": 50,
+      "answer_match_fraction": 0.38,
+      "answer_match_fraction_den": 50,
+      "longbench_score": 0.3716190476190476,
+      "longbench_score_den": 50,
+      "by_task": {
+        "2wikimqa": {
+          "correct_num": 19,
+          "correct_den": 50,
+          "exact_num": 12,
+          "exact_den": 50,
+          "answer_match_fraction": 0.38,
+          "answer_match_fraction_den": 50,
+          "longbench_score": 0.3716190476190476,
+          "longbench_score_den": 50
+        }
+      }
+    }
+  },
+  "errors": 0,
+  "num_rows": 200
+}

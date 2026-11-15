@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or IH-CacheBench, please cite the paper."
+title: "AuthorityKV: Preventing Authority Reversals in KV-Cache Compression"
+authors:
+  - family-names: Zhang
+    given-names: Xingjian
+    affiliation: Carnegie Mellon University
+    orcid: "https://orcid.org/0009-0009-9141-8819"
+repository-code: "https://github.com/XingjianZhang-dev/AuthorityKV"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "AuthorityKV: Preventing Authority Reversals in KV-Cache Compression"
+  authors:
+    - family-names: Zhang
+      given-names: Xingjian
+  collection-title: "Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics"
+  year: 2027
+  publisher:
+    name: Association for Computational Linguistics

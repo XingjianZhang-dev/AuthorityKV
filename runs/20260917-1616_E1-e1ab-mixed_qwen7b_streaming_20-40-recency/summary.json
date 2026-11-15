@@ -1,0 +1,40 @@
+{
+  "experiment": "E1",
+  "prereg": "PREREG-01",
+  "task": "mixed",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_tag": "qwen7b",
+  "scorer": "streaming",
+  "tie_break": "recency",
+  "variants": [
+    "e1a",
+    "e1b"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "n_examples": 200,
+  "n_rows": 800,
+  "elapsed_s": 800.5,
+  "labels": {
+    "e1a": "filter-then-compress (a) whole-source deletion + P pin",
+    "e1b": "filter-then-compress (b) same-span deletion + P pin"
+  },
+  "classifiers": {},
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 11200,
+    "paired_base_run": "arrmixed_20260726v4_qwen_streaming_full300",
+    "retained_checked": 0,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 15728.954
+}

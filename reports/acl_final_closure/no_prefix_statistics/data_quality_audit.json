@@ -1,0 +1,151 @@
+{
+  "status": "pass",
+  "run_prefix": "aclfollow_20260725v2_qwen7b_noprefix_fullkv120,aclfollow_20260725v2_qwen7b_noprefix_nonh2o120,aclfollow_20260725v2_qwen7b_noprefix_h2o120",
+  "run_directories": 3,
+  "complete_runs": 3,
+  "missing_artifacts": [],
+  "global_duplicate_keys": [],
+  "experiment_config_hashes": [
+    "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93"
+  ],
+  "source_hashes": [
+    "35b24cb35724341f36dfe1e0d666fa2a866b8e0f538ac83ecb411a6f7002dfa3"
+  ],
+  "protocol_amendment": null,
+  "protocol_amendment_sha256": null,
+  "allowed_source_sha256": [],
+  "protocol_failures": [],
+  "kvpress_commits": [
+    "6d965557a5b9f0201a2301b23c454473dd681d0d"
+  ],
+  "inconsistent_dataset_hashes": {},
+  "runs": [
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_qwen7b_noprefix_fullkv120",
+      "run_id": "aclfollow_20260725v2_qwen7b_noprefix_fullkv120",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "dataset": "data/ih_cachebench/natural_short_120.jsonl",
+      "methods": [
+        "fullkv"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "num_examples": 120,
+      "dataset_rows": 120,
+      "expected_examples": 120,
+      "expected_rows": 120,
+      "prediction_rows": 120,
+      "judged_rows": 120,
+      "duplicate_keys": 0,
+      "prediction_judgment_key_mismatch": false,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "judge_exit_code": 0,
+      "artifact_sha256": {
+        "run_config.json": "f0508766735d4b47707d67ee7faa774b27cdf87abf0a96867560ab9bc430d993",
+        "predictions.jsonl": "494919e587248adb639f0ec96656de6bbe6bb6aa6747b9c7f4deb4d65c8576c3",
+        "judged_predictions.jsonl": "1eb1c895d8bee0a8837b47f666c3304e46773688131687782187c93b2bdc8db2",
+        "metrics.json": "32d2f8ee6fb1ac302e8f10ab115bda18f50b83ccae57bd06c8f652b49d651902",
+        "runner_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "judge_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      },
+      "errors": 0,
+      "infeasible": 0,
+      "has_end_time": true,
+      "dataset_sha256": "b7b7ec2690f7f8800e0dfb4dfaff6345157b30eb290f08ee6d92e6aa55f0f0d6",
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "source_sha256": "35b24cb35724341f36dfe1e0d666fa2a866b8e0f538ac83ecb411a6f7002dfa3",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "protocol_failures": [],
+      "status": "pass"
+    },
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_qwen7b_noprefix_h2o120",
+      "run_id": "aclfollow_20260725v2_qwen7b_noprefix_h2o120",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "dataset": "data/ih_cachebench/natural_short_120.jsonl",
+      "methods": [
+        "kvpress_h2o",
+        "authority_h2o_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "num_examples": 120,
+      "dataset_rows": 120,
+      "expected_examples": 120,
+      "expected_rows": 480,
+      "prediction_rows": 480,
+      "judged_rows": 480,
+      "duplicate_keys": 0,
+      "prediction_judgment_key_mismatch": false,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "judge_exit_code": 0,
+      "artifact_sha256": {
+        "run_config.json": "78ca6e0ccd94428f9b8cfc4704bb687bdb9ab384e0c80c5123139c245df3fb1a",
+        "predictions.jsonl": "e38127a340d3313107eb55b380cb6abeca37ed6b35df41d013e8036fb1917d5b",
+        "judged_predictions.jsonl": "733c83bf586a96b5e233f8470e24ae03ab377ec39e58cc52de3b1ae4bd9da3c4",
+        "metrics.json": "59db0994fd28450c727008a0273927c43ca6157b78e2a8c694ef2fd147cec839",
+        "runner_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "judge_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      },
+      "errors": 0,
+      "infeasible": 0,
+      "has_end_time": true,
+      "dataset_sha256": "b7b7ec2690f7f8800e0dfb4dfaff6345157b30eb290f08ee6d92e6aa55f0f0d6",
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "source_sha256": "35b24cb35724341f36dfe1e0d666fa2a866b8e0f538ac83ecb411a6f7002dfa3",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "protocol_failures": [],
+      "status": "pass"
+    },
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_qwen7b_noprefix_nonh2o120",
+      "run_id": "aclfollow_20260725v2_qwen7b_noprefix_nonh2o120",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "dataset": "data/ih_cachebench/natural_short_120.jsonl",
+      "methods": [
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance",
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "num_examples": 120,
+      "dataset_rows": 120,
+      "expected_examples": 120,
+      "expected_rows": 960,
+      "prediction_rows": 960,
+      "judged_rows": 960,
+      "duplicate_keys": 0,
+      "prediction_judgment_key_mismatch": false,
+      "identity_mismatch": 0,
+      "runner_exit_code": 0,
+      "judge_exit_code": 0,
+      "artifact_sha256": {
+        "run_config.json": "f32b7431fae24d0d2f4d1d4ef62b49146d72106bd701983dcb66afeefa3754f8",
+        "predictions.jsonl": "9b378368c54c32b3e68491fc54790f484fd73ad18e48205130f48148355ebe33",
+        "judged_predictions.jsonl": "a2a10567dcdaf71efdcfa73dc9c9f89a45e341d8ff50dd9c4974e881cc806387",
+        "metrics.json": "0ae50fcda33c4fc6a5ad4c614583f0492a16e58e02d2cf5f1c1c74f69378f18f",
+        "runner_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "judge_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      },
+      "errors": 0,
+      "infeasible": 0,
+      "has_end_time": true,
+      "dataset_sha256": "b7b7ec2690f7f8800e0dfb4dfaff6345157b30eb290f08ee6d92e6aa55f0f0d6",
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "source_sha256": "35b24cb35724341f36dfe1e0d666fa2a866b8e0f538ac83ecb411a6f7002dfa3",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "protocol_failures": [],
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+
+# raw records restored from raw_outputs/
+runs/*/predictions.jsonl
+runs/*/judged_predictions.jsonl
+runs/*/scored_judgments.jsonl
+results/authoritykv/*/predictions.jsonl
+results/authoritykv/*/judged_predictions.jsonl
+
+# outputs of the verification and figure tools
+results/_verify_facts_report.json
+paper/figures/*.png
+*.aux
+*.log

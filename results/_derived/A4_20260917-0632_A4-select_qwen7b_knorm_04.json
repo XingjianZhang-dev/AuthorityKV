@@ -1,0 +1,125 @@
+{
+  "source_run": "20260917-0632_A4-select_qwen7b_knorm_04",
+  "aggregate_gated": {
+    "0.4|clean|base|topk": {
+      "system": 0.894,
+      "question": 0.383,
+      "answer_sentence": 0.355,
+      "other_evidence": 0.394,
+      "injection": 0.502,
+      "template": 0.81
+    },
+    "0.4|clean|full|topk": {
+      "system": 1.0,
+      "question": 0.392,
+      "answer_sentence": 0.362,
+      "other_evidence": 0.401,
+      "injection": 0.0,
+      "template": 0.813
+    },
+    "0.4|clean|detector_only|topk": {
+      "system": 1.0,
+      "question": 0.383,
+      "answer_sentence": 0.354,
+      "other_evidence": 0.393,
+      "injection": 0.502,
+      "template": 0.81
+    },
+    "0.4|clean|full|recency": {
+      "system": 1.0,
+      "question": 0.465,
+      "answer_sentence": 0.409,
+      "other_evidence": 0.399,
+      "injection": 0.0,
+      "template": 0.764
+    },
+    "0.4|clean|detector_only|recency": {
+      "system": 1.0,
+      "question": 0.457,
+      "answer_sentence": 0.4,
+      "other_evidence": 0.391,
+      "injection": 0.573,
+      "template": 0.76
+    },
+    "0.4|explicit_attack|base|topk": {
+      "system": 0.894,
+      "question": 0.39,
+      "answer_sentence": 0.354,
+      "other_evidence": 0.393,
+      "injection": 0.51,
+      "template": 0.809
+    },
+    "0.4|explicit_attack|full|topk": {
+      "system": 1.0,
+      "question": 0.398,
+      "answer_sentence": 0.362,
+      "other_evidence": 0.4,
+      "injection": 0.0,
+      "template": 0.812
+    },
+    "0.4|explicit_attack|detector_only|topk": {
+      "system": 1.0,
+      "question": 0.393,
+      "answer_sentence": 0.357,
+      "other_evidence": 0.396,
+      "injection": 0.323,
+      "template": 0.81
+    },
+    "0.4|explicit_attack|full|recency": {
+      "system": 1.0,
+      "question": 0.472,
+      "answer_sentence": 0.409,
+      "other_evidence": 0.399,
+      "injection": 0.0,
+      "template": 0.763
+    },
+    "0.4|explicit_attack|detector_only|recency": {
+      "system": 1.0,
+      "question": 0.467,
+      "answer_sentence": 0.403,
+      "other_evidence": 0.394,
+      "injection": 0.369,
+      "template": 0.76
+    },
+    "0.4|paraphrase_attack|base|topk": {
+      "system": 0.894,
+      "question": 0.383,
+      "answer_sentence": 0.355,
+      "other_evidence": 0.394,
+      "injection": 0.489,
+      "template": 0.81
+    },
+    "0.4|paraphrase_attack|full|topk": {
+      "system": 1.0,
+      "question": 0.392,
+      "answer_sentence": 0.362,
+      "other_evidence": 0.401,
+      "injection": 0.0,
+      "template": 0.813
+    },
+    "0.4|paraphrase_attack|detector_only|topk": {
+      "system": 1.0,
+      "question": 0.383,
+      "answer_sentence": 0.354,
+      "other_evidence": 0.393,
+      "injection": 0.489,
+      "template": 0.81
+    },
+    "0.4|paraphrase_attack|full|recency": {
+      "system": 1.0,
+      "question": 0.466,
+      "answer_sentence": 0.409,
+      "other_evidence": 0.4,
+      "injection": 0.0,
+      "template": 0.764
+    },
+    "0.4|paraphrase_attack|detector_only|recency": {
+      "system": 1.0,
+      "question": 0.457,
+      "answer_sentence": 0.4,
+      "other_evidence": 0.391,
+      "injection": 0.56,
+      "template": 0.76
+    }
+  }
+}

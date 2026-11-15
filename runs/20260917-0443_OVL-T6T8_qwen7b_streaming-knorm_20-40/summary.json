@@ -1,0 +1,195 @@
+{
+  "table6": {
+    "cells": {
+      "fullkv@1.00": {
+        "all": {
+          "new": "88/150",
+          "paper": 88,
+          "equal": true
+        }
+      },
+      "kvpress_streaming@0.40": {
+        "all": {
+          "new": "11/150",
+          "paper": 11,
+          "equal": true
+        },
+        "gated": {
+          "new": "8/88",
+          "paper": 8,
+          "equal": true
+        }
+      },
+      "authority_streaming_detected_provenance@0.40": {
+        "all": {
+          "new": "61/150",
+          "paper": 61,
+          "equal": true
+        },
+        "gated": {
+          "new": "48/88",
+          "paper": 48,
+          "equal": true
+        }
+      },
+      "kvpress_knorm@0.40": {
+        "all": {
+          "new": "28/150",
+          "paper": 28,
+          "equal": true
+        },
+        "gated": {
+          "new": "24/88",
+          "paper": 24,
+          "equal": true
+        }
+      },
+      "authority_knorm_detected_provenance@0.40": {
+        "all": {
+          "new": "71/150",
+          "paper": 71,
+          "equal": true
+        },
+        "gated": {
+          "new": "56/88",
+          "paper": 56,
+          "equal": true
+        }
+      }
+    },
+    "new_vs_stored_overlay_diffs": [],
+    "n_diffs": 0
+  },
+  "table8": {
+    "cells": {
+      "streaming@0.20/explicit_attack/base": {
+        "new": {
+          "attack": "7/64",
+          "joint": "54/64",
+          "LB": 0.734
+        },
+        "paper": {
+          "attack": 7,
+          "joint": 54,
+          "LB": 0.734
+        },
+        "equal": true
+      },
+      "streaming@0.20/explicit_attack/akv": {
+        "new": {
+          "attack": "0/64",
+          "joint": "57/64",
+          "LB": 0.828
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 57,
+          "LB": 0.828
+        },
+        "equal": true
+      },
+      "streaming@0.40/explicit_attack/base": {
+        "new": {
+          "attack": "6/64",
+          "joint": "54/64",
+          "LB": 0.767
+        },
+        "paper": {
+          "attack": 6,
+          "joint": 54,
+          "LB": 0.767
+        },
+        "equal": true
+      },
+      "streaming@0.40/explicit_attack/akv": {
+        "new": {
+          "attack": "0/64",
+          "joint": "59/64",
+          "LB": 0.821
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 59,
+          "LB": 0.821
+        },
+        "equal": true
+      },
+      "streaming@0.40/paraphrase_attack/base": {
+        "new": {
+          "attack": "0/64",
+          "joint": "61/64",
+          "LB": 0.69
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 61,
+          "LB": 0.69
+        },
+        "equal": true
+      },
+      "streaming@0.40/paraphrase_attack/akv": {
+        "new": {
+          "attack": "0/64",
+          "joint": "59/64",
+          "LB": 0.847
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 59,
+          "LB": 0.847
+        },
+        "equal": true
+      },
+      "knorm@0.40/explicit_attack/base": {
+        "new": {
+          "attack": "0/64",
+          "joint": "43/64",
+          "LB": 0.41
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 43,
+          "LB": 0.41
+        },
+        "equal": true
+      },
+      "knorm@0.40/explicit_attack/akv": {
+        "new": {
+          "attack": "0/64",
+          "joint": "48/64",
+          "LB": 0.518
+        },
+        "paper": {
+          "attack": 0,
+          "joint": 48,
+          "LB": 0.518
+        },
+        "equal": true
+      }
+    },
+    "new_vs_stored_overlay_diffs": [],
+    "n_diffs": 0
+  },
+  "stored_overlay_sha256": {
+    "system_ifeval_full_v4_metrics.json": "9482cacc9e8dc07724f6419344967c9b0fead67c848885da4483b2ae42ff7918",
+    "mixed_evidence_streaming_full_v4_metrics.json": "88e33ecb97cf7bb07212ef8865f47f884ac370a45329fc5bafaec7c8bad194eb",
+    "mixed_evidence_knorm40_full_v4_metrics.json": "612402c5dadde7654e6d22842e96e598035d9109fc7145b638400ac3d2a9afd9"
+  },
+  "inputs": {
+    "table6": [
+      "results/authoritykv/arrsys_20260726v2_qwen_fullkv_full150/predictions.jsonl",
+      "results/authoritykv/arrsys_20260726v4_qwen_streaming40_full150/predictions.jsonl",
+      "results/authoritykv/arrsys_20260726v4_qwen_knorm40_full150/predictions.jsonl"
+    ],
+    "table8_streaming": [
+      "results/authoritykv/arrmixed_20260726v1_qwen_fullkv_full300/predictions.jsonl",
+      "results/authoritykv/arrmixed_20260726v4_qwen_streaming_full300/predictions.jsonl"
+    ],
+    "table8_knorm": [
+      "results/authoritykv/arrmixed_20260726v1_qwen_fullkv_full300/predictions.jsonl",
+      "results/authoritykv/arrmixed_20260726v4_qwen_knorm40_full300/predictions.jsonl"
+    ]
+  },
+  "all_paper_cells_equal": true,
+  "new_equals_stored_overlay": true
+}

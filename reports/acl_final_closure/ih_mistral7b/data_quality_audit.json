@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "run_prefix": "aclfollow_20260725v2_mistral7b_ih_",
+  "run_directories": 2,
+  "complete_runs": 2,
+  "global_duplicate_keys": [],
+  "missing_fullkv_filters": [],
+  "experiment_config_hashes": [
+    "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93"
+  ],
+  "source_hashes": [
+    "d2eb26b080c82d5cef19500b5141b7e67bcef35f15d419ce8eea020340e0d2c5"
+  ],
+  "kvpress_commits": [
+    "6d965557a5b9f0201a2301b23c454473dd681d0d"
+  ],
+  "inconsistent_dataset_hashes": {},
+  "runs": [
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_mistral7b_ih_native_fullkv40",
+      "run_id": "aclfollow_20260725v2_mistral7b_ih_native_fullkv40",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "dataset": "data/external_safety/ih_challenge_blue_team_auto_quoted_system_40.jsonl",
+      "configured_examples": 40,
+      "expected_rows": 40,
+      "prediction_rows": 40,
+      "runtime_errors": 0,
+      "grader_errors": 0,
+      "identity_mismatch": 0,
+      "role_compatibility_modes": [
+        "native_roles"
+      ],
+      "native_primary_role_mismatch": false,
+      "runner_exit_code": 0,
+      "infeasible": 0,
+      "source_sha256": "d2eb26b080c82d5cef19500b5141b7e67bcef35f15d419ce8eea020340e0d2c5",
+      "dataset_sha256": "313e1480bc3143d36a50b0491222dc1cd6494c8f334e5b2616e390a1152ccfc9",
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "has_end_time": true,
+      "status": "pass"
+    },
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_mistral7b_ih_source_compat_fullkv40",
+      "run_id": "aclfollow_20260725v2_mistral7b_ih_source_compat_fullkv40",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "dataset": "data/external_safety/ih_challenge_blue_team_auto_quoted_40.jsonl",
+      "configured_examples": 40,
+      "expected_rows": 40,
+      "prediction_rows": 40,
+      "runtime_errors": 0,
+      "grader_errors": 0,
+      "identity_mismatch": 0,
+      "role_compatibility_modes": [
+        "control_roles_serialized_in_system_channel_after_native_template_error"
+      ],
+      "native_primary_role_mismatch": false,
+      "runner_exit_code": 0,
+      "infeasible": 0,
+      "source_sha256": "d2eb26b080c82d5cef19500b5141b7e67bcef35f15d419ce8eea020340e0d2c5",
+      "dataset_sha256": "68f5b329af44e554410d7e5e658ed5e9c39e42cf55f21d149e40e44be83b2e84",
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "has_end_time": true,
+      "status": "pass"
+    }
+  ]
+}

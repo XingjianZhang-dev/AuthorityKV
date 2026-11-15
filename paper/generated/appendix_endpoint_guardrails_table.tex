@@ -1,0 +1,36 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{lllrrrrrr}
+\toprule
+& & & \multicolumn{3}{c}{Official base} & \multicolumn{3}{c}{+\method{}} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Model & Scorer & KV & Benign & Malformed & Strict JSON & Benign & Malformed & Strict JSON \\
+\midrule
+Qwen2.5-7B & H2O & 20\% & 97/100 & 4/500 & 496/500 & 100/100 & 0/500 & 500/500 \\
+Qwen2.5-7B & H2O & 40\% & 2/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Qwen2.5-7B & Knorm & 20\% & 94/100 & 0/500 & 497/500 & 100/100 & 0/500 & 500/500 \\
+Qwen2.5-7B & Knorm & 40\% & 100/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Qwen2.5-7B & StreamingLLM & 20\% & 15/100 & 285/500 & 202/500 & 100/100 & 0/500 & 500/500 \\
+Qwen2.5-7B & StreamingLLM & 40\% & 11/100 & 89/500 & 401/500 & 100/100 & 0/500 & 500/500 \\
+\midrule
+Mistral-7B-v0.3 & H2O & 20\% & 51/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Mistral-7B-v0.3 & H2O & 40\% & 99/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Mistral-7B-v0.3 & Knorm & 20\% & 55/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Mistral-7B-v0.3 & Knorm & 40\% & 100/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Mistral-7B-v0.3 & StreamingLLM & 20\% & 12/100 & 288/500 & 212/500 & 100/100 & 0/500 & 500/500 \\
+Mistral-7B-v0.3 & StreamingLLM & 40\% & 14/100 & 87/500 & 413/500 & 100/100 & 0/500 & 500/500 \\
+\midrule
+Yi-1.5-9B & H2O & 20\% & 96/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Yi-1.5-9B & H2O & 40\% & 100/100 & 5/500 & 495/500 & 100/100 & 0/500 & 500/500 \\
+Yi-1.5-9B & Knorm & 20\% & 100/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Yi-1.5-9B & Knorm & 40\% & 100/100 & 0/500 & 500/500 & 100/100 & 0/500 & 500/500 \\
+Yi-1.5-9B & StreamingLLM & 20\% & 13/100 & 286/500 & 214/500 & 100/100 & 0/500 & 500/500 \\
+Yi-1.5-9B & StreamingLLM & 40\% & 27/100 & 73/500 & 427/500 & 100/100 & 0/500 & 500/500 \\
+\bottomrule
+\end{tabular}
+\caption{Benign and output-format guardrails for every primary signal-family row. ``Malformed'' is the semantic endpoint over all 500 examples; strict JSON is descriptive surface compliance. AuthorityKV improves or matches these endpoints in the stated non-inferiority family.}
+\label{tab:endpoint-guardrails}
+\end{table*}

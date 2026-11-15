@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "run_prefix": "aclfollow_20260725v2_qwen7b_systems_",
+  "run_directories": 2,
+  "complete_runs": 2,
+  "global_duplicate_keys": [],
+  "experiment_config_hashes": [
+    "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93"
+  ],
+  "source_hashes": [
+    "848adfebc52a67b3c6eaaecbda3a168e64834a48e815bab6a2ca88a3a457681a"
+  ],
+  "kvpress_commits": [
+    "6d965557a5b9f0201a2301b23c454473dd681d0d"
+  ],
+  "runs": [
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_qwen7b_systems_h2o30",
+      "run_id": "aclfollow_20260725v2_qwen7b_systems_h2o30",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "dataset": "data/ih_cachebench/natural_short_stratified_30.jsonl",
+      "attn_implementation": "eager",
+      "methods": [
+        "fullkv",
+        "kvpress_h2o",
+        "authority_h2o_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "repeats": 3,
+      "expected_rows": 450,
+      "observed_rows": 450,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runtime_errors": 0,
+      "infeasible": 0,
+      "runner_exit_code": 0,
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "source_sha256": "848adfebc52a67b3c6eaaecbda3a168e64834a48e815bab6a2ca88a3a457681a",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "ac4c75e1f18b27e0acb524a95bc3be0ce44848746a3df749bdc4e4b21600fbdb",
+      "status": "pass"
+    },
+    {
+      "run_dir": "results/authoritykv/aclfollow_20260725v2_qwen7b_systems_nonh2o30",
+      "run_id": "aclfollow_20260725v2_qwen7b_systems_nonh2o30",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "dataset": "data/ih_cachebench/natural_short_stratified_30.jsonl",
+      "attn_implementation": null,
+      "methods": [
+        "fullkv",
+        "kvpress_streaming",
+        "authority_streaming_detected_provenance",
+        "kvpress_knorm",
+        "authority_knorm_detected_provenance"
+      ],
+      "keep_ratios": [
+        0.2,
+        0.4
+      ],
+      "repeats": 3,
+      "expected_rows": 810,
+      "observed_rows": 810,
+      "duplicate_keys": 0,
+      "identity_mismatch": 0,
+      "runtime_errors": 0,
+      "infeasible": 0,
+      "runner_exit_code": 0,
+      "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+      "source_sha256": "848adfebc52a67b3c6eaaecbda3a168e64834a48e815bab6a2ca88a3a457681a",
+      "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+      "dataset_sha256": "ac4c75e1f18b27e0acb524a95bc3be0ce44848746a3df749bdc4e4b21600fbdb",
+      "status": "pass"
+    }
+  ]
+}

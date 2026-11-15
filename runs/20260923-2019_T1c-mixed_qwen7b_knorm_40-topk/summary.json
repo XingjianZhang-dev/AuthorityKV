@@ -1,0 +1,39 @@
+{
+  "experiment": "T1",
+  "prereg": "PREREG-25",
+  "task": "mixed",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_tag": "qwen7b",
+  "scorer": "knorm",
+  "tie_break": "topk",
+  "variants": [
+    "detected",
+    "pin"
+  ],
+  "keep_ratios": [
+    0.4
+  ],
+  "n_examples": 300,
+  "n_rows": 600,
+  "elapsed_s": 1979.4,
+  "labels": {
+    "detected": "DETECTOR (annotated boundaries)",
+    "pin": "P-only"
+  },
+  "classifiers": {},
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 0,
+    "paired_base_run": "arrmixed_20260726v4_qwen_knorm40_full300",
+    "retained_checked": 600,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 15737.661
+}

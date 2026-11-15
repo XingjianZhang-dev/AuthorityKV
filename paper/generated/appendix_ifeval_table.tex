@@ -1,0 +1,21 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.2pt}
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{All 150 prompts} & \multicolumn{2}{c}{88 FullKV-strict prompts} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Method & Prompt strict & Instruction strict & Prompt strict & Instruction strict \\
+\midrule
+FullKV & 88/150 & 170/242 & 88/88 & 116/116 \\
+Streaming & 11/150 & 41/242 & 8/88 & 16/116 \\
+Streaming+AKV & 61/150 & 141/242 & 48/88 & 75/116 \\
+Knorm & 28/150 & 75/242 & 24/88 & 40/116 \\
+Knorm+AKV & 71/150 & 144/242 & 56/88 & 81/116 \\
+\bottomrule
+\end{tabular}
+\caption{Complete System-IFEval strict results under the official grader (\(\mathrm{R}_{\uparrow}\) rule). The capability-gated columns isolate compression-induced changes; all-prompt columns preserve the unconditional denominator.}
+\label{tab:ifeval-full}
+\end{table*}

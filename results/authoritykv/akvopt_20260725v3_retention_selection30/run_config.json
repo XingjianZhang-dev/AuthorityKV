@@ -1,0 +1,42 @@
+{
+  "assistant_prefix": "{\"decision\":\"",
+  "command": "scripts/run_retention_diagnostic.py --run-id akvopt_20260725v3_retention_selection30 --model Qwen/Qwen2.5-7B-Instruct --dataset data/ih_cachebench/natural_short_stratified_30.jsonl --methods kvpress_snapkv,kvpress_tova,kvpress_pyramid --keep-ratios 0.2,0.4 --limit 30 --max-new-tokens 16 --assistant-prefix '{\"decision\":\"' --stop-after-json-object --experiment-config configs/acl_main_outcome_informed_followup.json --out-dir results/authoritykv/akvopt_20260725v3_retention_selection30",
+  "dataset": "data/ih_cachebench/natural_short_stratified_30.jsonl",
+  "dataset_sha256": "ac4c75e1f18b27e0acb524a95bc3be0ce44848746a3df749bdc4e4b21600fbdb",
+  "dtype": "bf16",
+  "end_time": "2026-07-26T04:15:15+00:00",
+  "experiment_config": "/workspace/authoritykv/configs/acl_main_outcome_informed_followup.json",
+  "experiment_config_sha256": "5fb1ad99a9473ddb7ba00e5aa7d64c0ffe688842373d46458415f0663e89da5e",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "instrumentation_equivalence": "Delegate official score computation and reproduce the upstream top-k/layer-budget gather exactly; log masks after selection.",
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "kvpress_version": "not_exposed",
+  "limit": 30,
+  "max_new_tokens": 16,
+  "methods": [
+    "kvpress_snapkv",
+    "kvpress_tova",
+    "kvpress_pyramid"
+  ],
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "num_hidden_layers": 28,
+  "prefill_protocol": "one_shot_official_kvpress_instrumented",
+  "run_id": "akvopt_20260725v3_retention_selection30",
+  "source_hashes": {
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199",
+    "authoritykv_experiments/retention_audit_press.py": "817db8a1fecbbb5eaf544d67d2f82c9b59f2af14d97c8236992d809c0cafbd7c",
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "scripts/run_retention_diagnostic.py": "828ea0c29d0b562b6cb3c8a08ed0dcdeb9117d488a2ca0eaff9ee1cbae808a10"
+  },
+  "start_time": "2026-07-26T04:14:04+00:00",
+  "stop_after_json_object": true,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0"
+}

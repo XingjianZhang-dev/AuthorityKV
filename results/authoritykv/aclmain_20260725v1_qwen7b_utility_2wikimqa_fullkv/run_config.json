@@ -1,0 +1,49 @@
+{
+  "run_id": "aclmain_20260725v1_qwen7b_utility_2wikimqa_fullkv",
+  "start_time": "2026-07-25T23:23:23+00:00",
+  "command": "scripts/run_kvpress_external_utility.py --run-id aclmain_20260725v1_qwen7b_utility_2wikimqa_fullkv --model Qwen/Qwen2.5-7B-Instruct --dataset data/external_utility/longbench_official_2wikimqa_50.jsonl --methods fullkv --keep-ratios 0.2,0.4 --max-new-tokens 64 --dtype bf16 --use-chat-template --out-dir results/authoritykv/aclmain_20260725v1_qwen7b_utility_2wikimqa_fullkv",
+  "source_sha256": "b79f92cabcb0bda3a84090798ec703a91c4e1d6abf0a682070c1793333f5dd75",
+  "source_hashes": {
+    "scripts/run_kvpress_external_utility.py": "621c7b744278bf50cf04b56a6f84a0ac4f6cbe2657e970d8f76833520221259e",
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "scripts/run_external_utility_kv.py": "99e8ac345d74108c28244e3458f6046b23135af3dad8375e1f623e515cb83d40",
+    "scripts/run_acl_main_gpu_queue.sh": "c068673a4e34c7378330984558381f93c991ef17c337e247f589f52951027b41",
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199"
+  },
+  "experiment_config": "/workspace/authoritykv/configs/acl_main_experiment_matrix.json",
+  "experiment_config_sha256": "3bc79dc97453ada1578d6331d00b5298c8257bdf81e632f72c529eb828e850ed",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_max_position_embeddings": 32768,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "dataset": "data/external_utility/longbench_official_2wikimqa_50.jsonl",
+  "dataset_sha256": "82a820f2a16438b4198e0a58fb654aaabe955b6862ad39dc51cb33b89754c763",
+  "dataset_rows": 50,
+  "methods": [
+    "fullkv"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "max_new_tokens": 64,
+  "seed": 20260530,
+  "dtype": "bf16",
+  "attn_implementation": null,
+  "use_chat_template": true,
+  "authority_spans": "none_by_design_on_external_utility",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_capability": [
+    8,
+    0
+  ],
+  "cuda_runtime": "13.0",
+  "cudnn_version": 91900,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "kvpress_version": "not_exposed",
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "end_time": "2026-07-25T23:24:16+00:00"
+}

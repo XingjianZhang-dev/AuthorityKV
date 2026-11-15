@@ -1,0 +1,36 @@
+% Generated from released result records.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{lllrrrrrr}
+\toprule
+Model & Scorer & KV & \multicolumn{3}{c}{Official base} & \multicolumn{3}{c}{+\method{}} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+& & & Hier. & Rev. & Benign & Hier. & Rev. & Benign \\
+\midrule
+Qwen2.5-7B & H2O & 20\% & 199/400 & 118/400 & 97/100 & 400/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & H2O & 40\% & 280/400 & 120/400 & 2/100 & 400/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & Knorm & 20\% & 297/400 & 80/400 & 94/100 & 400/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & Knorm & 40\% & 361/400 & 39/400 & 100/100 & 400/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & StreamingLLM & 20\% & 0/400 & 200/400 & 15/100 & 400/400 & 0/400 & 100/100 \\
+Qwen2.5-7B & StreamingLLM & 40\% & 39/400 & 361/400 & 11/100 & 400/400 & 0/400 & 100/100 \\
+\midrule
+Mistral-7B-v0.3 & H2O & 20\% & 398/400 & 0/400 & 51/100 & 400/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & H2O & 40\% & 400/400 & 0/400 & 99/100 & 400/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & Knorm & 20\% & 400/400 & 0/400 & 55/100 & 400/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & Knorm & 40\% & 400/400 & 0/400 & 100/100 & 400/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & StreamingLLM & 20\% & 13/400 & 183/400 & 12/100 & 400/400 & 0/400 & 100/100 \\
+Mistral-7B-v0.3 & StreamingLLM & 40\% & 27/400 & 372/400 & 14/100 & 400/400 & 0/400 & 100/100 \\
+\midrule
+Yi-1.5-9B & H2O & 20\% & 355/400 & 15/400 & 96/100 & 400/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & H2O & 40\% & 333/400 & 6/400 & 100/100 & 400/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & Knorm & 20\% & 335/400 & 1/400 & 100/100 & 400/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & Knorm & 40\% & 397/400 & 3/400 & 100/100 & 400/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & StreamingLLM & 20\% & 15/400 & 185/400 & 13/100 & 400/400 & 0/400 & 100/100 \\
+Yi-1.5-9B & StreamingLLM & 40\% & 15/400 & 372/400 & 27/100 & 400/400 & 0/400 & 100/100 \\
+\bottomrule
+\end{tabular}
+\caption{Complete model-stratified reconstruction of Table~\ref{tab:ladder}. ``Rev.'' is explicit lower-authority selection; other wrong outputs remain visible in the hierarchy column.}
+\label{tab:appendix-crossmodel}
+\end{table*}

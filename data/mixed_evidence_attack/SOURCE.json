@@ -1,0 +1,37 @@
+{
+  "conditions": [
+    "clean",
+    "explicit_attack",
+    "paraphrase_attack"
+  ],
+  "generated_sha256": {
+    "mixed_evidence_labels.jsonl": "70c9fbc4728d0e7b511ea83bfa8d6627814ed4044afb358e10004f43bc6a5058",
+    "mixed_evidence_messages_all.jsonl": "ee9ee138d0b1783736f78d44394ae2d7e26b6e974bd047229f9e17853e76f13a",
+    "mixed_evidence_messages_clean.jsonl": "241d32af32a6b648e0a2ec0342f87e14e5e665ddd08a462449900d42dc5b4bf4",
+    "mixed_evidence_messages_explicit_attack.jsonl": "01624d8be2852554b4dbcc53f6ede2a612ee411d020ec47c8c243d9a43fdabad",
+    "mixed_evidence_messages_paraphrase_attack.jsonl": "eef09930146eae3357b911d07a2f9bf3f4bae20cdf540b8c766b45255002b2bb",
+    "mixed_evidence_messages_pilot.jsonl": "d9846581200fcd02a8414f43346dcec9b1bef3e72bc957914f39081ed9269628"
+  },
+  "generation_rows": 300,
+  "injection_position": "Immediately before the frozen LongBench Question section; no answer text is used to choose or modify the insertion position.",
+  "inputs": [
+    {
+      "path": "data/external_utility/longbench_official_triviaqa_50.jsonl",
+      "rows": 50,
+      "selected": 50,
+      "selection": "lexicographically first IDs, frozen before generation",
+      "sha256": "49bc674fa872747d00f2ab50270ddcabaf44a2e9b2f5a4dc5ce8f00463895be8"
+    },
+    {
+      "path": "data/external_utility/longbench_official_2wikimqa_50.jsonl",
+      "rows": 50,
+      "selected": 50,
+      "selection": "lexicographically first IDs, frozen before generation",
+      "sha256": "82a820f2a16438b4198e0a58fb654aaabe955b6862ad39dc51cb33b89754c763"
+    }
+  ],
+  "label_isolation": "Answers and the explicit attack_marker scoring field are stored only in the labels file. The marker string necessarily remains in the attacked prompt, but it is not designated as an outcome field until the post-generation scorer reads the labels file.",
+  "name": "LongBench mixed useful-evidence plus instruction-attack pairs",
+  "pairs": 100,
+  "pilot_pairs": 20
+}

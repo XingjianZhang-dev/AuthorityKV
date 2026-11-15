@@ -1,0 +1,48 @@
+{
+  "run_id": "aclfollow_20260725v2_qwen7b_systems_h2o30",
+  "start_time": "2026-07-26T03:18:51+00:00",
+  "command": "scripts/run_kvpress_systems_benchmark.py --run-id aclfollow_20260725v2_qwen7b_systems_h2o30 --model Qwen/Qwen2.5-7B-Instruct --dataset data/ih_cachebench/natural_short_stratified_30.jsonl --methods fullkv,kvpress_h2o,authority_h2o_detected_provenance --keep-ratios 0.2,0.4 --repeats 3 --warmup-per-setting 1 --max-new-tokens 16 --dtype bf16 --assistant-prefix '{\"decision\":\"' --stop-after-json-object --experiment-config configs/acl_main_followup_matrix.json --out-dir results/authoritykv/aclfollow_20260725v2_qwen7b_systems_h2o30",
+  "source_sha256": "848adfebc52a67b3c6eaaecbda3a168e64834a48e815bab6a2ca88a3a457681a",
+  "source_hashes": {
+    "scripts/run_kvpress_systems_benchmark.py": "296896ba22a99edaba1b55d6f441df6389dc666c6a2cc4c3929b92b453ff4db7",
+    "scripts/run_kvpress_authority.py": "314d59271712b001e460d6e364207272dfe3600015a59fbef9daf4915790ef0c",
+    "scripts/run_authoritykv_smoke.py": "391aec0542936007810f28c4902a7c496c814c1a2cdd9299bfee9b4f02e20dc3",
+    "scripts/judge_authoritykv.py": "dbbcfe0e68e4a71ce5850dcb304c053d9c445d86b671b18e7f9425f2aa3b15fe",
+    "scripts/run_acl_main_followup_gpu_queue.sh": "6aab83c1d53137500df868ade7dfc68968290396048e8993c440cf51e5fca2de",
+    "authoritykv_experiments/kvpress_authority.py": "870995d2cc792d597fc9130477bde4fb7ff8f619e278d3807d4a3c4b83401199"
+  },
+  "experiment_config_sha256": "38dfafef04a36d40cde1667ce9757437280b6eff03041d306f8fd46a3c0fdc93",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "model_commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "dataset": "data/ih_cachebench/natural_short_stratified_30.jsonl",
+  "dataset_sha256": "ac4c75e1f18b27e0acb524a95bc3be0ce44848746a3df749bdc4e4b21600fbdb",
+  "dataset_rows": 30,
+  "methods": [
+    "fullkv",
+    "kvpress_h2o",
+    "authority_h2o_detected_provenance"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "repeats": 3,
+  "warmup_per_setting": 1,
+  "order_protocol": "deterministic independent shuffle per repeat and example",
+  "seed": 20260530,
+  "max_new_tokens": 16,
+  "assistant_prefix": "{\"decision\":\"",
+  "stop_after_json_object": true,
+  "dtype": "bf16",
+  "attn_implementation": "eager",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "cuda_runtime": "13.0",
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.2.0",
+  "kvpress_version": "not_exposed",
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "end_time": "2026-07-26T03:23:19+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "D2",
+  "prereg": "PREREG-24",
+  "task": "sys",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_tag": "qwen7b",
+  "scorer": "knorm",
+  "tie_break": "random",
+  "variants": [
+    "base_pd_empty",
+    "full"
+  ],
+  "keep_ratios": [
+    0.4
+  ],
+  "n_examples": 150,
+  "n_rows": 300,
+  "elapsed_s": 5623.6,
+  "labels": {
+    "base_pd_empty": "none (official press via AuthorityKV with P = D = ∅; D2 base)",
+    "full": "DETECTOR (annotated boundaries) [IH] / ORACLE+DETECTOR [mixed]"
+  },
+  "classifiers": {},
+  "validation": {
+    "row_count_ok": true,
+    "ids_ok": true,
+    "empty_outputs": 0,
+    "runtime_errors": 0,
+    "infeasible": 0,
+    "uncompressed_layers_e1": 0,
+    "paired_base_run": "arrsys_20260726v4_qwen_knorm40_full150",
+    "retained_checked": 300,
+    "retained_mismatch": 0,
+    "retained_ok": true,
+    "config_complete": true
+  },
+  "valid": true,
+  "peak_memory_mb": 14621.871
+}

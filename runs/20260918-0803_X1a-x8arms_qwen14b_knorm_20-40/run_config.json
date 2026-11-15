@@ -1,0 +1,21 @@
+{
+  "run_id": "X1a-x8arms_qwen14b_knorm_20-40",
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "model_commit": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "dataset": "data/external_safety/ih_challenge_blue_team_auto_quoted_system_40.jsonl",
+  "methods": [
+    "rpstrict",
+    "e3bclfpg2",
+    "e3bclfdeberta",
+    "detv3mb"
+  ],
+  "keep_ratios": [
+    0.2,
+    0.4
+  ],
+  "seed": 20260530,
+  "dtype": "bf16",
+  "max_new_tokens": 16,
+  "command": "review_experiments/x8_run.py --model Qwen/Qwen2.5-14B-Instruct --model-tag qwen14b --experiment X1a-ext --scorer knorm --keep-ratios 0.2,0.4 --variants rpstrict,e3bclfpg2,e3bclfdeberta,detv3mb --tie-break topk --gate-run auto --out-dir /workspace/authoritykv/runs/_tmp/X1a-x8arms_qwen14b_knorm_20-40",
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d"
+}

@@ -1,0 +1,51 @@
+{
+  "amendment_id": "arr_august_detector_signal_isolation_fix_20260727v1",
+  "frozen_before_corrected_detector_only_generation": true,
+  "parents": [
+    {
+      "path": "configs/arr_august_streaming_robustness_full_scaling_decision.json",
+      "sha256": "d1c7b77343213a0f2d627717524aff4a36a0730bb48b76169d70ed0c796217b6"
+    },
+    {
+      "path": "reports/arr_august_external_closure/robustness/streaming40_full_v1_summary.json",
+      "sha256": "a9f5088c7d8840a2a3629bdcb72063e1abd0867c14ffaa177e3e0af0368514d0"
+    },
+    {
+      "path": "reports/arr_august_external_closure/robustness/streaming40_full_v1_execution_audit.json",
+      "sha256": "d611303da5f46ebeaa59a30c49a206f675e2f2ce9c4375d23c12956fa8055714"
+    }
+  ],
+  "defect": {
+    "scope": "Detector-only robustness controls.",
+    "old_behavior": "The detector was evaluated over both model-visible chat spans and metadata-provided authority spans. A detector-only method could therefore consume the provenance annotation whose absence it was intended to model.",
+    "detection": "The final cross-run equivalence audit found that detector-only and 100% provenance-drop conditions had different excluded-token sets despite targeting the same remaining detector signal.",
+    "impact": "Detector-only pilot and full controls are invalid for identifiability claims. Hybrid provenance-drop and boundary-shrink cells remain valid because any detector tokens from a retained metadata span are a subset of the provenance-excluded span, while dropped spans leave the independently localized chat detector unchanged. Main base-versus-Authority runs are also unchanged for the same set-union reason."
+  },
+  "resolution": {
+    "detector_signal": "Compute detector exclusions exclusively from source=chat_message spans.",
+    "provenance_signal": "Continue computing typed provenance exclusions from metadata/inferred spans independently.",
+    "hybrid_signal": "Use the union of the independent chat detector and provenance sets.",
+    "required_reruns": [
+      "Streaming detector-only pilot on 60 messages.",
+      "Streaming detector-only full run on 300 messages.",
+      "Knorm detector-only pilot on 60 messages."
+    ]
+  },
+  "invalidated_detector_only_runs": [
+    "arrmixed_robustpilot_20260726v2_qwen_knorm_detector40_60",
+    "arrmixed_robustpilot_20260726v2_qwen_streaming_detector40_60",
+    "arrmixed_robustfull_20260727v1_qwen_streaming_detector40_300"
+  ],
+  "preserved_runs": {
+    "main_external_fullscale": "All four final full-scale base-versus-Authority runs.",
+    "hybrid_robustness": "All provenance-drop and boundary-shrink pilot/full cells.",
+    "legacy_core": "All frozen core results."
+  },
+  "acceptance": [
+    "A unit test proves detector-only exclusions omit metadata_marker tokens.",
+    "The hybrid method still contains both independent chat-detector and provenance tokens.",
+    "Corrected detector-only runs have exact expected row counts and zero errors.",
+    "Corrected detector-only and 100% provenance-drop Streaming runs have identical excluded-token sets and generated outputs.",
+    "All execution and label-isolation audits pass."
+  ]
+}
