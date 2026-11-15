@@ -15,6 +15,6 @@ Official compressor & --- & 918 & 555 & 582 & 2{,}055 & 2{,}041 & --- & 1{,}086 
 \quad + span boundaries & detector, marked spans & 0 & 0 & 0 & 0 & 0 & 100\% & 1{,}800 \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{What each grade of metadata buys on \ihbench{}.} Authority reversals summed over H2O, Knorm, and StreamingLLM at 20\% and 40\% KV (400 conflicts and 100 benign controls per cell; every model solves all of them with the full cache). Rows add information about which lower-authority text to demote; protected spans are the same in all \method{} rows. R$_{\uparrow}$ and R$_{\downarrow}$ are the two tie-breaking rules of \S\ref{sec:ties}, applied to base and method alike (the detector row was run under R$_{\downarrow}$ only where ties occur; Appendix~\ref{app:extended}). Per-cell counts and paired tests are in Table~\ref{tab:app-ih-cells}.}
+\caption{\textbf{What each grade of metadata buys on \ihbench{}.} Authority reversals summed over H2O, Knorm, and StreamingLLM at 20\% and 40\% KV (400 conflicts and 100 benign controls per cell; every model solves all of them with the full cache). Rows add information about which lower-authority text to demote; protected spans are the same in all \method{} rows. R$_{\uparrow}$ and R$_{\downarrow}$ are the two tie-breaking rules of \S\ref{sec:ties}, applied to base and method alike (the detector row is reported under R$_{\uparrow}$). Per-cell counts and paired tests are in Table~\ref{tab:app-ih-cells}.}
 \label{tab:ladder}
 \end{table*}

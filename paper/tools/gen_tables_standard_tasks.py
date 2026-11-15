@@ -184,7 +184,7 @@ def make_appendix_ifeval_table() -> None:
             r"\end{tabular}",
             r"\caption{Complete System-IFEval strict results under the official "
             r"grader (\(\mathrm{R}_{\uparrow}\) rule). The capability-gated columns isolate compression-induced "
-            r"changes; all-prompt columns preserve the unconditional denominator.}",
+            r"changes; all-prompt columns cover all 150 prompts.}",
             r"\label{tab:ifeval-full}",
             r"\end{table*}",
         ]
@@ -217,7 +217,7 @@ def make_appendix_crossmodel_gate_rows() -> None:
         lines.extend(
             [
                 f"System-IFEval {display} pilot & {correct}/30 prompt-strict; gate is 15/30 &",
-                r"Stopped by gate & Compression result intentionally not estimated. \\",
+                r"Not run & Below the 15/30 gate. \\",
             ]
         )
     write_text(GENERATED / "appendix_crossmodel_external_gate_rows.tex", lines)
@@ -262,8 +262,8 @@ def make_appendix_mixed_table() -> None:
             r"\caption{Mixed useful-evidence plus explicit-attack results on all "
             r"64 FullKV-capable source pairs. Counts and scores use the \(\mathrm{R}_{\uparrow}\) rule "
             r"(both rules: Table~\ref{tab:app-mixed}); attack headroom exists only for "
-            r"StreamingLLM. The unconditional 100-pair results and clean/paraphrase "
-            r"conditions are retained in the artifact.}",
+            r"StreamingLLM. All 100 source pairs and the clean and paraphrase "
+            r"conditions are in Table~\ref{tab:mixed-all-conditions}.}",
             r"\label{tab:mixed-full}",
             r"\end{table*}",
         ]
@@ -362,8 +362,8 @@ def make_appendix_mixed_conditions_table() -> None:
         [
             r"\bottomrule",
             r"\end{tabular}",
-            r"\caption{Complete mixed-evidence matrix (\(\mathrm{R}_{\uparrow}\) rule). ``All'' preserves the "
-            r"unconditional 100-pair denominator; ``Gated'' contains the 64 source "
+            r"\caption{Complete mixed-evidence matrix (\(\mathrm{R}_{\uparrow}\) rule). ``All'' covers "
+            r"all 100 source pairs; ``Gated'' contains the 64 source "
             r"pairs correct and attack-free under FullKV in all three conditions. "
             r"Attack markers and answer labels are used only after generation.}",
             r"\label{tab:mixed-all-conditions}",

@@ -116,10 +116,9 @@ def write_appendix_crossmodel(rows: list[dict[str, str]]) -> None:
         [
             r"\bottomrule",
             r"\end{tabular}",
-            r"\caption{Complete model-stratified reconstruction of "
-            r"Table~\ref{tab:ladder}. ``Rev.'' is explicit "
-            r"lower-authority selection; other wrong outputs remain visible in the "
-            r"hierarchy column.}",
+            r"\caption{Table~\ref{tab:ladder} per model, scorer, and budget. "
+            r"``Rev.'' is explicit lower-authority selection; other wrong outputs "
+            r"count against hierarchy accuracy.}",
             r"\label{tab:appendix-crossmodel}",
             r"\end{table*}",
         ]
@@ -336,8 +335,7 @@ def write_category(rows: list[dict[str, str]]) -> None:
             r"\end{tabular}",
             r"\caption{Primary authority reversals by conflict relation, aggregated "
             r"over three independently FullKV-gated models. Each category cell has "
-            r"240 decisions; totals have 1,200. Other hierarchy errors are not "
-            r"reclassified as reversals.}",
+            r"240 decisions; totals have 1,200.}",
             r"\label{tab:category-full}",
             r"\end{table*}",
         ]

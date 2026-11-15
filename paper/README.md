@@ -7,7 +7,7 @@ repository by the tools in `tools/`; run them from the repository root.
 python paper/tools/gen_tables.py results paper/generated     # from the fact files
 python paper/tools/gen_tables_statistics.py                  # from the statistics of the main matrix
 python paper/tools/gen_tables_standard_tasks.py              # from the stored grader outputs
-python paper/tools/make_figs.py results paper/figures        # Figures 2 and 3
+python paper/tools/make_figs.py results paper/figures        # Figures 2, 3, 4, and 6
 bash   paper/tools/recompute_statistics.sh                   # recompute the statistics from the raw predictions
 ```
 
@@ -62,9 +62,11 @@ the protocol, or give worked examples and are written in the paper.
 
 | Figure | File in `figures/` | Source |
 |---|---|---|
-| 1 | `fig1_overview.pdf` | `fig1_overview.tex` (TikZ; `pdflatex fig1_overview_standalone.tex` in `figures/`) |
+| 1 | `fig1_overview.pdf` | `fig1_overview.tex` (TikZ; `pdflatex -jobname=fig1_overview fig1_overview_standalone.tex` in `figures/`) |
 | 2 | `fig2_results.pdf` | `tools/make_figs.py` from `results/T1_facts.json` |
 | 3 | `fig3_retention.pdf` | `tools/make_figs.py` from `results/RESPONSE_FACTS.jsonl` (experiment A4) |
+| 4 | `fig_app_cells.pdf` | `tools/make_figs.py` from `results/T1_facts.json`; `results/RESPONSE_FACTS.jsonl` (experiment E3b) |
+| 6 | `fig_app_relations.pdf` | `tools/make_figs.py` from `results/T1_facts.json` |
 
 `generated/cr_numbers.json` and `generated/cr_fact_ids_used.json` list the headline numbers and the fact ids
 that the tables read.

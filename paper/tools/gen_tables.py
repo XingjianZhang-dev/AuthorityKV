@@ -118,7 +118,7 @@ b += ['\\bottomrule', '\\end{tabular}',
       'StreamingLLM at 20\\% and 40\\% KV (400 conflicts and 100 benign controls per cell; every model solves all of them with the full cache). '
       'Rows add information about which lower-authority text to demote; protected spans are the same in all \\method{} rows. '
       + UP + ' and ' + DN + ' are the two tie-breaking rules of \\S\\ref{sec:ties}, applied to base and method alike '
-      '(the detector row was run under ' + DN + ' only where ties occur; Appendix~\\ref{app:extended}). '
+      '(the detector row is reported under ' + UP + '). '
       'Per-cell counts and paired tests are in Table~\\ref{tab:app-ih-cells}.}',
       '\\label{tab:ladder}', '\\end{table*}']
 write('cr_ladder.tex', '\n'.join(b) + '\n')
@@ -478,7 +478,7 @@ write('cr_app_mistral_mixed.tex', '\n'.join(b) + '\n')
 
 # ---------------------------------------------------------------- Appendix: capability checks at 14B (rows of the gate table)
 rg, ag, mg = FD_('X6-ruler-gate'), FD_('X6-agentdojo-gate'), FD_('X1c-gate-admitted')
-rows = [f'RULER 4k, Qwen2.5-14B & {rg[0]}/{rg[1]} task-correct & Not run & Same outcome as at 7B; no retrieval claim on RULER at either scale. \\\\',
+rows = [f'RULER 4k, Qwen2.5-14B & {rg[0]}/{rg[1]} task-correct & Not run & Same outcome as at 7B. \\\\',
         f'AgentDojo, Qwen2.5-14B & {ag[0]}/{ag[1]} utility-and-safe & Not run & The agent suite is not solved uncompressed at this scale either. \\\\',
         f'LongBench + injection, Qwen2.5-14B & {mg[0]}/{mg[1]} pairs correct and safe in all three versions & Not run & '
         f"The task is carried by Qwen2.5-7B (64 pairs) and Mistral-7B ({X2['admitted_pairs']} pairs). \\\\"]
