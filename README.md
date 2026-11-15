@@ -1,6 +1,6 @@
 # AuthorityKV: Preventing Authority Reversals in KV-Cache Compression
 
-Code, benchmark, and results for the EACL 2027 paper by Xingjian Zhang (Carnegie Mellon University).
+Code, benchmark, and results for the EACL 2027 main-conference paper by Xingjian Zhang (Carnegie Mellon University).
 
 [Paper (PDF)](paper/AuthorityKV_EACL2027.pdf) · [Dataset on the Hugging Face Hub](https://huggingface.co/datasets/XingjianZhangDev/AuthorityKV) · [Where each table comes from](paper/README.md)
 
@@ -197,7 +197,7 @@ python review_experiments/t1_unit.py           # the two tie-breaking rules agai
 @inproceedings{zhang-2027-authoritykv,
   title     = {{AuthorityKV}: Preventing Authority Reversals in {KV}-Cache Compression},
   author    = {Zhang, Xingjian},
-  booktitle = {Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics},
+  booktitle = {Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
   year      = {2027},
   address   = {Athens, Greece},
   publisher = {Association for Computational Linguistics}
