@@ -8,13 +8,13 @@
 Scorer & KV & Base & Roles only & Marker $D$ \\
 \midrule
 H2O & 20\% & 12/37 & 20/37 & 36/37 \\
- & 40\% & 30/37 & 27/37 & 37/37 \\
+H2O & 40\% & 30/37 & 27/37 & 37/37 \\
 Knorm & 20\% & 29/37 & 23/37 & 35/37 \\
- & 40\% & 30/37 & 29/37 & 37/37 \\
+Knorm & 40\% & 30/37 & 29/37 & 37/37 \\
 SnapKV & 20\% & 36/37 & 37/37 & 37/37 \\
- & 40\% & 36/37 & 37/37 & 37/37 \\
+SnapKV & 40\% & 36/37 & 37/37 & 37/37 \\
 StreamingLLM & 20\% & 0/37 & 20/37 & 20/37 \\
- & 40\% & 0/37 & 32/37 & 32/37 \\
+StreamingLLM & 40\% & 0/37 & 32/37 & 32/37 \\
 \bottomrule
 \end{tabular}
 \caption{\textbf{IH-Challenge, source-native serialization} (37 FullKV-correct items, Qwen2.5-7B, R$_{\uparrow}$; original grader). ``Roles only'' protects system and developer messages and demotes nothing, because these items carry no tool or retrieved spans. ``Marker-derived $D$'' additionally demotes spans that the benchmark marks as injected. Under R$_{\downarrow}$ the roles-only StreamingLLM cells are 17/37 and 17/37.}

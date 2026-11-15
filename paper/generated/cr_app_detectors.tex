@@ -17,6 +17,6 @@ Source type (roles + provenance) & 42 & 63 & 1 & 0 & 0 & 29 & 135 & --- & --- & 
 \quad + Lexical detector on marked spans & 0 & 0 & 0 & 0 & 0 & 0 & 0 & --- & --- & --- \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{Annotation-free detection on \ihbench{}} (Qwen2.5-7B, reversals of 400 per cell, R$_{\uparrow}$). Detectors run on sentence-split lower-authority messages with thresholds fixed before any run; flagged sentences form the demoted tier. Precision and recall are token level against the marked conflict spans. The DeBERTa classifier reaches zero by flagging about a third of the prompt, so its row measures over-demotion, not detection.}
+\caption{\textbf{Annotation-free detection on \ihbench{}} (Qwen2.5-7B, reversals of 400 per cell, R$_{\uparrow}$). Detectors run on sentence-split lower-authority messages with thresholds fixed before any run; flagged sentences form the demoted tier. Precision and recall are token level against the marked conflict spans. The DeBERTa classifier reaches zero by flagging about a third of the prompt, so its row measures over-demotion, not detection. A dash marks a row without a sentence-level detector.}
 \label{tab:app-detectors}
 \end{table*}

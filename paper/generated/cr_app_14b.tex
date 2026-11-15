@@ -8,11 +8,11 @@
 Scorer & KV & Base & Roles + prov. & + spans \\
 \midrule
 H2O & 20\% & 0 & 0 & 0 \\
- & 40\% & 0 & 0 & 0 \\
+H2O & 40\% & 0 & 0 & 0 \\
 Knorm & 20\% & 0 & 0 & 0 \\
- & 40\% & 0 & 0 & 0 \\
+Knorm & 40\% & 0 & 0 & 0 \\
 StreamingLLM & 20\% & 200 & 0 & 0 \\
- & 40\% & 347 & 0 & 0 \\
+StreamingLLM & 40\% & 347 & 0 & 0 \\
 \bottomrule
 \end{tabular}
 \caption{\textbf{Qwen2.5-14B on \ihbench{}} (reversals of 400, R$_{\uparrow}$). The uncompressed model solves 400/400 conflicts and 100/100 benign controls. StreamingLLM reverses half or more of the decisions at this scale too; both \method{} configurations remove every reversal, also under R$_{\downarrow}$.}

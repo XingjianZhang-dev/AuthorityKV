@@ -18,13 +18,11 @@ Reserve $q{=}0.25$, $D$ last & 0 & 0 & 0 & 0 & 0 & 0 \\
 Reserve $q{=}0.5$, $D$ last & 0 & 0 & 0 & 0 & 0 & 0 \\
 \midrule
 \multicolumn{7}{l}{\emph{Reversals of 400 (full split)}} \\
-Soft penalty $\alpha{=}0.1$ & 5 & 31 & 57 & 40 & --- & --- \\
-Soft penalty $\alpha{=}0.5$ & 0 & 0 & 0 & 8 & --- & --- \\
-Soft penalty $\alpha{=}1$ & --- & --- & --- & --- & 0 & 0 \\
-Soft penalty $\alpha{=}2$ & --- & --- & --- & --- & 0 & 0 \\
+Soft penalty, tuned $\alpha$ & 0 & 0 & 0 & 8 & 0 & 0 \\
+Soft penalty, weaker $\alpha$ & 5 & 31 & 57 & 40 & 0 & 0 \\
 \method{} (hard order) & 0 & 0 & 0 & 0 & 0 & 0 \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{Soft penalties and reservation with the same tiers} (Qwen2.5-7B, R$_{\uparrow}$). The soft penalty adds $\alpha\,\sigma_{\lambda,h}(2\cdot\mathbb{1}[t{\in}P]-\mathbb{1}[t{\in}D])$ to the score, where $\sigma_{\lambda,h}$ is the score standard deviation of the layer-head. Reserving budget for $P$ without a demoted tier does not reach zero on H2O or on StreamingLLM at 40\%; adding the demoted tier does. A penalty strong enough for one scorer is too weak for another.}
+\caption{\textbf{Soft penalties and reservation with the same tiers} (Qwen2.5-7B, R$_{\uparrow}$). The soft penalty adds $\alpha\,\sigma_{\lambda,h}(2\cdot\mathbf{1}[t{\in}P]-\mathbf{1}[t{\in}D])$ to the score, where $\sigma_{\lambda,h}$ is the score standard deviation of the layer-head. Reserving budget for $P$ without a demoted tier does not reach zero on H2O or on StreamingLLM at 40\%; adding the demoted tier does. The tuned $\alpha$ is the weakest that restores every decision on the tuning subset ($0.5$, $0.5$, $2$); the weaker one is a grid step below ($0.1$, $0.1$, $1$), where StreamingLLM shows no reversal but solves only 158 and 282 of 400 conflicts.}
 \label{tab:app-softquota}
 \end{table}

@@ -5,6 +5,7 @@ All numbers are read from records in this repository; nothing is typed by hand:
   results/T1_facts.json                    the headline matrix under both tie-breaking rules
   results/_derived/X2_mixed_mistral.json   Mistral-7B on the LongBench task (review_experiments/build_x2_mistral.py)
   reports/acl_final_closure/ih_qwen7b/method_summary.csv   IH-Challenge statistics of the main experiments
+  runs/<run>/summary.json, runs/<run>/scored_metrics.json  three stored run summaries (System-IFEval details, soft penalty)
 Usage: python paper/tools/gen_tables.py results paper/generated
 """
 import json, os, sys
@@ -23,6 +24,11 @@ def F(i):
     """number of fact i (raises if the fact does not exist)."""
     USED.append(i)
     return R[i]['number']
+
+
+def run_json(run, name):
+    """a stored summary of one run under runs/ (next to the results directory)."""
+    return json.load(open(os.path.join(os.path.dirname(os.path.abspath(FD)), 'runs', run, name), encoding='utf-8'))
 
 
 def FD_(i):
@@ -189,7 +195,7 @@ b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Ablations and alternatives at the same budget} (Qwen2.5-7B, ' + UP + '; columns are \\% KV retained; deletions happen before prefill). The middle block uses '
       'no demotion or replaces the hard order; the bottom block uses \\method{}\'s tiers. Deleting exactly the demoted spans before '
       'prefill matches \\method{} with span boundaries, as it should: the two enforce the same rule. The soft penalty uses the '
-      'strength that first reaches zero on a 100-item subset ($\\alpha{=}' + afmt(ALPHA['h2o']) + '$, $' + afmt(ALPHA['knorm']) + '$, $' + afmt(ALPHA['streaming']) +
+      'weakest strength that restores every decision on a 100-item subset ($\\alpha{=}' + afmt(ALPHA['h2o']) + '$, $' + afmt(ALPHA['knorm']) + '$, $' + afmt(ALPHA['streaming']) +
       '$ for H2O, Knorm, StreamingLLM).}',
       '\\label{tab:alternatives}', '\\end{table}']
 write('cr_alternatives.tex', '\n'.join(b) + '\n')
@@ -206,7 +212,7 @@ for m, mn in MODELS:
         c0, c1, c2 = (ihcell(m, s, r, a) for a in ('base', 'rpstrict', 'full'))
         cell = lambda c: (f"{c['up']['reversal']} ({c['up']['benign_correct']})", f"{c['dn']['reversal']} ({c['dn']['benign_correct']})")
         pu = c1.get('up_vs_base', {}).get('p'); pd = c1.get('dn_vs_base', {}).get('p')
-        b.append(f"{mn if j == 0 else ''} & {SC[s]} & {int(r*100)}\\% & " + ' & '.join(cell(c0) + cell(c1) + cell(c2)) +
+        b.append(f"{mn} & {SC[s]} & {int(r*100)}\\% & " + ' & '.join(cell(c0) + cell(c1) + cell(c2)) +
                  f" & ${pstr(pu) if pu is not None else '-'}$ & ${pstr(pd) if pd is not None else '-'}$ \\\\")
     b.append('\\midrule' if m != 'yi9b' else '')
 b = [x for x in b if x != '']
@@ -233,22 +239,34 @@ b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Annotation-free detection on \\ihbench{}} (Qwen2.5-7B, reversals of 400 per cell, ' + UP + '). Detectors run on '
       'sentence-split lower-authority messages with thresholds fixed before any run; flagged sentences form the demoted tier. '
       'Precision and recall are token level against the marked conflict spans. The DeBERTa classifier reaches zero by flagging about '
-      'a third of the prompt, so its row measures over-demotion, not detection.}',
+      'a third of the prompt, so its row measures over-demotion, not detection. A dash marks a row without a sentence-level detector.}',
       '\\label{tab:app-detectors}', '\\end{table*}']
 write('cr_app_detectors.tex', '\n'.join(b) + '\n')
 
 # ---------------------------------------------------------------- Appendix: System-IFEval details
-b = ['\\begin{table}[t]', '\\centering', '\\footnotesize', '\\setlength{\\tabcolsep}{2.6pt}', '\\begin{tabular}{@{}llccc@{}}', '\\toprule',
+b = ['\\begin{table}[t]', '\\centering', '\\scriptsize', '\\setlength{\\tabcolsep}{3pt}', '\\begin{tabular}{@{}llccc@{}}', '\\toprule',
      'Scorer & Rule & Of 88 & Of 150 & $p$ \\\\', '\\midrule']
 for sc in ['streaming', 'knorm', 'h2o']:
     for rule, lab in [('R↑', UP), ('R↓', DN)]:
         d = S[f'{sc}|{rule}']
-        b.append(f"{SCS[sc] if rule == 'R↑' else ''} & {lab} & {d['base_gated'][0]} $\\rightarrow$ {d['akv_gated'][0]} & {d['base_all'][0]} $\\rightarrow$ {d['akv_all'][0]} & ${pstr(d['p'])}$ \\\\")
-b.append(f"TOVA & {UP} & {F('E5-tova-base-gated88')} $\\rightarrow$ {F('E5-tova-akv-gated88')} & --- & --- \\\\")
+        b.append(f"{SCS[sc]} & {lab} & {d['base_gated'][0]} $\\rightarrow$ {d['akv_gated'][0]} & {d['base_all'][0]} $\\rightarrow$ {d['akv_all'][0]} & ${pstr(d['p'])}$ \\\\")
+_e5 = run_json('20260918-0432_E5v2-sys_qwen7b_tova_40', 'scored_metrics.json')
+_e5b, _e5a = 'kvpress_tova@0.40', 'authority_tova_detected_provenance@0.40'
+_e5p = _e5['paired_comparisons'][f'{_e5b}_vs_{_e5a}']['fullkv_strict_correct_prompts']['prompt_strict']
+assert _e5['by_method'][_e5b]['fullkv_strict_correct_prompts']['prompt_strict_num'] == F('E5-tova-base-gated88')
+assert _e5['by_method'][_e5a]['fullkv_strict_correct_prompts']['prompt_strict_num'] == F('E5-tova-akv-gated88')
+b.append(f"TOVA & {UP} & {F('E5-tova-base-gated88')} $\\rightarrow$ {F('E5-tova-akv-gated88')} & "
+         f"{_e5['by_method'][_e5b]['all_prompts']['prompt_strict_num']} $\\rightarrow$ {_e5['by_method'][_e5a]['all_prompts']['prompt_strict_num']} & "
+         f"${pstr(_e5p['mcnemar_exact_two_sided_p'])}$ \\\\")
 b += ['\\midrule', '\\multicolumn{5}{l}{\\emph{By whether the system prompt fits the budget (' + UP + ')}} \\\\']
+_a6 = {(c['scorer'], c['population'], c['regime']): c
+       for c in run_json('20260917-0549_A1A2A5A6_qwen7b-mistral7b-yi9b_all_20-40', 'summary.json')['A6']['cells']}
 for sc, k in [('streaming', 'str'), ('knorm', 'knorm')]:
-    b.append(f"{SCS[sc]} & $|P|\\le B$ & {frac(f'A6-{k}-le-base')} $\\rightarrow$ {frac(f'A6-{k}-le-akv')} & --- & ${pstr(F(f'A6-{k}-le-p'))}$ \\\\")
-    b.append(f" & $|P|> B$ & {frac(f'A6-{k}-gt-base')} $\\rightarrow$ {frac(f'A6-{k}-gt-akv')} & --- & ${pstr(F(f'A6-{k}-gt-p'))}$ \\\\")
+    for reg, tag, lab in [('P<=B', 'le', '$|P|\\le B$'), ('P>B', 'gt', '$|P|> B$')]:
+        g, a = _a6[(sc, 'gated88', reg)], _a6[(sc, 'all150', reg)]
+        assert (g['base_prompt_strict'], g['akv_prompt_strict'], g['n']) == (F(f'A6-{k}-{tag}-base'), F(f'A6-{k}-{tag}-akv'), FD_(f'A6-{k}-{tag}-base')[1])
+        b.append(f"{SCS[sc]} & {lab} & {frac(f'A6-{k}-{tag}-base')} $\\rightarrow$ {frac(f'A6-{k}-{tag}-akv')} & "
+                 f"{a['base_prompt_strict']}/{a['n']} $\\rightarrow$ {a['akv_prompt_strict']}/{a['n']} & ${pstr(F(f'A6-{k}-{tag}-p'))}$ \\\\")
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{System-IFEval at 40\\% KV, Qwen2.5-7B} (prompt-strict, base $\\rightarrow$ +\\method{}; exact McNemar on the 88 '
       f"FullKV-correct prompts). The system prompt exceeds the budget on {F('A6-overflow-rows')} of 150 prompts; there the priority "
@@ -267,7 +285,7 @@ for sc, r in [('streaming', 0.2), ('streaming', 0.4), ('knorm', 0.4)]:
     for j, (c, cn) in enumerate(COND):
         ba, fu = M[f'{sc}|{r}|{c}|base'], M[f'{sc}|{r}|{c}|full']
         seg = lambda k: f"{ba[k]['attack']} $\\rightarrow$ {fu[k]['attack']} & {ba[k]['joint']} $\\rightarrow$ {fu[k]['joint']} & {ba[k]['contains']} $\\rightarrow$ {fu[k]['contains']} & {ba[k]['f1']:.3f} $\\rightarrow$ {fu[k]['f1']:.3f}"
-        b.append(f"{SCS[sc] + ', ' + str(int(r*100)) + chr(92) + '%' if j == 0 else ''} & {cn} & {seg('up')} & {seg('dn')} \\\\")
+        b.append(f"{SCS[sc] + ', ' + str(int(r*100)) + chr(92) + '%'} & {cn} & {seg('up')} & {seg('dn')} \\\\")
     b.append('\\midrule')
 b = b[:-1]
 b += ['\\bottomrule', '\\end{tabular}',
@@ -316,7 +334,7 @@ for sc, r, cid in [('knorm', 0.4, 'knorm40'), ('streaming', 0.2, 'streaming20'),
     fu = M[f'{sc}|{r}|explicit_attack|full']
     b.append(f"{SCS[sc]}, {int(r*100)}\\% & {UP} & {frac(f'E1-e1a-{cid}-expl-joint')} & {frac(f'E1-e1b-{cid}-expl-joint')} & {fu['up']['joint']}/64 \\\\")
     if sc == 'streaming':
-        b.append(f" & {DN} & {frac(f'E1-e1a-{cid}-rec-expl-joint')} & {frac(f'E1-e1b-{cid}-rec-expl-joint')} & {fu['dn']['joint']}/64 \\\\")
+        b.append(f"{SCS[sc]}, {int(r*100)}\\% & {DN} & {frac(f'E1-e1a-{cid}-rec-expl-joint')} & {frac(f'E1-e1b-{cid}-rec-expl-joint')} & {fu['dn']['joint']}/64 \\\\")
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Filter-then-compress on LongBench with an explicit injected instruction} (safe-and-correct answers of 64). '
       'Deleting the whole untrusted source before prefill also deletes the answer. Deleting only the demoted spans is the same rule as '
@@ -334,16 +352,22 @@ for q in QS:
 for q in QS:
     b.append(f'Reserve $q{{=}}{q}$, $D$ last & ' + ' & '.join(str(F(f'E2-qwen7b-{CELLID[c]}-quotad{q}-reversal')) for c in CELLS) + ' \\\\')
 b += ['\\midrule', '\\multicolumn{7}{l}{\\emph{Reversals of 400 (full split)}} \\\\']
-for a in ['0.1', '0.5']:
-    b.append(f'Soft penalty $\\alpha{{=}}{a}$ & ' + ' & '.join(str(F(f'E2full-qwen7b-{CELLID[c]}-softsigma{a}-reversal')) for c in CELLS[:4]) + ' & --- & --- \\\\')
-for a in ['1', '2']:
-    b.append(f'Soft penalty $\\alpha{{=}}{a}$ & --- & --- & --- & --- & ' + ' & '.join(str(F(f'E2full-qwen7b-{CELLID[c]}-softsigma{a}-reversal')) for c in CELLS[4:]) + ' \\\\')
+GRID = ['0.1', '0.5', '1', '2', '5', '10', '50']
+WEAKER = {k: GRID[GRID.index(afmt(v)) - 1] for k, v in ALPHA.items()}
+b.append('Soft penalty, tuned $\\alpha$ & ' + ' & '.join(str(F(f'E2full-qwen7b-{CELLID[c]}-softsigma{afmt(ALPHA[c[0]])}-reversal')) for c in CELLS) + ' \\\\')
+b.append('Soft penalty, weaker $\\alpha$ & ' + ' & '.join(str(F(f'E2full-qwen7b-{CELLID[c]}-softsigma{WEAKER[c[0]]}-reversal')) for c in CELLS) + ' \\\\')
+_e2 = run_json('20260917-2356_E2-full_qwen7b_streaming_20-40', 'summary.json')['by_method']
+_e2w = [_e2[f"authority_streaming_softsigma{WEAKER['streaming']}@{r}"] for r in ('0.20', '0.40')]
+assert [m['reversal'] for m in _e2w] == [F(f"E2full-qwen7b-streaming{r}-softsigma{WEAKER['streaming']}-reversal") for r in ('20', '40')]
 b.append('\\method{} (hard order) & ' + ' & '.join(str(ihcell('qwen7b', s, r, 'full')['up']['reversal']) for s, r in CELLS) + ' \\\\')
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Soft penalties and reservation with the same tiers} (Qwen2.5-7B, ' + UP + '). The soft penalty adds '
-      '$\\alpha\\,\\sigma_{\\lambda,h}(2\\cdot\\mathbb{1}[t{\\in}P]-\\mathbb{1}[t{\\in}D])$ to the score, where $\\sigma_{\\lambda,h}$ is the score '
+      '$\\alpha\\,\\sigma_{\\lambda,h}(2\\cdot\\mathbf{1}[t{\\in}P]-\\mathbf{1}[t{\\in}D])$ to the score, where $\\sigma_{\\lambda,h}$ is the score '
       'standard deviation of the layer-head. Reserving budget for $P$ without a demoted tier does not reach zero on H2O or on '
-      'StreamingLLM at 40\\%; adding the demoted tier does. A penalty strong enough for one scorer is too weak for another.}',
+      'StreamingLLM at 40\\%; adding the demoted tier does. The tuned $\\alpha$ is the weakest that restores every decision on the '
+      'tuning subset ($' + afmt(ALPHA['h2o']) + '$, $' + afmt(ALPHA['knorm']) + '$, $' + afmt(ALPHA['streaming']) + '$); the weaker one is a grid step below '
+      '($' + WEAKER['h2o'] + '$, $' + WEAKER['knorm'] + '$, $' + WEAKER['streaming'] + '$), where StreamingLLM shows no reversal but solves only '
+      f"{_e2w[0]['hierarchy']} and {_e2w[1]['hierarchy']} of {_e2w[0]['conflict_n']} conflicts.}}",
       '\\label{tab:app-softquota}', '\\end{table}']
 write('cr_app_softquota.tex', '\n'.join(b) + '\n')
 
@@ -352,7 +376,7 @@ b = ['\\begin{table}[t]', '\\centering', '\\footnotesize', '\\setlength{\\tabcol
      'Scorer & KV & Base & Roles + prov. & + spans \\\\', '\\midrule']
 for s, r in CELLS:
     c = CELLID[(s, r)]
-    b.append(f"{SC[s] if r == 0.2 else ''} & {int(r*100)}\\% & {F(f'E6-base-qwen14b-{c}-reversal')} & {F(f'E6-rpstrict-qwen14b-{c}-reversal')} & {F(f'E6-full-qwen14b-{c}-reversal')} \\\\")
+    b.append(f"{SC[s]} & {int(r*100)}\\% & {F(f'E6-base-qwen14b-{c}-reversal')} & {F(f'E6-rpstrict-qwen14b-{c}-reversal')} & {F(f'E6-full-qwen14b-{c}-reversal')} \\\\")
 b += ['\\bottomrule', '\\end{tabular}',
       f"\\caption{{\\textbf{{Qwen2.5-14B on \\ihbench{{}}}} (reversals of 400, {UP}). The uncompressed model solves "
       f"{frac('E6-fullkv-hierarchy')} conflicts and {frac('E6-fullkv-benign')} benign controls. StreamingLLM reverses half or more of "
@@ -387,10 +411,10 @@ b.append(f"Official base & {UP} & {ba(0.2,'explicit_attack','up')['attack']} ({b
 for arm, nm in [('e4clfdeberta', 'DeBERTa classifier'), ('e4clfpg2', 'Prompt Guard 2'), ('e4det', 'Lexical detector')]:
     for rec, lab in [('', UP), ('-rec', DN)]:
         cells = [f"{F(f'E4-{arm}-streaming{bud}{rec}-{c}-attack')} ({F(f'E4-{arm}-streaming{bud}{rec}-{c}-joint')})" for c in ['expl', 'para'] for bud in ['20', '40']]
-        b.append(f"{nm if rec == '' else ''} & {lab} & " + ' & '.join(cells) + ' \\\\')
+        b.append(f"{nm} & {lab} & " + ' & '.join(cells) + ' \\\\')
 fu = lambda r, c, k: M[f'streaming|{r}|{c}|full'][k]
 for k, lab in [('up', UP), ('dn', DN)]:
-    b.append(f"{'Marked note span' if k == 'up' else ''} & {lab} & " + ' & '.join(f"{fu(r, c, k)['attack']} ({fu(r, c, k)['joint']})" for c in ['explicit_attack', 'paraphrase_attack'] for r in [0.2, 0.4]) + ' \\\\')
+    b.append(f"{'Marked note span'} & {lab} & " + ' & '.join(f"{fu(r, c, k)['attack']} ({fu(r, c, k)['joint']})" for c in ['explicit_attack', 'paraphrase_attack'] for r in [0.2, 0.4]) + ' \\\\')
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Detectors in place of annotation on the LongBench task} (StreamingLLM, 64 pairs): attacks that succeed, with '
       'safe-and-correct answers in parentheses. Detectors read the retrieved passage sentence by sentence. On paraphrased notes the '
@@ -421,7 +445,7 @@ for sc, nm in [('h2o', 'H2O'), ('knorm', 'Knorm'), ('snapkv', 'SnapKV'), ('strea
     for bud in ['20', '40']:
         c = f'{sc}{bud}'
         n, d = FD_(f'X8-rpstrict-qwen7b-{c}-correct')
-        b.append(f"{nm if bud == '20' else ''} & {bud}\\% & {OLD_BASE[c]}/{d} & {n}/{d} & {OLD_AKV[c]}/{d} \\\\")
+        b.append(f"{nm} & {bud}\\% & {OLD_BASE[c]}/{d} & {n}/{d} & {OLD_AKV[c]}/{d} \\\\")
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{IH-Challenge, source-native serialization} (37 FullKV-correct items, Qwen2.5-7B, ' + UP + '; original grader). '
       '``Roles only\'\' protects system and developer messages and demotes nothing, because these items carry no tool or retrieved '

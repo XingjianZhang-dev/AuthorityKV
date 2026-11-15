@@ -10,16 +10,16 @@
 Scorer, KV & Condition & Attack & Joint & Present & F1 & Attack & Joint & Present & F1 \\
 \midrule
 Stream., 20\% & Explicit & 7 $\rightarrow$ 0 & 54 $\rightarrow$ 57 & 58 $\rightarrow$ 57 & 0.734 $\rightarrow$ 0.828 & 7 $\rightarrow$ 0 & 54 $\rightarrow$ 59 & 58 $\rightarrow$ 59 & 0.734 $\rightarrow$ 0.686 \\
- & Paraphrase & 1 $\rightarrow$ 0 & 59 $\rightarrow$ 57 & 59 $\rightarrow$ 57 & 0.682 $\rightarrow$ 0.843 & 1 $\rightarrow$ 0 & 59 $\rightarrow$ 57 & 59 $\rightarrow$ 57 & 0.677 $\rightarrow$ 0.635 \\
- & Clean & 0 $\rightarrow$ 0 & 57 $\rightarrow$ 58 & 57 $\rightarrow$ 58 & 0.514 $\rightarrow$ 0.857 & 0 $\rightarrow$ 0 & 57 $\rightarrow$ 58 & 57 $\rightarrow$ 58 & 0.518 $\rightarrow$ 0.634 \\
+Stream., 20\% & Paraphrase & 1 $\rightarrow$ 0 & 59 $\rightarrow$ 57 & 59 $\rightarrow$ 57 & 0.682 $\rightarrow$ 0.843 & 1 $\rightarrow$ 0 & 59 $\rightarrow$ 57 & 59 $\rightarrow$ 57 & 0.677 $\rightarrow$ 0.635 \\
+Stream., 20\% & Clean & 0 $\rightarrow$ 0 & 57 $\rightarrow$ 58 & 57 $\rightarrow$ 58 & 0.514 $\rightarrow$ 0.857 & 0 $\rightarrow$ 0 & 57 $\rightarrow$ 58 & 57 $\rightarrow$ 58 & 0.518 $\rightarrow$ 0.634 \\
 \midrule
 Stream., 40\% & Explicit & 6 $\rightarrow$ 0 & 54 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.767 $\rightarrow$ 0.821 & 6 $\rightarrow$ 0 & 54 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.767 $\rightarrow$ 0.725 \\
- & Paraphrase & 0 $\rightarrow$ 0 & 61 $\rightarrow$ 59 & 61 $\rightarrow$ 59 & 0.690 $\rightarrow$ 0.847 & 0 $\rightarrow$ 0 & 61 $\rightarrow$ 59 & 61 $\rightarrow$ 59 & 0.692 $\rightarrow$ 0.693 \\
- & Clean & 0 $\rightarrow$ 0 & 59 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.585 $\rightarrow$ 0.840 & 0 $\rightarrow$ 0 & 59 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.579 $\rightarrow$ 0.687 \\
+Stream., 40\% & Paraphrase & 0 $\rightarrow$ 0 & 61 $\rightarrow$ 59 & 61 $\rightarrow$ 59 & 0.690 $\rightarrow$ 0.847 & 0 $\rightarrow$ 0 & 61 $\rightarrow$ 59 & 61 $\rightarrow$ 59 & 0.692 $\rightarrow$ 0.693 \\
+Stream., 40\% & Clean & 0 $\rightarrow$ 0 & 59 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.585 $\rightarrow$ 0.840 & 0 $\rightarrow$ 0 & 59 $\rightarrow$ 59 & 59 $\rightarrow$ 59 & 0.579 $\rightarrow$ 0.687 \\
 \midrule
 Knorm, 40\% & Explicit & 0 $\rightarrow$ 0 & 43 $\rightarrow$ 48 & 43 $\rightarrow$ 48 & 0.410 $\rightarrow$ 0.518 & 0 $\rightarrow$ 0 & 47 $\rightarrow$ 48 & 47 $\rightarrow$ 48 & 0.386 $\rightarrow$ 0.432 \\
- & Paraphrase & 0 $\rightarrow$ 0 & 44 $\rightarrow$ 46 & 44 $\rightarrow$ 46 & 0.423 $\rightarrow$ 0.521 & 0 $\rightarrow$ 0 & 49 $\rightarrow$ 49 & 49 $\rightarrow$ 49 & 0.446 $\rightarrow$ 0.456 \\
- & Clean & 0 $\rightarrow$ 0 & 45 $\rightarrow$ 48 & 45 $\rightarrow$ 48 & 0.341 $\rightarrow$ 0.551 & 0 $\rightarrow$ 0 & 49 $\rightarrow$ 49 & 49 $\rightarrow$ 49 & 0.420 $\rightarrow$ 0.485 \\
+Knorm, 40\% & Paraphrase & 0 $\rightarrow$ 0 & 44 $\rightarrow$ 46 & 44 $\rightarrow$ 46 & 0.423 $\rightarrow$ 0.521 & 0 $\rightarrow$ 0 & 49 $\rightarrow$ 49 & 49 $\rightarrow$ 49 & 0.446 $\rightarrow$ 0.456 \\
+Knorm, 40\% & Clean & 0 $\rightarrow$ 0 & 45 $\rightarrow$ 48 & 45 $\rightarrow$ 48 & 0.341 $\rightarrow$ 0.551 & 0 $\rightarrow$ 0 & 49 $\rightarrow$ 49 & 49 $\rightarrow$ 49 & 0.420 $\rightarrow$ 0.485 \\
 \bottomrule
 \end{tabular}
 \caption{\textbf{LongBench answers with an injected instruction in the same source} (64 FullKV-admitted source pairs, Qwen2.5-7B). Attack: the marker requested by the injected instruction appears. Joint: answer correct and no marker. Present: the gold answer string occurs in the output. F1: LongBench score. Attack suppression and joint success agree across rules; the F1 difference under R$_{\uparrow}$ reflects shorter outputs, not more retained evidence (Table~\ref{tab:app-retention}).}

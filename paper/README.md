@@ -25,13 +25,13 @@ The first four commands leave `git status` clean. The fifth re-runs the analysis
 | 7 | `cr_app_detectors.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E3, E3b) |
 | 8 | `cr_app_14b.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E6) |
 | 9 | `cr_app_heldout.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments X3) |
-| 10 | `cr_app_sysifeval.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments A1A2A5A6, E5) |
+| 10 | `cr_app_sysifeval.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments A1A2A5A6, E5); the stored summaries of those two runs under `runs/` (all-150 counts) |
 | 11 | `cr_app_mixed.tex` | `gen_tables.py` | `results/T1_facts.json` |
 | 12 | `cr_app_retention.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments A1A2A5A6, A4) |
 | 13 | `cr_app_classifier.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E4) |
 | 14 | `cr_app_mistral_mixed.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments X2); `results/_derived/X2_mixed_mistral.json` |
 | 15 | `cr_app_filter.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E1) |
-| 16 | `cr_app_softquota.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E2, E2full) |
+| 16 | `cr_app_softquota.tex` | `gen_tables.py` | `results/RESPONSE_FACTS.jsonl` (experiments E2, E2full); the stored summary of the full-split StreamingLLM run under `runs/` |
 | 17 | `cr_app_dropout.tex` | `gen_tables.py` | `results/T1_facts.json` |
 | 20 | `appendix_ifeval_table.tex` | `gen_tables_standard_tasks.py` | `reports/arr_august_external_closure/full/system_ifeval_full_v4_metrics.json` |
 | 21 | `appendix_mixed_table.tex` | `gen_tables_standard_tasks.py` | `reports/arr_august_external_closure/full/mixed_evidence_*_full_v4_metrics.json` |
