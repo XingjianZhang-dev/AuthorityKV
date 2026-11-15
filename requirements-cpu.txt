@@ -1,13 +1,13 @@
-# CPU environment (Python 3.13) in which the verification commands, the unit tests, and examples/quickstart.py
-# of this repository were run. No GPU is needed for any of them.
-# On Linux, add: --extra-index-url https://download.pytorch.org/whl/cpu
+# CPU environment (Python 3.12) for the verification commands, the unit tests, and examples/quickstart.py
+# of this repository. No GPU is needed for any of them. The extra index gives Linux the CPU build of torch.
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.15.0
 transformers==5.2.0
 accelerate==1.15.0
 kvpress @ git+https://github.com/NVIDIA/kvpress.git@6d965557a5b9f0201a2301b23c454473dd681d0d
 numpy==2.5.4
 scipy==1.18.1
-pandas==3.1.1
+pandas==2.3.3
 matplotlib==3.11.1
 datasets==5.2.0
 pytest==9.2.0

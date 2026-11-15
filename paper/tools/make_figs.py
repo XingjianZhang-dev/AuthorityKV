@@ -169,7 +169,10 @@ PW, PX = 95, [121, 238, 355]  # panel width and left edges in points
 for k, (m, mname) in enumerate(MODELS):
     ax = fig.add_axes([PX[k] / FW, 0.06, PW / FW, 0.56])
     data = [[grid[m][i][j] for i in range(len(ROWS))] for j in range(len(LADDER))]  # rows: ladder, columns: cells
-    ax.imshow(data, cmap=cmap, norm=norm, aspect='auto')
+    # vector cells (pcolormesh), so the figure prints sharply and does not depend on image resampling
+    ax.pcolormesh([x - 0.5 for x in range(len(ROWS) + 1)], [y - 0.5 for y in range(len(LADDER) + 1)], data,
+                  cmap=cmap, norm=norm, edgecolors='white', linewidth=1.4)
+    ax.set_xlim(-0.5, len(ROWS) - 0.5); ax.set_ylim(len(LADDER) - 0.5, -0.5)
     for j, row in enumerate(data):
         for i, v in enumerate(row):
             ink = 'white' if v >= 150 else ('#1F2430' if v > 0 else '#8A919C')
@@ -183,10 +186,6 @@ for k, (m, mname) in enumerate(MODELS):
     ax.tick_params(axis='y', length=0)
     for sp in ax.spines.values():
         sp.set_visible(False)
-    ax.set_xticks([x - 0.5 for x in range(1, len(ROWS))], minor=True)
-    ax.set_yticks([y - 0.5 for y in range(1, len(LADDER))], minor=True)
-    ax.grid(which='minor', color='white', linewidth=1.4)
-    ax.tick_params(which='minor', length=0)
     ax.axvline(1.5, color='white', linewidth=3.4); ax.axvline(3.5, color='white', linewidth=3.4)
     ax.set_title(mname, fontsize=8.5, fontweight='bold', pad=21)
 fig.savefig(os.path.join(OUT, 'fig_app_cells.pdf'), metadata={'CreationDate': None})
