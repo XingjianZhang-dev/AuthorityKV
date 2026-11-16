@@ -15,7 +15,6 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "paper" / "generated"
 
 PARENT = ROOT / "reports/acl_final_closure/parent_statistics/method_summary.csv"
-CATEGORY = ROOT / "reports/acl_final_closure/parent_statistics/category_summary.csv"
 POSITION = ROOT / "reports/acl_final_closure/parent_statistics/position_summary.csv"
 PAIRED = ROOT / "reports/acl_final_closure/parent_statistics/paired_comparisons.csv"
 UTILITY = ROOT / "reports/acl_final_closure/parent_utility/utility_summary.csv"
@@ -279,70 +278,6 @@ def write_matched(rows: list[dict[str, str]]) -> None:
     write(OUT / "appendix_matched_table.tex", lines)
 
 
-def write_category(rows: list[dict[str, str]]) -> None:
-    categories = [
-        ("system_vs_user", "Sys./user"),
-        ("developer_vs_user", "Dev./user"),
-        ("system_vs_tool", "Sys./tool"),
-        ("developer_vs_retrieved_document", "Dev./retr."),
-        ("multi_tier", "Multi-tier"),
-    ]
-    wanted = {method for pair in FAMILIES.values() for method in pair}
-    grouped: dict[tuple[str, float, str], list[int]] = defaultdict(lambda: [0, 0])
-    for row in rows:
-        if (
-            row["dataset"].endswith("natural_short_500.jsonl")
-            and row["model"] in MODELS
-            and row["method"] in wanted
-            and row["category"] != "benign_utility"
-        ):
-            key = (row["method"], float(row["keep_ratio"]), row["category"])
-            grouped[key][0] += intval(row, "authority_reversal_num")
-            grouped[key][1] += intval(row, "feasible_num")
-
-    lines = [
-        "% Generated from released result records.",
-        r"\begin{table*}[t]",
-        r"\centering",
-        r"\scriptsize",
-        r"\setlength{\tabcolsep}{3.0pt}",
-        r"\begin{tabular}{llrrrrrr}",
-        r"\toprule",
-        r"Method & KV & Sys./user & Dev./user & Sys./tool & Dev./retr. & Multi-tier & Total \\",
-        r"\midrule",
-    ]
-    for family, (base, authority) in FAMILIES.items():
-        for keep in (0.2, 0.4):
-            for label, method in ((family, base), (rf"{family}+\method{{}}", authority)):
-                cells = []
-                total_num = total_den = 0
-                for category, _ in categories:
-                    num, den = grouped[(method, keep, category)]
-                    cells.append(frac(num, den))
-                    total_num += num
-                    total_den += den
-                lines.append(
-                    " & ".join(
-                        [label, f"{int(keep * 100)}\\%", *cells, frac(total_num, total_den)]
-                    )
-                    + r" \\"
-                )
-        if family != list(FAMILIES)[-1]:
-            lines.append(r"\midrule")
-    lines.extend(
-        [
-            r"\bottomrule",
-            r"\end{tabular}",
-            r"\caption{Primary authority reversals by conflict relation, aggregated "
-            r"over three independently FullKV-gated models. Each category cell has "
-            r"240 decisions; totals have 1,200.}",
-            r"\label{tab:category-full}",
-            r"\end{table*}",
-        ]
-    )
-    write(OUT / "appendix_category_table.tex", lines)
-
-
 def write_position(rows: list[dict[str, str]]) -> None:
     wanted = {method for pair in FAMILIES.values() for method in pair}
     grouped: dict[tuple[str, float, str], dict[str, int]] = defaultdict(
@@ -576,7 +511,6 @@ def main() -> None:
     write_utility(read_csv(UTILITY))
     write_systems(read_csv(SYSTEMS), read_csv(SYSTEMS_PAIRED))
     write_matched(read_csv(MATCHED))
-    write_category(read_csv(CATEGORY))
     write_position(read_csv(POSITION))
     write_primary_paired(read_csv(PAIRED))
     write_crossmodel_ablation(parent)

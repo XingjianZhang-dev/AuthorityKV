@@ -127,7 +127,7 @@ step needs the grader environment: `python -m pip install -r requirements-eval.t
 python paper/tools/gen_tables.py results paper/generated     # Tables 2-4, 6-17 and 43 from the fact files
 python paper/tools/gen_tables_statistics.py                  # appendix tables of the main matrix
 python paper/tools/gen_tables_standard_tasks.py              # appendix tables of the standard tasks
-python paper/tools/make_figs.py results paper/figures        # Figures 2, 3, 4, and 6
+python paper/tools/make_figs.py results paper/figures        # Figures 2, 3, 4, and 5
 ```
 
 `git status` stays clean afterwards. `paper/README.md` maps every table and figure of the paper to its file,

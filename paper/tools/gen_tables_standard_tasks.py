@@ -52,94 +52,6 @@ def write_text(path: Path, lines: list[str]) -> None:
     path.write_text("\n".join(lines).rstrip() + "\n")
 
 
-def mixed_rows() -> list[dict[str, Any]]:
-    sources = {"Streaming": read_json(STREAMING), "Knorm": read_json(KNORM)}
-    specs = [
-        (
-            "Streaming",
-            0.2,
-            "kvpress_streaming",
-            "authority_streaming_detected_provenance",
-        ),
-        (
-            "Streaming",
-            0.4,
-            "kvpress_streaming",
-            "authority_streaming_detected_provenance",
-        ),
-        (
-            "Knorm",
-            0.4,
-            "kvpress_knorm",
-            "authority_knorm_detected_provenance",
-        ),
-    ]
-    output: list[dict[str, Any]] = []
-    for label, keep, base_name, authority_name in specs:
-        data = sources[label]
-        condition = "explicit_attack"
-        base_key = f"{base_name}@{keep:.2f}/{condition}"
-        authority_key = f"{authority_name}@{keep:.2f}/{condition}"
-        pair_key = f"{base_name}_vs_{authority_name}@{keep:.2f}/{condition}"
-        base = data["by_method_condition"][base_key]["fullkv_capable_rows"]
-        authority = data["by_method_condition"][authority_key][
-            "fullkv_capable_rows"
-        ]
-        paired = data["paired_comparisons"][pair_key]["fullkv_capable_rows"]
-        output.append(
-            {
-                "panel": "mixed_evidence",
-                "scorer": label,
-                "keep_ratio": keep,
-                "gate_num": data["fullkv_capability_gate"]["capable_pairs"],
-                "gate_den": data["fullkv_capability_gate"]["all_pairs"],
-                "base_attack_num": base["attack_success_num"],
-                "base_attack_den": base["attack_success_den"],
-                "base_attack_rate": base["attack_success_rate"],
-                "authority_attack_num": authority["attack_success_num"],
-                "authority_attack_den": authority["attack_success_den"],
-                "authority_attack_rate": authority["attack_success_rate"],
-                "attack_delta": paired["attack_success_rate"][
-                    "authority_minus_base"
-                ],
-                "attack_ci_low": paired["attack_success_rate"][
-                    "paired_bootstrap95"
-                ][0],
-                "attack_ci_high": paired["attack_success_rate"][
-                    "paired_bootstrap95"
-                ][1],
-                "base_longbench": base["longbench_score"],
-                "authority_longbench": authority["longbench_score"],
-                "longbench_delta": paired["longbench_score"][
-                    "authority_minus_base"
-                ],
-                "longbench_ci_low": paired["longbench_score"][
-                    "paired_bootstrap95"
-                ][0],
-                "longbench_ci_high": paired["longbench_score"][
-                    "paired_bootstrap95"
-                ][1],
-                "base_joint_num": base["safe_utility_joint_num"],
-                "base_joint_den": base["safe_utility_joint_den"],
-                "authority_joint_num": authority["safe_utility_joint_num"],
-                "authority_joint_den": authority["safe_utility_joint_den"],
-                "joint_delta": paired["safe_utility_joint"][
-                    "authority_minus_base"
-                ],
-                "joint_ci_low": paired["safe_utility_joint"][
-                    "paired_bootstrap95"
-                ][0],
-                "joint_ci_high": paired["safe_utility_joint"][
-                    "paired_bootstrap95"
-                ][1],
-                "joint_mcnemar_p": paired["safe_utility_joint"][
-                    "mcnemar_exact_two_sided_p"
-                ],
-            }
-        )
-    return output
-
-
 def make_appendix_ifeval_table() -> None:
     data = read_json(IFEVAL)
     methods = [
@@ -221,54 +133,6 @@ def make_appendix_crossmodel_gate_rows() -> None:
             ]
         )
     write_text(GENERATED / "appendix_crossmodel_external_gate_rows.tex", lines)
-
-
-def make_appendix_mixed_table() -> None:
-    rows = mixed_rows()
-    lines = [
-        "% Generated from released result records.",
-        r"\begin{table*}[t]",
-        r"\centering",
-        r"\small",
-        r"\setlength{\tabcolsep}{3.0pt}",
-        r"\begin{tabular}{llrrrrrr}",
-        r"\toprule",
-        r"Scorer & KV & \multicolumn{2}{c}{Attack success} & "
-        r"\multicolumn{2}{c}{Safe + useful} & \multicolumn{2}{c}{LongBench score} \\",
-        r"\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}",
-        r"& & Base & +AKV & Base & +AKV & Base & +AKV \\",
-        r"\midrule",
-    ]
-    for row in rows:
-        lines.append(
-            " & ".join(
-                [
-                    row["scorer"],
-                    f"{int(100 * row['keep_ratio'])}\\%",
-                    f"{row['base_attack_num']}/64",
-                    rf"\textbf{{{row['authority_attack_num']}/64}}",
-                    f"{row['base_joint_num']}/64",
-                    rf"\textbf{{{row['authority_joint_num']}/64}}",
-                    f"{row['base_longbench']:.3f}",
-                    rf"\textbf{{{row['authority_longbench']:.3f}}}",
-                ]
-            )
-            + r" \\"
-        )
-    lines.extend(
-        [
-            r"\bottomrule",
-            r"\end{tabular}",
-            r"\caption{Mixed useful-evidence plus explicit-attack results on all "
-            r"64 FullKV-capable source pairs. Counts and scores use the \(\mathrm{R}_{\uparrow}\) rule "
-            r"(both rules: Table~\ref{tab:app-mixed}); attack headroom exists only for "
-            r"StreamingLLM. All 100 source pairs and the clean and paraphrase "
-            r"conditions are in Table~\ref{tab:mixed-all-conditions}.}",
-            r"\label{tab:mixed-full}",
-            r"\end{table*}",
-        ]
-    )
-    write_text(GENERATED / "appendix_mixed_table.tex", lines)
 
 
 def make_appendix_mixed_conditions_table() -> None:
@@ -389,7 +253,6 @@ def main() -> None:
     verify_sources()
     make_appendix_ifeval_table()
     make_appendix_crossmodel_gate_rows()
-    make_appendix_mixed_table()
     make_appendix_mixed_conditions_table()
     print(f"wrote appendix tables to {GENERATED}")
 

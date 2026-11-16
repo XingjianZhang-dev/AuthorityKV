@@ -21,6 +21,6 @@ Delete demoted spans & 0 & 0 & 0 & 0 & 0 & 0 \\
 \method{}, + span bound. & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{Ablations and alternatives at the same budget} (Qwen2.5-7B, R$_{\uparrow}$; columns are \% KV retained; deletions happen before prefill). The middle block uses no demotion or replaces the hard order; the bottom block uses \method{}'s tiers. Deleting exactly the demoted spans before prefill matches \method{} with span boundaries, as it should: the two enforce the same rule. The soft penalty uses the weakest strength that restores every decision on a 100-item subset ($\alpha{=}0.5$, $0.5$, $2$ for H2O, Knorm, StreamingLLM).}
+\caption{\textbf{Ablations and alternatives at the same budget} (Qwen2.5-7B, R$_{\uparrow}$; columns are \% KV retained; deletions happen before prefill). The middle block uses no demotion or replaces the hard order; the bottom block uses \method{}'s tiers. On this benchmark, deleting exactly the demoted spans before prefill matches \method{} with span boundaries in every cell, since both enforce the same partition. The soft penalty uses the weakest strength that restores every decision on a 100-item subset ($\alpha{=}0.5$, $0.5$, $2$ for H2O, Knorm, StreamingLLM).}
 \label{tab:alternatives}
 \end{table}

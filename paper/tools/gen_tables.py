@@ -193,8 +193,8 @@ for i, (name, vals) in enumerate(altrows):
     b.append(name + ' & ' + ' & '.join((f'\\textbf{{{v}}}' if 'method' in name else str(v)) for v in vals) + ' \\\\')
 b += ['\\bottomrule', '\\end{tabular}',
       '\\caption{\\textbf{Ablations and alternatives at the same budget} (Qwen2.5-7B, ' + UP + '; columns are \\% KV retained; deletions happen before prefill). The middle block uses '
-      'no demotion or replaces the hard order; the bottom block uses \\method{}\'s tiers. Deleting exactly the demoted spans before '
-      'prefill matches \\method{} with span boundaries, as it should: the two enforce the same rule. The soft penalty uses the '
+      'no demotion or replaces the hard order; the bottom block uses \\method{}\'s tiers. On this benchmark, deleting exactly the '
+      'demoted spans before prefill matches \\method{} with span boundaries in every cell, since both enforce the same partition. The soft penalty uses the '
       'weakest strength that restores every decision on a 100-item subset ($\\alpha{=}' + afmt(ALPHA['h2o']) + '$, $' + afmt(ALPHA['knorm']) + '$, $' + afmt(ALPHA['streaming']) +
       '$ for H2O, Knorm, StreamingLLM).}',
       '\\label{tab:alternatives}', '\\end{table}']
