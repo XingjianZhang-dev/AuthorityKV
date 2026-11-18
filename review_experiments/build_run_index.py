@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write results/RUN_INDEX.csv: one row per released run (main matrix and review-period experiments).
+"""Write results/RUN_INDEX.csv: one row per released run (main matrix and extended experiments).
 
 Reads only the run configurations, so it works on a fresh clone. When the raw-output archives are
 extracted at the repository root, the number of stored predictions per run is filled in as well."""

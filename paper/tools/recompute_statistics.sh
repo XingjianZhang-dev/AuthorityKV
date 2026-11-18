@@ -6,7 +6,7 @@
 #   bash paper/tools/recompute_statistics.sh OUT_DIR    # keep the recomputed files in OUT_DIR
 #
 # Run from the repository root after extracting raw_outputs/ (see README). CPU only, about ten minutes.
-# The System-IFEval step needs the grader environment of requirements-eval.txt (including NLTK punkt_tab).
+# The System-IFEval step uses the official grader (its packages are in requirements-cpu.txt) and NLTK punkt_tab.
 set -u -o pipefail
 
 OUT="${1:-$(mktemp -d)}"

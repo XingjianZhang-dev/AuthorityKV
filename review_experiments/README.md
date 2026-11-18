@@ -1,4 +1,4 @@
-# Experiments added during peer review
+# Extended experiments
 
 These scripts extend the main harness (`scripts/`, `authoritykv_experiments/`) without changing it: the runner and
 the press of the main experiments are imported, and their SHA-256 is checked at import time

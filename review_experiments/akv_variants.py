@@ -1,4 +1,4 @@
-r"""P / D construction for the variants of the review-period experiments. Frozen functions are imported (never copied); new variants are
+r"""P / D construction for the variants of the extended experiments. Frozen functions are imported (never copied); new variants are
 independent functions with their names recorded in config.json.
 
 Variant catalogue (method name = f"authority_{scorer}_{variant}" unless noted):

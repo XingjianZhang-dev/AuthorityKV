@@ -24,9 +24,9 @@ redistribute public model weights.
 | `Qwen/Qwen2.5-7B-Instruct` | Stored in each primary `run_config.json` | Apache-2.0 |
 | `mistralai/Mistral-7B-Instruct-v0.3` | `c170c708c41dac9275d15a8fff4eca08d52bab71` in the cross-model external run | Apache-2.0 |
 | `01-ai/Yi-1.5-9B-Chat` | Stored in each primary `run_config.json` | Apache-2.0 |
-| `Qwen/Qwen2.5-14B-Instruct` | Stored in each review-period `config.json` | Apache-2.0 |
-| `meta-llama/Llama-Prompt-Guard-2-86M` (detector) | Stored in each review-period `config.json` | Llama 4 Community License |
-| `protectai/deberta-v3-base-prompt-injection-v2` (detector) | Stored in each review-period `config.json` | Apache-2.0 |
+| `Qwen/Qwen2.5-14B-Instruct` | Stored in each extended-experiment `config.json` | Apache-2.0 |
+| `meta-llama/Llama-Prompt-Guard-2-86M` (detector) | Stored in each extended-experiment `config.json` | Llama 4 Community License |
+| `protectai/deberta-v3-base-prompt-injection-v2` (detector) | Stored in each extended-experiment `config.json` | Apache-2.0 |
 
 The artifact retains model identifiers, revisions, tokenizer information, and
 download locations rather than redistributing weights.

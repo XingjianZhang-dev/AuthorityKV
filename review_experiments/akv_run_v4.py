@@ -2,7 +2,7 @@
 """v4 (2026-09-23T18:30Z, T1/PREREG-25): v3 + --boundary-shrink K (frozen perturb_metadata_spans boundary_shrink_tokens=K; boundary-shrink rows of the metadata-robustness table). Otherwise identical to v3.
 v3 (2026-09-17T14:45Z): + --tie-break random with --tie-seed (D2, akv_presses_d2.RandomTiePress); + variant base_pd_empty (AuthorityKV with P=D=∅, the dormant equivalence). v2 = akv_run_v2.py (used by E1/E4/E2/E6/E5 jobs).
 v2 (2026-09-17T06:10Z, patched 06:30Z before any v2 run): + P/D/D_extra index ranges in variant_audit; + tova/pyramid support (LayerBudgetAwareAuthorityPress for pyramid). v1 = akv_run.py (used by D1 runs).
-Generic generation runner for the review-period experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
+Generic generation runner for the extended experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
 
 Reuses the frozen runner by import (prompt_parts, find_token_spans, make_press, generate_one, official presses) and adds
 the new P/D variants (akv_variants) and presses (akv_presses). Output rows have the same fields as the frozen runner's

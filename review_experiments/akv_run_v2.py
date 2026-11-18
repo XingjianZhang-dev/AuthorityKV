@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """v2 (2026-09-17T06:10Z, patched 06:30Z before any v2 run): + P/D/D_extra index ranges in variant_audit; + tova/pyramid support (LayerBudgetAwareAuthorityPress for pyramid). v1 = akv_run.py (used by D1 runs).
-Generic generation runner for the review-period experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
+Generic generation runner for the extended experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
 
 Reuses the frozen runner by import (prompt_parts, find_token_spans, make_press, generate_one, official presses) and adds
 the new P/D variants (akv_variants) and presses (akv_presses). Output rows have the same fields as the frozen runner's

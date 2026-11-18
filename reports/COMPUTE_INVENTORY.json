@@ -1,31 +1,46 @@
 {
   "by_gpu": [
     {
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "process_gpu_hours": 79.563889,
+      "runs": 146
+    },
+    {
       "gpu": "NVIDIA A100-SXM4-80GB",
-      "process_gpu_hours": 36.313611,
-      "runs": 222
+      "process_gpu_hours": 69.234722,
+      "runs": 268
     }
   ],
   "by_model": [
     {
       "model": "Qwen/Qwen2.5-7B-Instruct",
-      "process_gpu_hours": 26.916111,
-      "runs": 185
+      "process_gpu_hours": 89.756667,
+      "runs": 292
     },
     {
       "model": "01-ai/Yi-1.5-9B-Chat",
-      "process_gpu_hours": 5.324444,
-      "runs": 10
+      "process_gpu_hours": 25.005556,
+      "runs": 39
     },
     {
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
-      "process_gpu_hours": 3.310833,
-      "runs": 13
+      "process_gpu_hours": 21.8475,
+      "runs": 46
     },
     {
       "model": "Qwen/Qwen2.5-14B-Instruct",
-      "process_gpu_hours": 0.756667,
-      "runs": 9
+      "process_gpu_hours": 12.148333,
+      "runs": 29
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct (tokenizer only, CPU)",
+      "process_gpu_hours": 0.026944,
+      "runs": 1
+    },
+    {
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "process_gpu_hours": 0.007222,
+      "runs": 1
     },
     {
       "model": "microsoft/Phi-3.5-mini-instruct",
@@ -36,458 +51,586 @@
       "model": "MaxJeblick/llama2-0b-unit-test",
       "process_gpu_hours": 0.001944,
       "runs": 4
+    },
+    {
+      "model": "n/a (stored predictions)",
+      "process_gpu_hours": 0.000833,
+      "runs": 1
     }
   ],
-  "data_source": "saved run configurations",
   "excluded": [
     {
       "config_sha256": "064329823ae76a8b99d0f4378a7be02d287a0b173cf3fd27c676d457067af265",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "0b11d86a4c0de814cf65b16854f01f4dfbcc8c82b3302f499a9137cf945ff93b",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b3b524de9cb5925e51ce8a784cdb695de34cd706b44d41a3e2226f9d6d8034eb",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "98f2a5d5a93ddcbd0da94ca3028b6f8558527915e2cff071641031dadb4b4c72",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "789b4bcffc846b1a4dcefc8104b07e846815b715c44fc4768800342872f34584",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "f953d0f8c250feffec9131f4416f5012b855adb45a349b417f3d727e379b7851",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "222512b3301fe1528358c8ffccd0e6f182c6bba744f614daf8a73c4fbdc3444b",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "409a7088e5c7030334a0349bc2d8ad567318481da0cdb74844f086993c72baba",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "79ae97d51241cb1659be6bd696570b1792a888a3fee652ac4f42bef7845bbb4e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "84d51e037e79d8d321ad7d5de4caf3d3c73df50be247c934e90048c919b1d776",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "9f6eb8ee27800212a50c9bfbd4dbba3936a7ef86a9713a3e2d694224dde5987e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "4193c792d9cc8e6d6162788dd15639b710671301bca224732044391e41ef4b25",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a3b7bf7d0b0c9f1d6517e17f174e3419c099465180948d14ca2cda1146a1c82f",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "407e15e1b1d12c8de63cebe60ef46eb98116177300fe1f5480cffa475005ba80",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "4903ae8cc06430f839516f42db22bf82c1642cbb952813cba2defedb177ead95",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "329dd63dbad2a841591e15de75795a63d49ba3c9774bd5968d21c84bc140a9fa",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7d5e7b211d008957b2df4b4054ead14c921fb2adb7d91502f6709a0c349fac84",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "043e7a3b67c6dfe4b2711814566f36bb64ea04f5797cc273c0385cc016521f7a",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d53a4e9f1cf689e7adb552b58537a89d650fc9af9870bdc54c9429950b8ea5d6",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7108b92035d25fcc1b4a1364bbb57517d51cdcc52525da2ee2f6a00fe3586dde",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c0f5428267151f168d076f2a88591fe1a20197ef06a4ac9d673aa255d6b1db34",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "f3784e81f52da37534913b3639c51f0db9f570d8eb5f9e6bb5a3130c1b6c2ad5",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "aafbfa4775747c5e15c042cd5a83f4ca7c12dd1676cfb755ac6febb16a9c00ca",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "09bf9d704cae2ee31e40f92c77c9b2bc17221e939d5b51e013e20d4d2f04b45f",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_id": "b936724bb169a224d5fe04d2ddd0059abac2282cd26e7572ada7c5a0f0d64319",
+      "group": "main",
       "reason": "unreadable config: Expecting value: line 1 column 1 (char 0)"
     },
     {
       "config_sha256": "8423ac20f067374772128ce8ac81d7c7a96c25b7c9fe2a987928988cbc1f1555",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "63704aea2dc79aa62fadbcd1cfbb80b8ee9bacb4390a58453012a29aa432de58",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "1930f9a933141093d8ea10468d04ee2e5bea6c0114356f0a7b171a70af6ddedc",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "6610da4270ecc78ec4d709bb3743b55719d24b3ad49426f50c0cdb34d49eaa3e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d263e46e7c36bf575f6df4442b5db152ec9cebe2645615eabd5dcca258d63cb4",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ede095fad68e4bcd264442b184e464578bf610497fee8791d4e1f0a90f0109a8",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d4f54fe2c641019b368f5fef7dca8342f40990a7196944c2c5ab3e9962388b51",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "119e76a561f25bc40748ee17569254f583714d47d8bad95e3966e7814b57f1ea",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d9f00cdd6b04afb7a1ebb77e7384e87d74318bbaf5bfe0c0a081ab049a2ae836",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "111e1b9d8be5878e7b155796a813af9bd0c8b37b4a6795e264c32b665694650f",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d8aec65097487c922cb8e5a0f61b33d4ad9241caafabb3987b8d747a6d046f5e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "e420a01f3a6a2528ad0d8e728097bc772cfc070e5d3a0602c6159f564368cd88",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "9eb24655b52c22f462a1761c4377c3d52c43c7b5c93da3bbc5140bf48a157a84",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ddf0e01d21f44c937c920b119144d0dd97bebf2e1fcd9b485d09f7c2df3715c0",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7e5bacd818b165f092b3cc13a72acab122affaac3e70e11805a3b7a3ffbb57a9",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "9d166b0ddcc5869e3a5b21427d2802a2a42296f3a0e916bd4118e2fd7106929b",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "8d0122ae5d3c47c342e80dcd932da676b1ebedff8be147b6567cf3cdbafe2454",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ab70f4869d946223dc6295b9eb2cd6c35bdc4dbbbcc184de53bb487d68e54575",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "f787a06b84961d94e9417f82d3720add2c90aa0d4608f54670b03361cbe17658",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "f4f9cc698f91b6e0a444b9485d3bbec9d5a818a3f6ccf9fda6e67eb0b787b29f",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ce63001d426cd4debe2c81ce1e2d3679657094ed4fabc5fd93ce0f95df7c1c3f",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "3eced5ed38ef56e47c1b67c77dc95ee36b44215971765256a94a72c98bb85f4d",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "198d3510a84165c440e65fc1040205ffe33779f876e57d90214cb21178bf7a20",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "30138c84cf3858e4d0b12bb67ecb74915989be0e9c39ff887645043f066a7f55",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "cf6e38398d23ccd6b8dc640f33e62a3da5baf4664570936d2b3c728d59e09917",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "31fe5cb344bd71c0a8fed73058a67c959295e2a48dc9246ce826206dbb21b4e9",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "1aa968a07e1772ccacfb0f81c832cbc01d43c4f2b4d8e37fc838a9af2755ff81",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "905f246e660588ec7217a8286dd0aa0071799c952e1f9269427280398f98ff2c",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "5932d4f891e333a101d05e8c0c1932e446de5e82b635a62d5f06302d047391a8",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a331712d5c243ec2e94df0f679fbe29333ef7cc952277831428ecbdab835f4df",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a46d00061df229c894bcc6766ca26a2ec4efa89049423493c8e93879f72429c4",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c143c1e8932c1aa66206dead60f4c31c0c8176684ffc69116b619323bcf0a333",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "abe4743a84f2a362330f326b1890cb44f30c7afcf0dab2617ce86d64eb90475d",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "8792726b59ef0a998d11a09cff9b60a556c846d5a178dcca95bd7f44de3804b0",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c2e08e0b5f197276d32bb1b5eeffe15e9dbb6b7ace828fbe847e7beaf4403e8a",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "db1042f01a98aac59c7468c42bacea15da1c9ec330280a3822ea8fabf7e549fb",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "e6c42f6c30dedb6a5e77cc87ea5b23d5461658a39a6a5b1768fd9d4aadadd559",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a2ca412bf289465d926d9b847c63673881433e2a3f31013db3b9c2f008d452f8",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "f3cf8791493d276395b4bc6e5b53820e633c441c7587e1c41a533def3efef542",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a68682736ca756eb88fce4d65fb2de71a023d3e54ea127af5139b58f1c0b3780",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "25ec07d1115ce3ee6225f71081b65899d1e159b175dcfa5b528982939dbc5502",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "be128db247d9347cc0a78d9c5e60b0ebf8e8f427619655b4e2c3d5ed5e5bc4c4",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "624c542eff1363805c8107dc1dced3b03c5f22f3f914b3d00ca5d0f81b81089e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b21ef1e56356fd37872b5550e5a88115a137bfd0ae8101cf3ecb73e528e7cbe1",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "83143d07d21798f75277df475f8d45eb79fb1b8367df5677feb13c213f4742b2",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b108d9f93ff2cfe2cadaf19e614b126ba7ad17a9c5cf0d1a3c497acb1e5d39ba",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b4e9d5698473c5ce7983f4c54f575466cdcc6204e27fd6180ecfde89fe043c43",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c132203a65a659dfd494523913f585d63e11fa1c1d2ca98108b9091657418302",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ade4587c91eb70dbe3e8aab5d37f8ef833f2249e9c2687229175c9617d22dcd7",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "325bb621934f066ef22fa1ebb25a664d181f7436d961fd118b0c69dea56c94f7",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7852eeb2711f4dc903d5225137b597d52959da0aec68eb6c7b6354e1f16fe857",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ef83fb597cffe2b0cd3aa746aaab2bd9598dd3e1970047a184b628f00d008ddd",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a68652ea08fed8377a03fd43f46f7a47ad45097ebd0b174642335605198c57da",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7826d3a1e6b4f0389b62adeb01df4586882a373b9180e11f4492e93584023720",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "ce8094a2e043c8f47263f2fdd67ff88698c1fc8f57f8d581fa708d30b48c2eb6",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "6e87bd24b84eb064f574ff9075745a38cb9668813ac6dab2e514f63bbba95198",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "2216cc09f64a596f332f635aedbb4f2da29c90b916ea5b4b38d6cea7e1d867ff",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "569e18124ef4df37ff0fb928da1794d8becee6d53d0209c82ec122cb509392c1",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "947f385280cde53b6612472d295feeba2280ababd7f93ece7b92ddf7a25e9188",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "8da47300331b12eefd5337eff98fd17f382a39628944acfe66c4d4df3833f045",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "d8182a955506f35193fce759af56c5b3544c8ec6e70518e14f36f5bab05f7236",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "e063cabd44399388a90b69194c8c5ca572abfccd2e3fafa465de35e313741540",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b0ef9df6dfece31c8fd62ff5af9f186cdd35270c35d47d3da7952acae4ea99a3",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "792e4c964de60967ed9b28f70efa4c0b0886b496aa52845dc1ff25e9bd4774b7",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "27fb35598d1a69a5ea2d744378f7bc482b40fd5fed3a28e3eb474595b5cd7734",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "5d7d9d1661e464d49c9bb3d0f28fe7035728f16d202b2acdbd290ca1c7d09e32",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "17951003a1ee499c634b5c3e8eab375edff7d4342b294fe2a93b373b1095c6f0",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "b6a845445e6e69bc7173505daa01fe96bf9e887a66e51b22b797ca513f303124",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "74f4289b6cb5968095fa7a02cb18dee8a2e88ce904bd0059b3dca8e0ebdacad4",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c3e1402e52f866c547a7319ff8dd2ed8a017f5ea15fb070a0fa6176972b0cd7d",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "76e0a6922c6b7f7987e244b89abd9b3c8746f9345f449e1a220745b5779a1d45",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "58a8ce4cd183e7ffd8e7d8f25725a56076f06d728d28e4fc0c6233d65f86a233",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "9432d124c6e2a4d4d8749c3de3b8e3e0835db4464d740dcd11ef2cc14f49e73c",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "a2de7caf4c8cc50e6f76376ed20785e9bbda7d57008edc483aaba122121ff0ac",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "26dfff247ee0e78df1871d84d30a34c5f1000545b0e50bd80a385d56f3b4dc7e",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "c2834413bb605255ecea4cf20d9ab1bdb9fd16f4cc4aeb8ea61ecd54f0daf09c",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "95b1a552f467daead5b7307561fa886c98394397606ddd01da49806c3cbc5be7",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "95b1a552f467daead5b7307561fa886c98394397606ddd01da49806c3cbc5be7",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "0f0b8d25eedf61a8e5a515c7b9b598f8dbed1e550b4578b8570ae69f4148bee6",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "36d9bc2c7eaaac7fa3db5f12a26848202390f1dc96ce4cb675cefaa3e5e1aa3b",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "8a905154228f16f5e37d11b75ba0e10901b8f138d2107206315ad831c8a842a9",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "8f155fe5d46191b63e0f7cd28a817df3b605703ced7d7f4d759415f80406853a",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "7dfd0e4ca1827538f60972d4a996070788897b4b86c7cf34aa1ed50eb8fa6252",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     },
     {
       "config_sha256": "e3bf16ddd88c31aca11acb2fd38d21cbad7e544c6417646afc37d07b7d90ba06",
+      "group": "main",
       "reason": "missing or invalid start/end timestamp"
     }
   ],
   "excluded_configs": 109,
-  "generated_at": "2026-07-27T19:02:29.792798+08:00",
+  "groups": {
+    "extended": {
+      "data_source": "saved run configurations under runs/",
+      "excluded_configs": 0,
+      "process_gpu_hours": 112.485,
+      "timestamp_complete_runs": 192
+    },
+    "main": {
+      "data_source": "anonymized timing ledger",
+      "excluded_configs": 109,
+      "process_gpu_hours": 36.313611,
+      "timestamp_complete_runs": 222
+    }
+  },
+  "latest_run_end": "2026-09-24T07:47:25+00:00",
   "method": "sum of nonnegative end_time - start_time durations",
   "nonzero_exit_runs": 0,
-  "process_gpu_hours": 36.313611,
+  "process_gpu_hours": 148.798611,
   "runs": [
     {
       "config_sha256": "642e6dfb819be3368a6610e6436a7a8dcef3e79471a6ef16e2a74e88c8deda17",
       "duration_hours": 0.0038888888888888888,
       "end_time": "2026-07-26T02:59:14+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:59:00+00:00"
@@ -497,6 +640,7 @@
       "duration_hours": 0.004166666666666667,
       "end_time": "2026-07-26T02:59:39+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:59:24+00:00"
@@ -506,6 +650,7 @@
       "duration_hours": 0.003611111111111111,
       "end_time": "2026-07-26T03:01:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "microsoft/Phi-3.5-mini-instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:01:31+00:00"
@@ -515,6 +660,7 @@
       "duration_hours": 0.010555555555555556,
       "end_time": "2026-07-26T03:24:09+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:23:31+00:00"
@@ -524,6 +670,7 @@
       "duration_hours": 0.003611111111111111,
       "end_time": "2026-07-26T02:52:46+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:52:33+00:00"
@@ -533,6 +680,7 @@
       "duration_hours": 0.026111111111111113,
       "end_time": "2026-07-26T02:58:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:56:52+00:00"
@@ -542,6 +690,7 @@
       "duration_hours": 0.06305555555555556,
       "end_time": "2026-07-26T02:56:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:52:56+00:00"
@@ -551,6 +700,7 @@
       "duration_hours": 0.003611111111111111,
       "end_time": "2026-07-26T02:58:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:58:36+00:00"
@@ -560,6 +710,7 @@
       "duration_hours": 0.01138888888888889,
       "end_time": "2026-07-26T03:02:35+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:01:54+00:00"
@@ -569,6 +720,7 @@
       "duration_hours": 0.07861111111111112,
       "end_time": "2026-07-26T03:13:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:08:53+00:00"
@@ -578,6 +730,7 @@
       "duration_hours": 0.09944444444444445,
       "end_time": "2026-07-26T03:08:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:02:45+00:00"
@@ -587,6 +740,7 @@
       "duration_hours": 0.07444444444444444,
       "end_time": "2026-07-26T03:23:19+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:18:51+00:00"
@@ -596,6 +750,7 @@
       "duration_hours": 0.08194444444444444,
       "end_time": "2026-07-26T03:18:41+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:13:46+00:00"
@@ -605,6 +760,7 @@
       "duration_hours": 0.009722222222222222,
       "end_time": "2026-07-26T03:00:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:59:51+00:00"
@@ -614,6 +770,7 @@
       "duration_hours": 0.009722222222222222,
       "end_time": "2026-07-26T03:01:11+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T03:00:36+00:00"
@@ -623,6 +780,7 @@
       "duration_hours": 1.166111111111111,
       "end_time": "2026-07-25T19:56:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T18:46:09+00:00"
@@ -632,6 +790,7 @@
       "duration_hours": 1.0447222222222223,
       "end_time": "2026-07-25T21:00:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T19:57:26+00:00"
@@ -641,6 +800,7 @@
       "duration_hours": 0.06444444444444444,
       "end_time": "2026-07-25T07:07:17+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T07:03:25+00:00"
@@ -650,6 +810,7 @@
       "duration_hours": 0.6725,
       "end_time": "2026-07-25T18:45:59+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T18:05:38+00:00"
@@ -659,6 +820,7 @@
       "duration_hours": 0.3283333333333333,
       "end_time": "2026-07-25T22:50:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T22:30:46+00:00"
@@ -668,6 +830,7 @@
       "duration_hours": 0.8116666666666666,
       "end_time": "2026-07-25T11:46:18+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T10:57:36+00:00"
@@ -677,6 +840,7 @@
       "duration_hours": 0.04888888888888889,
       "end_time": "2026-07-25T07:03:12+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T07:00:16+00:00"
@@ -686,6 +850,7 @@
       "duration_hours": 1.1530555555555555,
       "end_time": "2026-07-25T10:40:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T09:31:15+00:00"
@@ -695,6 +860,7 @@
       "duration_hours": 0.03777777777777778,
       "end_time": "2026-07-25T21:22:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:20:28+00:00"
@@ -704,6 +870,7 @@
       "duration_hours": 0.17972222222222223,
       "end_time": "2026-07-25T22:12:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T22:01:23+00:00"
@@ -713,6 +880,7 @@
       "duration_hours": 0.38,
       "end_time": "2026-07-25T21:46:37+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:23:49+00:00"
@@ -722,6 +890,7 @@
       "duration_hours": 0.03333333333333333,
       "end_time": "2026-07-25T21:23:29+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:21:29+00:00"
@@ -731,6 +900,7 @@
       "duration_hours": 0.17722222222222223,
       "end_time": "2026-07-25T22:23:39+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T22:13:01+00:00"
@@ -740,6 +910,7 @@
       "duration_hours": 0.37722222222222224,
       "end_time": "2026-07-25T21:47:24+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:24:46+00:00"
@@ -749,6 +920,7 @@
       "duration_hours": 0.03805555555555556,
       "end_time": "2026-07-25T21:22:52+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:20:35+00:00"
@@ -758,6 +930,7 @@
       "duration_hours": 0.16972222222222222,
       "end_time": "2026-07-25T22:00:30+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:50:19+00:00"
@@ -767,6 +940,7 @@
       "duration_hours": 0.37972222222222224,
       "end_time": "2026-07-25T21:46:37+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:23:50+00:00"
@@ -776,6 +950,7 @@
       "duration_hours": 0.5902777777777778,
       "end_time": "2026-07-25T09:31:03+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T08:55:38+00:00"
@@ -785,6 +960,7 @@
       "duration_hours": 0.49777777777777776,
       "end_time": "2026-07-25T07:42:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T07:12:44+00:00"
@@ -794,6 +970,7 @@
       "duration_hours": 0.6133333333333333,
       "end_time": "2026-07-25T08:19:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T07:42:46+00:00"
@@ -803,6 +980,7 @@
       "duration_hours": 0.5944444444444444,
       "end_time": "2026-07-25T08:55:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T08:19:46+00:00"
@@ -812,6 +990,7 @@
       "duration_hours": 0.014722222222222222,
       "end_time": "2026-07-25T23:24:16+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T23:23:23+00:00"
@@ -821,6 +1000,7 @@
       "duration_hours": 0.08444444444444445,
       "end_time": "2026-07-26T02:47:45+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:42:41+00:00"
@@ -830,6 +1010,7 @@
       "duration_hours": 0.1511111111111111,
       "end_time": "2026-07-25T23:50:39+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T23:41:35+00:00"
@@ -839,6 +1020,7 @@
       "duration_hours": 0.009444444444444445,
       "end_time": "2026-07-25T23:25:09+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T23:24:35+00:00"
@@ -848,6 +1030,7 @@
       "duration_hours": 0.01361111111111111,
       "end_time": "2026-07-25T23:22:52+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T23:22:03+00:00"
@@ -857,6 +1040,7 @@
       "duration_hours": 0.09027777777777778,
       "end_time": "2026-07-26T02:42:31+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T02:37:06+00:00"
@@ -866,6 +1050,7 @@
       "duration_hours": 0.16333333333333333,
       "end_time": "2026-07-25T23:39:11+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T23:29:23+00:00"
@@ -875,6 +1060,7 @@
       "duration_hours": 1.8869444444444445,
       "end_time": "2026-07-26T00:16:31+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T22:23:18+00:00"
@@ -884,6 +1070,7 @@
       "duration_hours": 1.4561111111111111,
       "end_time": "2026-07-26T01:44:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T00:16:44+00:00"
@@ -893,6 +1080,7 @@
       "duration_hours": 0.08527777777777777,
       "end_time": "2026-07-25T07:12:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T07:07:27+00:00"
@@ -902,6 +1090,7 @@
       "duration_hours": 1.378611111111111,
       "end_time": "2026-07-25T22:23:02+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-25T21:00:19+00:00"
@@ -911,6 +1100,7 @@
       "duration_hours": 0.058333333333333334,
       "end_time": "2026-07-26T04:59:48+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T04:56:18+00:00"
@@ -920,6 +1110,7 @@
       "duration_hours": 0.06055555555555556,
       "end_time": "2026-07-26T04:26:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T04:23:11+00:00"
@@ -929,6 +1120,7 @@
       "duration_hours": 0.006666666666666667,
       "end_time": "2026-07-26T04:15:56+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T04:15:32+00:00"
@@ -938,6 +1130,7 @@
       "duration_hours": 0.11527777777777778,
       "end_time": "2026-07-26T04:23:01+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T04:16:06+00:00"
@@ -947,6 +1140,7 @@
       "duration_hours": 0.01972222222222222,
       "end_time": "2026-07-26T04:15:15+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T04:14:04+00:00"
@@ -956,6 +1150,7 @@
       "duration_hours": 0.1913888888888889,
       "end_time": "2026-07-26T12:03:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T11:51:41+00:00"
@@ -965,6 +1160,7 @@
       "duration_hours": 0.01972222222222222,
       "end_time": "2026-07-26T11:37:40+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T11:36:29+00:00"
@@ -974,6 +1170,7 @@
       "duration_hours": 0.0011111111111111111,
       "end_time": "2026-07-26T11:39:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-26T11:39:24+00:00"
@@ -983,6 +1180,7 @@
       "duration_hours": 0.2038888888888889,
       "end_time": "2026-07-26T12:57:23+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:45:09+00:00"
@@ -992,6 +1190,7 @@
       "duration_hours": 0.18638888888888888,
       "end_time": "2026-07-26T12:56:20+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:45:09+00:00"
@@ -1001,6 +1200,7 @@
       "duration_hours": 0.19777777777777777,
       "end_time": "2026-07-26T12:57:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:45:08+00:00"
@@ -1010,6 +1210,7 @@
       "duration_hours": 0.215,
       "end_time": "2026-07-26T13:29:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:16:06+00:00"
@@ -1019,6 +1220,7 @@
       "duration_hours": 0.14666666666666667,
       "end_time": "2026-07-26T13:37:18+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:28:30+00:00"
@@ -1028,6 +1230,7 @@
       "duration_hours": 0.20083333333333334,
       "end_time": "2026-07-26T13:28:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:16:07+00:00"
@@ -1037,6 +1240,7 @@
       "duration_hours": 0.5561111111111111,
       "end_time": "2026-07-26T14:27:02+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:53:40+00:00"
@@ -1046,6 +1250,7 @@
       "duration_hours": 0.9411111111111111,
       "end_time": "2026-07-26T14:50:08+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:53:40+00:00"
@@ -1055,6 +1260,7 @@
       "duration_hours": 0.24,
       "end_time": "2026-07-26T16:28:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:13:42+00:00"
@@ -1064,6 +1270,7 @@
       "duration_hours": 0.24,
       "end_time": "2026-07-26T16:28:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:13:42+00:00"
@@ -1073,6 +1280,7 @@
       "duration_hours": 0.2411111111111111,
       "end_time": "2026-07-26T16:28:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:13:42+00:00"
@@ -1082,6 +1290,7 @@
       "duration_hours": 0.24166666666666667,
       "end_time": "2026-07-26T16:28:12+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:13:42+00:00"
@@ -1091,6 +1300,7 @@
       "duration_hours": 0.2411111111111111,
       "end_time": "2026-07-26T16:42:46+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:28:18+00:00"
@@ -1100,6 +1310,7 @@
       "duration_hours": 0.24166666666666667,
       "end_time": "2026-07-26T16:42:50+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:28:20+00:00"
@@ -1109,6 +1320,7 @@
       "duration_hours": 0.06194444444444445,
       "end_time": "2026-07-26T16:46:47+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:43:04+00:00"
@@ -1118,6 +1330,7 @@
       "duration_hours": 0.23916666666666667,
       "end_time": "2026-07-26T16:42:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:28:23+00:00"
@@ -1127,6 +1340,7 @@
       "duration_hours": 0.23833333333333334,
       "end_time": "2026-07-26T16:42:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:28:25+00:00"
@@ -1136,6 +1350,7 @@
       "duration_hours": 0.09444444444444444,
       "end_time": "2026-07-26T17:01:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:55:46+00:00"
@@ -1145,6 +1360,7 @@
       "duration_hours": 0.05611111111111111,
       "end_time": "2026-07-26T14:35:33+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:32:11+00:00"
@@ -1154,6 +1370,7 @@
       "duration_hours": 0.05722222222222222,
       "end_time": "2026-07-26T14:39:11+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:35:45+00:00"
@@ -1163,6 +1380,7 @@
       "duration_hours": 0.05694444444444444,
       "end_time": "2026-07-26T14:42:48+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:39:23+00:00"
@@ -1172,6 +1390,7 @@
       "duration_hours": 0.056666666666666664,
       "end_time": "2026-07-26T14:46:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:43:02+00:00"
@@ -1181,6 +1400,7 @@
       "duration_hours": 0.05527777777777778,
       "end_time": "2026-07-26T14:49:58+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:46:39+00:00"
@@ -1190,6 +1410,7 @@
       "duration_hours": 0.0425,
       "end_time": "2026-07-26T14:52:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:50:11+00:00"
@@ -1199,6 +1420,7 @@
       "duration_hours": 0.043333333333333335,
       "end_time": "2026-07-26T15:01:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:58:34+00:00"
@@ -1208,6 +1430,7 @@
       "duration_hours": 0.043611111111111114,
       "end_time": "2026-07-26T14:55:33+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:52:56+00:00"
@@ -1217,6 +1440,7 @@
       "duration_hours": 0.043055555555555555,
       "end_time": "2026-07-26T14:58:21+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T14:55:46+00:00"
@@ -1226,6 +1450,7 @@
       "duration_hours": 0.04416666666666667,
       "end_time": "2026-07-26T15:39:40+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:37:01+00:00"
@@ -1235,6 +1460,7 @@
       "duration_hours": 0.03638888888888889,
       "end_time": "2026-07-26T15:42:04+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:39:53+00:00"
@@ -1244,6 +1470,7 @@
       "duration_hours": 0.013333333333333334,
       "end_time": "2026-07-26T15:43:04+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:42:16+00:00"
@@ -1253,6 +1480,7 @@
       "duration_hours": 0.01361111111111111,
       "end_time": "2026-07-26T15:44:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:43:17+00:00"
@@ -1262,6 +1490,7 @@
       "duration_hours": 0.014166666666666666,
       "end_time": "2026-07-26T15:45:09+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:44:18+00:00"
@@ -1271,6 +1500,7 @@
       "duration_hours": 0.014722222222222222,
       "end_time": "2026-07-26T15:46:14+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:45:21+00:00"
@@ -1280,6 +1510,7 @@
       "duration_hours": 0.013333333333333334,
       "end_time": "2026-07-26T15:49:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:48:22+00:00"
@@ -1289,6 +1520,7 @@
       "duration_hours": 0.012777777777777779,
       "end_time": "2026-07-26T15:47:12+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:46:26+00:00"
@@ -1298,6 +1530,7 @@
       "duration_hours": 0.0125,
       "end_time": "2026-07-26T15:48:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T15:47:25+00:00"
@@ -1307,6 +1540,7 @@
       "duration_hours": 0.03833333333333333,
       "end_time": "2026-07-26T16:58:04+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:55:46+00:00"
@@ -1316,6 +1550,7 @@
       "duration_hours": 0.04,
       "end_time": "2026-07-26T16:58:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T16:55:46+00:00"
@@ -1325,6 +1560,7 @@
       "duration_hours": 0.058611111111111114,
       "end_time": "2026-07-26T11:39:21+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T11:35:50+00:00"
@@ -1334,6 +1570,7 @@
       "duration_hours": 0.39166666666666666,
       "end_time": "2026-07-26T13:00:35+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:37:05+00:00"
@@ -1343,6 +1580,7 @@
       "duration_hours": 0.7494444444444445,
       "end_time": "2026-07-26T13:41:38+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:56:40+00:00"
@@ -1352,6 +1590,7 @@
       "duration_hours": 0.7361111111111112,
       "end_time": "2026-07-26T13:41:29+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:57:19+00:00"
@@ -1361,6 +1600,7 @@
       "duration_hours": 1.7963888888888888,
       "end_time": "2026-07-26T15:41:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:53:41+00:00"
@@ -1370,6 +1610,7 @@
       "duration_hours": 1.8075,
       "end_time": "2026-07-26T15:42:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T13:53:40+00:00"
@@ -1379,6 +1620,7 @@
       "duration_hours": 0.06333333333333334,
       "end_time": "2026-07-26T18:36:57+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T18:33:09+00:00"
@@ -1388,6 +1630,7 @@
       "duration_hours": 0.26916666666666667,
       "end_time": "2026-07-26T18:53:24+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T18:37:15+00:00"
@@ -1397,6 +1640,7 @@
       "duration_hours": 0.002777777777777778,
       "end_time": "2026-07-26T12:40:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": 0,
       "start_time": "2026-07-26T12:40:39+00:00"
@@ -1406,6 +1650,7 @@
       "duration_hours": 0.012222222222222223,
       "end_time": "2026-05-30T04:38:14+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:37:30+00:00"
@@ -1415,6 +1660,7 @@
       "duration_hours": 0.003611111111111111,
       "end_time": "2026-05-30T01:47:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:47:36+00:00"
@@ -1424,6 +1670,7 @@
       "duration_hours": 0.03,
       "end_time": "2026-05-30T03:23:15+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:21:27+00:00"
@@ -1433,6 +1680,7 @@
       "duration_hours": 0.022222222222222223,
       "end_time": "2026-05-30T01:56:32+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:55:12+00:00"
@@ -1442,6 +1690,7 @@
       "duration_hours": 0.021666666666666667,
       "end_time": "2026-05-30T03:12:54+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:11:36+00:00"
@@ -1451,6 +1700,7 @@
       "duration_hours": 0.0175,
       "end_time": "2026-05-30T03:25:48+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:24:45+00:00"
@@ -1460,6 +1710,7 @@
       "duration_hours": 0.001388888888888889,
       "end_time": "2026-05-31T20:08:22+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:08:17+00:00"
@@ -1469,6 +1720,7 @@
       "duration_hours": 0.0002777777777777778,
       "end_time": "2026-07-25T06:06:50+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "MaxJeblick/llama2-0b-unit-test",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:06:49+00:00"
@@ -1478,6 +1730,7 @@
       "duration_hours": 0.0002777777777777778,
       "end_time": "2026-07-25T06:07:05+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "MaxJeblick/llama2-0b-unit-test",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:07:04+00:00"
@@ -1487,6 +1740,7 @@
       "duration_hours": 0.0002777777777777778,
       "end_time": "2026-07-25T06:06:16+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "MaxJeblick/llama2-0b-unit-test",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:06:15+00:00"
@@ -1496,6 +1750,7 @@
       "duration_hours": 0.0011111111111111111,
       "end_time": "2026-07-25T06:06:35+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "MaxJeblick/llama2-0b-unit-test",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:06:31+00:00"
@@ -1505,6 +1760,7 @@
       "duration_hours": 0.11,
       "end_time": "2026-07-25T06:38:38+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:32:02+00:00"
@@ -1514,6 +1770,7 @@
       "duration_hours": 0.0038888888888888888,
       "end_time": "2026-07-25T06:18:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:18:20+00:00"
@@ -1523,6 +1780,7 @@
       "duration_hours": 0.05694444444444444,
       "end_time": "2026-07-25T06:43:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:39:35+00:00"
@@ -1532,6 +1790,7 @@
       "duration_hours": 0.07027777777777777,
       "end_time": "2026-05-31T09:58:08+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T09:53:55+00:00"
@@ -1541,6 +1800,7 @@
       "duration_hours": 0.11694444444444445,
       "end_time": "2026-05-31T14:33:22+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T14:26:21+00:00"
@@ -1550,6 +1810,7 @@
       "duration_hours": 0.04027777777777778,
       "end_time": "2026-05-31T11:09:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T11:06:35+00:00"
@@ -1559,6 +1820,7 @@
       "duration_hours": 0.052222222222222225,
       "end_time": "2026-05-30T04:48:29+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:45:21+00:00"
@@ -1568,6 +1830,7 @@
       "duration_hours": 0.010277777777777778,
       "end_time": "2026-05-30T04:45:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:44:30+00:00"
@@ -1577,6 +1840,7 @@
       "duration_hours": 0.017777777777777778,
       "end_time": "2026-05-30T23:07:15+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T23:06:11+00:00"
@@ -1586,6 +1850,7 @@
       "duration_hours": 0.3688888888888889,
       "end_time": "2026-05-30T23:29:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T23:07:36+00:00"
@@ -1595,6 +1860,7 @@
       "duration_hours": 0.17694444444444443,
       "end_time": "2026-05-30T23:03:19+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T22:52:42+00:00"
@@ -1604,6 +1870,7 @@
       "duration_hours": 0.03166666666666667,
       "end_time": "2026-05-30T22:52:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T22:50:34+00:00"
@@ -1613,6 +1880,7 @@
       "duration_hours": 0.12083333333333333,
       "end_time": "2026-05-30T22:47:41+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T22:40:26+00:00"
@@ -1622,6 +1890,7 @@
       "duration_hours": 0.042222222222222223,
       "end_time": "2026-05-30T22:40:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T22:37:38+00:00"
@@ -1631,6 +1900,7 @@
       "duration_hours": 0.04138888888888889,
       "end_time": "2026-06-01T00:08:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-06-01T00:05:37+00:00"
@@ -1640,6 +1910,7 @@
       "duration_hours": 0.009444444444444445,
       "end_time": "2026-06-01T00:26:20+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-06-01T00:25:46+00:00"
@@ -1649,6 +1920,7 @@
       "duration_hours": 0.011666666666666667,
       "end_time": "2026-05-31T20:25:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:24:18+00:00"
@@ -1658,6 +1930,7 @@
       "duration_hours": 0.014166666666666666,
       "end_time": "2026-05-31T19:09:25+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:08:34+00:00"
@@ -1667,6 +1940,7 @@
       "duration_hours": 0.0125,
       "end_time": "2026-05-31T19:07:47+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:07:02+00:00"
@@ -1676,6 +1950,7 @@
       "duration_hours": 0.010277777777777778,
       "end_time": "2026-05-31T19:06:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:05:30+00:00"
@@ -1685,6 +1960,7 @@
       "duration_hours": 0.005277777777777778,
       "end_time": "2026-05-31T18:59:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:59:15+00:00"
@@ -1694,6 +1970,7 @@
       "duration_hours": 0.006111111111111111,
       "end_time": "2026-05-31T18:57:23+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:57:01+00:00"
@@ -1703,6 +1980,7 @@
       "duration_hours": 0.006388888888888889,
       "end_time": "2026-05-31T18:58:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:58:11+00:00"
@@ -1712,6 +1990,7 @@
       "duration_hours": 0.006388888888888889,
       "end_time": "2026-05-31T18:56:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:55:47+00:00"
@@ -1721,6 +2000,7 @@
       "duration_hours": 0.029444444444444443,
       "end_time": "2026-05-31T19:01:51+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:00:05+00:00"
@@ -1730,6 +2010,7 @@
       "duration_hours": 0.04111111111111111,
       "end_time": "2026-05-31T21:45:56+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T21:43:28+00:00"
@@ -1739,6 +2020,7 @@
       "duration_hours": 0.024444444444444446,
       "end_time": "2026-05-31T17:00:52+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:59:24+00:00"
@@ -1748,6 +2030,7 @@
       "duration_hours": 0.14166666666666666,
       "end_time": "2026-05-31T17:23:29+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:14:59+00:00"
@@ -1757,6 +2040,7 @@
       "duration_hours": 0.027777777777777776,
       "end_time": "2026-05-31T17:03:46+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:02:06+00:00"
@@ -1766,6 +2050,7 @@
       "duration_hours": 0.1725,
       "end_time": "2026-05-31T17:14:35+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:04:14+00:00"
@@ -1775,6 +2060,7 @@
       "duration_hours": 0.11527777777777778,
       "end_time": "2026-05-31T21:05:09+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:58:14+00:00"
@@ -1784,6 +2070,7 @@
       "duration_hours": 0.021666666666666667,
       "end_time": "2026-05-31T20:54:30+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:53:12+00:00"
@@ -1793,6 +2080,7 @@
       "duration_hours": 0.5566666666666666,
       "end_time": "2026-05-31T21:42:53+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T21:09:29+00:00"
@@ -1802,6 +2090,7 @@
       "duration_hours": 0.008888888888888889,
       "end_time": "2026-05-31T16:06:32+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:06:00+00:00"
@@ -1811,6 +2100,7 @@
       "duration_hours": 0.008611111111111111,
       "end_time": "2026-05-31T16:09:24+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:08:53+00:00"
@@ -1820,6 +2110,7 @@
       "duration_hours": 0.011666666666666667,
       "end_time": "2026-05-31T16:08:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:07:25+00:00"
@@ -1829,6 +2120,7 @@
       "duration_hours": 0.04888888888888889,
       "end_time": "2026-05-31T16:12:42+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:09:46+00:00"
@@ -1838,6 +2130,7 @@
       "duration_hours": 0.020833333333333332,
       "end_time": "2026-05-31T18:47:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:46:21+00:00"
@@ -1847,6 +2140,7 @@
       "duration_hours": 0.008333333333333333,
       "end_time": "2026-05-31T15:46:59+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:46:29+00:00"
@@ -1856,6 +2150,7 @@
       "duration_hours": 0.0077777777777777776,
       "end_time": "2026-05-31T15:44:06+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:43:38+00:00"
@@ -1865,6 +2160,7 @@
       "duration_hours": 0.014166666666666666,
       "end_time": "2026-05-31T18:45:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:44:58+00:00"
@@ -1874,6 +2170,7 @@
       "duration_hours": 0.021666666666666667,
       "end_time": "2026-05-31T18:44:13+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T18:42:55+00:00"
@@ -1883,6 +2180,7 @@
       "duration_hours": 0.03277777777777778,
       "end_time": "2026-05-31T20:57:46+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:55:48+00:00"
@@ -1892,6 +2190,7 @@
       "duration_hours": 0.2452777777777778,
       "end_time": "2026-05-31T20:43:22+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:28:39+00:00"
@@ -1901,6 +2200,7 @@
       "duration_hours": 0.0125,
       "end_time": "2026-05-31T20:27:59+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:27:14+00:00"
@@ -1910,6 +2210,7 @@
       "duration_hours": 0.009444444444444445,
       "end_time": "2026-05-31T15:45:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:45:02+00:00"
@@ -1919,6 +2220,7 @@
       "duration_hours": 0.004722222222222222,
       "end_time": "2026-05-31T15:42:42+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:42:25+00:00"
@@ -1928,6 +2230,7 @@
       "duration_hours": 0.06194444444444445,
       "end_time": "2026-05-31T15:57:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:53:24+00:00"
@@ -1937,6 +2240,7 @@
       "duration_hours": 0.011666666666666667,
       "end_time": "2026-05-31T15:48:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:47:46+00:00"
@@ -1946,6 +2250,7 @@
       "duration_hours": 0.07055555555555555,
       "end_time": "2026-05-31T15:53:03+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:48:49+00:00"
@@ -1955,6 +2260,7 @@
       "duration_hours": 0.18305555555555555,
       "end_time": "2026-05-31T16:41:30+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:30:31+00:00"
@@ -1964,6 +2270,7 @@
       "duration_hours": 0.03944444444444444,
       "end_time": "2026-05-31T16:16:14+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:13:52+00:00"
@@ -1973,6 +2280,7 @@
       "duration_hours": 0.22361111111111112,
       "end_time": "2026-05-31T16:30:01+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T16:16:36+00:00"
@@ -1982,6 +2290,7 @@
       "duration_hours": 0.08916666666666667,
       "end_time": "2026-05-31T15:16:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:11:23+00:00"
@@ -1991,6 +2300,7 @@
       "duration_hours": 0.015833333333333335,
       "end_time": "2026-05-31T15:19:29+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:18:32+00:00"
@@ -2000,6 +2310,7 @@
       "duration_hours": 0.015833333333333335,
       "end_time": "2026-05-31T15:17:57+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "mistralai/Mistral-7B-Instruct-v0.3",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:17:00+00:00"
@@ -2009,6 +2320,7 @@
       "duration_hours": 0.009166666666666667,
       "end_time": "2026-05-31T20:55:22+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:54:49+00:00"
@@ -2018,6 +2330,7 @@
       "duration_hours": 0.020555555555555556,
       "end_time": "2026-05-31T15:42:03+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:40:49+00:00"
@@ -2027,6 +2340,7 @@
       "duration_hours": 0.004166666666666667,
       "end_time": "2026-05-31T15:38:30+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:38:15+00:00"
@@ -2036,6 +2350,7 @@
       "duration_hours": 0.023333333333333334,
       "end_time": "2026-05-31T15:40:16+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:38:52+00:00"
@@ -2045,6 +2360,7 @@
       "duration_hours": 0.014166666666666666,
       "end_time": "2026-05-31T20:49:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:48:52+00:00"
@@ -2054,6 +2370,7 @@
       "duration_hours": 0.002777777777777778,
       "end_time": "2026-05-31T15:24:49+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:24:39+00:00"
@@ -2063,6 +2380,7 @@
       "duration_hours": 0.042777777777777776,
       "end_time": "2026-05-31T15:24:14+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T15:21:40+00:00"
@@ -2072,6 +2390,7 @@
       "duration_hours": 0.11388888888888889,
       "end_time": "2026-05-31T19:21:18+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:14:28+00:00"
@@ -2081,6 +2400,7 @@
       "duration_hours": 0.021666666666666667,
       "end_time": "2026-05-31T19:14:12+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:12:54+00:00"
@@ -2090,6 +2410,7 @@
       "duration_hours": 0.5616666666666666,
       "end_time": "2026-05-31T19:55:15+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T19:21:33+00:00"
@@ -2099,6 +2420,7 @@
       "duration_hours": 0.015555555555555555,
       "end_time": "2026-05-31T20:02:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:01:40+00:00"
@@ -2108,6 +2430,7 @@
       "duration_hours": 0.0175,
       "end_time": "2026-05-31T20:11:47+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:10:44+00:00"
@@ -2117,6 +2440,7 @@
       "duration_hours": 0.029444444444444443,
       "end_time": "2026-05-31T20:10:23+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T20:08:37+00:00"
@@ -2126,6 +2450,7 @@
       "duration_hours": 0.019444444444444445,
       "end_time": "2026-05-31T17:32:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:30:57+00:00"
@@ -2135,6 +2460,7 @@
       "duration_hours": 0.08472222222222223,
       "end_time": "2026-05-31T17:49:50+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:44:45+00:00"
@@ -2144,6 +2470,7 @@
       "duration_hours": 0.017222222222222222,
       "end_time": "2026-05-31T17:34:37+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:33:35+00:00"
@@ -2153,6 +2480,7 @@
       "duration_hours": 0.1502777777777778,
       "end_time": "2026-05-31T17:44:10+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-31T17:35:09+00:00"
@@ -2162,6 +2490,7 @@
       "duration_hours": 0.059444444444444446,
       "end_time": "2026-07-25T06:24:56+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:21:22+00:00"
@@ -2171,6 +2500,7 @@
       "duration_hours": 0.0030555555555555557,
       "end_time": "2026-07-25T06:09:51+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:09:40+00:00"
@@ -2180,6 +2510,7 @@
       "duration_hours": 0.04972222222222222,
       "end_time": "2026-07-25T06:29:08+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:26:09+00:00"
@@ -2189,6 +2520,7 @@
       "duration_hours": 0.06722222222222222,
       "end_time": "2026-07-25T06:16:57+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:12:55+00:00"
@@ -2198,6 +2530,7 @@
       "duration_hours": 0.0005555555555555556,
       "end_time": "2026-07-25T06:59:28+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:59:26+00:00"
@@ -2207,6 +2540,7 @@
       "duration_hours": 0.07944444444444444,
       "end_time": "2026-05-30T01:52:44+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:47:58+00:00"
@@ -2216,6 +2550,7 @@
       "duration_hours": 0.04027777777777778,
       "end_time": "2026-05-30T01:45:18+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:42:53+00:00"
@@ -2225,6 +2560,7 @@
       "duration_hours": 0.008888888888888889,
       "end_time": "2026-05-30T01:54:38+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:54:06+00:00"
@@ -2234,6 +2570,7 @@
       "duration_hours": 0.03111111111111111,
       "end_time": "2026-05-30T01:58:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:56:51+00:00"
@@ -2243,6 +2580,7 @@
       "duration_hours": 0.0225,
       "end_time": "2026-05-30T02:06:12+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:04:51+00:00"
@@ -2252,6 +2590,7 @@
       "duration_hours": 0.014166666666666666,
       "end_time": "2026-05-30T01:59:57+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T01:59:06+00:00"
@@ -2261,6 +2600,7 @@
       "duration_hours": 0.05555555555555555,
       "end_time": "2026-05-30T02:03:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:00:14+00:00"
@@ -2270,6 +2610,7 @@
       "duration_hours": 0.3572222222222222,
       "end_time": "2026-05-30T04:34:26+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:13:00+00:00"
@@ -2279,6 +2620,7 @@
       "duration_hours": 0.1922222222222222,
       "end_time": "2026-05-30T03:41:43+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:30:11+00:00"
@@ -2288,6 +2630,7 @@
       "duration_hours": 0.3688888888888889,
       "end_time": "2026-05-30T04:04:16+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:42:08+00:00"
@@ -2297,6 +2640,7 @@
       "duration_hours": 0.03638888888888889,
       "end_time": "2026-05-30T02:12:05+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:09:54+00:00"
@@ -2306,6 +2650,7 @@
       "duration_hours": 0.06555555555555556,
       "end_time": "2026-05-30T04:12:45+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:08:49+00:00"
@@ -2315,6 +2660,7 @@
       "duration_hours": 0.04777777777777778,
       "end_time": "2026-05-30T04:42:07+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:39:15+00:00"
@@ -2324,6 +2670,7 @@
       "duration_hours": 0.43472222222222223,
       "end_time": "2026-05-30T02:58:37+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:32:32+00:00"
@@ -2333,6 +2680,7 @@
       "duration_hours": 0.2363888888888889,
       "end_time": "2026-05-30T02:27:22+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:13:11+00:00"
@@ -2342,6 +2690,7 @@
       "duration_hours": 0.06472222222222222,
       "end_time": "2026-05-30T03:09:54+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:06:01+00:00"
@@ -2351,6 +2700,7 @@
       "duration_hours": 0.06194444444444445,
       "end_time": "2026-05-30T03:29:52+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:26:09+00:00"
@@ -2360,6 +2710,7 @@
       "duration_hours": 0.06777777777777778,
       "end_time": "2026-05-30T03:05:40+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T03:01:36+00:00"
@@ -2369,6 +2720,7 @@
       "duration_hours": 0.01,
       "end_time": "2026-05-30T04:39:00+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T04:38:24+00:00"
@@ -2378,6 +2730,7 @@
       "duration_hours": 0.017222222222222222,
       "end_time": "2026-05-30T02:09:39+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T02:08:37+00:00"
@@ -2387,6 +2740,7 @@
       "duration_hours": 0.07888888888888888,
       "end_time": "2026-05-30T09:15:03+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:10:19+00:00"
@@ -2396,6 +2750,7 @@
       "duration_hours": 0.015833333333333335,
       "end_time": "2026-05-30T09:09:52+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:08:55+00:00"
@@ -2405,6 +2760,7 @@
       "duration_hours": 0.7147222222222223,
       "end_time": "2026-05-30T10:16:38+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:33:45+00:00"
@@ -2414,6 +2770,7 @@
       "duration_hours": 0.08,
       "end_time": "2026-05-30T09:33:27+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:28:39+00:00"
@@ -2423,6 +2780,7 @@
       "duration_hours": 0.17277777777777778,
       "end_time": "2026-05-30T09:28:13+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:17:51+00:00"
@@ -2432,6 +2790,7 @@
       "duration_hours": 0.015833333333333335,
       "end_time": "2026-05-30T09:17:34+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T09:16:37+00:00"
@@ -2441,6 +2800,7 @@
       "duration_hours": 0.03166666666666667,
       "end_time": "2026-05-30T23:34:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T23:32:42+00:00"
@@ -2450,6 +2810,7 @@
       "duration_hours": 0.7241666666666666,
       "end_time": "2026-05-31T00:18:17+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "runner_exit_code": null,
       "start_time": "2026-05-30T23:34:50+00:00"
@@ -2459,6 +2820,7 @@
       "duration_hours": 0.14694444444444443,
       "end_time": "2026-07-25T06:53:11+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:44:22+00:00"
@@ -2468,6 +2830,7 @@
       "duration_hours": 0.005,
       "end_time": "2026-07-25T06:20:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:20:18+00:00"
@@ -2477,11 +2840,1932 @@
       "duration_hours": 0.07694444444444444,
       "end_time": "2026-07-25T06:58:36+00:00",
       "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "main",
       "model": "01-ai/Yi-1.5-9B-Chat",
       "runner_exit_code": null,
       "start_time": "2026-07-25T06:53:59+00:00"
+    },
+    {
+      "config_sha256": "74ee15c33dde44add988853aee47a332680e283018913528204df0bc2315559c",
+      "duration_hours": 0.0044444444444444444,
+      "end_time": "2026-09-17T04:44:02+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T04:43:46+00:00"
+    },
+    {
+      "config_sha256": "c65dca1a75b9d25809fbe4b4b9aae67ef8ead72917a3dc72f6f6700dc8c6a3d8",
+      "duration_hours": 0.007222222222222222,
+      "end_time": "2026-09-17T05:22:54+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:22:28+00:00"
+    },
+    {
+      "config_sha256": "4f3fb0fbf3ee19ff579b19f777584456823f78cadeddd9a37815bc7acfb31381",
+      "duration_hours": 0.026944444444444444,
+      "end_time": "2026-09-17T05:28:14+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct (tokenizer only, CPU)",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:26:37+00:00"
+    },
+    {
+      "config_sha256": "4ebde233fe3ea28f7fc73e9f36f2cde0c6a6f739ea91072c0228ad8ec6ee67dc",
+      "duration_hours": 0.005555555555555556,
+      "end_time": "2026-09-17T05:40:42+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:40:22+00:00"
+    },
+    {
+      "config_sha256": "5c78d94db5e1b1ff6e091ec892ffb9d70bd04d7d0b518c7778d873f9897db1f4",
+      "duration_hours": 0.006944444444444444,
+      "end_time": "2026-09-17T05:42:50+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:42:25+00:00"
+    },
+    {
+      "config_sha256": "18507ff19c9926b11d4663dcbef0316772280954f6154446e13b80637a8cae6d",
+      "duration_hours": 0.16166666666666665,
+      "end_time": "2026-09-17T05:55:51+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:46:09+00:00"
+    },
+    {
+      "config_sha256": "831e36d301e337c88dfb5995591a24bc771a52aa06bcdc5110c5a136582ebd8f",
+      "duration_hours": 0.1852777777777778,
+      "end_time": "2026-09-17T05:57:47+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:46:40+00:00"
+    },
+    {
+      "config_sha256": "7942cd88cc50d67184acf0697fa7dfe89177522ffb6997a24e9f2624ceee8630",
+      "duration_hours": 0.2013888888888889,
+      "end_time": "2026-09-17T06:00:45+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:48:40+00:00"
+    },
+    {
+      "config_sha256": "fcec290404e2b8c0b942bd9976dd517910764fbf2fe6721cadd40ce807f239c1",
+      "duration_hours": 0.0008333333333333334,
+      "end_time": "2026-09-17T05:49:23+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "n/a (stored predictions)",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:49:20+00:00"
+    },
+    {
+      "config_sha256": "32634edaa5721faff0e841b5fec6d710a1a1982164fce00be69696791ccdc748",
+      "duration_hours": 0.1986111111111111,
+      "end_time": "2026-09-17T06:08:06+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:56:11+00:00"
+    },
+    {
+      "config_sha256": "71063ea11c89d4f7889f834d36711e6b20c30df3d4000c3dd2bb3b75c1ce8768",
+      "duration_hours": 0.1947222222222222,
+      "end_time": "2026-09-17T06:09:37+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T05:57:56+00:00"
+    },
+    {
+      "config_sha256": "8d2f4fc9f47f6118f0531878372ee6dd8f3c433d583b0a3e4f6e936dd2954381",
+      "duration_hours": 0.1825,
+      "end_time": "2026-09-17T06:11:54+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:00:57+00:00"
+    },
+    {
+      "config_sha256": "1e8aedf808d81fef3ca2f773c1eec8bd059b18bce5d82ab6f68c5401ae773a2d",
+      "duration_hours": 0.4116666666666667,
+      "end_time": "2026-09-17T06:32:55+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:08:13+00:00"
+    },
+    {
+      "config_sha256": "dff720b3fe356ee328683cd543da580bc259c3c7322bb4286abbe61b191d799a",
+      "duration_hours": 0.34055555555555556,
+      "end_time": "2026-09-17T06:30:09+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:09:43+00:00"
+    },
+    {
+      "config_sha256": "b9bd12c54d19857aaf0820a831f2a84c74b8a94d7b6a89efc4f79d9ff5fe29c5",
+      "duration_hours": 0.5494444444444444,
+      "end_time": "2026-09-17T06:45:12+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:12:14+00:00"
+    },
+    {
+      "config_sha256": "4d755f45a46a71356f4bf162ba40d71b45a52b96e207da255b2fe17b626f6d76",
+      "duration_hours": 0.7763888888888889,
+      "end_time": "2026-09-17T07:16:51+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:30:16+00:00"
+    },
+    {
+      "config_sha256": "9d8354f74134d6831783020c308f0401ff09bf8d364f7c420378f86a429a00bf",
+      "duration_hours": 0.9408333333333333,
+      "end_time": "2026-09-17T07:29:29+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:33:02+00:00"
+    },
+    {
+      "config_sha256": "53620bce1b4cd97a275570cdc4f7b49702fd23d7f28a0487c7d9d1a4914f22a3",
+      "duration_hours": 1.718611111111111,
+      "end_time": "2026-09-17T08:28:26+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T06:45:19+00:00"
+    },
+    {
+      "config_sha256": "f90811a749c72ee1396b009a1319ddb5cf206b0ca7bd0001cced710a01daa9cb",
+      "duration_hours": 1.4747222222222223,
+      "end_time": "2026-09-17T08:45:39+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T07:17:10+00:00"
+    },
+    {
+      "config_sha256": "c24abf33d821e4d6297137ccf8cc1812a8be682d6ad7e00bb59ea51e49645e3e",
+      "duration_hours": 2.0213888888888887,
+      "end_time": "2026-09-17T09:30:59+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T07:29:42+00:00"
+    },
+    {
+      "config_sha256": "0d83b1fd7aa40e819470333bf19cf18d896e13858ca7c5ccca84f79aa53b7211",
+      "duration_hours": 1.5911111111111111,
+      "end_time": "2026-09-17T10:04:05+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T08:28:37+00:00"
+    },
+    {
+      "config_sha256": "c462b40130df81ee7e06c5af1c50c9ee65a7d3a645f92ad2ea8305fd832fdd56",
+      "duration_hours": 1.7466666666666666,
+      "end_time": "2026-09-17T10:30:43+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T08:45:55+00:00"
+    },
+    {
+      "config_sha256": "95425c31ea339810b6ea9523b9ce5047e01361acf81607440ba0b4c38233be00",
+      "duration_hours": 0.9969444444444444,
+      "end_time": "2026-09-17T10:31:07+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T09:31:18+00:00"
+    },
+    {
+      "config_sha256": "16813fe2d62730353371e3e6039687575116153c756ec64eae4a1d598581412a",
+      "duration_hours": 1.0944444444444446,
+      "end_time": "2026-09-17T11:10:03+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T10:04:23+00:00"
+    },
+    {
+      "config_sha256": "1491dd08c7b5f83ab79f91bf47c6b41a4784bb0e7aae644b4fd8dc5ccee541bd",
+      "duration_hours": 1.4794444444444443,
+      "end_time": "2026-09-17T11:59:44+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T10:30:58+00:00"
+    },
+    {
+      "config_sha256": "8b7b65419536cb3b4873b23d298635b96d16ef8f7609b3bb7e414095cf2aacf6",
+      "duration_hours": 1.4875,
+      "end_time": "2026-09-17T12:00:43+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T10:31:28+00:00"
+    },
+    {
+      "config_sha256": "90865bc00677428ef056d497fdebe3cf3d8286f10d3e52b636d4d211469d83f5",
+      "duration_hours": 1.1605555555555556,
+      "end_time": "2026-09-17T12:19:58+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T11:10:20+00:00"
+    },
+    {
+      "config_sha256": "b06263ad277fccd3b0539b91ed16e2a164f5ab63ac255f53380721c72e82efec",
+      "duration_hours": 1.423888888888889,
+      "end_time": "2026-09-17T13:25:24+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T11:59:58+00:00"
+    },
+    {
+      "config_sha256": "00d679a32173683b7e66f4ea0122d9848901d9c35c66745f6f4686fad46625a8",
+      "duration_hours": 0.4072222222222222,
+      "end_time": "2026-09-17T12:25:24+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T12:00:58+00:00"
+    },
+    {
+      "config_sha256": "4005b3f57adfabe74bc408d96c61de5428c30d0a0ffdfe94b45159ff13c5a837",
+      "duration_hours": 0.5213888888888889,
+      "end_time": "2026-09-17T12:51:33+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T12:20:16+00:00"
+    },
+    {
+      "config_sha256": "37c7d9c230657d7927bdba500b2b6cf93ffda49e2c7e69fd7e77108b0419e830",
+      "duration_hours": 0.4052777777777778,
+      "end_time": "2026-09-17T12:49:51+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T12:25:32+00:00"
+    },
+    {
+      "config_sha256": "8ce112dab4566e786557251ac1e3244243052032750a071c0389a5a585e2a9f1",
+      "duration_hours": 0.4177777777777778,
+      "end_time": "2026-09-17T13:15:11+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T12:50:07+00:00"
+    },
+    {
+      "config_sha256": "874f7dbbf13b47e8c5118444837130220a5180b1121663a32b56e28a5836c590",
+      "duration_hours": 0.1338888888888889,
+      "end_time": "2026-09-17T12:59:54+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T12:51:52+00:00"
+    },
+    {
+      "config_sha256": "ba0740fd39129ec8a6d8c36bd15f48cf2be2c3d92e2ba08f76ed9af215c05f6a",
+      "duration_hours": 0.5225,
+      "end_time": "2026-09-17T13:31:29+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:00:08+00:00"
+    },
+    {
+      "config_sha256": "4034bcbd04739a2ac7cb5aae48d375611ca08e8ed19261893235a9f2ba0a7833",
+      "duration_hours": 0.38972222222222225,
+      "end_time": "2026-09-17T13:38:49+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:15:26+00:00"
+    },
+    {
+      "config_sha256": "39ed321a97ef2c7d46cee9f8c1d051d26ce097dba8edde43c23c8ccd8e973f84",
+      "duration_hours": 0.3763888888888889,
+      "end_time": "2026-09-17T13:48:18+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:25:43+00:00"
+    },
+    {
+      "config_sha256": "cb78cd25a902baceed018b713ca8b92079b1bc9032c0ced5adff99c4ba258cdf",
+      "duration_hours": 0.49333333333333335,
+      "end_time": "2026-09-17T14:01:20+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:31:44+00:00"
+    },
+    {
+      "config_sha256": "d699c3d2d8881b27322bca40931836818b043211dfc331cfd6552a26bc704175",
+      "duration_hours": 0.37555555555555553,
+      "end_time": "2026-09-17T14:01:32+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:39:00+00:00"
+    },
+    {
+      "config_sha256": "9d60dffed249eb2b47fac20290a15ffea910a0ccc15dcb3fd5e81698c46f9702",
+      "duration_hours": 0.4102777777777778,
+      "end_time": "2026-09-17T14:13:09+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T13:48:32+00:00"
+    },
+    {
+      "config_sha256": "93b7c0d11f059e624aed22fad750c9c042b80412aa9c6eb621aece4d0909c8c8",
+      "duration_hours": 0.4330555555555556,
+      "end_time": "2026-09-17T14:27:33+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:01:34+00:00"
+    },
+    {
+      "config_sha256": "a7c3b906e173345385829d1e4781bf8745934ab8ec17d5bcd5b8653bf51e79ea",
+      "duration_hours": 0.22361111111111112,
+      "end_time": "2026-09-17T14:15:29+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:02:04+00:00"
+    },
+    {
+      "config_sha256": "00fda0edf454e87580c23eca85cd3b0975a30167129d2964baa4291e818eed68",
+      "duration_hours": 0.4513888888888889,
+      "end_time": "2026-09-17T14:40:28+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:13:23+00:00"
+    },
+    {
+      "config_sha256": "00a35dafca5f538811b238a4af4dd001935659ad68873f536c526d78f057582f",
+      "duration_hours": 0.36916666666666664,
+      "end_time": "2026-09-17T14:37:47+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:15:38+00:00"
+    },
+    {
+      "config_sha256": "265c154e26f9bd56a8bdfd2c99ab6b4b2ed503200c34cc0ea20b3be9444ab08d",
+      "duration_hours": 0.745,
+      "end_time": "2026-09-17T15:12:22+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:27:40+00:00"
+    },
+    {
+      "config_sha256": "b65f3152af8702a20aa7470f533f6b33d1ef3f5c0b0b73e029185589a63ccd5d",
+      "duration_hours": 0.01972222222222222,
+      "end_time": "2026-09-17T14:39:06+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:37:55+00:00"
+    },
+    {
+      "config_sha256": "40b3cffcfc3496518c46c82b113c2fc22b5170facfc98eda0baead15daa28204",
+      "duration_hours": 0.6305555555555555,
+      "end_time": "2026-09-17T15:37:32+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T14:59:42+00:00"
+    },
+    {
+      "config_sha256": "e40d259b6f30b7e5ad81332d6c2ca49c15f003a74ab4f59d68f5229709946a10",
+      "duration_hours": 1.4097222222222223,
+      "end_time": "2026-09-17T16:37:05+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T15:12:30+00:00"
+    },
+    {
+      "config_sha256": "299b297f6a94e59169fe5c9bbf8cd31fcedb5306cf304cea008e1bb93940c7ef",
+      "duration_hours": 0.6355555555555555,
+      "end_time": "2026-09-17T16:15:58+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T15:37:50+00:00"
+    },
+    {
+      "config_sha256": "d6580b614f5d9f16187a59aeea94991259b42f571fabf8b7983be54f9bb8b1b5",
+      "duration_hours": 0.22416666666666665,
+      "end_time": "2026-09-17T16:29:39+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T16:16:12+00:00"
+    },
+    {
+      "config_sha256": "650fee3d95d1cdf91dda4c470d63b38c55ebdc249c0b8bb567fc50eee7888d5d",
+      "duration_hours": 0.4452777777777778,
+      "end_time": "2026-09-17T16:56:28+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T16:29:45+00:00"
+    },
+    {
+      "config_sha256": "9b676fa0b379993d351a2bd45469bb379c7bb26e335e62294d8b3ab79a7c8827",
+      "duration_hours": 1.6802777777777778,
+      "end_time": "2026-09-17T18:18:05+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T16:37:16+00:00"
+    },
+    {
+      "config_sha256": "851981ed84625718507dcf19b4015bb995dcc127b32ecbdf434d81cadbb2e3d7",
+      "duration_hours": 0.6125,
+      "end_time": "2026-09-17T17:33:20+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T16:56:35+00:00"
+    },
+    {
+      "config_sha256": "7b7ed3491532e0a74152d749bd270b8c95ef2dd640ebfb432826de8d7476c296",
+      "duration_hours": 0.8305555555555556,
+      "end_time": "2026-09-17T18:23:18+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T17:33:28+00:00"
+    },
+    {
+      "config_sha256": "a4155323a00b56ff49564e3150a63eced641063c1a7e783f3eae22b3a3722132",
+      "duration_hours": 1.0105555555555557,
+      "end_time": "2026-09-17T19:19:00+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:18:22+00:00"
+    },
+    {
+      "config_sha256": "274d1c1b39f86c5d32a629c00307c1d82ccec5bb39f5cab78e80a4cb5d07d004",
+      "duration_hours": 0.16166666666666665,
+      "end_time": "2026-09-17T18:30:34+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:20:52+00:00"
+    },
+    {
+      "config_sha256": "e12f1c05818e541d06b2b95e1b0d6b75798d20ee9e1b659b9dcfd863ffbbb280",
+      "duration_hours": 0.1913888888888889,
+      "end_time": "2026-09-17T18:35:07+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:23:38+00:00"
+    },
+    {
+      "config_sha256": "6ae9acadfa56626e5a6f7729b9c34102c4024e9e264316657ed5b31010794eef",
+      "duration_hours": 0.12277777777777778,
+      "end_time": "2026-09-17T18:38:16+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:30:54+00:00"
+    },
+    {
+      "config_sha256": "bb857ab291a95b65f0dd6c15b2905c26c43161e0730c0f69260730251be15def",
+      "duration_hours": 0.12611111111111112,
+      "end_time": "2026-09-17T18:42:58+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:35:24+00:00"
+    },
+    {
+      "config_sha256": "2c38f29a52de68319538c5e85a994600e9230a011ed98f03a3891c28fcd90b73",
+      "duration_hours": 0.11861111111111111,
+      "end_time": "2026-09-17T18:45:32+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:38:25+00:00"
+    },
+    {
+      "config_sha256": "dc44559a0640136f0ed62e4708f1d63bb36288752c40ac14893147f9337d3607",
+      "duration_hours": 0.12805555555555556,
+      "end_time": "2026-09-17T18:50:52+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:43:11+00:00"
+    },
+    {
+      "config_sha256": "19e7ec008c08e170f15223e1dd19891623a0194c16c292231b330d094d834c90",
+      "duration_hours": 1.2336111111111112,
+      "end_time": "2026-09-17T19:59:42+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:45:41+00:00"
+    },
+    {
+      "config_sha256": "4e6e4b3d560ce35745f987d4d00f8efefd68c9969599981aa53e3a89a5ef8655",
+      "duration_hours": 1.2583333333333333,
+      "end_time": "2026-09-17T20:06:42+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T18:51:12+00:00"
+    },
+    {
+      "config_sha256": "9d1394d873d11cd151c87f2f72a3850974eaef9d0a5cb6299a375bbc3d59a632",
+      "duration_hours": 1.0916666666666666,
+      "end_time": "2026-09-17T20:24:48+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T19:19:18+00:00"
+    },
+    {
+      "config_sha256": "bbc7c3be6c31eb7715b8d41ed564758f8bc32ac16d14e0c1127320e71f45a61d",
+      "duration_hours": 0.12416666666666666,
+      "end_time": "2026-09-17T20:07:22+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T19:59:55+00:00"
+    },
+    {
+      "config_sha256": "ea14b0884390a49eae66a3fa1d87561235dd2b60774a007b9e7645cf849e6495",
+      "duration_hours": 0.13194444444444445,
+      "end_time": "2026-09-17T20:14:51+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:06:56+00:00"
+    },
+    {
+      "config_sha256": "4aef33bc916b1470c66eeadafc734a629626216e8b14a17166d1caa08455f61f",
+      "duration_hours": 0.13055555555555556,
+      "end_time": "2026-09-17T20:15:31+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:07:41+00:00"
+    },
+    {
+      "config_sha256": "da87f4246f0de621f36c59560d584de63dc43dc2ce4b30e93d85ba9f0569db26",
+      "duration_hours": 0.07833333333333334,
+      "end_time": "2026-09-17T20:19:40+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:14:58+00:00"
+    },
+    {
+      "config_sha256": "904834ab156a8f47e33ecb6637bb72c5845d37b2e6e419bd1305dc4f72cdd3b9",
+      "duration_hours": 0.06916666666666667,
+      "end_time": "2026-09-17T20:24:08+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:19:59+00:00"
+    },
+    {
+      "config_sha256": "9594c33cd1794fcac917842dbc1b31020eda933b18bc9cc7daf7c75e7cc29f7d",
+      "duration_hours": 0.06555555555555556,
+      "end_time": "2026-09-17T20:24:25+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:20:29+00:00"
+    },
+    {
+      "config_sha256": "56d0faa5160e8d3be5a16461b925b0c6a2872fae60be3a1cc94f3e504d7b06ee",
+      "duration_hours": 0.01361111111111111,
+      "end_time": "2026-09-17T20:25:03+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:24:14+00:00"
+    },
+    {
+      "config_sha256": "ff8ed241342172d4cae3ba784e478b0af40cc8f0cb04e5a3f76a5ed7dec48ecb",
+      "duration_hours": 0.009722222222222222,
+      "end_time": "2026-09-17T20:25:19+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:24:44+00:00"
+    },
+    {
+      "config_sha256": "4f8b952a24f9993a79d83d74644aef770d803e7b43fb87b2fc89b19a69ba377f",
+      "duration_hours": 1.9891666666666667,
+      "end_time": "2026-09-17T22:24:35+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:25:14+00:00"
+    },
+    {
+      "config_sha256": "0e6099503996602d7167af88cb6713e294e98878b9c24e6c54baea0ce8fba1c7",
+      "duration_hours": 1.4747222222222223,
+      "end_time": "2026-09-17T21:54:13+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:25:44+00:00"
+    },
+    {
+      "config_sha256": "4a212e7b9eecd4a48015c244dcc8a99f102c3bf564ef227a5d8e99f1cad49e9c",
+      "duration_hours": 1.5152777777777777,
+      "end_time": "2026-09-17T21:59:10+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T20:28:15+00:00"
+    },
+    {
+      "config_sha256": "c619b8805d83fa626f1914e40e930120815e098755c732f7d184a8bda3e21855",
+      "duration_hours": 1.3527777777777779,
+      "end_time": "2026-09-17T23:15:41+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T21:54:31+00:00"
+    },
+    {
+      "config_sha256": "e9345791804a5a9f37acfbc040e2220159c23ab968e55d02fb53bdc210bd698f",
+      "duration_hours": 0.6602777777777777,
+      "end_time": "2026-09-17T22:46:55+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T22:07:18+00:00"
+    },
+    {
+      "config_sha256": "55ae7ab73bc039cad246cf0f8b4fccdd4e3960d8f8c372e04eb5997ac1940f78",
+      "duration_hours": 0.20583333333333334,
+      "end_time": "2026-09-17T22:37:12+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T22:24:51+00:00"
+    },
+    {
+      "config_sha256": "bbca75ba05882fbb737404b4f86f2c00819bf7fe454bbf288c73b062c1cdab54",
+      "duration_hours": 1.3152777777777778,
+      "end_time": "2026-09-17T23:56:18+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T22:37:23+00:00"
+    },
+    {
+      "config_sha256": "f0b2caca764a7bd0e319d365a18d6adbbe29245dacc66148bae7b00f2927b0d3",
+      "duration_hours": 0.7061111111111111,
+      "end_time": "2026-09-17T23:58:23+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T23:16:01+00:00"
+    },
+    {
+      "config_sha256": "b49effb9669fc762765967d638d372f5e069a1634101ceed80ca297aa12a044c",
+      "duration_hours": 0.4247222222222222,
+      "end_time": "2026-09-18T00:22:07+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T23:56:38+00:00"
+    },
+    {
+      "config_sha256": "f44846c04008234830632a38876625f0215588c7caffdcd98bc6e2fc414e9c1e",
+      "duration_hours": 0.4336111111111111,
+      "end_time": "2026-09-18T00:24:39+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-17T23:58:38+00:00"
+    },
+    {
+      "config_sha256": "2dc3355ca1f9736c690f566b0807b8336197d09e8a37441b3f09ea66b8dd36ab",
+      "duration_hours": 0.15361111111111111,
+      "end_time": "2026-09-18T00:31:25+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T00:22:12+00:00"
+    },
+    {
+      "config_sha256": "aa4efe08d463f00691b9a73c4454f1dc3671c012f4f427134bf505229f2caebc",
+      "duration_hours": 0.3477777777777778,
+      "end_time": "2026-09-18T00:45:52+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T00:25:00+00:00"
+    },
+    {
+      "config_sha256": "3211234f075040326f6081d5e4cefa9b64746917fd043231b9cf02a1a301a703",
+      "duration_hours": 0.4275,
+      "end_time": "2026-09-18T00:57:23+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T00:31:44+00:00"
+    },
+    {
+      "config_sha256": "6da4ff64d1c5697b209ce4dcb0f0ec3e1ec4c5450c0073e95a01b31fcfede6f7",
+      "duration_hours": 1.5630555555555556,
+      "end_time": "2026-09-18T02:19:49+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T00:46:02+00:00"
+    },
+    {
+      "config_sha256": "31e86c82e9e4ee1e154fd0005814549df29e6c81cb394227df2ee78da9514609",
+      "duration_hours": 0.48,
+      "end_time": "2026-09-18T01:26:37+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T00:57:49+00:00"
+    },
+    {
+      "config_sha256": "8e4ca26c9ddc22facf43469c0a25186ba40a56e0facd38873fe48a847d1326fa",
+      "duration_hours": 1.3827777777777779,
+      "end_time": "2026-09-18T02:24:22+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T01:01:24+00:00"
+    },
+    {
+      "config_sha256": "f4eaf84b88fcf9e3d1b1473a26f063e28eb4402ed91c26cdd5481dcd9f096ea4",
+      "duration_hours": 1.0655555555555556,
+      "end_time": "2026-09-18T03:24:20+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T02:20:24+00:00"
+    },
+    {
+      "config_sha256": "229adaf460d809a0fe40b562a60ec4fb1cf3c131b3aa3cb6ce86cd9fb8e6c059",
+      "duration_hours": 0.8986111111111111,
+      "end_time": "2026-09-18T03:18:50+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T02:24:55+00:00"
+    },
+    {
+      "config_sha256": "f9ffb22a35ca0769772cad770ae9e178346b870c295c955de06182754798c83e",
+      "duration_hours": 1.1247222222222222,
+      "end_time": "2026-09-18T04:32:21+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T03:24:52+00:00"
+    },
+    {
+      "config_sha256": "f6785063f67d1267d58699a17a24c912f010c58bae37f135201e9e1a801a4b5f",
+      "duration_hours": 1.7544444444444445,
+      "end_time": "2026-09-18T06:18:07+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:32:51+00:00"
+    },
+    {
+      "config_sha256": "f17f1998c085e226575dfbcdcde652d4002ff8a6d198d5b9b8973e162df8895b",
+      "duration_hours": 0.016944444444444446,
+      "end_time": "2026-09-18T04:34:17+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:33:16+00:00"
+    },
+    {
+      "config_sha256": "30534f47b415b5be021d4b97744d6b6039523b5d3cdf2bd0fa8d4158500453d0",
+      "duration_hours": 0.2575,
+      "end_time": "2026-09-18T04:50:18+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:34:51+00:00"
+    },
+    {
+      "config_sha256": "363dbfb3c08107e0e84eaa9cd92270043d338c007884511010ba72407d78a448",
+      "duration_hours": 2.0797222222222222,
+      "end_time": "2026-09-18T06:42:09+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:37:22+00:00"
+    },
+    {
+      "config_sha256": "b6b287a4077667e732b8e63f5725fa21c559ad7de528d5efa33bb77b27cdb810",
+      "duration_hours": 0.0022222222222222222,
+      "end_time": "2026-09-18T04:50:47+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:50:39+00:00"
+    },
+    {
+      "config_sha256": "94f94857d280bc4d9f6e1e9e189949fa62172f552447d67737028df5cf27d690",
+      "duration_hours": 0.045,
+      "end_time": "2026-09-18T04:54:06+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:51:24+00:00"
+    },
+    {
+      "config_sha256": "0c9d0734d70b1e0ab47ef4ebf6e5e1b29455804eda4ea2569ea38be24f092ec1",
+      "duration_hours": 0.044444444444444446,
+      "end_time": "2026-09-18T04:57:20+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:54:40+00:00"
+    },
+    {
+      "config_sha256": "19e5eb27d56ab1943041a973babb3063f35637dfc9bc45148210c257788c0697",
+      "duration_hours": 0.04138888888888889,
+      "end_time": "2026-09-18T05:00:25+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T04:57:56+00:00"
+    },
+    {
+      "config_sha256": "d2661fbbc0059fe5dd77806d2428aba0aedc73ac08666fda489094b39b96216d",
+      "duration_hours": 0.050833333333333335,
+      "end_time": "2026-09-18T05:03:59+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:00:56+00:00"
+    },
+    {
+      "config_sha256": "67a958a83de8c4d470f2d8409270d67eec2733508d109931dbf0a36f301c9bd8",
+      "duration_hours": 0.041666666666666664,
+      "end_time": "2026-09-18T05:06:57+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:04:27+00:00"
+    },
+    {
+      "config_sha256": "dd4df48ad6d0cb9e3134bcfe479ef489fd0206853d2bcd934aeeaea48168c5c3",
+      "duration_hours": 0.04666666666666667,
+      "end_time": "2026-09-18T05:10:15+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:07:27+00:00"
+    },
+    {
+      "config_sha256": "cfe9bf4b65129e9a4cd851c06c9e35358a3e986552133e149b444b1ebf34e4b3",
+      "duration_hours": 0.05,
+      "end_time": "2026-09-18T05:13:43+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:10:43+00:00"
+    },
+    {
+      "config_sha256": "337af9d75c0f657ef7546724356b37048e6fd51c5c8c781143e5879793178fd6",
+      "duration_hours": 0.04111111111111111,
+      "end_time": "2026-09-18T05:16:42+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:14:14+00:00"
+    },
+    {
+      "config_sha256": "fe8ccab9a359f56e81f0eccc52b9bb8e665dcd0e313e7044d36d5c673dc7e5bb",
+      "duration_hours": 0.051111111111111114,
+      "end_time": "2026-09-18T05:20:18+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:17:14+00:00"
+    },
+    {
+      "config_sha256": "166816f49566b78470e1795b861cd9591bac8e2e2f22c114429b6f4d17362461",
+      "duration_hours": 0.5525,
+      "end_time": "2026-09-18T05:53:54+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:20:45+00:00"
+    },
+    {
+      "config_sha256": "6aea44c903f831a82da0de07bf4cfe0c6d1fcf8d11989f1f51c106aaa87401b3",
+      "duration_hours": 0.3605555555555556,
+      "end_time": "2026-09-18T06:15:59+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T05:54:21+00:00"
+    },
+    {
+      "config_sha256": "35842f67cc05937babefeca31a9bb22aedce90c16ca2c449be0bc22b863ab13d",
+      "duration_hours": 0.30027777777777775,
+      "end_time": "2026-09-18T06:34:27+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T06:16:26+00:00"
+    },
+    {
+      "config_sha256": "8d01582dbd425655add96ab839f24eb1563a2fb3439f907ead7e56b7bf66e913",
+      "duration_hours": 0.16916666666666666,
+      "end_time": "2026-09-18T06:29:06+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T06:18:57+00:00"
+    },
+    {
+      "config_sha256": "dbef663d7e337c34f8ce275f4df3dbb98b723aa976bc53ef0588973dd117885b",
+      "duration_hours": 0.38916666666666666,
+      "end_time": "2026-09-18T06:58:23+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T06:35:02+00:00"
+    },
+    {
+      "config_sha256": "a679223b54aabd67a3ed0c8ea192b91598c997303690a5593949a0d319fca38b",
+      "duration_hours": 0.25166666666666665,
+      "end_time": "2026-09-18T06:57:40+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T06:42:34+00:00"
+    },
+    {
+      "config_sha256": "a87af26555813fbb3571f5307e25a62eb41cc71d2df6138695b2a2b6e5a81d95",
+      "duration_hours": 0.21555555555555556,
+      "end_time": "2026-09-18T07:11:04+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T06:58:08+00:00"
+    },
+    {
+      "config_sha256": "a3f668a5622e2f580c30184b59555c08aa49c3779a3e4cdb217fb8425745e645",
+      "duration_hours": 0.5077777777777778,
+      "end_time": "2026-09-18T07:31:05+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:00:37+00:00"
+    },
+    {
+      "config_sha256": "719c22ad98a56ec7eb30f11940e3447f8995fa0d719d4c35bd3f34eb883456b2",
+      "duration_hours": 0.3202777777777778,
+      "end_time": "2026-09-18T07:30:52+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:11:39+00:00"
+    },
+    {
+      "config_sha256": "8b783f02ab3568f62799bf5d19f5fa39c8e91fed2c4f486eea1dc673417734c7",
+      "duration_hours": 0.1852777777777778,
+      "end_time": "2026-09-18T07:42:36+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:31:29+00:00"
+    },
+    {
+      "config_sha256": "524f6acc3501a26fa9a7d1ad5c73fd37312c4c1a96fa91e019baec72e43f71cd",
+      "duration_hours": 0.06472222222222222,
+      "end_time": "2026-09-18T07:46:50+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:42:57+00:00"
+    },
+    {
+      "config_sha256": "1a8375c47d32ee03a10b5a2a56fdc37a8e9abac9aa277d476f44099af68d3a26",
+      "duration_hours": 0.1063888888888889,
+      "end_time": "2026-09-18T07:53:35+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:47:12+00:00"
+    },
+    {
+      "config_sha256": "baa7106b0a1301e082954b57d85aac6a0336f018ae34830eb7633dab54f65a69",
+      "duration_hours": 0.15305555555555556,
+      "end_time": "2026-09-18T08:03:14+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T07:54:03+00:00"
+    },
+    {
+      "config_sha256": "391d39df0989cf1aac960f84a51b3fe7945ec2ebfc9ebef955f603d3292e55b0",
+      "duration_hours": 0.12166666666666667,
+      "end_time": "2026-09-18T08:10:54+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:03:36+00:00"
+    },
+    {
+      "config_sha256": "6467baa742802bf82a8dac4b1c4f63b294c423e53df4d343ff1c7f4a2c401d56",
+      "duration_hours": 0.1475,
+      "end_time": "2026-09-18T08:14:57+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:06:06+00:00"
+    },
+    {
+      "config_sha256": "87ce0a7a8cd73175d776640e8488b4bc828e84af6863afa55e2e947f4e233ec7",
+      "duration_hours": 0.1436111111111111,
+      "end_time": "2026-09-18T08:19:59+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:11:22+00:00"
+    },
+    {
+      "config_sha256": "58944030aa9291429b29113175ad92227b77945d2b318e1654b88f3c6ea648fe",
+      "duration_hours": 0.145,
+      "end_time": "2026-09-18T08:24:05+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:15:23+00:00"
+    },
+    {
+      "config_sha256": "c226ab130a38addbcff3805820177bbd6dec5f3860371a74a90e15f3aef90b63",
+      "duration_hours": 0.7391666666666666,
+      "end_time": "2026-09-18T09:04:45+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:20:24+00:00"
+    },
+    {
+      "config_sha256": "d3e97ef8c3207475ad48b5c8c1d4a9f725468f3588f4708b2ec9feea507bcfe5",
+      "duration_hours": 1.1547222222222222,
+      "end_time": "2026-09-18T09:32:12+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T08:22:55+00:00"
+    },
+    {
+      "config_sha256": "ef9bb4ac6eeb67a487f9d19004c713f414824944244df4ac5b0173a2dac0e4f9",
+      "duration_hours": 0.42027777777777775,
+      "end_time": "2026-09-18T09:30:31+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T09:05:18+00:00"
+    },
+    {
+      "config_sha256": "ea60772281fbfc2b02f0ded0898ee5d9b2c84c6ce7fa4a448b89fe8a5f22cac3",
+      "duration_hours": 0.25722222222222224,
+      "end_time": "2026-09-18T09:46:20+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T09:30:54+00:00"
+    },
+    {
+      "config_sha256": "2fb584e431e0c265cf4508c9af982d87211048fb08c42ff97298441683263ccc",
+      "duration_hours": 0.2544444444444444,
+      "end_time": "2026-09-18T09:46:40+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T09:31:24+00:00"
+    },
+    {
+      "config_sha256": "2e816aa1e1c0fe0c53e8ebe3de4eb6d89756658b2754c7e9a2bb6b82ca805596",
+      "duration_hours": 0.5369444444444444,
+      "end_time": "2026-09-18T10:18:55+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T09:46:42+00:00"
+    },
+    {
+      "config_sha256": "b78f42a2f27cda1a28628a650e3d4456cacde300508d4186d142f6be9a780abf",
+      "duration_hours": 0.3372222222222222,
+      "end_time": "2026-09-18T10:09:26+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T09:49:12+00:00"
+    },
+    {
+      "config_sha256": "9e390723a2f055c8c901f3d9ec892fbceec9bce7b069053addb8d3b74308020f",
+      "duration_hours": 0.3402777777777778,
+      "end_time": "2026-09-18T10:30:27+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T10:10:02+00:00"
+    },
+    {
+      "config_sha256": "76b6e779c41e2a76b5ff3b2c16b1882f8c98c75b78272e0891b54bb2cd777a0a",
+      "duration_hours": 0.4305555555555556,
+      "end_time": "2026-09-18T10:45:09+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T10:19:19+00:00"
+    },
+    {
+      "config_sha256": "16af6015d83a77a207fe595730590fcdcad36dd6d07a6d06e73d14f400c5ce0d",
+      "duration_hours": 0.2602777777777778,
+      "end_time": "2026-09-18T10:46:28+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T10:30:51+00:00"
+    },
+    {
+      "config_sha256": "cf7b1cc0ab607d7921b8be23cf23ada51b680b3311fe88a3a3065c1a286d12a0",
+      "duration_hours": 0.2425,
+      "end_time": "2026-09-18T11:00:12+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T10:45:39+00:00"
+    },
+    {
+      "config_sha256": "19841f3ef8f53ad89e43f1d11d1bd6e830d9e64c11753f4625b323361df6b3b4",
+      "duration_hours": 0.5611111111111111,
+      "end_time": "2026-09-18T11:21:50+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T10:48:10+00:00"
+    },
+    {
+      "config_sha256": "45bcb99510903c8484e158ab40c1b9bc3b3764a4bd8e47c1628d0c5e10088a9e",
+      "duration_hours": 0.33805555555555555,
+      "end_time": "2026-09-18T11:20:59+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:00:42+00:00"
+    },
+    {
+      "config_sha256": "7436db6ae7537d58066a9f091741ff66e1d45db9ef69841c4d13c3c9eb90aaad",
+      "duration_hours": 0.315,
+      "end_time": "2026-09-18T11:40:25+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:21:31+00:00"
+    },
+    {
+      "config_sha256": "5296da0f65630423e473c4fbe5d95106ba88d6883349974de3a4a9efefcf18a0",
+      "duration_hours": 0.425,
+      "end_time": "2026-09-18T11:49:32+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:24:02+00:00"
+    },
+    {
+      "config_sha256": "faf8933476bb961e2e48c9df56a9199574ccd253be14ea39486c6277edb620bb",
+      "duration_hours": 0.25333333333333335,
+      "end_time": "2026-09-18T11:56:02+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:40:50+00:00"
+    },
+    {
+      "config_sha256": "060a99e7b15a79f18567a783bbf40852e010e4b9c6a065157cc2b176eeb4454b",
+      "duration_hours": 0.2544444444444444,
+      "end_time": "2026-09-18T12:05:23+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:50:07+00:00"
+    },
+    {
+      "config_sha256": "7c0b699e13ee83c6003519a313d6cd8aa57fb35a317849824a1196f22cecd2a4",
+      "duration_hours": 0.5655555555555556,
+      "end_time": "2026-09-18T12:30:19+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T11:56:23+00:00"
+    },
+    {
+      "config_sha256": "bd159ef8148b1f2c03653fa57db554c5880bea3f148f5927049a009d6b9dacef",
+      "duration_hours": 0.33555555555555555,
+      "end_time": "2026-09-18T12:26:02+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T12:05:54+00:00"
+    },
+    {
+      "config_sha256": "9ea10aafae5d7be5eb1c8589e92b736371cb307368583dda0d3f23d03029c4b3",
+      "duration_hours": 0.355,
+      "end_time": "2026-09-18T12:47:47+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T12:26:29+00:00"
+    },
+    {
+      "config_sha256": "62e62f70acb94b72f97cded4aa309b6d68b9b1adb62c3f2b5fa4ffeb919cab32",
+      "duration_hours": 0.4802777777777778,
+      "end_time": "2026-09-18T12:59:33+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T12:30:44+00:00"
+    },
+    {
+      "config_sha256": "20a291008634f9887becd4333aa8041523ea796a9312e4f774a93a99aec5695d",
+      "duration_hours": 2.5005555555555556,
+      "end_time": "2026-09-18T15:30:07+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T13:00:05+00:00"
+    },
+    {
+      "config_sha256": "1dfee8ce5877e4e7e903532c4135f96079adcdd4cfb56b02230e903ed3889ed0",
+      "duration_hours": 2.343888888888889,
+      "end_time": "2026-09-18T15:23:28+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T13:02:50+00:00"
+    },
+    {
+      "config_sha256": "3c3684bcbca42f2e1a999471f03b24efc876d5e84845653d3a712e1fe47eb893",
+      "duration_hours": 0.024444444444444446,
+      "end_time": "2026-09-18T15:25:27+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T15:23:59+00:00"
+    },
+    {
+      "config_sha256": "5fe3b5f767717caf32fd31836d1c3f41576fdb21b13a0233813f6af28fb4f13e",
+      "duration_hours": 0.03944444444444444,
+      "end_time": "2026-09-18T15:28:06+00:00",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-18T15:25:44+00:00"
+    },
+    {
+      "config_sha256": "ab7467696e8406b9dec8753a85d2e3e0cb50cd43675480d1d40faf764fe46485",
+      "duration_hours": 1.3769444444444445,
+      "end_time": "2026-09-23T19:59:59+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T18:37:22+00:00"
+    },
+    {
+      "config_sha256": "6091375cebce0e4d17da37f9345a6973757b450da262bd2ab110b776ac50e819",
+      "duration_hours": 1.3563888888888889,
+      "end_time": "2026-09-23T19:59:15+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T18:37:52+00:00"
+    },
+    {
+      "config_sha256": "1cb7d202ec800158c0d28771b65b95231006bc3b45863ef89205aeca94bb669a",
+      "duration_hours": 1.1880555555555556,
+      "end_time": "2026-09-23T19:51:09+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T18:39:52+00:00"
+    },
+    {
+      "config_sha256": "535d6f6531941ad49797a9c29548f071f6908c2afe8f70a1e64c8b9953d87522",
+      "duration_hours": 1.0077777777777779,
+      "end_time": "2026-09-23T19:42:51+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T18:42:23+00:00"
+    },
+    {
+      "config_sha256": "cc7fe4cb680f61063ed5a3d0d9e1002f5e4e99eeb2962347e8b5b5306c09bdf8",
+      "duration_hours": 0.37722222222222224,
+      "end_time": "2026-09-23T20:14:17+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T19:51:39+00:00"
+    },
+    {
+      "config_sha256": "fb97e29da0f2b4f549f2cdf4e57f4d1f769560f01e96bcb79bfa0ec62a9be5fe",
+      "duration_hours": 0.2361111111111111,
+      "end_time": "2026-09-23T20:13:51+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T19:59:41+00:00"
+    },
+    {
+      "config_sha256": "f201860134b63cb80f11187250edeba8e4e228c64186f170e2cce7cd89963d4f",
+      "duration_hours": 0.23555555555555555,
+      "end_time": "2026-09-23T20:14:34+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:00:26+00:00"
+    },
+    {
+      "config_sha256": "6033f528cb1c1a35d6123747f9c9c12c0281e31f89f0ae11e2bd1e5fddee5b47",
+      "duration_hours": 0.06,
+      "end_time": "2026-09-23T20:17:50+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:14:14+00:00"
+    },
+    {
+      "config_sha256": "cb3afa9f89cd852934ae675b33cb6570a8e186419924607543d74adc0912b959",
+      "duration_hours": 0.13277777777777777,
+      "end_time": "2026-09-23T20:22:57+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:14:59+00:00"
+    },
+    {
+      "config_sha256": "46f5d299e0322941a0772bbf559997ba22189490928c03bc9993c1d7572750ef",
+      "duration_hours": 0.04111111111111111,
+      "end_time": "2026-09-23T20:19:13+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:16:45+00:00"
+    },
+    {
+      "config_sha256": "b968972aed771905ad3e7ab496152205e4593e79a376ed2f8ff175464a18ad95",
+      "duration_hours": 0.2808333333333333,
+      "end_time": "2026-09-23T20:35:06+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:18:15+00:00"
+    },
+    {
+      "config_sha256": "d40c86a575d6a6372b35f0e0cf4153feba567d5940152eea3521d18184507681",
+      "duration_hours": 0.5511111111111111,
+      "end_time": "2026-09-23T20:52:49+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:19:45+00:00"
+    },
+    {
+      "config_sha256": "63e6cbecae4a2362e777d85b3d564388ce507572f66461f58b2faabd42db5604",
+      "duration_hours": 0.5111111111111111,
+      "end_time": "2026-09-23T20:52:56+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:22:16+00:00"
+    },
+    {
+      "config_sha256": "9a2b8a84f6e56fdbfc02e4d046f268d29e4be73ed79a20a94254b5891f2ea265",
+      "duration_hours": 0.29138888888888886,
+      "end_time": "2026-09-23T20:42:15+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:24:46+00:00"
+    },
+    {
+      "config_sha256": "53af064a19486b1f5b53518f11d095cf7bcb8fb37bccf91f26c4b075a040dde4",
+      "duration_hours": 0.2633333333333333,
+      "end_time": "2026-09-23T20:51:22+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:35:34+00:00"
+    },
+    {
+      "config_sha256": "18db23184bc808a944696eacad5be57c98626c456b8d73864d42e6c81a6887d5",
+      "duration_hours": 0.25583333333333336,
+      "end_time": "2026-09-23T20:58:12+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:42:51+00:00"
+    },
+    {
+      "config_sha256": "f4a8e8d0c18704ea0f6cd88c163e34d3333831c8e820baa5ee8b6abda542843b",
+      "duration_hours": 0.23083333333333333,
+      "end_time": "2026-09-23T21:05:44+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:51:53+00:00"
+    },
+    {
+      "config_sha256": "a6a6aab59db4ad8d0e107be7bd50487b5adee929c77aa12656672f68c96366c0",
+      "duration_hours": 0.25916666666666666,
+      "end_time": "2026-09-23T21:08:56+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:53:23+00:00"
+    },
+    {
+      "config_sha256": "b0750575711ae449e780d3f809b97c8cb92f60e5934fb01ebc31ea764bd1c42d",
+      "duration_hours": 0.25972222222222224,
+      "end_time": "2026-09-23T21:11:29+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:55:54+00:00"
+    },
+    {
+      "config_sha256": "dff71d5f999d54cb8a5300cdba5b97cce1a4d00756835726e1a7e9d9a59ba6b1",
+      "duration_hours": 0.8825,
+      "end_time": "2026-09-23T21:51:37+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T20:58:40+00:00"
+    },
+    {
+      "config_sha256": "f379f4e1e7939581281cde55e80a77a2fcf9d0186123b2f348aa23469a7cde02",
+      "duration_hours": 1.1086111111111112,
+      "end_time": "2026-09-23T22:12:42+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T21:06:11+00:00"
+    },
+    {
+      "config_sha256": "95c83c9c1c0a4b3b934e9a89e5fc469950772b6f37da5a7ecc2bdea90df0f6be",
+      "duration_hours": 1.2775,
+      "end_time": "2026-09-23T22:26:06+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T21:09:27+00:00"
+    },
+    {
+      "config_sha256": "7db305b44abd32e784ee17881e14c8efb05d5579bb5a004446de4da1c83b3117",
+      "duration_hours": 1.3777777777777778,
+      "end_time": "2026-09-23T22:34:38+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T21:11:58+00:00"
+    },
+    {
+      "config_sha256": "5d763def7ea368e27c478ca8cba61dd49cb5a473e420f66a7ebba13425fe05c7",
+      "duration_hours": 1.0911111111111111,
+      "end_time": "2026-09-23T23:18:40+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T22:13:12+00:00"
+    },
+    {
+      "config_sha256": "b226eea879c6e24b592d500b22ee1cffbdf5cdeb2e00c13e6c76cd660c7c97c0",
+      "duration_hours": 1.2475,
+      "end_time": "2026-09-23T23:49:53+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T22:35:02+00:00"
+    },
+    {
+      "config_sha256": "710b00711a425666348caf97122e894efa6532df8dfe9d4a63235a0ff57c3b91",
+      "duration_hours": 0.9552777777777778,
+      "end_time": "2026-09-24T00:16:31+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T23:19:12+00:00"
+    },
+    {
+      "config_sha256": "008b60c816d71817701a17a986ab32e9548a0b2f9efcee2dfdc956d6ee9a5206",
+      "duration_hours": 1.2616666666666667,
+      "end_time": "2026-09-24T00:35:39+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-23T23:19:57+00:00"
+    },
+    {
+      "config_sha256": "aa476d6c361410351e70c7e321edda44f9384807a90c9e6be4801aae37c70eb8",
+      "duration_hours": 1.0519444444444443,
+      "end_time": "2026-09-24T01:20:02+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T00:16:55+00:00"
+    },
+    {
+      "config_sha256": "104846c29aa574de3a128fd9d42a6dde15bf4ed59649e0da67426880857dd7d2",
+      "duration_hours": 0.2772222222222222,
+      "end_time": "2026-09-24T01:14:42+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T00:58:04+00:00"
+    },
+    {
+      "config_sha256": "1ae39d66279e43a736e5c0c7cae4d6dbaee1e181488d0f88a444f0c6c00a41ff",
+      "duration_hours": 0.33555555555555555,
+      "end_time": "2026-09-24T01:43:02+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T01:22:54+00:00"
+    },
+    {
+      "config_sha256": "240cdc3235a702213590944f8664641d13522a41b4322e3428c3ae5f7f743c3b",
+      "duration_hours": 0.125,
+      "end_time": "2026-09-24T02:07:33+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:00:03+00:00"
+    },
+    {
+      "config_sha256": "a09f520d8514ed6662304c1b5ca4ebb433a26f428b26a02b65fc73a81d0da598",
+      "duration_hours": 0.21138888888888888,
+      "end_time": "2026-09-24T02:13:29+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:00:48+00:00"
+    },
+    {
+      "config_sha256": "02cab895da2bd11571928506e3cd9a32b13b42a2f2adce8f58ad203bd2af1819",
+      "duration_hours": 1.5508333333333333,
+      "end_time": "2026-09-24T03:35:36+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:02:33+00:00"
+    },
+    {
+      "config_sha256": "a2880b72cdce13ac0287d64e383237f63a6f7be83c933b18e097edd33138148b",
+      "duration_hours": 1.5955555555555556,
+      "end_time": "2026-09-24T03:40:48+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:05:04+00:00"
+    },
+    {
+      "config_sha256": "2fbfd123e58e6c29bb39019f8c6c67ec182486f11b115d5f06102d38ba3512ba",
+      "duration_hours": 2.121111111111111,
+      "end_time": "2026-09-24T04:15:20+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:08:04+00:00"
+    },
+    {
+      "config_sha256": "f5adc8733689b02ff0b777e0610c2d1c2a212b6f3a0cb052a837cb6a2cafdb5d",
+      "duration_hours": 2.0905555555555555,
+      "end_time": "2026-09-24T04:19:17+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T02:13:51+00:00"
+    },
+    {
+      "config_sha256": "b23c909ce8917e2dca5ec593079449b78a70a8c557b43bb522efb5293528995a",
+      "duration_hours": 0.5172222222222222,
+      "end_time": "2026-09-24T04:07:12+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T03:36:10+00:00"
+    },
+    {
+      "config_sha256": "2ad6200ef4761b7517c3d6158b5c05cc507c5695ffa09bc4037e7b950c39f711",
+      "duration_hours": 0.5177777777777778,
+      "end_time": "2026-09-24T04:12:15+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T03:41:11+00:00"
+    },
+    {
+      "config_sha256": "eff3e237bde84dc2a41cfebb8e05451fcf6e96e88cb6a1a6518d027606250783",
+      "duration_hours": 0.4136111111111111,
+      "end_time": "2026-09-24T04:32:36+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T04:07:47+00:00"
+    },
+    {
+      "config_sha256": "2b8de915bc6d548abec4dc20cc21d98364a39c0a012c0980e931e03df83433c1",
+      "duration_hours": 0.35833333333333334,
+      "end_time": "2026-09-24T04:37:19+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T04:15:49+00:00"
+    },
+    {
+      "config_sha256": "7a4ef131bb889e6255dce8db60812a33482dc01d579b31e2678689a940322210",
+      "duration_hours": 0.8083333333333333,
+      "end_time": "2026-09-24T05:21:38+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T04:33:08+00:00"
+    },
+    {
+      "config_sha256": "b1026ac41b32402b1d2347030a1191fbd23c1cfc9d8a4c6d2b1bbc552f195d99",
+      "duration_hours": 1.065,
+      "end_time": "2026-09-24T06:25:58+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T05:22:04+00:00"
+    },
+    {
+      "config_sha256": "c5889c1dd84229dcd94d48bbcf6265375fb5d973c98cdb6f66563210a63cee8b",
+      "duration_hours": 0.2577777777777778,
+      "end_time": "2026-09-24T06:42:02+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T06:26:34+00:00"
+    },
+    {
+      "config_sha256": "560a252649d25b4c93158969a5114f8253804d3c26b44143cb497f66c62fd41e",
+      "duration_hours": 0.35333333333333333,
+      "end_time": "2026-09-24T07:03:50+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "01-ai/Yi-1.5-9B-Chat",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T06:42:38+00:00"
+    },
+    {
+      "config_sha256": "36f21947aee7c71b5685a5b82d887c1a4fa66a1c81824ac1d650f187cb02d0f4",
+      "duration_hours": 0.72,
+      "end_time": "2026-09-24T07:47:25+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T07:04:13+00:00"
+    },
+    {
+      "config_sha256": "2b182580c7ce01c211bca5de8597a4b5ac0c9bdcea151bde3861be1f1975493a",
+      "duration_hours": 0.43333333333333335,
+      "end_time": "2026-09-24T07:32:44+00:00",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "group": "extended",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "runner_exit_code": null,
+      "start_time": "2026-09-24T07:06:44+00:00"
     }
   ],
-  "scope": "saved AuthorityKV GPU run configurations",
-  "timestamp_complete_runs": 222
+  "scope": "GPU run configurations of the main and extended AuthorityKV experiments",
+  "timestamp_complete_runs": 414
 }

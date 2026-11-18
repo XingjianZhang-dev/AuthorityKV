@@ -1,4 +1,4 @@
-"""Shared helpers for the review-period experiments: load the frozen runners by import and write a config.json per run.
+"""Shared helpers for the extended experiments: load the frozen runners by import and write a config.json per run.
 
 Nothing here modifies frozen code. Two runner versions exist:
   snapshot = repro_snapshots/acl_parent_20260725/scripts/run_kvpress_authority.py (sha 314d5927; detector on all

@@ -1,6 +1,6 @@
-# Review-period runs
+# Runs of the extended experiments
 
-One directory per run of the experiments added during peer review: both
+One directory per run of the extended experiments: both
 tie-breaking rules, the roles + provenance and detector configurations,
 filter-then-compress, soft-penalty and quota baselines, Qwen2.5-14B, and the
 selection audits. Directory names follow

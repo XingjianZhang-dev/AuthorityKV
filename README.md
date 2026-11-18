@@ -118,7 +118,7 @@ bash paper/tools/recompute_statistics.sh       # the statistics files behind the
 
 The last command re-runs the paired tests, bootstrap intervals, and official graders on the raw predictions and
 reports whether each of the 46 statistics files under `reports/` is reproduced byte for byte. The System-IFEval
-step needs the grader environment: `python -m pip install -r requirements-eval.txt` and
+step uses the official grader, whose packages are part of `requirements-cpu.txt`, and NLTK's tokenizer data:
 `python -m nltk.downloader punkt_tab`.
 
 ### 2. Regenerate the tables and figures
@@ -135,9 +135,10 @@ its command, and the records it is built from.
 
 ### 3. Re-run experiments
 
-Each run uses a single A100-80GB GPU and the environment of `requirements-gpu.txt`. The command line, model revision, and source hashes of every reported
-run are stored with it: `results/authoritykv/<run>/run_config.json` for the main experiments and
-`runs/<run>/config.json` for the experiments added during peer review; `results/RUN_INDEX.csv` lists all 261
+Each run uses a single A100-80GB GPU and the environment of `requirements-gpu.txt`; `reports/COMPUTE_INVENTORY.md`
+totals the GPU time of all experiments (148.8 process-GPU hours). The command line, model revision, and source
+hashes of every reported run are stored with it: `results/authoritykv/<run>/run_config.json` for the main
+experiments and `runs/<run>/config.json` for the extended experiments; `results/RUN_INDEX.csv` lists all 261
 runs. For example, the main matrix on one model and scorer:
 
 ```bash
@@ -170,13 +171,13 @@ authoritykv_experiments/   The method: AuthorityAwarePress and supporting cache-
 examples/                  quickstart.py
 scripts/                   Benchmark construction, runners, graders, and statistics of the main experiments
 review_experiments/        Tie-breaking rules, soft-penalty and quota baselines, filter-then-compress,
-                           annotation-free detectors, and the verification code, added during peer review
+                           annotation-free detectors, and the verification code of the extended experiments
 repro_snapshots/           The runner revision used for the IH-CacheBench runs of review_experiments/
 configs/                   Experiment matrices passed to the runners (their hashes are stored with each run)
 data/                      IH-CacheBench and the derived evaluation sets (see DATASET_CARD.md)
 results/                   Run records of the main experiments; RUN_INDEX.csv; RESPONSE_FACTS.jsonl and
-                           T1_facts.json hold every number of the review-period experiments with its source run
-runs/                      Run records of the review-period experiments
+                           T1_facts.json hold every number of the extended experiments with its source run
+runs/                      Run records of the extended experiments
 raw_outputs/               Per-example outputs and judgments of all 261 runs (two archives, 27 MB)
 reports/                   Statistics computed from the raw outputs; inputs of the appendix tables
 paper/                     The paper, its generated tables and figure sources, and the tools that build them

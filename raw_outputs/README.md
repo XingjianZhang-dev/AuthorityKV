@@ -23,4 +23,4 @@ A record in `predictions.jsonl` holds the example id, method, and budget,
 the output text, and the generated token ids. `judged_predictions.jsonl`
 adds the deterministic IH-CacheBench judgment, and `scored_judgments.jsonl`
 holds the per-prompt System-IFEval result from the official grader. The
-record formats of the review-period runs are described in `runs/README.md`.
+record formats of the extended-experiment runs are described in `runs/README.md`.

@@ -1,4 +1,4 @@
-"""New press variants for the review-period experiments (E1 fixed per-layer budget, E2 soft/quota rules, D1 recency tie-break).
+"""New press variants for the extended experiments (E1 fixed per-layer budget, E2 soft/quota rules, D1 recency tie-break).
 Each subclasses the frozen AuthorityAwarePress that is bound in this process (snapshot 870995d2 or current a4af6dc8 via
 akv_common.load_runner) and overrides only the selection step. Offsets/budget/audit fields follow the frozen code.
 """

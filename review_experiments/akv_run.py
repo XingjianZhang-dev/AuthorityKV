@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generic generation runner for the review-period experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
+"""Generic generation runner for the extended experiments (E1, E2, E3, E3b, E4, D1, E6, X-queue).
 
 Reuses the frozen runner by import (prompt_parts, find_token_spans, make_press, generate_one, official presses) and adds
 the new P/D variants (akv_variants) and presses (akv_presses). Output rows have the same fields as the frozen runner's
